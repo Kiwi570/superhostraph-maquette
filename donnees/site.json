@@ -1,0 +1,15 @@
+{
+  "nom": "Madame&Monsieur",
+  "adresse": "https://superhostraph-maquette.vercel.app",
+  "siteActuel": "www.superhostraph.com",
+  "version": 1,
+  "langues": ["fr"],
+  "navigation": ["accueil", "villas", "chez-vous", "chez-nous", "renseignements"],
+  "actionEntete": { "page": "renseignements" },
+  "couleurs": { "fond": "#f6f1e9", "texte": "#1e2a2f", "voile": "#12303f", "ouverture": "#12303f", "menu": "#f6f1e9", "theme": "#f6f1e9" },
+  "formeVoile": "persiennes",
+  "contact": { "telephone": "06 43 78 02 23", "telephoneLien": "+33643780223", "email": "contact@maconciergeriesaintraphael.fr", "adresse": "55, allée de la Voie Lactée, 83700 Saint-Raphaël", "instagram": "https://www.instagram.com/madametmonsieur_conciergerie/" },
+  "polices": ["/assets/fonts/noto-serif-display-500.woff2", "/assets/fonts/albert-sans-400.woff2"],
+  "imagePartage": "ouverture-accueil-1440.webp",
+  "curseur": false
+}

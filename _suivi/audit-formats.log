@@ -1,0 +1,23 @@
+… fichiers
+  fait en 0 s
+… mesures
+  16/234
+  43/234
+  72/234
+  93/234
+  121/234
+  142/234
+  163/234
+  183/234
+  206/234
+  234/234
+  fait en 301 s
+… mesures:balayage
+  fait en 47 s
+… ecran
+  fait en 44 s
+
+Échecs : 8 · À regarder : 7 · Non lancé : 0
+Relancer seulement ce qui a échoué : node _audit/audit.mjs --complet --pages=/,/404,/chez-nous,/chez-vous,/renseignements --seulement=fichiers,mesures
+Rapport : /home/claude/superhostraph-maquette/_audit/rapport/rapport.md (passe 20261120-223939-complet-partiel)
+FIN 1

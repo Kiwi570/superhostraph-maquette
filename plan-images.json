@@ -1,0 +1,1529 @@
+[
+ {
+  "source": "recu/155-18.jpg",
+  "nom": "villa-155-1",
+  "role": "galerie",
+  "ratio": "4:3",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Piscine du 155 entre palmiers et cyprès",
+  "beaute": 3,
+  "page": "villas"
+ },
+ {
+  "source": "recu/155-12.jpg",
+  "nom": "villa-155-2",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Le 155 vu d’en haut, piscine et jardin",
+  "beaute": 3,
+  "page": "villas"
+ },
+ {
+  "source": "recu/155-8.jpg",
+  "nom": "villa-155-3",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Déjeuner en terrasse au 155",
+  "beaute": 3,
+  "page": "villas"
+ },
+ {
+  "source": "recu/155-6.jpg",
+  "nom": "villa-155-4",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Salon du 155 aux murs bleus",
+  "beaute": 3,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-dolce-vita-2.jpg",
+  "nom": "villa-dolce-vita-1",
+  "role": "galerie",
+  "ratio": "4:3",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Piscine et escalier de pierre dans le jardin méditerranéen de La Dolce Vita",
+  "beaute": 4,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-dolce-vita-11.jpg",
+  "nom": "villa-dolce-vita-2",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "La Dolce Vita vue du ciel, piscine et jardin plein sud",
+  "beaute": 3,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-dolce-vita-13.jpg",
+  "nom": "villa-dolce-vita-3",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Piscine de La Dolce Vita au pied du jardin en terrasses",
+  "beaute": 3,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-dolce-vita-19.jpg",
+  "nom": "villa-dolce-vita-4",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Séjour lumineux de La Dolce Vita ouvert sur le jardin",
+  "beaute": 3,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-camelias-3.png",
+  "nom": "villa-camelias-1",
+  "role": "galerie",
+  "ratio": "4:3",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Terrasse ombragée et piscine des Camelias",
+  "beaute": 4,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-camelias-2.png",
+  "nom": "villa-camelias-2",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Allée bordée de lauriers-roses vers la villa Les Camelias",
+  "beaute": 4,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-camelias-5.png",
+  "nom": "villa-camelias-3",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Table dressée sous la pergola des Camelias",
+  "beaute": 4,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-camelias-7.png",
+  "nom": "villa-camelias-4",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Salon des Camelias ouvert sur les palmiers",
+  "beaute": 4,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-santoline-5.jpg",
+  "nom": "villa-santoline-1",
+  "role": "galerie",
+  "ratio": "4:3",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "La Santoline et sa piscine au cœur du jardin",
+  "beaute": 3,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-santoline-17.jpg",
+  "nom": "villa-santoline-2",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Piscine de La Santoline éclairée à la tombée du jour",
+  "beaute": 3,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-santoline-8.jpg",
+  "nom": "villa-santoline-3",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Salon de La Santoline",
+  "beaute": 3,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-santoline-16.jpg",
+  "nom": "villa-santoline-4",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Terrasse couverte face à la piscine de La Santoline",
+  "beaute": 3,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-escapadou-7.jpg",
+  "nom": "villa-escapadou-1",
+  "role": "galerie",
+  "ratio": "4:3",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "L’Île d’Or vue depuis le jardin de L’Escapadou, sous un pin",
+  "beaute": 4,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-escapadou-16.jpg",
+  "nom": "villa-escapadou-2",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Table de terrasse face à la mer à L’Escapadou",
+  "beaute": 3,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-escapadou-3.jpg",
+  "nom": "villa-escapadou-3",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Séjour de L’Escapadou ouvert sur la mer",
+  "beaute": 3,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-escapadou-6.jpg",
+  "nom": "villa-escapadou-4",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Coin salon et cheminée de L’Escapadou",
+  "beaute": 3,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-estaou-4.png",
+  "nom": "villa-estaou-1",
+  "role": "galerie",
+  "ratio": "4:3",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Piscine d’Estaou bordée de lauriers-roses et de transats rouges",
+  "beaute": 4,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-estaou-2.png",
+  "nom": "villa-estaou-2",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Plage de la piscine d’Estaou sous les parasols de paille",
+  "beaute": 4,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-estaou-8.png",
+  "nom": "villa-estaou-3",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Jardin et piscine d’Estaou",
+  "beaute": 4,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-estaou-22.jpg",
+  "nom": "villa-estaou-4",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Façade ocre d’Estaou et sa piscine",
+  "beaute": 3,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-alice-20.png",
+  "nom": "villa-alice-1",
+  "role": "galerie",
+  "ratio": "4:3",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Villa Alice, sa piscine et le pool-house plein sud",
+  "beaute": 4,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-alice-11.png",
+  "nom": "villa-alice-2",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Piscine d’Alice sous les pins parasols",
+  "beaute": 4,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-alice-13.png",
+  "nom": "villa-alice-3",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Grande pièce à vivre d’Alice sous la charpente",
+  "beaute": 4,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-alice-12.png",
+  "nom": "villa-alice-4",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Salon d’Alice ouvert sur les pins",
+  "beaute": 4,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-uccelli.png",
+  "nom": "villa-uccelli-1",
+  "role": "galerie",
+  "ratio": "4:3",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Villa contemporaine Uccelli et sa piscine privée",
+  "beaute": 4,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-uccelli-21.png",
+  "nom": "villa-uccelli-2",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Uccelli se reflète dans sa piscine",
+  "beaute": 4,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-uccelli-7.png",
+  "nom": "villa-uccelli-3",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Table pour douze dans la cuisine d’Uccelli",
+  "beaute": 4,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-uccelli-24.png",
+  "nom": "villa-uccelli-4",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Salon d’extérieur d’Uccelli au bord de l’eau",
+  "beaute": 4,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-petit-roc-6.jpg",
+  "nom": "villa-petit-roc-1",
+  "role": "galerie",
+  "ratio": "4:3",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Rochers rouges et mer au pied du Petit Roc",
+  "beaute": 4,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-petit-roc-2.jpg",
+  "nom": "villa-petit-roc-2",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Pin et horizon marin depuis le jardin du Petit Roc",
+  "beaute": 3,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-petit-roc-14.jpg",
+  "nom": "villa-petit-roc-3",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Côte rocheuse face au Petit Roc",
+  "beaute": 3,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-petit-roc-9.jpg",
+  "nom": "villa-petit-roc-4",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Chambre du Petit Roc avec fenêtre sur la mer",
+  "beaute": 3,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-palmeraie-5.png",
+  "nom": "villa-palmeraie-1",
+  "role": "galerie",
+  "ratio": "4:3",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "La Palmeraie se reflète dans sa piscine à débordement",
+  "beaute": 5,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-palmeraie-7.png",
+  "nom": "villa-palmeraie-2",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Piscine à débordement de La Palmeraie face à la baie d’Agay",
+  "beaute": 5,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-palmeraie-12.png",
+  "nom": "villa-palmeraie-3",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Transats de La Palmeraie face aux rochers rouges de l’Estérel",
+  "beaute": 5,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-palmeraie-14.png",
+  "nom": "villa-palmeraie-4",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Salon sous la pergola de La Palmeraie",
+  "beaute": 4,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-harmony.png",
+  "nom": "villa-harmony-1",
+  "role": "galerie",
+  "ratio": "4:3",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Villa Harmony, piscine et terrasses",
+  "beaute": 4,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-harmony-6.png",
+  "nom": "villa-harmony-2",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Piscine d’Harmony entre oliviers et voilages",
+  "beaute": 4,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-harmony-3.png",
+  "nom": "villa-harmony-3",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Harmony vue du ciel, sur les hauteurs de Boulouris",
+  "beaute": 4,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-harmony-10.png",
+  "nom": "villa-harmony-4",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Déjeuner face à la piscine d’Harmony",
+  "beaute": 4,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-chez-nous-4.png",
+  "nom": "villa-chez-nous-1",
+  "role": "galerie",
+  "ratio": "4:3",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Maison de caractère Chez nous et sa piscine",
+  "beaute": 4,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-chez-nous-2.png",
+  "nom": "villa-chez-nous-2",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Façade fleurie et piscine de Chez nous",
+  "beaute": 4,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-chez-nous-6.png",
+  "nom": "villa-chez-nous-3",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Terrasse et grandes baies de Chez nous",
+  "beaute": 4,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-chez-nous-17.png",
+  "nom": "villa-chez-nous-4",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Salon de Chez nous sous les poutres",
+  "beaute": 4,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-aiguebonne.png",
+  "nom": "villa-aiguebonne-1",
+  "role": "galerie",
+  "ratio": "4:3",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Grande terrasse d’Aiguebonne face à la mer",
+  "beaute": 4,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-aiguebonne-13.png",
+  "nom": "villa-aiguebonne-2",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Transat et chapeau de paille sur la terrasse d’Aiguebonne, la mer au loin",
+  "beaute": 4,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-aiguebonne-2.png",
+  "nom": "villa-aiguebonne-3",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Terrasse fleurie d’Aiguebonne",
+  "beaute": 4,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-aiguebonne-15.png",
+  "nom": "villa-aiguebonne-4",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Table sous l’arbre de la terrasse d’Aiguebonne",
+  "beaute": 4,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-pirouschka-20.jpg",
+  "nom": "villa-pirouschka-1",
+  "role": "galerie",
+  "ratio": "4:3",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Pirouschka et sa piscine sous les pins",
+  "beaute": 3,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-pirouschka-4.jpg",
+  "nom": "villa-pirouschka-2",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Maison aux volets bleus de Pirouschka",
+  "beaute": 3,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-pirouschka-13.jpg",
+  "nom": "villa-pirouschka-3",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Transats bleus au bord de la piscine de Pirouschka",
+  "beaute": 3,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-pirouschka-5.jpg",
+  "nom": "villa-pirouschka-4",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Salle à manger de Pirouschka",
+  "beaute": 3,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-soleada-3.jpg",
+  "nom": "villa-soleada-1",
+  "role": "galerie",
+  "ratio": "4:3",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Terrasse de La Soleada au soleil couchant",
+  "beaute": 4,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-soleada-19.png",
+  "nom": "villa-soleada-2",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Patio de La Soleada ouvert sur l’Estérel",
+  "beaute": 4,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-soleada-14.png",
+  "nom": "villa-soleada-3",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Salle à manger de La Soleada",
+  "beaute": 4,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-soleada-21.png",
+  "nom": "villa-soleada-4",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Dîner sous la pergola de La Soleada, la baie illuminée",
+  "beaute": 4,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-boheme-5.png",
+  "nom": "villa-boheme-1",
+  "role": "galerie",
+  "ratio": "4:3",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "La Bohème, sa piscine et ses palmiers",
+  "beaute": 5,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-boheme-13.png",
+  "nom": "villa-boheme-2",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "La piscine de La Bohème vue à travers une arche",
+  "beaute": 5,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-boheme-20.png",
+  "nom": "villa-boheme-3",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Piscine de La Bohème au coucher du soleil",
+  "beaute": 5,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-boheme-8.png",
+  "nom": "villa-boheme-4",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Salon de La Bohème sous la charpente",
+  "beaute": 4,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-eucalypta-6.jpg",
+  "nom": "villa-eucalypta-1",
+  "role": "galerie",
+  "ratio": "4:3",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Piscine d’Eucalypta face aux rochers rouges de l’Estérel",
+  "beaute": 3,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-eucalypta-18.jpg",
+  "nom": "villa-eucalypta-2",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Fauteuils de la terrasse d’Eucalypta face au soleil couchant",
+  "beaute": 3,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-eucalypta-4.jpg",
+  "nom": "villa-eucalypta-3",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Piscine aux formes douces d’Eucalypta",
+  "beaute": 3,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-eucalypta-20.jpg",
+  "nom": "villa-eucalypta-4",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Terrasse d’Eucalypta sur la mer",
+  "beaute": 3,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-casa-lomi-13.jpg",
+  "nom": "villa-casa-lomi-1",
+  "role": "galerie",
+  "ratio": "4:3",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Casa Lomi, ses murs de pierre et sa piscine",
+  "beaute": 3,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-casa-lomi-5.jpg",
+  "nom": "villa-casa-lomi-2",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Grande table en terrasse à Casa Lomi",
+  "beaute": 3,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-casa-lomi-6.jpg",
+  "nom": "villa-casa-lomi-3",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Cuisine de Casa Lomi ouverte sur la terrasse",
+  "beaute": 3,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-casa-lomi-24.jpg",
+  "nom": "villa-casa-lomi-4",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Salon de Casa Lomi",
+  "beaute": 3,
+  "page": "villas"
+ },
+ {
+  "source": "recu/mas-mirabelle-5.jpg",
+  "nom": "villa-mas-mirabelle-1",
+  "role": "galerie",
+  "ratio": "4:3",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Piscine à débordement du Mas Mirabelle face à la baie",
+  "beaute": 3,
+  "page": "villas"
+ },
+ {
+  "source": "recu/mas-mirabelle-8.jpg",
+  "nom": "villa-mas-mirabelle-2",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Oliviers et piscine du Mas Mirabelle",
+  "beaute": 3,
+  "page": "villas"
+ },
+ {
+  "source": "recu/mas-mirabelle-3.jpg",
+  "nom": "villa-mas-mirabelle-3",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Table du Mas Mirabelle face à la mer",
+  "beaute": 3,
+  "page": "villas"
+ },
+ {
+  "source": "recu/mas-mirabelle-17.jpg",
+  "nom": "villa-mas-mirabelle-4",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Salon du Mas Mirabelle ouvert sur la terrasse",
+  "beaute": 3,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-boheme-2.png",
+  "source_mobile": "recu/villa-boheme-13.png",
+  "nom": "ouverture-accueil",
+  "role": "ouverture",
+  "ratio": "16:9",
+  "largeurs": [
+   960,
+   1440,
+   1920
+  ],
+  "mobile": true,
+  "zone_texte": "gauche",
+  "alt": "Piscine de La Bohème face aux rochers rouges de l’Estérel et à la mer",
+  "beaute": 5,
+  "page": "accueil"
+ },
+ {
+  "source": "recu/villa-palmeraie-17.png",
+  "nom": "manifeste",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   800,
+   1280,
+   1536
+  ],
+  "alt": "Table d’été sous la pergola de La Palmeraie, ouverte sur l’Estérel",
+  "beaute": 5,
+  "page": "accueil"
+ },
+ {
+  "source": "recu/villa-boheme-25.png",
+  "nom": "appel-accueil",
+  "role": "section-fond",
+  "ratio": "16:9",
+  "largeurs": [
+   960,
+   1440,
+   1600
+  ],
+  "mobile": true,
+  "zone_texte": "haut",
+  "alt": "Le soleil se couche sur la mer, vu sous l’arche de La Bohème",
+  "beaute": 5,
+  "page": "accueil"
+ },
+ {
+  "source": "recu/villa-palmeraie-16.png",
+  "nom": "appel-villas",
+  "role": "section-fond",
+  "ratio": "16:9",
+  "largeurs": [
+   960,
+   1440,
+   1600
+  ],
+  "mobile": true,
+  "zone_texte": "haut",
+  "alt": "Piscine à débordement de La Palmeraie qui rejoint l’horizon",
+  "beaute": 5,
+  "page": "villas"
+ },
+ {
+  "source": "recu/villa-palmeraie-13.png",
+  "nom": "ouverture-chez-vous",
+  "role": "ouverture",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1280,
+   1536
+  ],
+  "mobile": "4:5",
+  "alt": "Lit fait à l’arrivée, linge blanc de qualité hôtelière, à La Palmeraie",
+  "beaute": 4,
+  "page": "chez-vous"
+ },
+ {
+  "source": "recu/villa-soleada-8.jpg",
+  "nom": "service-accueil",
+  "role": "carte-service",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Lits jumeaux faits avec des serviettes pliées en éléphants à La Soleada",
+  "beaute": 4,
+  "page": "chez-vous"
+ },
+ {
+  "source": "recu/villa-camelias-6.png",
+  "nom": "service-table",
+  "role": "carte-service",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1280
+  ],
+  "alt": "Table dressée sur la terrasse des Camelias",
+  "beaute": 4,
+  "page": "chez-vous"
+ },
+ {
+  "source": "recu/villa-camelias-14.png",
+  "nom": "appel-chez-vous",
+  "role": "section-fond",
+  "ratio": "16:9",
+  "largeurs": [
+   960,
+   1440,
+   1556
+  ],
+  "mobile": true,
+  "zone_texte": "haut",
+  "alt": "Piscine des Camelias et ses parasols",
+  "beaute": 4,
+  "page": "chez-vous"
+ },
+ {
+  "source": "recu/grok/g-service-cles.png",
+  "nom": "service-cles",
+  "role": "carte-service",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1168
+  ],
+  "alt": "Clé de villa posée sur une serviette pliée, avec un brin de lavande",
+  "beaute": 4,
+  "page": "chez-vous",
+  "emplacement": "service",
+  "priorite": "Indispensable",
+  "consigne_scene": "A single vintage brass villa key with a small natural linen tag, resting on a folded white towel on a pale limestone console, a sprig of lavender beside it, nobody in the frame."
+ },
+ {
+  "source": "recu/grok/g-service-entretien.png",
+  "nom": "service-entretien",
+  "role": "carte-service",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1168
+  ],
+  "alt": "Îlot de cuisine impeccable, bouquet d’hortensias blancs",
+  "beaute": 4,
+  "page": "chez-vous",
+  "emplacement": "service",
+  "priorite": "Indispensable",
+  "consigne_scene": "A freshly cleaned villa kitchen island in pale stone, a vase of white hydrangeas and a neatly folded linen tea towel, sunlight from a large open window with a garden beyond, immaculate, nobody in the frame."
+ },
+ {
+  "source": "recu/grok/g-service-transfert.png",
+  "nom": "service-transfert",
+  "role": "carte-service",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1168
+  ],
+  "alt": "Berline sombre portière ouverte dans une allée de lavande",
+  "beaute": 4,
+  "page": "chez-vous",
+  "emplacement": "service",
+  "priorite": "Indispensable",
+  "consigne_scene": "The open rear door of a dark premium sedan waiting in a gravel driveway lined with lavender and umbrella pines, no driver visible, no logo, no license plate."
+ },
+ {
+  "source": "recu/grok/g-service-chef.png",
+  "nom": "service-chef",
+  "role": "carte-service",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1168
+  ],
+  "alt": "Tomates anciennes, huile d’olive, basilic et casserole de cuivre sur un plan de marbre",
+  "beaute": 4,
+  "page": "chez-vous",
+  "emplacement": "service",
+  "priorite": "Indispensable",
+  "consigne_scene": "A private chef mise en place on a marble kitchen counter: heirloom tomatoes, olive oil in a glass cruet, fresh basil, lemons and a copper pan, nobody in the frame."
+ },
+ {
+  "source": "recu/grok/g-service-bebe.png",
+  "nom": "service-bebe",
+  "role": "carte-service",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1168
+  ],
+  "alt": "Lit à barreaux blanc avec langes pliés dans une chambre ensoleillée",
+  "beaute": 4,
+  "page": "chez-vous",
+  "emplacement": "service",
+  "priorite": "Indispensable",
+  "consigne_scene": "A white wooden baby cot with neatly folded muslin and a soft knitted toy in a sunny bedroom, sheer linen curtains, calm and safe, nobody in the frame."
+ },
+ {
+  "source": "recu/grok/g-service-coach.png",
+  "nom": "service-coach",
+  "role": "carte-service",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1168
+  ],
+  "alt": "Tapis de yoga roulé et serviette sur le bord d’une piscine au lever du soleil",
+  "beaute": 4,
+  "page": "chez-vous",
+  "emplacement": "service",
+  "priorite": "Indispensable",
+  "consigne_scene": "A rolled natural yoga mat, a folded white towel and a glass water bottle on a teak pool deck in soft morning light, the sea softly blurred in the distance, nobody in the frame."
+ },
+ {
+  "source": "recu/grok/g-service-bateau.png",
+  "nom": "service-bateau",
+  "role": "carte-service",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1168
+  ],
+  "alt": "Bateau en bois amarré dans une crique turquoise entre des rochers rouges",
+  "beaute": 4,
+  "page": "chez-vous",
+  "emplacement": "service",
+  "priorite": "Conseillée",
+  "consigne_scene": "A classic varnished wooden day boat moored alone in a small turquoise cove between red volcanic rocks, seen from above at a gentle angle, nobody aboard."
+ },
+ {
+  "source": "recu/villa-escapadou-2.jpg",
+  "nom": "ouverture-chez-nous",
+  "role": "ouverture",
+  "ratio": "16:9",
+  "largeurs": [
+   960,
+   1440,
+   1920
+  ],
+  "mobile": true,
+  "zone_texte": "bas",
+  "alt": "L’Île d’Or et sa tour au large des rochers du Dramont",
+  "beaute": 5,
+  "page": "chez-nous"
+ },
+ {
+  "source": "recu/location-saisonniere-madame-monsieur.jpg",
+  "nom": "esterel-mer",
+  "role": "section-fond",
+  "ratio": "16:9",
+  "largeurs": [
+   960,
+   1440,
+   1920
+  ],
+  "mobile": true,
+  "alt": "Rochers rouges de l’Estérel plongeant dans la mer, la côte au loin",
+  "beaute": 4,
+  "page": "chez-nous"
+ },
+ {
+  "source": "recu/chez-nous.jpg",
+  "nom": "lieu-coucher",
+  "role": "galerie",
+  "ratio": "4:3",
+  "largeurs": [
+   480,
+   800,
+   1000
+  ],
+  "alt": "Coucher de soleil orange sur la mer, depuis la plage",
+  "beaute": 4,
+  "page": "chez-nous"
+ },
+ {
+  "source": "recu/chez-nous-2.jpg",
+  "nom": "lieu-port",
+  "role": "galerie",
+  "ratio": "4:3",
+  "largeurs": [
+   480,
+   800,
+   1000
+  ],
+  "alt": "Voiliers amarrés au port, ciel bleu",
+  "beaute": 3,
+  "page": "chez-nous"
+ },
+ {
+  "source": "recu/chez-nous-3.jpg",
+  "nom": "lieu-front-de-mer",
+  "role": "galerie",
+  "ratio": "4:3",
+  "largeurs": [
+   480,
+   800,
+   1000
+  ],
+  "alt": "Front de mer de Saint-Raphaël, palmiers et dômes de la basilique",
+  "beaute": 3,
+  "page": "chez-nous"
+ },
+ {
+  "source": "recu/chez-nous-4.jpg",
+  "nom": "lieu-belle-epoque",
+  "role": "galerie",
+  "ratio": "4:3",
+  "largeurs": [
+   480,
+   800,
+   1000
+  ],
+  "alt": "Tour d’une villa Belle Époque parmi les pins",
+  "beaute": 3,
+  "page": "chez-nous"
+ },
+ {
+  "source": "recu/chez-nous-5.jpg",
+  "nom": "lieu-crique",
+  "role": "galerie",
+  "ratio": "4:3",
+  "largeurs": [
+   480,
+   800,
+   1000
+  ],
+  "alt": "Crique entre les rochers rouges, mer bleue",
+  "beaute": 4,
+  "page": "chez-nous"
+ },
+ {
+  "source": "recu/chez-nous-6.jpg",
+  "nom": "lieu-ile-d-or",
+  "role": "galerie",
+  "ratio": "4:3",
+  "largeurs": [
+   480,
+   800,
+   1000
+  ],
+  "alt": "L’Île d’Or et sa tour au coucher du soleil",
+  "beaute": 4,
+  "page": "chez-nous"
+ },
+ {
+  "source": "recu/chez-nous-7.jpg",
+  "nom": "lieu-sentier",
+  "role": "galerie",
+  "ratio": "4:3",
+  "largeurs": [
+   480,
+   800,
+   1000
+  ],
+  "alt": "Soleil couchant sous les pins, au bord de la mer",
+  "beaute": 4,
+  "page": "chez-nous"
+ },
+ {
+  "source": "recu/chez-nous-8.jpg",
+  "nom": "lieu-plage",
+  "role": "galerie",
+  "ratio": "4:3",
+  "largeurs": [
+   480,
+   800,
+   1000
+  ],
+  "alt": "Plage de sable et colonnes d’une pergola face à la mer",
+  "beaute": 3,
+  "page": "chez-nous"
+ },
+ {
+  "source": "recu/chez-nous-9.jpg",
+  "nom": "lieu-ville-mer",
+  "role": "galerie",
+  "ratio": "4:3",
+  "largeurs": [
+   480,
+   800,
+   1000
+  ],
+  "alt": "Saint-Raphaël vue de la mer, la grande roue et la basilique",
+  "beaute": 3,
+  "page": "chez-nous"
+ },
+ {
+  "source": "recu/chez-nous-10.jpg",
+  "nom": "lieu-vieux-port",
+  "role": "galerie",
+  "ratio": "4:3",
+  "largeurs": [
+   480,
+   800,
+   1000
+  ],
+  "alt": "Le port et la grande roue",
+  "beaute": 3,
+  "page": "chez-nous"
+ },
+ {
+  "source": "recu/villa-boheme-23.png",
+  "nom": "appel-chez-nous",
+  "role": "section-fond",
+  "ratio": "16:9",
+  "largeurs": [
+   960,
+   1440,
+   1535
+  ],
+  "mobile": true,
+  "zone_texte": "haut",
+  "alt": "Kiosque et jardin de La Bohème au soleil couchant",
+  "beaute": 5,
+  "page": "chez-nous"
+ },
+ {
+  "source": "recu/villa-aiguebonne-15.png",
+  "nom": "ouverture-renseignements",
+  "role": "ouverture",
+  "ratio": "4:3",
+  "largeurs": [
+   640,
+   960,
+   1280,
+   1448
+  ],
+  "mobile": "4:5",
+  "alt": "Table de terrasse à l’ombre d’un arbre à Aiguebonne, la mer au loin",
+  "beaute": 4,
+  "page": "renseignements"
+ },
+ {
+  "source": "recu/grok/g-404.png",
+  "nom": "page-404",
+  "role": "404",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1168
+  ],
+  "alt": "Une clé laissée seule sur la marche d’une terrasse, volets fermés",
+  "beaute": 4,
+  "page": "404",
+  "emplacement": "ouverture de la 404",
+  "priorite": "Conseillée",
+  "gabarit": "404",
+  "consigne_scene": "A single vintage brass villa key with a small linen tag left alone on a warm limestone terrace step, closed pale wooden louvered shutters behind it, late afternoon light with long soft shadows, a gentle touch of humour, nobody."
+ }
+]

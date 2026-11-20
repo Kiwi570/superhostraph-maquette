@@ -1,0 +1,7792 @@
+{
+  "villa-155-1": {
+    "nom": "villa-155-1",
+    "source": "recu/155-18.jpg",
+    "role": "galerie",
+    "alt": "Piscine du 155 entre palmiers et cyprès",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "bfcea4a4fc2db481",
+    "ratio": "4:3",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "50% 50%",
+    "sujet": {
+      "x": 15.8,
+      "y": 32.4,
+      "l": 64.5,
+      "h": 35.3
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.7,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.21,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.21,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.19,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 36,
+      "top": 0,
+      "width": 912,
+      "height": 684,
+      "source": [
+        1025,
+        684
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1025 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,4 fois (source de 912 px après recadrage)"
+    ],
+    "fichiers": [
+      "villa-155-1-640.webp",
+      "villa-155-1-960.webp",
+      "villa-155-1-1280.webp"
+    ],
+    "poids": {
+      "villa-155-1-640.webp": 91270,
+      "villa-155-1-960.webp": 174346,
+      "villa-155-1-1280.webp": 252802
+    },
+    "media": "c.media({ nom: 'villa-155-1', alt: \"Piscine du 155 entre palmiers et cyprès\", sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 3' })"
+  },
+  "villa-155-2": {
+    "nom": "villa-155-2",
+    "source": "recu/155-12.jpg",
+    "role": "galerie",
+    "alt": "Le 155 vu d’en haut, piscine et jardin",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "692509fb1061b14f",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "52% 58%",
+    "sujet": {
+      "x": 36.8,
+      "y": 44,
+      "l": 29.4,
+      "h": 27.9
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.26,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.25,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.23,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.22,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 1,
+      "width": 1025,
+      "height": 683,
+      "source": [
+        1025,
+        684
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1025 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,25 fois (source de 1025 px après recadrage)"
+    ],
+    "fichiers": [
+      "villa-155-2-640.webp",
+      "villa-155-2-960.webp",
+      "villa-155-2-1280.webp"
+    ],
+    "poids": {
+      "villa-155-2-640.webp": 87832,
+      "villa-155-2-960.webp": 188478,
+      "villa-155-2-1280.webp": 270740
+    },
+    "media": "c.media({ nom: 'villa-155-2', alt: \"Le 155 vu d’en haut, piscine et jardin\", cadrage: '52% 58%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "villa-155-3": {
+    "nom": "villa-155-3",
+    "source": "recu/155-8.jpg",
+    "role": "galerie",
+    "alt": "Déjeuner en terrasse au 155",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "49bb4a898145f933",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "52% 50%",
+    "sujet": {
+      "x": 25.7,
+      "y": 41.7,
+      "l": 51.6,
+      "h": 31.6
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.21,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.17,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.16,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.16,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 1,
+      "width": 1025,
+      "height": 683,
+      "source": [
+        1025,
+        684
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1025 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,25 fois (source de 1025 px après recadrage)"
+    ],
+    "fichiers": [
+      "villa-155-3-640.webp",
+      "villa-155-3-960.webp",
+      "villa-155-3-1280.webp"
+    ],
+    "poids": {
+      "villa-155-3-640.webp": 57938,
+      "villa-155-3-960.webp": 117166,
+      "villa-155-3-1280.webp": 165304
+    },
+    "media": "c.media({ nom: 'villa-155-3', alt: \"Déjeuner en terrasse au 155\", cadrage: '52% 50%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "villa-155-4": {
+    "nom": "villa-155-4",
+    "source": "recu/155-6.jpg",
+    "role": "galerie",
+    "alt": "Salon du 155 aux murs bleus",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "f66b71d59a7dd268",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "63% 43%",
+    "sujet": {
+      "x": 40.8,
+      "y": 27.8,
+      "l": 54.3,
+      "h": 38.4
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.43,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.27,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.18,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.13,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1025,
+      "height": 683,
+      "source": [
+        1025,
+        684
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1025 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,25 fois (source de 1025 px après recadrage)"
+    ],
+    "fichiers": [
+      "villa-155-4-640.webp",
+      "villa-155-4-960.webp",
+      "villa-155-4-1280.webp"
+    ],
+    "poids": {
+      "villa-155-4-640.webp": 74516,
+      "villa-155-4-960.webp": 157870,
+      "villa-155-4-1280.webp": 225082
+    },
+    "media": "c.media({ nom: 'villa-155-4', alt: \"Salon du 155 aux murs bleus\", cadrage: '63% 43%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "villa-dolce-vita-1": {
+    "nom": "villa-dolce-vita-1",
+    "source": "recu/villa-dolce-vita-2.jpg",
+    "role": "galerie",
+    "alt": "Piscine et escalier de pierre dans le jardin méditerranéen de La Dolce Vita",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "6743edb927b68723",
+    "ratio": "4:3",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "50% 44%",
+    "sujet": {
+      "x": 26.5,
+      "y": 27.8,
+      "l": 40.3,
+      "h": 37.3
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.29,
+        "ton": "clair"
+      },
+      {
+        "cote": "haut",
+        "score": 0.22,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.21,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.2,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1364,
+      "height": 1023,
+      "source": [
+        1537,
+        1023
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "villa-dolce-vita-1-640.webp",
+      "villa-dolce-vita-1-960.webp",
+      "villa-dolce-vita-1-1280.webp"
+    ],
+    "poids": {
+      "villa-dolce-vita-1-640.webp": 84774,
+      "villa-dolce-vita-1-960.webp": 171110,
+      "villa-dolce-vita-1-1280.webp": 263278
+    },
+    "media": "c.media({ nom: 'villa-dolce-vita-1', alt: \"Piscine et escalier de pierre dans le jardin méditerranéen de La Dolce Vita\", cadrage: '50% 44%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 3' })"
+  },
+  "villa-dolce-vita-2": {
+    "nom": "villa-dolce-vita-2",
+    "source": "recu/villa-dolce-vita-11.jpg",
+    "role": "galerie",
+    "alt": "La Dolce Vita vue du ciel, piscine et jardin plein sud",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "d1806ad3b296f03c",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "51% 53%",
+    "sujet": {
+      "x": 27.9,
+      "y": 30.8,
+      "l": 47.1,
+      "h": 45.7
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.63,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.22,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.22,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.18,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 1,
+      "width": 1025,
+      "height": 683,
+      "source": [
+        1025,
+        684
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1025 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,25 fois (source de 1025 px après recadrage)"
+    ],
+    "fichiers": [
+      "villa-dolce-vita-2-640.webp",
+      "villa-dolce-vita-2-960.webp",
+      "villa-dolce-vita-2-1280.webp"
+    ],
+    "poids": {
+      "villa-dolce-vita-2-640.webp": 73284,
+      "villa-dolce-vita-2-960.webp": 159062,
+      "villa-dolce-vita-2-1280.webp": 235408
+    },
+    "media": "c.media({ nom: 'villa-dolce-vita-2', alt: \"La Dolce Vita vue du ciel, piscine et jardin plein sud\", cadrage: '51% 53%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "villa-dolce-vita-3": {
+    "nom": "villa-dolce-vita-3",
+    "source": "recu/villa-dolce-vita-13.jpg",
+    "role": "galerie",
+    "alt": "Piscine de La Dolce Vita au pied du jardin en terrasses",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "9ad98c6c7dff4929",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "52% 49%",
+    "sujet": {
+      "x": 26.5,
+      "y": 32.4,
+      "l": 55.9,
+      "h": 35.4
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.51,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.22,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.22,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.19,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1025,
+      "height": 683,
+      "source": [
+        1025,
+        684
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1025 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,25 fois (source de 1025 px après recadrage)"
+    ],
+    "fichiers": [
+      "villa-dolce-vita-3-640.webp",
+      "villa-dolce-vita-3-960.webp",
+      "villa-dolce-vita-3-1280.webp"
+    ],
+    "poids": {
+      "villa-dolce-vita-3-640.webp": 75108,
+      "villa-dolce-vita-3-960.webp": 162302,
+      "villa-dolce-vita-3-1280.webp": 236830
+    },
+    "media": "c.media({ nom: 'villa-dolce-vita-3', alt: \"Piscine de La Dolce Vita au pied du jardin en terrasses\", cadrage: '52% 49%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "villa-dolce-vita-4": {
+    "nom": "villa-dolce-vita-4",
+    "source": "recu/villa-dolce-vita-19.jpg",
+    "role": "galerie",
+    "alt": "Séjour lumineux de La Dolce Vita ouvert sur le jardin",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "024e411d16cfc8b5",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "51% 52%",
+    "sujet": {
+      "x": 17.6,
+      "y": 35.2,
+      "l": 69.1,
+      "h": 33.8
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.8,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.55,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.42,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.22,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 1,
+      "width": 1025,
+      "height": 683,
+      "source": [
+        1025,
+        684
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1025 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,25 fois (source de 1025 px après recadrage)"
+    ],
+    "fichiers": [
+      "villa-dolce-vita-4-640.webp",
+      "villa-dolce-vita-4-960.webp",
+      "villa-dolce-vita-4-1280.webp"
+    ],
+    "poids": {
+      "villa-dolce-vita-4-640.webp": 36842,
+      "villa-dolce-vita-4-960.webp": 76522,
+      "villa-dolce-vita-4-1280.webp": 108694
+    },
+    "media": "c.media({ nom: 'villa-dolce-vita-4', alt: \"Séjour lumineux de La Dolce Vita ouvert sur le jardin\", cadrage: '51% 52%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "villa-camelias-1": {
+    "nom": "villa-camelias-1",
+    "source": "recu/villa-camelias-3.png",
+    "role": "galerie",
+    "alt": "Terrasse ombragée et piscine des Camelias",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "af9f62afb018b453",
+    "ratio": "4:3",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "50% 55%",
+    "sujet": {
+      "x": 19.1,
+      "y": 30.9,
+      "l": 57.8,
+      "h": 44.1
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.27,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.19,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.16,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.15,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 145,
+      "top": 0,
+      "width": 1367,
+      "height": 1025,
+      "source": [
+        1535,
+        1025
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "villa-camelias-1-640.webp",
+      "villa-camelias-1-960.webp",
+      "villa-camelias-1-1280.webp"
+    ],
+    "poids": {
+      "villa-camelias-1-640.webp": 86242,
+      "villa-camelias-1-960.webp": 179086,
+      "villa-camelias-1-1280.webp": 282706
+    },
+    "media": "c.media({ nom: 'villa-camelias-1', alt: \"Terrasse ombragée et piscine des Camelias\", cadrage: '50% 55%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 3' })"
+  },
+  "villa-camelias-2": {
+    "nom": "villa-camelias-2",
+    "source": "recu/villa-camelias-2.png",
+    "role": "galerie",
+    "alt": "Allée bordée de lauriers-roses vers la villa Les Camelias",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "2717014c30823a26",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "51% 55%",
+    "sujet": {
+      "x": 35.3,
+      "y": 42.5,
+      "l": 32.4,
+      "h": 25
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.28,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.24,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.23,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.22,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 2,
+      "width": 1535,
+      "height": 1023,
+      "source": [
+        1535,
+        1025
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "villa-camelias-2-640.webp",
+      "villa-camelias-2-960.webp",
+      "villa-camelias-2-1280.webp"
+    ],
+    "poids": {
+      "villa-camelias-2-640.webp": 81150,
+      "villa-camelias-2-960.webp": 158252,
+      "villa-camelias-2-1280.webp": 243592
+    },
+    "media": "c.media({ nom: 'villa-camelias-2', alt: \"Allée bordée de lauriers-roses vers la villa Les Camelias\", cadrage: '51% 55%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "villa-camelias-3": {
+    "nom": "villa-camelias-3",
+    "source": "recu/villa-camelias-5.png",
+    "role": "galerie",
+    "alt": "Table dressée sous la pergola des Camelias",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "043682f08a9549ca",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "48% 46%",
+    "sujet": {
+      "x": 27.9,
+      "y": 22.1,
+      "l": 36.8,
+      "h": 44.2
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.26,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.25,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.21,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.21,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1535,
+      "height": 1023,
+      "source": [
+        1535,
+        1025
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "villa-camelias-3-640.webp",
+      "villa-camelias-3-960.webp",
+      "villa-camelias-3-1280.webp"
+    ],
+    "poids": {
+      "villa-camelias-3-640.webp": 52490,
+      "villa-camelias-3-960.webp": 104022,
+      "villa-camelias-3-1280.webp": 162442
+    },
+    "media": "c.media({ nom: 'villa-camelias-3', alt: \"Table dressée sous la pergola des Camelias\", cadrage: '48% 46%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "villa-camelias-4": {
+    "nom": "villa-camelias-4",
+    "source": "recu/villa-camelias-7.png",
+    "role": "galerie",
+    "alt": "Salon des Camelias ouvert sur les palmiers",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "c5f68626a8b582f2",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "51% 53%",
+    "sujet": {
+      "x": 11.8,
+      "y": 32.3,
+      "l": 85.3,
+      "h": 39.8
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.22,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.14,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.1,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.1,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 2,
+      "width": 1535,
+      "height": 1023,
+      "source": [
+        1535,
+        1025
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "villa-camelias-4-640.webp",
+      "villa-camelias-4-960.webp",
+      "villa-camelias-4-1280.webp"
+    ],
+    "poids": {
+      "villa-camelias-4-640.webp": 60650,
+      "villa-camelias-4-960.webp": 132658,
+      "villa-camelias-4-1280.webp": 220942
+    },
+    "media": "c.media({ nom: 'villa-camelias-4', alt: \"Salon des Camelias ouvert sur les palmiers\", cadrage: '51% 53%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "villa-santoline-1": {
+    "nom": "villa-santoline-1",
+    "source": "recu/villa-santoline-5.jpg",
+    "role": "galerie",
+    "alt": "La Santoline et sa piscine au cœur du jardin",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "5ceabc3e72775c65",
+    "ratio": "4:3",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "50% 46%",
+    "sujet": {
+      "x": 11.5,
+      "y": 11.5,
+      "l": 77.3,
+      "h": 65.4
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.14,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.12,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.11,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.04,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 87,
+      "top": 0,
+      "width": 912,
+      "height": 684,
+      "source": [
+        1025,
+        684
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1025 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,4 fois (source de 912 px après recadrage)"
+    ],
+    "fichiers": [
+      "villa-santoline-1-640.webp",
+      "villa-santoline-1-960.webp",
+      "villa-santoline-1-1280.webp"
+    ],
+    "poids": {
+      "villa-santoline-1-640.webp": 74612,
+      "villa-santoline-1-960.webp": 140698,
+      "villa-santoline-1-1280.webp": 202436
+    },
+    "media": "c.media({ nom: 'villa-santoline-1', alt: \"La Santoline et sa piscine au cœur du jardin\", cadrage: '50% 46%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 3' })"
+  },
+  "villa-santoline-2": {
+    "nom": "villa-santoline-2",
+    "source": "recu/villa-santoline-17.jpg",
+    "role": "galerie",
+    "alt": "Piscine de La Santoline éclairée à la tombée du jour",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "c9c7daddbebe1521",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "57% 70%",
+    "sujet": {
+      "x": 12.3,
+      "y": 63.5,
+      "l": 83.3,
+      "h": 25.4
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.32,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0.22,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.21,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.19,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 1,
+      "width": 1025,
+      "height": 683,
+      "source": [
+        1025,
+        684
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1025 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,25 fois (source de 1025 px après recadrage)"
+    ],
+    "fichiers": [
+      "villa-santoline-2-640.webp",
+      "villa-santoline-2-960.webp",
+      "villa-santoline-2-1280.webp"
+    ],
+    "poids": {
+      "villa-santoline-2-640.webp": 89460,
+      "villa-santoline-2-960.webp": 188998,
+      "villa-santoline-2-1280.webp": 272788
+    },
+    "media": "c.media({ nom: 'villa-santoline-2', alt: \"Piscine de La Santoline éclairée à la tombée du jour\", cadrage: '57% 70%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "villa-santoline-3": {
+    "nom": "villa-santoline-3",
+    "source": "recu/villa-santoline-8.jpg",
+    "role": "galerie",
+    "alt": "Salon de La Santoline",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "73395ab701c51c32",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "45% 58%",
+    "sujet": {
+      "x": 14.7,
+      "y": 41.1,
+      "l": 51.5,
+      "h": 36.9
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.66,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.4,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.21,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.16,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 1,
+      "width": 1025,
+      "height": 683,
+      "source": [
+        1025,
+        684
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1025 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,25 fois (source de 1025 px après recadrage)"
+    ],
+    "fichiers": [
+      "villa-santoline-3-640.webp",
+      "villa-santoline-3-960.webp",
+      "villa-santoline-3-1280.webp"
+    ],
+    "poids": {
+      "villa-santoline-3-640.webp": 44908,
+      "villa-santoline-3-960.webp": 98400,
+      "villa-santoline-3-1280.webp": 141326
+    },
+    "media": "c.media({ nom: 'villa-santoline-3', alt: \"Salon de La Santoline\", cadrage: '45% 58%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "villa-santoline-4": {
+    "nom": "villa-santoline-4",
+    "source": "recu/villa-santoline-16.jpg",
+    "role": "galerie",
+    "alt": "Terrasse couverte face à la piscine de La Santoline",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "14c23caab61f7db9",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "42% 52%",
+    "sujet": {
+      "x": 9.2,
+      "y": 47.7,
+      "l": 50.3,
+      "h": 16
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.25,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0.25,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.2,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.16,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 1,
+      "width": 1025,
+      "height": 683,
+      "source": [
+        1025,
+        684
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1025 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,25 fois (source de 1025 px après recadrage)"
+    ],
+    "fichiers": [
+      "villa-santoline-4-640.webp",
+      "villa-santoline-4-960.webp",
+      "villa-santoline-4-1280.webp"
+    ],
+    "poids": {
+      "villa-santoline-4-640.webp": 61056,
+      "villa-santoline-4-960.webp": 121498,
+      "villa-santoline-4-1280.webp": 165260
+    },
+    "media": "c.media({ nom: 'villa-santoline-4', alt: \"Terrasse couverte face à la piscine de La Santoline\", cadrage: '42% 52%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "villa-escapadou-1": {
+    "nom": "villa-escapadou-1",
+    "source": "recu/villa-escapadou-7.jpg",
+    "role": "galerie",
+    "alt": "L’Île d’Or vue depuis le jardin de L’Escapadou, sous un pin",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "e1c82b30d6f4521f",
+    "ratio": "4:3",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "38% 45%",
+    "sujet": {
+      "x": 26.5,
+      "y": 30.9,
+      "l": 23.5,
+      "h": 27.9
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.27,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.24,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.23,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.18,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1000,
+      "height": 750,
+      "source": [
+        1000,
+        750
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1000 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,28 fois (source de 1000 px après recadrage)"
+    ],
+    "fichiers": [
+      "villa-escapadou-1-640.webp",
+      "villa-escapadou-1-960.webp",
+      "villa-escapadou-1-1280.webp"
+    ],
+    "poids": {
+      "villa-escapadou-1-640.webp": 95384,
+      "villa-escapadou-1-960.webp": 200412,
+      "villa-escapadou-1-1280.webp": 279674
+    },
+    "media": "c.media({ nom: 'villa-escapadou-1', alt: \"L’Île d’Or vue depuis le jardin de L’Escapadou, sous un pin\", cadrage: '38% 45%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 3' })"
+  },
+  "villa-escapadou-2": {
+    "nom": "villa-escapadou-2",
+    "source": "recu/villa-escapadou-16.jpg",
+    "role": "galerie",
+    "alt": "Table de terrasse face à la mer à L’Escapadou",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "ff9697a9e758a503",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960
+    ],
+    "mobile": null,
+    "cadrage": "48% 50%",
+    "sujet": {
+      "x": 26.5,
+      "y": 24.3,
+      "l": 42.6,
+      "h": 50.7
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.27,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.17,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.17,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.16,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 75,
+      "width": 640,
+      "height": 427,
+      "source": [
+        640,
+        640
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "largeurs retirées (source trop petite) : 1280",
+      "640 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,5 fois (source de 640 px après recadrage)"
+    ],
+    "fichiers": [
+      "villa-escapadou-2-640.webp",
+      "villa-escapadou-2-960.webp"
+    ],
+    "poids": {
+      "villa-escapadou-2-640.webp": 44398,
+      "villa-escapadou-2-960.webp": 67034
+    },
+    "media": "c.media({ nom: 'villa-escapadou-2', alt: \"Table de terrasse face à la mer à L’Escapadou\", cadrage: '48% 50%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "villa-escapadou-3": {
+    "nom": "villa-escapadou-3",
+    "source": "recu/villa-escapadou-3.jpg",
+    "role": "galerie",
+    "alt": "Séjour de L’Escapadou ouvert sur la mer",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "794216c5936d4d89",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "49% 50%",
+    "sujet": {
+      "x": 29.4,
+      "y": 34.6,
+      "l": 57.4,
+      "h": 29.8
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.74,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.37,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.34,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.34,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 34,
+      "width": 1000,
+      "height": 667,
+      "source": [
+        1000,
+        750
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1000 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,28 fois (source de 1000 px après recadrage)"
+    ],
+    "fichiers": [
+      "villa-escapadou-3-640.webp",
+      "villa-escapadou-3-960.webp",
+      "villa-escapadou-3-1280.webp"
+    ],
+    "poids": {
+      "villa-escapadou-3-640.webp": 35400,
+      "villa-escapadou-3-960.webp": 75998,
+      "villa-escapadou-3-1280.webp": 107002
+    },
+    "media": "c.media({ nom: 'villa-escapadou-3', alt: \"Séjour de L’Escapadou ouvert sur la mer\", cadrage: '49% 50%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "villa-escapadou-4": {
+    "nom": "villa-escapadou-4",
+    "source": "recu/villa-escapadou-6.jpg",
+    "role": "galerie",
+    "alt": "Coin salon et cheminée de L’Escapadou",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "684095071e04fd97",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "46% 63%",
+    "sujet": {
+      "x": 2.1,
+      "y": 50.4,
+      "l": 71,
+      "h": 48.8
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.78,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.4,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.23,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.04,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 83,
+      "width": 1000,
+      "height": 667,
+      "source": [
+        1000,
+        750
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1000 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,28 fois (source de 1000 px après recadrage)"
+    ],
+    "fichiers": [
+      "villa-escapadou-4-640.webp",
+      "villa-escapadou-4-960.webp",
+      "villa-escapadou-4-1280.webp"
+    ],
+    "poids": {
+      "villa-escapadou-4-640.webp": 37924,
+      "villa-escapadou-4-960.webp": 70776,
+      "villa-escapadou-4-1280.webp": 97284
+    },
+    "media": "c.media({ nom: 'villa-escapadou-4', alt: \"Coin salon et cheminée de L’Escapadou\", cadrage: '46% 63%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "villa-estaou-1": {
+    "nom": "villa-estaou-1",
+    "source": "recu/villa-estaou-4.png",
+    "role": "galerie",
+    "alt": "Piscine d’Estaou bordée de lauriers-roses et de transats rouges",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "1ad59c74bd10eb8d",
+    "ratio": "4:3",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "50% 50%",
+    "sujet": {
+      "x": 20.6,
+      "y": 32.4,
+      "l": 59.5,
+      "h": 35.3
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.3,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.26,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.19,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.15,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 171,
+      "top": 0,
+      "width": 1365,
+      "height": 1024,
+      "source": [
+        1536,
+        1024
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "villa-estaou-1-640.webp",
+      "villa-estaou-1-960.webp",
+      "villa-estaou-1-1280.webp"
+    ],
+    "poids": {
+      "villa-estaou-1-640.webp": 67266,
+      "villa-estaou-1-960.webp": 141396,
+      "villa-estaou-1-1280.webp": 225630
+    },
+    "media": "c.media({ nom: 'villa-estaou-1', alt: \"Piscine d’Estaou bordée de lauriers-roses et de transats rouges\", sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 3' })"
+  },
+  "villa-estaou-2": {
+    "nom": "villa-estaou-2",
+    "source": "recu/villa-estaou-2.png",
+    "role": "galerie",
+    "alt": "Plage de la piscine d’Estaou sous les parasols de paille",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "461d9b805eab483e",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "49% 56%",
+    "sujet": {
+      "x": 22.1,
+      "y": 39.3,
+      "l": 52.9,
+      "h": 31.1
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.32,
+        "ton": "clair"
+      },
+      {
+        "cote": "haut",
+        "score": 0.23,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.2,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.16,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 6,
+      "width": 1532,
+      "height": 1021,
+      "source": [
+        1532,
+        1027
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "villa-estaou-2-640.webp",
+      "villa-estaou-2-960.webp",
+      "villa-estaou-2-1280.webp"
+    ],
+    "poids": {
+      "villa-estaou-2-640.webp": 69032,
+      "villa-estaou-2-960.webp": 149584,
+      "villa-estaou-2-1280.webp": 246068
+    },
+    "media": "c.media({ nom: 'villa-estaou-2', alt: \"Plage de la piscine d’Estaou sous les parasols de paille\", cadrage: '49% 56%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "villa-estaou-3": {
+    "nom": "villa-estaou-3",
+    "source": "recu/villa-estaou-8.png",
+    "role": "galerie",
+    "alt": "Jardin et piscine d’Estaou",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "ed1f03ff2fdb6ef2",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "56% 53%",
+    "sujet": {
+      "x": 29.3,
+      "y": 35.3,
+      "l": 57.5,
+      "h": 33.8
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.49,
+        "ton": "clair"
+      },
+      {
+        "cote": "haut",
+        "score": 0.26,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.17,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.14,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 2,
+      "top": 0,
+      "width": 1535,
+      "height": 1023,
+      "source": [
+        1537,
+        1023
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "villa-estaou-3-640.webp",
+      "villa-estaou-3-960.webp",
+      "villa-estaou-3-1280.webp"
+    ],
+    "poids": {
+      "villa-estaou-3-640.webp": 70446,
+      "villa-estaou-3-960.webp": 157008,
+      "villa-estaou-3-1280.webp": 260742
+    },
+    "media": "c.media({ nom: 'villa-estaou-3', alt: \"Jardin et piscine d’Estaou\", cadrage: '56% 53%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "villa-estaou-4": {
+    "nom": "villa-estaou-4",
+    "source": "recu/villa-estaou-22.jpg",
+    "role": "galerie",
+    "alt": "Façade ocre d’Estaou et sa piscine",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "3109f408c3c474f3",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "55% 48%",
+    "sujet": {
+      "x": 17.8,
+      "y": 13.2,
+      "l": 71.9,
+      "h": 55.2
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.25,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.12,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.07,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.04,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1025,
+      "height": 683,
+      "source": [
+        1025,
+        685
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1025 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,25 fois (source de 1025 px après recadrage)"
+    ],
+    "fichiers": [
+      "villa-estaou-4-640.webp",
+      "villa-estaou-4-960.webp",
+      "villa-estaou-4-1280.webp"
+    ],
+    "poids": {
+      "villa-estaou-4-640.webp": 64902,
+      "villa-estaou-4-960.webp": 133496,
+      "villa-estaou-4-1280.webp": 186376
+    },
+    "media": "c.media({ nom: 'villa-estaou-4', alt: \"Façade ocre d’Estaou et sa piscine\", cadrage: '55% 48%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "villa-alice-1": {
+    "nom": "villa-alice-1",
+    "source": "recu/villa-alice-20.png",
+    "role": "galerie",
+    "alt": "Villa Alice, sa piscine et le pool-house plein sud",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "6b73559ba5578824",
+    "ratio": "4:3",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "50% 48%",
+    "sujet": {
+      "x": 2.2,
+      "y": 28.1,
+      "l": 78.7,
+      "h": 44.8
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.24,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.23,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.22,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.12,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 58,
+      "top": 0,
+      "width": 1347,
+      "height": 1010,
+      "source": [
+        1557,
+        1010
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "villa-alice-1-640.webp",
+      "villa-alice-1-960.webp",
+      "villa-alice-1-1280.webp"
+    ],
+    "poids": {
+      "villa-alice-1-640.webp": 79246,
+      "villa-alice-1-960.webp": 155902,
+      "villa-alice-1-1280.webp": 227034
+    },
+    "media": "c.media({ nom: 'villa-alice-1', alt: \"Villa Alice, sa piscine et le pool-house plein sud\", cadrage: '50% 48%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 3' })"
+  },
+  "villa-alice-2": {
+    "nom": "villa-alice-2",
+    "source": "recu/villa-alice-11.png",
+    "role": "galerie",
+    "alt": "Piscine d’Alice sous les pins parasols",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "cc69c4a3582d0ade",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "44% 46%",
+    "sujet": {
+      "x": 16.6,
+      "y": 19.5,
+      "l": 39.5,
+      "h": 62.4
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.27,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.24,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.21,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.14,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1515,
+      "height": 1010,
+      "source": [
+        1557,
+        1010
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "villa-alice-2-640.webp",
+      "villa-alice-2-960.webp",
+      "villa-alice-2-1280.webp"
+    ],
+    "poids": {
+      "villa-alice-2-640.webp": 73774,
+      "villa-alice-2-960.webp": 144816,
+      "villa-alice-2-1280.webp": 220232
+    },
+    "media": "c.media({ nom: 'villa-alice-2', alt: \"Piscine d’Alice sous les pins parasols\", cadrage: '44% 46%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "villa-alice-3": {
+    "nom": "villa-alice-3",
+    "source": "recu/villa-alice-13.png",
+    "role": "galerie",
+    "alt": "Grande pièce à vivre d’Alice sous la charpente",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "4c80f7874ab36649",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "50% 52%",
+    "sujet": {
+      "x": 30.9,
+      "y": 41.2,
+      "l": 37.8,
+      "h": 22.1
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.27,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.26,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.25,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.23,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 37,
+      "top": 0,
+      "width": 1515,
+      "height": 1010,
+      "source": [
+        1557,
+        1010
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "villa-alice-3-640.webp",
+      "villa-alice-3-960.webp",
+      "villa-alice-3-1280.webp"
+    ],
+    "poids": {
+      "villa-alice-3-640.webp": 56230,
+      "villa-alice-3-960.webp": 107404,
+      "villa-alice-3-1280.webp": 165310
+    },
+    "media": "c.media({ nom: 'villa-alice-3', alt: \"Grande pièce à vivre d’Alice sous la charpente\", cadrage: '50% 52%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "villa-alice-4": {
+    "nom": "villa-alice-4",
+    "source": "recu/villa-alice-12.png",
+    "role": "galerie",
+    "alt": "Salon d’Alice ouvert sur les pins",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "9d245ad3cf829988",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "48% 54%",
+    "sujet": {
+      "x": 33.3,
+      "y": 39.7,
+      "l": 31.8,
+      "h": 29.4
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.25,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.25,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.23,
+        "ton": "clair"
+      },
+      {
+        "cote": "haut",
+        "score": 0.23,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1515,
+      "height": 1010,
+      "source": [
+        1557,
+        1010
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "villa-alice-4-640.webp",
+      "villa-alice-4-960.webp",
+      "villa-alice-4-1280.webp"
+    ],
+    "poids": {
+      "villa-alice-4-640.webp": 58246,
+      "villa-alice-4-960.webp": 115804,
+      "villa-alice-4-1280.webp": 181218
+    },
+    "media": "c.media({ nom: 'villa-alice-4', alt: \"Salon d’Alice ouvert sur les pins\", cadrage: '48% 54%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "villa-uccelli-1": {
+    "nom": "villa-uccelli-1",
+    "source": "recu/villa-uccelli.png",
+    "role": "galerie",
+    "alt": "Villa contemporaine Uccelli et sa piscine privée",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "7ed45495490ba134",
+    "ratio": "4:3",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "50% 47%",
+    "sujet": {
+      "x": 2.3,
+      "y": 12.2,
+      "l": 76.3,
+      "h": 61.7
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.2,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.19,
+        "ton": "clair"
+      },
+      {
+        "cote": "haut",
+        "score": 0.1,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.06,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 142,
+      "top": 0,
+      "width": 1255,
+      "height": 941,
+      "source": [
+        1672,
+        941
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "villa-uccelli-1-640.webp",
+      "villa-uccelli-1-960.webp",
+      "villa-uccelli-1-1280.webp"
+    ],
+    "poids": {
+      "villa-uccelli-1-640.webp": 59382,
+      "villa-uccelli-1-960.webp": 121782,
+      "villa-uccelli-1-1280.webp": 179394
+    },
+    "media": "c.media({ nom: 'villa-uccelli-1', alt: \"Villa contemporaine Uccelli et sa piscine privée\", cadrage: '50% 47%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 3' })"
+  },
+  "villa-uccelli-2": {
+    "nom": "villa-uccelli-2",
+    "source": "recu/villa-uccelli-21.png",
+    "role": "galerie",
+    "alt": "Uccelli se reflète dans sa piscine",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "edfdfafc797cc5df",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "50% 46%",
+    "sujet": {
+      "x": 0,
+      "y": 8.3,
+      "l": 92.5,
+      "h": 83.5
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.23,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.12,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.07,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.02,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1448,
+      "height": 965,
+      "source": [
+        1448,
+        1086
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "villa-uccelli-2-640.webp",
+      "villa-uccelli-2-960.webp",
+      "villa-uccelli-2-1280.webp"
+    ],
+    "poids": {
+      "villa-uccelli-2-640.webp": 51452,
+      "villa-uccelli-2-960.webp": 99352,
+      "villa-uccelli-2-1280.webp": 154840
+    },
+    "media": "c.media({ nom: 'villa-uccelli-2', alt: \"Uccelli se reflète dans sa piscine\", cadrage: '50% 46%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "villa-uccelli-3": {
+    "nom": "villa-uccelli-3",
+    "source": "recu/villa-uccelli-7.png",
+    "role": "galerie",
+    "alt": "Table pour douze dans la cuisine d’Uccelli",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "066ebc9632a8c779",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "42% 42%",
+    "sujet": {
+      "x": 25,
+      "y": 29.4,
+      "l": 33.8,
+      "h": 25
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.46,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.37,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.21,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.17,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1536,
+      "height": 1024,
+      "source": [
+        1536,
+        1024
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "villa-uccelli-3-640.webp",
+      "villa-uccelli-3-960.webp",
+      "villa-uccelli-3-1280.webp"
+    ],
+    "poids": {
+      "villa-uccelli-3-640.webp": 38440,
+      "villa-uccelli-3-960.webp": 71098,
+      "villa-uccelli-3-1280.webp": 110704
+    },
+    "media": "c.media({ nom: 'villa-uccelli-3', alt: \"Table pour douze dans la cuisine d’Uccelli\", cadrage: '42% 42%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "villa-uccelli-4": {
+    "nom": "villa-uccelli-4",
+    "source": "recu/villa-uccelli-24.png",
+    "role": "galerie",
+    "alt": "Salon d’extérieur d’Uccelli au bord de l’eau",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "9d8fa435c87fdcb9",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "49% 50%",
+    "sujet": {
+      "x": 11.8,
+      "y": 29.5,
+      "l": 73.5,
+      "h": 41.4
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.25,
+        "ton": "clair"
+      },
+      {
+        "cote": "haut",
+        "score": 0.21,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.15,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.14,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 82,
+      "width": 1448,
+      "height": 965,
+      "source": [
+        1448,
+        1086
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "villa-uccelli-4-640.webp",
+      "villa-uccelli-4-960.webp",
+      "villa-uccelli-4-1280.webp"
+    ],
+    "poids": {
+      "villa-uccelli-4-640.webp": 57928,
+      "villa-uccelli-4-960.webp": 115064,
+      "villa-uccelli-4-1280.webp": 180172
+    },
+    "media": "c.media({ nom: 'villa-uccelli-4', alt: \"Salon d’extérieur d’Uccelli au bord de l’eau\", cadrage: '49% 50%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "villa-petit-roc-1": {
+    "nom": "villa-petit-roc-1",
+    "source": "recu/villa-petit-roc-6.jpg",
+    "role": "galerie",
+    "alt": "Rochers rouges et mer au pied du Petit Roc",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "71483c245b128138",
+    "ratio": "4:3",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "56% 48%",
+    "sujet": {
+      "x": 47.2,
+      "y": 36.8,
+      "l": 17,
+      "h": 22.1
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.71,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.39,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.27,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.24,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 144,
+      "top": 0,
+      "width": 911,
+      "height": 683,
+      "source": [
+        1055,
+        683
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1055 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,41 fois (source de 911 px après recadrage)"
+    ],
+    "fichiers": [
+      "villa-petit-roc-1-640.webp",
+      "villa-petit-roc-1-960.webp",
+      "villa-petit-roc-1-1280.webp"
+    ],
+    "poids": {
+      "villa-petit-roc-1-640.webp": 68012,
+      "villa-petit-roc-1-960.webp": 136300,
+      "villa-petit-roc-1-1280.webp": 203902
+    },
+    "media": "c.media({ nom: 'villa-petit-roc-1', alt: \"Rochers rouges et mer au pied du Petit Roc\", cadrage: '56% 48%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 3' })"
+  },
+  "villa-petit-roc-2": {
+    "nom": "villa-petit-roc-2",
+    "source": "recu/villa-petit-roc-2.jpg",
+    "role": "galerie",
+    "alt": "Pin et horizon marin depuis le jardin du Petit Roc",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "9e99e0b22f12c8c9",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "45% 55%",
+    "sujet": {
+      "x": 16.2,
+      "y": 30.5,
+      "l": 48.5,
+      "h": 47.9
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.21,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.21,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.18,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0.17,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 87,
+      "width": 1053,
+      "height": 702,
+      "source": [
+        1053,
+        789
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1053 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,22 fois (source de 1053 px après recadrage)"
+    ],
+    "fichiers": [
+      "villa-petit-roc-2-640.webp",
+      "villa-petit-roc-2-960.webp",
+      "villa-petit-roc-2-1280.webp"
+    ],
+    "poids": {
+      "villa-petit-roc-2-640.webp": 93816,
+      "villa-petit-roc-2-960.webp": 184842,
+      "villa-petit-roc-2-1280.webp": 253442
+    },
+    "media": "c.media({ nom: 'villa-petit-roc-2', alt: \"Pin et horizon marin depuis le jardin du Petit Roc\", cadrage: '45% 55%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "villa-petit-roc-3": {
+    "nom": "villa-petit-roc-3",
+    "source": "recu/villa-petit-roc-14.jpg",
+    "role": "galerie",
+    "alt": "Côte rocheuse face au Petit Roc",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "3c2b16285a1407d3",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "49% 58%",
+    "sujet": {
+      "x": 15.1,
+      "y": 42.6,
+      "l": 68.1,
+      "h": 32.4
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.73,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.21,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.19,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.19,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1025,
+      "height": 683,
+      "source": [
+        1055,
+        683
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1055 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,25 fois (source de 1025 px après recadrage)"
+    ],
+    "fichiers": [
+      "villa-petit-roc-3-640.webp",
+      "villa-petit-roc-3-960.webp",
+      "villa-petit-roc-3-1280.webp"
+    ],
+    "poids": {
+      "villa-petit-roc-3-640.webp": 59338,
+      "villa-petit-roc-3-960.webp": 124818,
+      "villa-petit-roc-3-1280.webp": 182632
+    },
+    "media": "c.media({ nom: 'villa-petit-roc-3', alt: \"Côte rocheuse face au Petit Roc\", cadrage: '49% 58%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "villa-petit-roc-4": {
+    "nom": "villa-petit-roc-4",
+    "source": "recu/villa-petit-roc-9.jpg",
+    "role": "galerie",
+    "alt": "Chambre du Petit Roc avec fenêtre sur la mer",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "7e7161d5d91b77d5",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "46% 56%",
+    "sujet": {
+      "x": 15.3,
+      "y": 23.7,
+      "l": 45.8,
+      "h": 51.8
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.73,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.66,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.49,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.33,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1025,
+      "height": 683,
+      "source": [
+        1055,
+        683
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1055 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,25 fois (source de 1025 px après recadrage)"
+    ],
+    "fichiers": [
+      "villa-petit-roc-4-640.webp",
+      "villa-petit-roc-4-960.webp",
+      "villa-petit-roc-4-1280.webp"
+    ],
+    "poids": {
+      "villa-petit-roc-4-640.webp": 20354,
+      "villa-petit-roc-4-960.webp": 39434,
+      "villa-petit-roc-4-1280.webp": 55480
+    },
+    "media": "c.media({ nom: 'villa-petit-roc-4', alt: \"Chambre du Petit Roc avec fenêtre sur la mer\", cadrage: '46% 56%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "villa-palmeraie-1": {
+    "nom": "villa-palmeraie-1",
+    "source": "recu/villa-palmeraie-5.png",
+    "role": "galerie",
+    "alt": "La Palmeraie se reflète dans sa piscine à débordement",
+    "grok": false,
+    "mention": null,
+    "beaute": 5,
+    "empreinte": "e0177d805ef780db",
+    "ratio": "4:3",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "50% 43%",
+    "sujet": {
+      "x": 21.8,
+      "y": 25,
+      "l": 58,
+      "h": 33.8
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.31,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.21,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.19,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.19,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 86,
+      "top": 0,
+      "width": 1365,
+      "height": 1024,
+      "source": [
+        1536,
+        1024
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "villa-palmeraie-1-640.webp",
+      "villa-palmeraie-1-960.webp",
+      "villa-palmeraie-1-1280.webp"
+    ],
+    "poids": {
+      "villa-palmeraie-1-640.webp": 72954,
+      "villa-palmeraie-1-960.webp": 152130,
+      "villa-palmeraie-1-1280.webp": 245082
+    },
+    "media": "c.media({ nom: 'villa-palmeraie-1', alt: \"La Palmeraie se reflète dans sa piscine à débordement\", cadrage: '50% 43%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 3' })"
+  },
+  "villa-palmeraie-2": {
+    "nom": "villa-palmeraie-2",
+    "source": "recu/villa-palmeraie-7.png",
+    "role": "galerie",
+    "alt": "Piscine à débordement de La Palmeraie face à la baie d’Agay",
+    "grok": false,
+    "mention": null,
+    "beaute": 5,
+    "empreinte": "84a6379ff51a6f7e",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "43% 44%",
+    "sujet": {
+      "x": 7.4,
+      "y": 16.2,
+      "l": 73.5,
+      "h": 54.4
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.2,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.16,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.14,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.06,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1536,
+      "height": 1024,
+      "source": [
+        1536,
+        1024
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "villa-palmeraie-2-640.webp",
+      "villa-palmeraie-2-960.webp",
+      "villa-palmeraie-2-1280.webp"
+    ],
+    "poids": {
+      "villa-palmeraie-2-640.webp": 71618,
+      "villa-palmeraie-2-960.webp": 152526,
+      "villa-palmeraie-2-1280.webp": 250108
+    },
+    "media": "c.media({ nom: 'villa-palmeraie-2', alt: \"Piscine à débordement de La Palmeraie face à la baie d’Agay\", cadrage: '43% 44%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "villa-palmeraie-3": {
+    "nom": "villa-palmeraie-3",
+    "source": "recu/villa-palmeraie-12.png",
+    "role": "galerie",
+    "alt": "Transats de La Palmeraie face aux rochers rouges de l’Estérel",
+    "grok": false,
+    "mention": null,
+    "beaute": 5,
+    "empreinte": "f211fcc5795e5c71",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "50% 56%",
+    "sujet": {
+      "x": 16.2,
+      "y": 32.4,
+      "l": 64.7,
+      "h": 41.2
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.39,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.17,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.17,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.14,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1536,
+      "height": 1024,
+      "source": [
+        1536,
+        1024
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "villa-palmeraie-3-640.webp",
+      "villa-palmeraie-3-960.webp",
+      "villa-palmeraie-3-1280.webp"
+    ],
+    "poids": {
+      "villa-palmeraie-3-640.webp": 61774,
+      "villa-palmeraie-3-960.webp": 129092,
+      "villa-palmeraie-3-1280.webp": 209356
+    },
+    "media": "c.media({ nom: 'villa-palmeraie-3', alt: \"Transats de La Palmeraie face aux rochers rouges de l’Estérel\", cadrage: '50% 56%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "villa-palmeraie-4": {
+    "nom": "villa-palmeraie-4",
+    "source": "recu/villa-palmeraie-14.png",
+    "role": "galerie",
+    "alt": "Salon sous la pergola de La Palmeraie",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "c94f401a3094ba00",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "53% 49%",
+    "sujet": {
+      "x": 25,
+      "y": 33.8,
+      "l": 58.8,
+      "h": 29.4
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.28,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.25,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.23,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.2,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1536,
+      "height": 1024,
+      "source": [
+        1536,
+        1024
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "villa-palmeraie-4-640.webp",
+      "villa-palmeraie-4-960.webp",
+      "villa-palmeraie-4-1280.webp"
+    ],
+    "poids": {
+      "villa-palmeraie-4-640.webp": 77392,
+      "villa-palmeraie-4-960.webp": 165144,
+      "villa-palmeraie-4-1280.webp": 271144
+    },
+    "media": "c.media({ nom: 'villa-palmeraie-4', alt: \"Salon sous la pergola de La Palmeraie\", cadrage: '53% 49%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "villa-harmony-1": {
+    "nom": "villa-harmony-1",
+    "source": "recu/villa-harmony.png",
+    "role": "galerie",
+    "alt": "Villa Harmony, piscine et terrasses",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "f8fd7daa39b62776",
+    "ratio": "4:3",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "47% 49%",
+    "sujet": {
+      "x": 0,
+      "y": 7.8,
+      "l": 79.6,
+      "h": 82
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.4,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.19,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.06,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1365,
+      "height": 1024,
+      "source": [
+        1535,
+        1024
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "villa-harmony-1-640.webp",
+      "villa-harmony-1-960.webp",
+      "villa-harmony-1-1280.webp"
+    ],
+    "poids": {
+      "villa-harmony-1-640.webp": 53180,
+      "villa-harmony-1-960.webp": 112622,
+      "villa-harmony-1-1280.webp": 181156
+    },
+    "media": "c.media({ nom: 'villa-harmony-1', alt: \"Villa Harmony, piscine et terrasses\", cadrage: '47% 49%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 3' })"
+  },
+  "villa-harmony-2": {
+    "nom": "villa-harmony-2",
+    "source": "recu/villa-harmony-6.png",
+    "role": "galerie",
+    "alt": "Piscine d’Harmony entre oliviers et voilages",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "c829f8c78640ea43",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "58% 62%",
+    "sujet": {
+      "x": 33.6,
+      "y": 43.2,
+      "l": 45.4,
+      "h": 52.6
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.54,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.22,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.16,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.09,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 1,
+      "width": 1535,
+      "height": 1023,
+      "source": [
+        1535,
+        1024
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "villa-harmony-2-640.webp",
+      "villa-harmony-2-960.webp",
+      "villa-harmony-2-1280.webp"
+    ],
+    "poids": {
+      "villa-harmony-2-640.webp": 68158,
+      "villa-harmony-2-960.webp": 139442,
+      "villa-harmony-2-1280.webp": 219170
+    },
+    "media": "c.media({ nom: 'villa-harmony-2', alt: \"Piscine d’Harmony entre oliviers et voilages\", cadrage: '58% 62%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "villa-harmony-3": {
+    "nom": "villa-harmony-3",
+    "source": "recu/villa-harmony-3.png",
+    "role": "galerie",
+    "alt": "Harmony vue du ciel, sur les hauteurs de Boulouris",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "c1feadf81ab7dca0",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "50% 57%",
+    "sujet": {
+      "x": 24.5,
+      "y": 40.4,
+      "l": 45.2,
+      "h": 36.8
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.24,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.21,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.19,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.17,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 92,
+      "top": 0,
+      "width": 1400,
+      "height": 933,
+      "source": [
+        1686,
+        933
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "villa-harmony-3-640.webp",
+      "villa-harmony-3-960.webp",
+      "villa-harmony-3-1280.webp"
+    ],
+    "poids": {
+      "villa-harmony-3-640.webp": 78438,
+      "villa-harmony-3-960.webp": 164346,
+      "villa-harmony-3-1280.webp": 271190
+    },
+    "media": "c.media({ nom: 'villa-harmony-3', alt: \"Harmony vue du ciel, sur les hauteurs de Boulouris\", cadrage: '50% 57%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "villa-harmony-4": {
+    "nom": "villa-harmony-4",
+    "source": "recu/villa-harmony-10.png",
+    "role": "galerie",
+    "alt": "Déjeuner face à la piscine d’Harmony",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "ae92006b5600f01d",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "51% 55%",
+    "sujet": {
+      "x": 26.5,
+      "y": 33.7,
+      "l": 52.9,
+      "h": 41.2
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.29,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.2,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.18,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.18,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 1,
+      "width": 1535,
+      "height": 1023,
+      "source": [
+        1535,
+        1024
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "villa-harmony-4-640.webp",
+      "villa-harmony-4-960.webp",
+      "villa-harmony-4-1280.webp"
+    ],
+    "poids": {
+      "villa-harmony-4-640.webp": 49570,
+      "villa-harmony-4-960.webp": 96774,
+      "villa-harmony-4-1280.webp": 153666
+    },
+    "media": "c.media({ nom: 'villa-harmony-4', alt: \"Déjeuner face à la piscine d’Harmony\", cadrage: '51% 55%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "villa-chez-nous-1": {
+    "nom": "villa-chez-nous-1",
+    "source": "recu/villa-chez-nous-4.png",
+    "role": "galerie",
+    "alt": "Maison de caractère Chez nous et sa piscine",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "e04fb20cc198bc0c",
+    "ratio": "4:3",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "50% 45%",
+    "sujet": {
+      "x": 23.9,
+      "y": 7.5,
+      "l": 47.3,
+      "h": 66.8
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.26,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.21,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.19,
+        "ton": "clair"
+      },
+      {
+        "cote": "haut",
+        "score": 0.14,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 69,
+      "top": 0,
+      "width": 1367,
+      "height": 1025,
+      "source": [
+        1535,
+        1025
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "villa-chez-nous-1-640.webp",
+      "villa-chez-nous-1-960.webp",
+      "villa-chez-nous-1-1280.webp"
+    ],
+    "poids": {
+      "villa-chez-nous-1-640.webp": 76054,
+      "villa-chez-nous-1-960.webp": 156280,
+      "villa-chez-nous-1-1280.webp": 242624
+    },
+    "media": "c.media({ nom: 'villa-chez-nous-1', alt: \"Maison de caractère Chez nous et sa piscine\", cadrage: '50% 45%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 3' })"
+  },
+  "villa-chez-nous-2": {
+    "nom": "villa-chez-nous-2",
+    "source": "recu/villa-chez-nous-2.png",
+    "role": "galerie",
+    "alt": "Façade fleurie et piscine de Chez nous",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "692153a045877dd0",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "41% 54%",
+    "sujet": {
+      "x": 1.1,
+      "y": 28.7,
+      "l": 59.1,
+      "h": 58.8
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.41,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.24,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.16,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.1,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 2,
+      "width": 1535,
+      "height": 1023,
+      "source": [
+        1535,
+        1025
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "villa-chez-nous-2-640.webp",
+      "villa-chez-nous-2-960.webp",
+      "villa-chez-nous-2-1280.webp"
+    ],
+    "poids": {
+      "villa-chez-nous-2-640.webp": 67150,
+      "villa-chez-nous-2-960.webp": 137894,
+      "villa-chez-nous-2-1280.webp": 224954
+    },
+    "media": "c.media({ nom: 'villa-chez-nous-2', alt: \"Façade fleurie et piscine de Chez nous\", cadrage: '41% 54%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "villa-chez-nous-3": {
+    "nom": "villa-chez-nous-3",
+    "source": "recu/villa-chez-nous-6.png",
+    "role": "galerie",
+    "alt": "Terrasse et grandes baies de Chez nous",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "6b43571ee9cc3a21",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "46% 48%",
+    "sujet": {
+      "x": 14.7,
+      "y": 24.5,
+      "l": 53.9,
+      "h": 33.6
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.27,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.23,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.2,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.17,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1535,
+      "height": 1023,
+      "source": [
+        1535,
+        1025
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "villa-chez-nous-3-640.webp",
+      "villa-chez-nous-3-960.webp",
+      "villa-chez-nous-3-1280.webp"
+    ],
+    "poids": {
+      "villa-chez-nous-3-640.webp": 83112,
+      "villa-chez-nous-3-960.webp": 168598,
+      "villa-chez-nous-3-1280.webp": 265502
+    },
+    "media": "c.media({ nom: 'villa-chez-nous-3', alt: \"Terrasse et grandes baies de Chez nous\", cadrage: '46% 48%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "villa-chez-nous-4": {
+    "nom": "villa-chez-nous-4",
+    "source": "recu/villa-chez-nous-17.png",
+    "role": "galerie",
+    "alt": "Salon de Chez nous sous les poutres",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "337b92f8b437f4f2",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "53% 53%",
+    "sujet": {
+      "x": 26.5,
+      "y": 39.6,
+      "l": 55.9,
+      "h": 25
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.42,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.36,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.2,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.15,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 1,
+      "width": 1535,
+      "height": 1023,
+      "source": [
+        1535,
+        1024
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "villa-chez-nous-4-640.webp",
+      "villa-chez-nous-4-960.webp",
+      "villa-chez-nous-4-1280.webp"
+    ],
+    "poids": {
+      "villa-chez-nous-4-640.webp": 46770,
+      "villa-chez-nous-4-960.webp": 94828,
+      "villa-chez-nous-4-1280.webp": 155012
+    },
+    "media": "c.media({ nom: 'villa-chez-nous-4', alt: \"Salon de Chez nous sous les poutres\", cadrage: '53% 53%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "villa-aiguebonne-1": {
+    "nom": "villa-aiguebonne-1",
+    "source": "recu/villa-aiguebonne.png",
+    "role": "galerie",
+    "alt": "Grande terrasse d’Aiguebonne face à la mer",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "7c298481c688269d",
+    "ratio": "4:3",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "50% 56%",
+    "sujet": {
+      "x": 30.2,
+      "y": 35.3,
+      "l": 43,
+      "h": 41.2
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.33,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.21,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.2,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.18,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 86,
+      "top": 0,
+      "width": 1365,
+      "height": 1024,
+      "source": [
+        1536,
+        1024
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "villa-aiguebonne-1-640.webp",
+      "villa-aiguebonne-1-960.webp",
+      "villa-aiguebonne-1-1280.webp"
+    ],
+    "poids": {
+      "villa-aiguebonne-1-640.webp": 78190,
+      "villa-aiguebonne-1-960.webp": 166318,
+      "villa-aiguebonne-1-1280.webp": 270670
+    },
+    "media": "c.media({ nom: 'villa-aiguebonne-1', alt: \"Grande terrasse d’Aiguebonne face à la mer\", cadrage: '50% 56%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 3' })"
+  },
+  "villa-aiguebonne-2": {
+    "nom": "villa-aiguebonne-2",
+    "source": "recu/villa-aiguebonne-13.png",
+    "role": "galerie",
+    "alt": "Transat et chapeau de paille sur la terrasse d’Aiguebonne, la mer au loin",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "06eee244a2907418",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "50% 52%",
+    "sujet": {
+      "x": 27.9,
+      "y": 28.9,
+      "l": 44.1,
+      "h": 46.4
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.29,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.26,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.2,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.19,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 121,
+      "width": 1448,
+      "height": 965,
+      "source": [
+        1448,
+        1086
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "villa-aiguebonne-2-640.webp",
+      "villa-aiguebonne-2-960.webp",
+      "villa-aiguebonne-2-1280.webp"
+    ],
+    "poids": {
+      "villa-aiguebonne-2-640.webp": 52612,
+      "villa-aiguebonne-2-960.webp": 103746,
+      "villa-aiguebonne-2-1280.webp": 160748
+    },
+    "media": "c.media({ nom: 'villa-aiguebonne-2', alt: \"Transat et chapeau de paille sur la terrasse d’Aiguebonne, la mer au loin\", cadrage: '50% 52%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "villa-aiguebonne-3": {
+    "nom": "villa-aiguebonne-3",
+    "source": "recu/villa-aiguebonne-2.png",
+    "role": "galerie",
+    "alt": "Terrasse fleurie d’Aiguebonne",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "acb7067c975f2e5b",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "55% 39%",
+    "sujet": {
+      "x": 28.4,
+      "y": 11.7,
+      "l": 68.7,
+      "h": 43.9
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.25,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.21,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.13,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.11,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1536,
+      "height": 1024,
+      "source": [
+        1536,
+        1024
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "villa-aiguebonne-3-640.webp",
+      "villa-aiguebonne-3-960.webp",
+      "villa-aiguebonne-3-1280.webp"
+    ],
+    "poids": {
+      "villa-aiguebonne-3-640.webp": 78044,
+      "villa-aiguebonne-3-960.webp": 167634,
+      "villa-aiguebonne-3-1280.webp": 277026
+    },
+    "media": "c.media({ nom: 'villa-aiguebonne-3', alt: \"Terrasse fleurie d’Aiguebonne\", cadrage: '55% 39%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "villa-aiguebonne-4": {
+    "nom": "villa-aiguebonne-4",
+    "source": "recu/villa-aiguebonne-15.png",
+    "role": "galerie",
+    "alt": "Table sous l’arbre de la terrasse d’Aiguebonne",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "eb5b31199f04d6e2",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "43% 50%",
+    "sujet": {
+      "x": 22.1,
+      "y": 34.7,
+      "l": 41.2,
+      "h": 31.4
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.26,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.26,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.23,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.2,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 17,
+      "width": 1448,
+      "height": 965,
+      "source": [
+        1448,
+        1086
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "villa-aiguebonne-4-640.webp",
+      "villa-aiguebonne-4-960.webp",
+      "villa-aiguebonne-4-1280.webp"
+    ],
+    "poids": {
+      "villa-aiguebonne-4-640.webp": 84208,
+      "villa-aiguebonne-4-960.webp": 165380,
+      "villa-aiguebonne-4-1280.webp": 256818
+    },
+    "media": "c.media({ nom: 'villa-aiguebonne-4', alt: \"Table sous l’arbre de la terrasse d’Aiguebonne\", cadrage: '43% 50%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "villa-pirouschka-1": {
+    "nom": "villa-pirouschka-1",
+    "source": "recu/villa-pirouschka-20.jpg",
+    "role": "galerie",
+    "alt": "Pirouschka et sa piscine sous les pins",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "c6c961f30b9a2528",
+    "ratio": "4:3",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "50% 58%",
+    "sujet": {
+      "x": 0,
+      "y": 35,
+      "l": 100,
+      "h": 63.7
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.69,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0.15,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.13,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.1,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 57,
+      "top": 0,
+      "width": 911,
+      "height": 683,
+      "source": [
+        1024,
+        683
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1024 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,41 fois (source de 911 px après recadrage)"
+    ],
+    "fichiers": [
+      "villa-pirouschka-1-640.webp",
+      "villa-pirouschka-1-960.webp",
+      "villa-pirouschka-1-1280.webp"
+    ],
+    "poids": {
+      "villa-pirouschka-1-640.webp": 57804,
+      "villa-pirouschka-1-960.webp": 106416,
+      "villa-pirouschka-1-1280.webp": 151718
+    },
+    "media": "c.media({ nom: 'villa-pirouschka-1', alt: \"Pirouschka et sa piscine sous les pins\", cadrage: '50% 58%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 3' })"
+  },
+  "villa-pirouschka-2": {
+    "nom": "villa-pirouschka-2",
+    "source": "recu/villa-pirouschka-4.jpg",
+    "role": "galerie",
+    "alt": "Maison aux volets bleus de Pirouschka",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "6862d5fff8aff137",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "53% 47%",
+    "sujet": {
+      "x": 17.6,
+      "y": 19,
+      "l": 62.2,
+      "h": 59.2
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.22,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.16,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.11,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.08,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1025,
+      "height": 683,
+      "source": [
+        1025,
+        683
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1025 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,25 fois (source de 1025 px après recadrage)"
+    ],
+    "fichiers": [
+      "villa-pirouschka-2-640.webp",
+      "villa-pirouschka-2-960.webp",
+      "villa-pirouschka-2-1280.webp"
+    ],
+    "poids": {
+      "villa-pirouschka-2-640.webp": 57772,
+      "villa-pirouschka-2-960.webp": 109054,
+      "villa-pirouschka-2-1280.webp": 148442
+    },
+    "media": "c.media({ nom: 'villa-pirouschka-2', alt: \"Maison aux volets bleus de Pirouschka\", cadrage: '53% 47%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "villa-pirouschka-3": {
+    "nom": "villa-pirouschka-3",
+    "source": "recu/villa-pirouschka-13.jpg",
+    "role": "galerie",
+    "alt": "Transats bleus au bord de la piscine de Pirouschka",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "989127694702d47e",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "52% 52%",
+    "sujet": {
+      "x": 20.1,
+      "y": 35.5,
+      "l": 67.6,
+      "h": 51
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.22,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.11,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.08,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.08,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1025,
+      "height": 683,
+      "source": [
+        1025,
+        683
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1025 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,25 fois (source de 1025 px après recadrage)"
+    ],
+    "fichiers": [
+      "villa-pirouschka-3-640.webp",
+      "villa-pirouschka-3-960.webp",
+      "villa-pirouschka-3-1280.webp"
+    ],
+    "poids": {
+      "villa-pirouschka-3-640.webp": 62272,
+      "villa-pirouschka-3-960.webp": 115274,
+      "villa-pirouschka-3-1280.webp": 155246
+    },
+    "media": "c.media({ nom: 'villa-pirouschka-3', alt: \"Transats bleus au bord de la piscine de Pirouschka\", cadrage: '52% 52%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "villa-pirouschka-4": {
+    "nom": "villa-pirouschka-4",
+    "source": "recu/villa-pirouschka-5.jpg",
+    "role": "galerie",
+    "alt": "Salle à manger de Pirouschka",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "e38f1a94456dd66a",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "53% 44%",
+    "sujet": {
+      "x": 23.5,
+      "y": 33.8,
+      "l": 58.8,
+      "h": 20.6
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.82,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.35,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.3,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.21,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1025,
+      "height": 683,
+      "source": [
+        1025,
+        683
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1025 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,25 fois (source de 1025 px après recadrage)"
+    ],
+    "fichiers": [
+      "villa-pirouschka-4-640.webp",
+      "villa-pirouschka-4-960.webp",
+      "villa-pirouschka-4-1280.webp"
+    ],
+    "poids": {
+      "villa-pirouschka-4-640.webp": 32820,
+      "villa-pirouschka-4-960.webp": 67710,
+      "villa-pirouschka-4-1280.webp": 93476
+    },
+    "media": "c.media({ nom: 'villa-pirouschka-4', alt: \"Salle à manger de Pirouschka\", cadrage: '53% 44%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "villa-soleada-1": {
+    "nom": "villa-soleada-1",
+    "source": "recu/villa-soleada-3.jpg",
+    "role": "galerie",
+    "alt": "Terrasse de La Soleada au soleil couchant",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "03905328d0e3d095",
+    "ratio": "4:3",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "50% 52%",
+    "sujet": {
+      "x": 31.7,
+      "y": 33.8,
+      "l": 37.2,
+      "h": 35.3
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.28,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0.26,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.22,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.19,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 230,
+      "top": 0,
+      "width": 1500,
+      "height": 1125,
+      "source": [
+        2000,
+        1125
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "villa-soleada-1-640.webp",
+      "villa-soleada-1-960.webp",
+      "villa-soleada-1-1280.webp"
+    ],
+    "poids": {
+      "villa-soleada-1-640.webp": 56174,
+      "villa-soleada-1-960.webp": 111554,
+      "villa-soleada-1-1280.webp": 170890
+    },
+    "media": "c.media({ nom: 'villa-soleada-1', alt: \"Terrasse de La Soleada au soleil couchant\", cadrage: '50% 52%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 3' })"
+  },
+  "villa-soleada-2": {
+    "nom": "villa-soleada-2",
+    "source": "recu/villa-soleada-19.png",
+    "role": "galerie",
+    "alt": "Patio de La Soleada ouvert sur l’Estérel",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "8e3eb1aa4a1bfc4b",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "45% 39%",
+    "sujet": {
+      "x": 13.4,
+      "y": 12.8,
+      "l": 49.1,
+      "h": 47.7
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.23,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.23,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.17,
+        "ton": "clair"
+      },
+      {
+        "cote": "haut",
+        "score": 0.15,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1448,
+      "height": 965,
+      "source": [
+        1448,
+        1086
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "villa-soleada-2-640.webp",
+      "villa-soleada-2-960.webp",
+      "villa-soleada-2-1280.webp"
+    ],
+    "poids": {
+      "villa-soleada-2-640.webp": 54494,
+      "villa-soleada-2-960.webp": 111976,
+      "villa-soleada-2-1280.webp": 177636
+    },
+    "media": "c.media({ nom: 'villa-soleada-2', alt: \"Patio de La Soleada ouvert sur l’Estérel\", cadrage: '45% 39%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "villa-soleada-3": {
+    "nom": "villa-soleada-3",
+    "source": "recu/villa-soleada-14.png",
+    "role": "galerie",
+    "alt": "Salle à manger de La Soleada",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "d7cf0d4c9dad55f9",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "53% 45%",
+    "sujet": {
+      "x": 30.9,
+      "y": 29.8,
+      "l": 44.1,
+      "h": 31.4
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.34,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.24,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.21,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.21,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1448,
+      "height": 965,
+      "source": [
+        1448,
+        1086
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "villa-soleada-3-640.webp",
+      "villa-soleada-3-960.webp",
+      "villa-soleada-3-1280.webp"
+    ],
+    "poids": {
+      "villa-soleada-3-640.webp": 52386,
+      "villa-soleada-3-960.webp": 111668,
+      "villa-soleada-3-1280.webp": 181892
+    },
+    "media": "c.media({ nom: 'villa-soleada-3', alt: \"Salle à manger de La Soleada\", cadrage: '53% 45%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "villa-soleada-4": {
+    "nom": "villa-soleada-4",
+    "source": "recu/villa-soleada-21.png",
+    "role": "galerie",
+    "alt": "Dîner sous la pergola de La Soleada, la baie illuminée",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "d1756d37459935b7",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "56% 50%",
+    "sujet": {
+      "x": 32.4,
+      "y": 35.5,
+      "l": 48.5,
+      "h": 27.9
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.3,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0.25,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.23,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.18,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 48,
+      "width": 1496,
+      "height": 997,
+      "source": [
+        1496,
+        1051
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "villa-soleada-4-640.webp",
+      "villa-soleada-4-960.webp",
+      "villa-soleada-4-1280.webp"
+    ],
+    "poids": {
+      "villa-soleada-4-640.webp": 50042,
+      "villa-soleada-4-960.webp": 102404,
+      "villa-soleada-4-1280.webp": 165270
+    },
+    "media": "c.media({ nom: 'villa-soleada-4', alt: \"Dîner sous la pergola de La Soleada, la baie illuminée\", cadrage: '56% 50%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "villa-boheme-1": {
+    "nom": "villa-boheme-1",
+    "source": "recu/villa-boheme-5.png",
+    "role": "galerie",
+    "alt": "La Bohème, sa piscine et ses palmiers",
+    "grok": false,
+    "mention": null,
+    "beaute": 5,
+    "empreinte": "c40fd5183075f164",
+    "ratio": "4:3",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "52% 54%",
+    "sujet": {
+      "x": 0,
+      "y": 24.6,
+      "l": 100,
+      "h": 62.6
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.39,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.11,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.05,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.04,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 171,
+      "top": 0,
+      "width": 1365,
+      "height": 1024,
+      "source": [
+        1536,
+        1024
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "villa-boheme-1-640.webp",
+      "villa-boheme-1-960.webp",
+      "villa-boheme-1-1280.webp"
+    ],
+    "poids": {
+      "villa-boheme-1-640.webp": 71692,
+      "villa-boheme-1-960.webp": 149512,
+      "villa-boheme-1-1280.webp": 238578
+    },
+    "media": "c.media({ nom: 'villa-boheme-1', alt: \"La Bohème, sa piscine et ses palmiers\", cadrage: '52% 54%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 3' })"
+  },
+  "villa-boheme-2": {
+    "nom": "villa-boheme-2",
+    "source": "recu/villa-boheme-13.png",
+    "role": "galerie",
+    "alt": "La piscine de La Bohème vue à travers une arche",
+    "grok": false,
+    "mention": null,
+    "beaute": 5,
+    "empreinte": "d9782e36a4a5ee05",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "50% 62%",
+    "sujet": {
+      "x": 32.9,
+      "y": 53.3,
+      "l": 32.5,
+      "h": 32.9
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.65,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.25,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.23,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.16,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 121,
+      "width": 1448,
+      "height": 965,
+      "source": [
+        1448,
+        1086
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "villa-boheme-2-640.webp",
+      "villa-boheme-2-960.webp",
+      "villa-boheme-2-1280.webp"
+    ],
+    "poids": {
+      "villa-boheme-2-640.webp": 59096,
+      "villa-boheme-2-960.webp": 131032,
+      "villa-boheme-2-1280.webp": 216276
+    },
+    "media": "c.media({ nom: 'villa-boheme-2', alt: \"La piscine de La Bohème vue à travers une arche\", cadrage: '50% 62%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "villa-boheme-3": {
+    "nom": "villa-boheme-3",
+    "source": "recu/villa-boheme-20.png",
+    "role": "galerie",
+    "alt": "Piscine de La Bohème au coucher du soleil",
+    "grok": false,
+    "mention": null,
+    "beaute": 5,
+    "empreinte": "290f41e01d6d148f",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "58% 61%",
+    "sujet": {
+      "x": 24.3,
+      "y": 45,
+      "l": 70.2,
+      "h": 54.6
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.35,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.29,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.27,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.1,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 2,
+      "width": 1534,
+      "height": 1023,
+      "source": [
+        1534,
+        1025
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "villa-boheme-3-640.webp",
+      "villa-boheme-3-960.webp",
+      "villa-boheme-3-1280.webp"
+    ],
+    "poids": {
+      "villa-boheme-3-640.webp": 53432,
+      "villa-boheme-3-960.webp": 108100,
+      "villa-boheme-3-1280.webp": 170294
+    },
+    "media": "c.media({ nom: 'villa-boheme-3', alt: \"Piscine de La Bohème au coucher du soleil\", cadrage: '58% 61%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "villa-boheme-4": {
+    "nom": "villa-boheme-4",
+    "source": "recu/villa-boheme-8.png",
+    "role": "galerie",
+    "alt": "Salon de La Bohème sous la charpente",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "91335cf37cfc438f",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "48% 52%",
+    "sujet": {
+      "x": 19.1,
+      "y": 36.8,
+      "l": 54.4,
+      "h": 27.9
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.26,
+        "ton": "clair"
+      },
+      {
+        "cote": "haut",
+        "score": 0.25,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.23,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.19,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1536,
+      "height": 1024,
+      "source": [
+        1536,
+        1024
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "villa-boheme-4-640.webp",
+      "villa-boheme-4-960.webp",
+      "villa-boheme-4-1280.webp"
+    ],
+    "poids": {
+      "villa-boheme-4-640.webp": 47428,
+      "villa-boheme-4-960.webp": 91130,
+      "villa-boheme-4-1280.webp": 142314
+    },
+    "media": "c.media({ nom: 'villa-boheme-4', alt: \"Salon de La Bohème sous la charpente\", cadrage: '48% 52%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "villa-eucalypta-1": {
+    "nom": "villa-eucalypta-1",
+    "source": "recu/villa-eucalypta-6.jpg",
+    "role": "galerie",
+    "alt": "Piscine d’Eucalypta face aux rochers rouges de l’Estérel",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "ddf2a445029f3b75",
+    "ratio": "4:3",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "50% 52%",
+    "sujet": {
+      "x": 26.4,
+      "y": 44.5,
+      "l": 52.9,
+      "h": 21.8
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.28,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.26,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.25,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.21,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 87,
+      "top": 0,
+      "width": 911,
+      "height": 683,
+      "source": [
+        1024,
+        683
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1024 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,41 fois (source de 911 px après recadrage)"
+    ],
+    "fichiers": [
+      "villa-eucalypta-1-640.webp",
+      "villa-eucalypta-1-960.webp",
+      "villa-eucalypta-1-1280.webp"
+    ],
+    "poids": {
+      "villa-eucalypta-1-640.webp": 85022,
+      "villa-eucalypta-1-960.webp": 166542,
+      "villa-eucalypta-1-1280.webp": 248256
+    },
+    "media": "c.media({ nom: 'villa-eucalypta-1', alt: \"Piscine d’Eucalypta face aux rochers rouges de l’Estérel\", cadrage: '50% 52%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 3' })"
+  },
+  "villa-eucalypta-2": {
+    "nom": "villa-eucalypta-2",
+    "source": "recu/villa-eucalypta-18.jpg",
+    "role": "galerie",
+    "alt": "Fauteuils de la terrasse d’Eucalypta face au soleil couchant",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "afdfcd0a3598823b",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "47% 50%",
+    "sujet": {
+      "x": 30.9,
+      "y": 29.4,
+      "l": 32.4,
+      "h": 41.2
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.55,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.5,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.45,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.4,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1024,
+      "height": 683,
+      "source": [
+        1024,
+        683
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1024 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,25 fois (source de 1024 px après recadrage)"
+    ],
+    "fichiers": [
+      "villa-eucalypta-2-640.webp",
+      "villa-eucalypta-2-960.webp",
+      "villa-eucalypta-2-1280.webp"
+    ],
+    "poids": {
+      "villa-eucalypta-2-640.webp": 41004,
+      "villa-eucalypta-2-960.webp": 88456,
+      "villa-eucalypta-2-1280.webp": 124366
+    },
+    "media": "c.media({ nom: 'villa-eucalypta-2', alt: \"Fauteuils de la terrasse d’Eucalypta face au soleil couchant\", cadrage: '47% 50%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "villa-eucalypta-3": {
+    "nom": "villa-eucalypta-3",
+    "source": "recu/villa-eucalypta-4.jpg",
+    "role": "galerie",
+    "alt": "Piscine aux formes douces d’Eucalypta",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "217d8b7cbba0de20",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "50% 50%",
+    "sujet": {
+      "x": 27,
+      "y": 36.9,
+      "l": 63.8,
+      "h": 33.5
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.22,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.22,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.21,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.13,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1024,
+      "height": 683,
+      "source": [
+        1024,
+        683
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1024 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,25 fois (source de 1024 px après recadrage)"
+    ],
+    "fichiers": [
+      "villa-eucalypta-3-640.webp",
+      "villa-eucalypta-3-960.webp",
+      "villa-eucalypta-3-1280.webp"
+    ],
+    "poids": {
+      "villa-eucalypta-3-640.webp": 72204,
+      "villa-eucalypta-3-960.webp": 147590,
+      "villa-eucalypta-3-1280.webp": 203976
+    },
+    "media": "c.media({ nom: 'villa-eucalypta-3', alt: \"Piscine aux formes douces d’Eucalypta\", sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "villa-eucalypta-4": {
+    "nom": "villa-eucalypta-4",
+    "source": "recu/villa-eucalypta-20.jpg",
+    "role": "galerie",
+    "alt": "Terrasse d’Eucalypta sur la mer",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "f5434b7bb0f4e354",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "43% 49%",
+    "sujet": {
+      "x": 23.5,
+      "y": 27.9,
+      "l": 38.2,
+      "h": 41.2
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.56,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.41,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.36,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.34,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1024,
+      "height": 683,
+      "source": [
+        1024,
+        683
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1024 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,25 fois (source de 1024 px après recadrage)"
+    ],
+    "fichiers": [
+      "villa-eucalypta-4-640.webp",
+      "villa-eucalypta-4-960.webp",
+      "villa-eucalypta-4-1280.webp"
+    ],
+    "poids": {
+      "villa-eucalypta-4-640.webp": 53962,
+      "villa-eucalypta-4-960.webp": 122328,
+      "villa-eucalypta-4-1280.webp": 174312
+    },
+    "media": "c.media({ nom: 'villa-eucalypta-4', alt: \"Terrasse d’Eucalypta sur la mer\", cadrage: '43% 49%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "villa-casa-lomi-1": {
+    "nom": "villa-casa-lomi-1",
+    "source": "recu/villa-casa-lomi-13.jpg",
+    "role": "galerie",
+    "alt": "Casa Lomi, ses murs de pierre et sa piscine",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "c09cd4d0d72f4b3d",
+    "ratio": "4:3",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "47% 47%",
+    "sujet": {
+      "x": 14.8,
+      "y": 27.9,
+      "l": 67.7,
+      "h": 36.8
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.27,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.19,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.18,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.16,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 913,
+      "height": 685,
+      "source": [
+        1025,
+        685
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1025 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,4 fois (source de 913 px après recadrage)"
+    ],
+    "fichiers": [
+      "villa-casa-lomi-1-640.webp",
+      "villa-casa-lomi-1-960.webp",
+      "villa-casa-lomi-1-1280.webp"
+    ],
+    "poids": {
+      "villa-casa-lomi-1-640.webp": 60038,
+      "villa-casa-lomi-1-960.webp": 110388,
+      "villa-casa-lomi-1-1280.webp": 157378
+    },
+    "media": "c.media({ nom: 'villa-casa-lomi-1', alt: \"Casa Lomi, ses murs de pierre et sa piscine\", cadrage: '47% 47%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 3' })"
+  },
+  "villa-casa-lomi-2": {
+    "nom": "villa-casa-lomi-2",
+    "source": "recu/villa-casa-lomi-5.jpg",
+    "role": "galerie",
+    "alt": "Grande table en terrasse à Casa Lomi",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "f620e42262485742",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "47% 40%",
+    "sujet": {
+      "x": 23.4,
+      "y": 0.7,
+      "l": 50.5,
+      "h": 52.9
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.2,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.16,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.12,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.06,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1025,
+      "height": 683,
+      "source": [
+        1025,
+        685
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1025 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,25 fois (source de 1025 px après recadrage)"
+    ],
+    "fichiers": [
+      "villa-casa-lomi-2-640.webp",
+      "villa-casa-lomi-2-960.webp",
+      "villa-casa-lomi-2-1280.webp"
+    ],
+    "poids": {
+      "villa-casa-lomi-2-640.webp": 68392,
+      "villa-casa-lomi-2-960.webp": 138936,
+      "villa-casa-lomi-2-1280.webp": 192472
+    },
+    "media": "c.media({ nom: 'villa-casa-lomi-2', alt: \"Grande table en terrasse à Casa Lomi\", cadrage: '47% 40%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "villa-casa-lomi-3": {
+    "nom": "villa-casa-lomi-3",
+    "source": "recu/villa-casa-lomi-6.jpg",
+    "role": "galerie",
+    "alt": "Cuisine de Casa Lomi ouverte sur la terrasse",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "47d7d6ae93b1d287",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "37% 50%",
+    "sujet": {
+      "x": 13.2,
+      "y": 38.2,
+      "l": 47.1,
+      "h": 23.6
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.26,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.24,
+        "ton": "clair"
+      },
+      {
+        "cote": "haut",
+        "score": 0.22,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.14,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 1,
+      "width": 1025,
+      "height": 683,
+      "source": [
+        1025,
+        685
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1025 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,25 fois (source de 1025 px après recadrage)"
+    ],
+    "fichiers": [
+      "villa-casa-lomi-3-640.webp",
+      "villa-casa-lomi-3-960.webp",
+      "villa-casa-lomi-3-1280.webp"
+    ],
+    "poids": {
+      "villa-casa-lomi-3-640.webp": 55188,
+      "villa-casa-lomi-3-960.webp": 110230,
+      "villa-casa-lomi-3-1280.webp": 153996
+    },
+    "media": "c.media({ nom: 'villa-casa-lomi-3', alt: \"Cuisine de Casa Lomi ouverte sur la terrasse\", cadrage: '37% 50%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "villa-casa-lomi-4": {
+    "nom": "villa-casa-lomi-4",
+    "source": "recu/villa-casa-lomi-24.jpg",
+    "role": "galerie",
+    "alt": "Salon de Casa Lomi",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "8985b2e4147f03d6",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "57% 45%",
+    "sujet": {
+      "x": 30.9,
+      "y": 29.5,
+      "l": 54.4,
+      "h": 32.5
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.51,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.47,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.42,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.24,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1024,
+      "height": 683,
+      "source": [
+        1024,
+        685
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1024 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,25 fois (source de 1024 px après recadrage)"
+    ],
+    "fichiers": [
+      "villa-casa-lomi-4-640.webp",
+      "villa-casa-lomi-4-960.webp",
+      "villa-casa-lomi-4-1280.webp"
+    ],
+    "poids": {
+      "villa-casa-lomi-4-640.webp": 33220,
+      "villa-casa-lomi-4-960.webp": 71780,
+      "villa-casa-lomi-4-1280.webp": 101668
+    },
+    "media": "c.media({ nom: 'villa-casa-lomi-4', alt: \"Salon de Casa Lomi\", cadrage: '57% 45%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "villa-mas-mirabelle-1": {
+    "nom": "villa-mas-mirabelle-1",
+    "source": "recu/mas-mirabelle-5.jpg",
+    "role": "galerie",
+    "alt": "Piscine à débordement du Mas Mirabelle face à la baie",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "5e037c7b9682756f",
+    "ratio": "4:3",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "50% 41%",
+    "sujet": {
+      "x": 11.2,
+      "y": 25,
+      "l": 76.1,
+      "h": 32.4
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.62,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.18,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.15,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.13,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 78,
+      "top": 0,
+      "width": 911,
+      "height": 683,
+      "source": [
+        1025,
+        683
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1025 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,41 fois (source de 911 px après recadrage)"
+    ],
+    "fichiers": [
+      "villa-mas-mirabelle-1-640.webp",
+      "villa-mas-mirabelle-1-960.webp",
+      "villa-mas-mirabelle-1-1280.webp"
+    ],
+    "poids": {
+      "villa-mas-mirabelle-1-640.webp": 77818,
+      "villa-mas-mirabelle-1-960.webp": 138118,
+      "villa-mas-mirabelle-1-1280.webp": 195730
+    },
+    "media": "c.media({ nom: 'villa-mas-mirabelle-1', alt: \"Piscine à débordement du Mas Mirabelle face à la baie\", cadrage: '50% 41%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 3' })"
+  },
+  "villa-mas-mirabelle-2": {
+    "nom": "villa-mas-mirabelle-2",
+    "source": "recu/mas-mirabelle-8.jpg",
+    "role": "galerie",
+    "alt": "Oliviers et piscine du Mas Mirabelle",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "63864fbfd94b128f",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "53% 51%",
+    "sujet": {
+      "x": 26.5,
+      "y": 30.9,
+      "l": 55.9,
+      "h": 39.7
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.55,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.39,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.26,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.19,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1025,
+      "height": 683,
+      "source": [
+        1025,
+        683
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1025 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,25 fois (source de 1025 px après recadrage)"
+    ],
+    "fichiers": [
+      "villa-mas-mirabelle-2-640.webp",
+      "villa-mas-mirabelle-2-960.webp",
+      "villa-mas-mirabelle-2-1280.webp"
+    ],
+    "poids": {
+      "villa-mas-mirabelle-2-640.webp": 59292,
+      "villa-mas-mirabelle-2-960.webp": 118096,
+      "villa-mas-mirabelle-2-1280.webp": 163626
+    },
+    "media": "c.media({ nom: 'villa-mas-mirabelle-2', alt: \"Oliviers et piscine du Mas Mirabelle\", cadrage: '53% 51%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "villa-mas-mirabelle-3": {
+    "nom": "villa-mas-mirabelle-3",
+    "source": "recu/mas-mirabelle-3.jpg",
+    "role": "galerie",
+    "alt": "Table du Mas Mirabelle face à la mer",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "637750d31bc87ad0",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "49% 53%",
+    "sujet": {
+      "x": 38.2,
+      "y": 39.7,
+      "l": 20.6,
+      "h": 26.5
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.54,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.45,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.2,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.2,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1025,
+      "height": 683,
+      "source": [
+        1025,
+        683
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1025 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,25 fois (source de 1025 px après recadrage)"
+    ],
+    "fichiers": [
+      "villa-mas-mirabelle-3-640.webp",
+      "villa-mas-mirabelle-3-960.webp",
+      "villa-mas-mirabelle-3-1280.webp"
+    ],
+    "poids": {
+      "villa-mas-mirabelle-3-640.webp": 57368,
+      "villa-mas-mirabelle-3-960.webp": 107440,
+      "villa-mas-mirabelle-3-1280.webp": 144864
+    },
+    "media": "c.media({ nom: 'villa-mas-mirabelle-3', alt: \"Table du Mas Mirabelle face à la mer\", cadrage: '49% 53%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "villa-mas-mirabelle-4": {
+    "nom": "villa-mas-mirabelle-4",
+    "source": "recu/mas-mirabelle-17.jpg",
+    "role": "galerie",
+    "alt": "Salon du Mas Mirabelle ouvert sur la terrasse",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "93acb03f456826ad",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "56% 49%",
+    "sujet": {
+      "x": 29.4,
+      "y": 36.8,
+      "l": 50,
+      "h": 26.5
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.46,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.38,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.28,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.23,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1024,
+      "height": 683,
+      "source": [
+        1024,
+        683
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1024 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,25 fois (source de 1024 px après recadrage)"
+    ],
+    "fichiers": [
+      "villa-mas-mirabelle-4-640.webp",
+      "villa-mas-mirabelle-4-960.webp",
+      "villa-mas-mirabelle-4-1280.webp"
+    ],
+    "poids": {
+      "villa-mas-mirabelle-4-640.webp": 33358,
+      "villa-mas-mirabelle-4-960.webp": 58874,
+      "villa-mas-mirabelle-4-1280.webp": 80386
+    },
+    "media": "c.media({ nom: 'villa-mas-mirabelle-4', alt: \"Salon du Mas Mirabelle ouvert sur la terrasse\", cadrage: '56% 49%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "ouverture-accueil": {
+    "nom": "ouverture-accueil",
+    "source": "recu/villa-boheme-2.png",
+    "role": "ouverture",
+    "alt": "Piscine de La Bohème face aux rochers rouges de l’Estérel et à la mer",
+    "grok": false,
+    "mention": null,
+    "beaute": 5,
+    "empreinte": "464b06d809e6595c",
+    "ratio": "16:9",
+    "largeurs": [
+      960,
+      1440,
+      1920
+    ],
+    "mobile": {
+      "ratio": "9:16",
+      "largeurs": [
+        640
+      ],
+      "cadrage": "50% 66%"
+    },
+    "cadrage": "47% 50%",
+    "sujet": {
+      "x": 17.6,
+      "y": 26,
+      "l": 54.4,
+      "h": 48.9
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.44,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.36,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.2,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.17,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": "gauche",
+    "recadrage": {
+      "left": 0,
+      "top": 199,
+      "width": 2000,
+      "height": 1125,
+      "source": [
+        2000,
+        1336
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "version téléphone sans 1080 px (source trop petite)"
+    ],
+    "fichiers": [
+      "ouverture-accueil-960.webp",
+      "ouverture-accueil-1440.webp",
+      "ouverture-accueil-1920.webp",
+      "ouverture-accueil-mobile-640.webp"
+    ],
+    "poids": {
+      "ouverture-accueil-960.webp": 128574,
+      "ouverture-accueil-1440.webp": 240436,
+      "ouverture-accueil-1920.webp": 286562,
+      "ouverture-accueil-mobile-640.webp": 93618
+    },
+    "media": "c.media({ nom: 'ouverture-accueil', alt: \"Piscine de La Bohème face aux rochers rouges de l’Estérel et à la mer\", cadrage: '47% 50%', cadrageMobile: '50% 66%', sizes: '100vw', priorite: true })"
+  },
+  "manifeste": {
+    "nom": "manifeste",
+    "source": "recu/villa-palmeraie-17.png",
+    "role": "galerie",
+    "alt": "Table d’été sous la pergola de La Palmeraie, ouverte sur l’Estérel",
+    "grok": false,
+    "mention": null,
+    "beaute": 5,
+    "empreinte": "81f31992b34fa7ea",
+    "ratio": "3:2",
+    "largeurs": [
+      800,
+      1280,
+      1536
+    ],
+    "mobile": null,
+    "cadrage": "45% 48%",
+    "sujet": {
+      "x": 11.8,
+      "y": 30.9,
+      "l": 57.4,
+      "h": 35.3
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.22,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.22,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.21,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.14,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1536,
+      "height": 1024,
+      "source": [
+        1536,
+        1024
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "manifeste-800.webp",
+      "manifeste-1280.webp",
+      "manifeste-1536.webp"
+    ],
+    "poids": {
+      "manifeste-800.webp": 113316,
+      "manifeste-1280.webp": 241462,
+      "manifeste-1536.webp": 261566
+    },
+    "media": "c.media({ nom: 'manifeste', alt: \"Table d’été sous la pergola de La Palmeraie, ouverte sur l’Estérel\", cadrage: '45% 48%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "appel-accueil": {
+    "nom": "appel-accueil",
+    "source": "recu/villa-boheme-25.png",
+    "role": "section-fond",
+    "alt": "Le soleil se couche sur la mer, vu sous l’arche de La Bohème",
+    "grok": false,
+    "mention": null,
+    "beaute": 5,
+    "empreinte": "58b3a0fabf733787",
+    "ratio": "16:9",
+    "largeurs": [
+      960,
+      1440,
+      1600
+    ],
+    "mobile": {
+      "ratio": "9:16",
+      "largeurs": [
+        640
+      ],
+      "cadrage": "49% 57%"
+    },
+    "cadrage": "59% 66%",
+    "sujet": {
+      "x": 41.2,
+      "y": 50.7,
+      "l": 36.8,
+      "h": 33.1
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.53,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.45,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.25,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0.25,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": "haut",
+    "recadrage": {
+      "left": 0,
+      "top": 14,
+      "width": 1535,
+      "height": 863,
+      "source": [
+        1535,
+        1024
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "version téléphone sans 1080 px (source trop petite)"
+    ],
+    "fichiers": [
+      "appel-accueil-960.webp",
+      "appel-accueil-1440.webp",
+      "appel-accueil-1600.webp",
+      "appel-accueil-mobile-640.webp"
+    ],
+    "poids": {
+      "appel-accueil-960.webp": 51946,
+      "appel-accueil-1440.webp": 92326,
+      "appel-accueil-1600.webp": 102424,
+      "appel-accueil-mobile-640.webp": 65408
+    },
+    "media": "c.media({ nom: 'appel-accueil', alt: \"Le soleil se couche sur la mer, vu sous l’arche de La Bohème\", cadrage: '59% 66%', cadrageMobile: '49% 57%', sizes: '100vw' })"
+  },
+  "appel-villas": {
+    "nom": "appel-villas",
+    "source": "recu/villa-palmeraie-16.png",
+    "role": "section-fond",
+    "alt": "Piscine à débordement de La Palmeraie qui rejoint l’horizon",
+    "grok": false,
+    "mention": null,
+    "beaute": 5,
+    "empreinte": "1211e468c89a120f",
+    "ratio": "16:9",
+    "largeurs": [
+      960,
+      1440,
+      1600
+    ],
+    "mobile": {
+      "ratio": "9:16",
+      "largeurs": [
+        640
+      ],
+      "cadrage": "50% 50%"
+    },
+    "cadrage": "39% 59%",
+    "sujet": {
+      "x": 14.7,
+      "y": 43.6,
+      "l": 48.5,
+      "h": 31.4
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.54,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.23,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.23,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.14,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": "haut",
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1536,
+      "height": 864,
+      "source": [
+        1536,
+        1024
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "version téléphone sans 1080 px (source trop petite)"
+    ],
+    "fichiers": [
+      "appel-villas-960.webp",
+      "appel-villas-1440.webp",
+      "appel-villas-1600.webp",
+      "appel-villas-mobile-640.webp"
+    ],
+    "poids": {
+      "appel-villas-960.webp": 89782,
+      "appel-villas-1440.webp": 170848,
+      "appel-villas-1600.webp": 189122,
+      "appel-villas-mobile-640.webp": 70358
+    },
+    "media": "c.media({ nom: 'appel-villas', alt: \"Piscine à débordement de La Palmeraie qui rejoint l’horizon\", cadrage: '39% 59%', cadrageMobile: '50% 50%', sizes: '100vw' })"
+  },
+  "ouverture-chez-vous": {
+    "nom": "ouverture-chez-vous",
+    "source": "recu/villa-palmeraie-13.png",
+    "role": "ouverture",
+    "alt": "Lit fait à l’arrivée, linge blanc de qualité hôtelière, à La Palmeraie",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "676a09cdcd2e5984",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960,
+      1280,
+      1536
+    ],
+    "mobile": {
+      "ratio": "4:5",
+      "largeurs": [
+        640,
+        1080
+      ],
+      "cadrage": "50% 49%"
+    },
+    "cadrage": "50% 49%",
+    "sujet": {
+      "x": 24.1,
+      "y": 28.4,
+      "l": 56.3,
+      "h": 60
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.54,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.51,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.22,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.21,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1536,
+      "height": 1024,
+      "source": [
+        1536,
+        1024
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "ouverture-chez-vous-640.webp",
+      "ouverture-chez-vous-960.webp",
+      "ouverture-chez-vous-1280.webp",
+      "ouverture-chez-vous-1536.webp",
+      "ouverture-chez-vous-mobile-640.webp",
+      "ouverture-chez-vous-mobile-1080.webp"
+    ],
+    "poids": {
+      "ouverture-chez-vous-640.webp": 31972,
+      "ouverture-chez-vous-960.webp": 70690,
+      "ouverture-chez-vous-1280.webp": 122962,
+      "ouverture-chez-vous-1536.webp": 172240,
+      "ouverture-chez-vous-mobile-640.webp": 70558,
+      "ouverture-chez-vous-mobile-1080.webp": 144970
+    },
+    "media": "c.media({ nom: 'ouverture-chez-vous', alt: \"Lit fait à l’arrivée, linge blanc de qualité hôtelière, à La Palmeraie\", cadrage: '50% 49%', cadrageMobile: '50% 49%', sizes: '100vw', priorite: true })"
+  },
+  "service-accueil": {
+    "nom": "service-accueil",
+    "source": "recu/villa-soleada-8.jpg",
+    "role": "carte-service",
+    "alt": "Lits jumeaux faits avec des serviettes pliées en éléphants à La Soleada",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "8cfa4b910289f81e",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "32% 50%",
+    "sujet": {
+      "x": 9.7,
+      "y": 34.7,
+      "l": 33.2,
+      "h": 48.8
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.56,
+        "ton": "clair"
+      },
+      {
+        "cote": "haut",
+        "score": 0.49,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.49,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.17,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 39,
+      "width": 1448,
+      "height": 965,
+      "source": [
+        1448,
+        1086
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "service-accueil-640.webp",
+      "service-accueil-960.webp",
+      "service-accueil-1280.webp"
+    ],
+    "poids": {
+      "service-accueil-640.webp": 24290,
+      "service-accueil-960.webp": 47554,
+      "service-accueil-1280.webp": 76186
+    },
+    "media": "c.media({ nom: 'service-accueil', alt: \"Lits jumeaux faits avec des serviettes pliées en éléphants à La Soleada\", cadrage: '32% 50%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '3 / 2' })"
+  },
+  "service-table": {
+    "nom": "service-table",
+    "source": "recu/villa-camelias-6.png",
+    "role": "carte-service",
+    "alt": "Table dressée sur la terrasse des Camelias",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "d5fb09054f18c2cf",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "51% 51%",
+    "sujet": {
+      "x": 38.2,
+      "y": 35.2,
+      "l": 25,
+      "h": 29.5
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.24,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.23,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.2,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.19,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 2,
+      "width": 1535,
+      "height": 1023,
+      "source": [
+        1535,
+        1025
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "service-table-640.webp",
+      "service-table-960.webp",
+      "service-table-1280.webp"
+    ],
+    "poids": {
+      "service-table-640.webp": 67600,
+      "service-table-960.webp": 125044,
+      "service-table-1280.webp": 188920
+    },
+    "media": "c.media({ nom: 'service-table', alt: \"Table dressée sur la terrasse des Camelias\", cadrage: '51% 51%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '3 / 2' })"
+  },
+  "appel-chez-vous": {
+    "nom": "appel-chez-vous",
+    "source": "recu/villa-camelias-14.png",
+    "role": "section-fond",
+    "alt": "Piscine des Camelias et ses parasols",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "85b95ec7414c1f09",
+    "ratio": "16:9",
+    "largeurs": [
+      960,
+      1440,
+      1556
+    ],
+    "mobile": {
+      "ratio": "9:16",
+      "largeurs": [
+        640
+      ],
+      "cadrage": "50% 68%"
+    },
+    "cadrage": "49% 66%",
+    "sujet": {
+      "x": 7.2,
+      "y": 56.1,
+      "l": 74,
+      "h": 39.1
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.25,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.19,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.13,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.11,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": "haut",
+    "recadrage": {
+      "left": 0,
+      "top": 110,
+      "width": 1556,
+      "height": 875,
+      "source": [
+        1556,
+        1011
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "version téléphone sans 1080 px (source trop petite)"
+    ],
+    "fichiers": [
+      "appel-chez-vous-960.webp",
+      "appel-chez-vous-1440.webp",
+      "appel-chez-vous-1556.webp",
+      "appel-chez-vous-mobile-640.webp"
+    ],
+    "poids": {
+      "appel-chez-vous-960.webp": 157020,
+      "appel-chez-vous-1440.webp": 286184,
+      "appel-chez-vous-1556.webp": 266452,
+      "appel-chez-vous-mobile-640.webp": 133856
+    },
+    "media": "c.media({ nom: 'appel-chez-vous', alt: \"Piscine des Camelias et ses parasols\", cadrage: '49% 66%', cadrageMobile: '50% 68%', sizes: '100vw' })"
+  },
+  "service-cles": {
+    "nom": "service-cles",
+    "source": "recu/grok/g-service-cles.png",
+    "role": "carte-service",
+    "alt": "Clé de villa posée sur une serviette pliée, avec un brin de lavande",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "d6b2ece1aa3c28b3",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960,
+      1168
+    ],
+    "mobile": null,
+    "cadrage": "52% 52%",
+    "sujet": {
+      "x": 0,
+      "y": 3.9,
+      "l": 100,
+      "h": 91.5
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.26,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0.02,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 7,
+      "width": 1600,
+      "height": 1067,
+      "source": [
+        1600,
+        1074
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "service-cles-640.webp",
+      "service-cles-960.webp",
+      "service-cles-1168.webp"
+    ],
+    "poids": {
+      "service-cles-640.webp": 45344,
+      "service-cles-960.webp": 85604,
+      "service-cles-1168.webp": 112714
+    },
+    "media": "c.media({ nom: 'service-cles', alt: \"Clé de villa posée sur une serviette pliée, avec un brin de lavande\", cadrage: '52% 52%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '3 / 2' })"
+  },
+  "service-entretien": {
+    "nom": "service-entretien",
+    "source": "recu/grok/g-service-entretien.png",
+    "role": "carte-service",
+    "alt": "Îlot de cuisine impeccable, bouquet d’hortensias blancs",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "ff160a433bcaba1f",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960,
+      1168
+    ],
+    "mobile": null,
+    "cadrage": "60% 41%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 96.1
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.07,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.03,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1600,
+      "height": 1067,
+      "source": [
+        1600,
+        1074
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "service-entretien-640.webp",
+      "service-entretien-960.webp",
+      "service-entretien-1168.webp"
+    ],
+    "poids": {
+      "service-entretien-640.webp": 37658,
+      "service-entretien-960.webp": 72530,
+      "service-entretien-1168.webp": 94034
+    },
+    "media": "c.media({ nom: 'service-entretien', alt: \"Îlot de cuisine impeccable, bouquet d’hortensias blancs\", cadrage: '60% 41%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '3 / 2' })"
+  },
+  "service-transfert": {
+    "nom": "service-transfert",
+    "source": "recu/grok/g-service-transfert.png",
+    "role": "carte-service",
+    "alt": "Berline sombre portière ouverte dans une allée de lavande",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "ee1aa44b31334172",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960,
+      1168
+    ],
+    "mobile": null,
+    "cadrage": "49% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 96.1
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1600,
+      "height": 1067,
+      "source": [
+        1600,
+        1074
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "service-transfert-640.webp",
+      "service-transfert-960.webp",
+      "service-transfert-1168.webp"
+    ],
+    "poids": {
+      "service-transfert-640.webp": 92392,
+      "service-transfert-960.webp": 181174,
+      "service-transfert-1168.webp": 238502
+    },
+    "media": "c.media({ nom: 'service-transfert', alt: \"Berline sombre portière ouverte dans une allée de lavande\", cadrage: '49% 50%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '3 / 2' })"
+  },
+  "service-chef": {
+    "nom": "service-chef",
+    "source": "recu/grok/g-service-chef.png",
+    "role": "carte-service",
+    "alt": "Tomates anciennes, huile d’olive, basilic et casserole de cuivre sur un plan de marbre",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "a1876fe0bcb7d979",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960,
+      1168
+    ],
+    "mobile": null,
+    "cadrage": "54% 51%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 96.1
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1600,
+      "height": 1067,
+      "source": [
+        1600,
+        1074
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "service-chef-640.webp",
+      "service-chef-960.webp",
+      "service-chef-1168.webp"
+    ],
+    "poids": {
+      "service-chef-640.webp": 46504,
+      "service-chef-960.webp": 81002,
+      "service-chef-1168.webp": 105630
+    },
+    "media": "c.media({ nom: 'service-chef', alt: \"Tomates anciennes, huile d’olive, basilic et casserole de cuivre sur un plan de marbre\", cadrage: '54% 51%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '3 / 2' })"
+  },
+  "service-bebe": {
+    "nom": "service-bebe",
+    "source": "recu/grok/g-service-bebe.png",
+    "role": "carte-service",
+    "alt": "Lit à barreaux blanc avec langes pliés dans une chambre ensoleillée",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "64d059c15e2a1aee",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960,
+      1168
+    ],
+    "mobile": null,
+    "cadrage": "40% 44%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 81.3,
+      "h": 96.1
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.12,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.01,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1600,
+      "height": 1067,
+      "source": [
+        1600,
+        1074
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "service-bebe-640.webp",
+      "service-bebe-960.webp",
+      "service-bebe-1168.webp"
+    ],
+    "poids": {
+      "service-bebe-640.webp": 43584,
+      "service-bebe-960.webp": 80610,
+      "service-bebe-1168.webp": 104970
+    },
+    "media": "c.media({ nom: 'service-bebe', alt: \"Lit à barreaux blanc avec langes pliés dans une chambre ensoleillée\", cadrage: '40% 44%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '3 / 2' })"
+  },
+  "service-coach": {
+    "nom": "service-coach",
+    "source": "recu/grok/g-service-coach.png",
+    "role": "carte-service",
+    "alt": "Tapis de yoga roulé et serviette sur le bord d’une piscine au lever du soleil",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "fa62cf6210f8999b",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960,
+      1168
+    ],
+    "mobile": null,
+    "cadrage": "46% 39%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 91.5
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1600,
+      "height": 1067,
+      "source": [
+        1600,
+        1074
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "service-coach-640.webp",
+      "service-coach-960.webp",
+      "service-coach-1168.webp"
+    ],
+    "poids": {
+      "service-coach-640.webp": 32780,
+      "service-coach-960.webp": 56068,
+      "service-coach-1168.webp": 71674
+    },
+    "media": "c.media({ nom: 'service-coach', alt: \"Tapis de yoga roulé et serviette sur le bord d’une piscine au lever du soleil\", cadrage: '46% 39%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '3 / 2' })"
+  },
+  "service-bateau": {
+    "nom": "service-bateau",
+    "source": "recu/grok/g-service-bateau.png",
+    "role": "carte-service",
+    "alt": "Bateau en bois amarré dans une crique turquoise entre des rochers rouges",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "72f673859a8f945d",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960,
+      1168
+    ],
+    "mobile": null,
+    "cadrage": "67% 41%",
+    "sujet": {
+      "x": 15.6,
+      "y": 0,
+      "l": 84.4,
+      "h": 96.1
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.1,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1600,
+      "height": 1067,
+      "source": [
+        1600,
+        1074
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "service-bateau-640.webp",
+      "service-bateau-960.webp",
+      "service-bateau-1168.webp"
+    ],
+    "poids": {
+      "service-bateau-640.webp": 96334,
+      "service-bateau-960.webp": 190734,
+      "service-bateau-1168.webp": 256902
+    },
+    "media": "c.media({ nom: 'service-bateau', alt: \"Bateau en bois amarré dans une crique turquoise entre des rochers rouges\", cadrage: '67% 41%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '3 / 2' })"
+  },
+  "ouverture-chez-nous": {
+    "nom": "ouverture-chez-nous",
+    "source": "recu/villa-escapadou-2.jpg",
+    "role": "ouverture",
+    "alt": "L’Île d’Or et sa tour au large des rochers du Dramont",
+    "grok": false,
+    "mention": null,
+    "beaute": 5,
+    "empreinte": "af9da6e66cfc92ec",
+    "ratio": "16:9",
+    "largeurs": [
+      960,
+      1440,
+      1920
+    ],
+    "mobile": {
+      "ratio": "9:16",
+      "largeurs": [
+        640
+      ],
+      "cadrage": "50% 31%"
+    },
+    "cadrage": "46% 34%",
+    "sujet": {
+      "x": 29.4,
+      "y": 17.7,
+      "l": 38.2,
+      "h": 33.8
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.64,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.4,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.29,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.27,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": "bas",
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 2000,
+      "height": 1125,
+      "source": [
+        2000,
+        1229
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "version téléphone sans 1080 px (source trop petite)"
+    ],
+    "fichiers": [
+      "ouverture-chez-nous-960.webp",
+      "ouverture-chez-nous-1440.webp",
+      "ouverture-chez-nous-1920.webp",
+      "ouverture-chez-nous-mobile-640.webp"
+    ],
+    "poids": {
+      "ouverture-chez-nous-960.webp": 50642,
+      "ouverture-chez-nous-1440.webp": 78204,
+      "ouverture-chez-nous-1920.webp": 107190,
+      "ouverture-chez-nous-mobile-640.webp": 50276
+    },
+    "media": "c.media({ nom: 'ouverture-chez-nous', alt: \"L’Île d’Or et sa tour au large des rochers du Dramont\", cadrage: '46% 34%', cadrageMobile: '50% 31%', sizes: '100vw', priorite: true })"
+  },
+  "esterel-mer": {
+    "nom": "esterel-mer",
+    "source": "recu/location-saisonniere-madame-monsieur.jpg",
+    "role": "section-fond",
+    "alt": "Rochers rouges de l’Estérel plongeant dans la mer, la côte au loin",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "c28783fca06f856a",
+    "ratio": "16:9",
+    "largeurs": [
+      960,
+      1440,
+      1920
+    ],
+    "mobile": {
+      "ratio": "9:16",
+      "largeurs": [
+        640
+      ],
+      "cadrage": "50% 47%"
+    },
+    "cadrage": "45% 47%",
+    "sujet": {
+      "x": 36.8,
+      "y": 33.8,
+      "l": 16.2,
+      "h": 25
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.56,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.52,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.31,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.26,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1920,
+      "height": 1080,
+      "source": [
+        1920,
+        1080
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "version téléphone sans 1080 px (source trop petite)"
+    ],
+    "fichiers": [
+      "esterel-mer-960.webp",
+      "esterel-mer-1440.webp",
+      "esterel-mer-1920.webp",
+      "esterel-mer-mobile-640.webp"
+    ],
+    "poids": {
+      "esterel-mer-960.webp": 94544,
+      "esterel-mer-1440.webp": 206148,
+      "esterel-mer-1920.webp": 278098,
+      "esterel-mer-mobile-640.webp": 111188
+    },
+    "media": "c.media({ nom: 'esterel-mer', alt: \"Rochers rouges de l’Estérel plongeant dans la mer, la côte au loin\", cadrage: '45% 47%', cadrageMobile: '50% 47%', sizes: '100vw' })"
+  },
+  "lieu-coucher": {
+    "nom": "lieu-coucher",
+    "source": "recu/chez-nous.jpg",
+    "role": "galerie",
+    "alt": "Coucher de soleil orange sur la mer, depuis la plage",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "4f5f477bcf1cacfb",
+    "ratio": "4:3",
+    "largeurs": [
+      480,
+      800,
+      1000
+    ],
+    "mobile": null,
+    "cadrage": "61% 54%",
+    "sujet": {
+      "x": 39.7,
+      "y": 44.1,
+      "l": 45.6,
+      "h": 20.6
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.78,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.62,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.58,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.53,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1000,
+      "height": 750,
+      "source": [
+        1000,
+        750
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1000 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "lieu-coucher-480.webp",
+      "lieu-coucher-800.webp",
+      "lieu-coucher-1000.webp"
+    ],
+    "poids": {
+      "lieu-coucher-480.webp": 19278,
+      "lieu-coucher-800.webp": 51558,
+      "lieu-coucher-1000.webp": 79026
+    },
+    "media": "c.media({ nom: 'lieu-coucher', alt: \"Coucher de soleil orange sur la mer, depuis la plage\", cadrage: '61% 54%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 3' })"
+  },
+  "lieu-port": {
+    "nom": "lieu-port",
+    "source": "recu/chez-nous-2.jpg",
+    "role": "galerie",
+    "alt": "Voiliers amarrés au port, ciel bleu",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "4190aab36083849a",
+    "ratio": "4:3",
+    "largeurs": [
+      480,
+      800,
+      1000
+    ],
+    "mobile": null,
+    "cadrage": "49% 54%",
+    "sujet": {
+      "x": 14.7,
+      "y": 42.6,
+      "l": 67.6,
+      "h": 22.1
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.78,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.49,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.37,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.32,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1000,
+      "height": 750,
+      "source": [
+        1000,
+        750
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1000 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "lieu-port-480.webp",
+      "lieu-port-800.webp",
+      "lieu-port-1000.webp"
+    ],
+    "poids": {
+      "lieu-port-480.webp": 23322,
+      "lieu-port-800.webp": 59108,
+      "lieu-port-1000.webp": 87854
+    },
+    "media": "c.media({ nom: 'lieu-port', alt: \"Voiliers amarrés au port, ciel bleu\", cadrage: '49% 54%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 3' })"
+  },
+  "lieu-front-de-mer": {
+    "nom": "lieu-front-de-mer",
+    "source": "recu/chez-nous-3.jpg",
+    "role": "galerie",
+    "alt": "Front de mer de Saint-Raphaël, palmiers et dômes de la basilique",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "1d7cb4216ae1cbe4",
+    "ratio": "4:3",
+    "largeurs": [
+      480,
+      800,
+      1000
+    ],
+    "mobile": null,
+    "cadrage": "48% 48%",
+    "sujet": {
+      "x": 14.8,
+      "y": 28.3,
+      "l": 62.1,
+      "h": 42.5
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.74,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.45,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.19,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.16,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1000,
+      "height": 750,
+      "source": [
+        1000,
+        750
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1000 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "lieu-front-de-mer-480.webp",
+      "lieu-front-de-mer-800.webp",
+      "lieu-front-de-mer-1000.webp"
+    ],
+    "poids": {
+      "lieu-front-de-mer-480.webp": 27386,
+      "lieu-front-de-mer-800.webp": 66902,
+      "lieu-front-de-mer-1000.webp": 97260
+    },
+    "media": "c.media({ nom: 'lieu-front-de-mer', alt: \"Front de mer de Saint-Raphaël, palmiers et dômes de la basilique\", cadrage: '48% 48%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 3' })"
+  },
+  "lieu-belle-epoque": {
+    "nom": "lieu-belle-epoque",
+    "source": "recu/chez-nous-4.jpg",
+    "role": "galerie",
+    "alt": "Tour d’une villa Belle Époque parmi les pins",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "7e08fc3b269856bb",
+    "ratio": "4:3",
+    "largeurs": [
+      480,
+      800,
+      1000
+    ],
+    "mobile": null,
+    "cadrage": "68% 50%",
+    "sujet": {
+      "x": 45.8,
+      "y": 0,
+      "l": 54.2,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.7,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.54,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.11,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 189,
+      "width": 750,
+      "height": 563,
+      "source": [
+        750,
+        1000
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "750 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,33 fois (source de 750 px après recadrage)"
+    ],
+    "fichiers": [
+      "lieu-belle-epoque-480.webp",
+      "lieu-belle-epoque-800.webp",
+      "lieu-belle-epoque-1000.webp"
+    ],
+    "poids": {
+      "lieu-belle-epoque-480.webp": 34216,
+      "lieu-belle-epoque-800.webp": 71906,
+      "lieu-belle-epoque-1000.webp": 95994
+    },
+    "media": "c.media({ nom: 'lieu-belle-epoque', alt: \"Tour d’une villa Belle Époque parmi les pins\", cadrage: '68% 50%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 3' })"
+  },
+  "lieu-crique": {
+    "nom": "lieu-crique",
+    "source": "recu/chez-nous-5.jpg",
+    "role": "galerie",
+    "alt": "Crique entre les rochers rouges, mer bleue",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "cbc2ae0f8824371c",
+    "ratio": "4:3",
+    "largeurs": [
+      480,
+      800,
+      1000
+    ],
+    "mobile": null,
+    "cadrage": "34% 56%",
+    "sujet": {
+      "x": 13.2,
+      "y": 39.7,
+      "l": 38.2,
+      "h": 33.8
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.74,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.32,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.27,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.16,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1000,
+      "height": 750,
+      "source": [
+        1000,
+        750
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1000 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "lieu-crique-480.webp",
+      "lieu-crique-800.webp",
+      "lieu-crique-1000.webp"
+    ],
+    "poids": {
+      "lieu-crique-480.webp": 37364,
+      "lieu-crique-800.webp": 104304,
+      "lieu-crique-1000.webp": 159618
+    },
+    "media": "c.media({ nom: 'lieu-crique', alt: \"Crique entre les rochers rouges, mer bleue\", cadrage: '34% 56%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 3' })"
+  },
+  "lieu-ile-d-or": {
+    "nom": "lieu-ile-d-or",
+    "source": "recu/chez-nous-6.jpg",
+    "role": "galerie",
+    "alt": "L’Île d’Or et sa tour au coucher du soleil",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "fd98e40f4c4bb60b",
+    "ratio": "4:3",
+    "largeurs": [
+      480,
+      800,
+      1000
+    ],
+    "mobile": null,
+    "cadrage": "40% 58%",
+    "sujet": {
+      "x": 22.1,
+      "y": 32.4,
+      "l": 32.4,
+      "h": 55.9
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.22,
+        "ton": "clair"
+      },
+      {
+        "cote": "haut",
+        "score": 0.19,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.18,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.11,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1000,
+      "height": 750,
+      "source": [
+        1000,
+        750
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1000 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "lieu-ile-d-or-480.webp",
+      "lieu-ile-d-or-800.webp",
+      "lieu-ile-d-or-1000.webp"
+    ],
+    "poids": {
+      "lieu-ile-d-or-480.webp": 37942,
+      "lieu-ile-d-or-800.webp": 80380,
+      "lieu-ile-d-or-1000.webp": 107508
+    },
+    "media": "c.media({ nom: 'lieu-ile-d-or', alt: \"L’Île d’Or et sa tour au coucher du soleil\", cadrage: '40% 58%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 3' })"
+  },
+  "lieu-sentier": {
+    "nom": "lieu-sentier",
+    "source": "recu/chez-nous-7.jpg",
+    "role": "galerie",
+    "alt": "Soleil couchant sous les pins, au bord de la mer",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "9db2b57068bdfa2d",
+    "ratio": "4:3",
+    "largeurs": [
+      480,
+      800,
+      1000
+    ],
+    "mobile": null,
+    "cadrage": "59% 55%",
+    "sujet": {
+      "x": 50,
+      "y": 42.6,
+      "l": 17.6,
+      "h": 25
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.24,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.2,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.2,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.19,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1000,
+      "height": 750,
+      "source": [
+        1000,
+        750
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1000 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "lieu-sentier-480.webp",
+      "lieu-sentier-800.webp",
+      "lieu-sentier-1000.webp"
+    ],
+    "poids": {
+      "lieu-sentier-480.webp": 40774,
+      "lieu-sentier-800.webp": 106818,
+      "lieu-sentier-1000.webp": 160220
+    },
+    "media": "c.media({ nom: 'lieu-sentier', alt: \"Soleil couchant sous les pins, au bord de la mer\", cadrage: '59% 55%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 3' })"
+  },
+  "lieu-plage": {
+    "nom": "lieu-plage",
+    "source": "recu/chez-nous-8.jpg",
+    "role": "galerie",
+    "alt": "Plage de sable et colonnes d’une pergola face à la mer",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "9c435743deec17fc",
+    "ratio": "4:3",
+    "largeurs": [
+      480,
+      800,
+      1000
+    ],
+    "mobile": null,
+    "cadrage": "65% 33%",
+    "sujet": {
+      "x": 43.5,
+      "y": 5.6,
+      "l": 52,
+      "h": 36.7
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.46,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.26,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.21,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.13,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1000,
+      "height": 750,
+      "source": [
+        1000,
+        750
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1000 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "lieu-plage-480.webp",
+      "lieu-plage-800.webp",
+      "lieu-plage-1000.webp"
+    ],
+    "poids": {
+      "lieu-plage-480.webp": 28742,
+      "lieu-plage-800.webp": 70896,
+      "lieu-plage-1000.webp": 104200
+    },
+    "media": "c.media({ nom: 'lieu-plage', alt: \"Plage de sable et colonnes d’une pergola face à la mer\", cadrage: '65% 33%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 3' })"
+  },
+  "lieu-ville-mer": {
+    "nom": "lieu-ville-mer",
+    "source": "recu/chez-nous-9.jpg",
+    "role": "galerie",
+    "alt": "Saint-Raphaël vue de la mer, la grande roue et la basilique",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "6523744b036e8f09",
+    "ratio": "4:3",
+    "largeurs": [
+      480,
+      800,
+      1000
+    ],
+    "mobile": null,
+    "cadrage": "50% 50%",
+    "sujet": {
+      "x": 13.2,
+      "y": 38.2,
+      "l": 69.1,
+      "h": 22.1
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.93,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.45,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.44,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.35,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1000,
+      "height": 750,
+      "source": [
+        1000,
+        750
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1000 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "lieu-ville-mer-480.webp",
+      "lieu-ville-mer-800.webp",
+      "lieu-ville-mer-1000.webp"
+    ],
+    "poids": {
+      "lieu-ville-mer-480.webp": 28814,
+      "lieu-ville-mer-800.webp": 80410,
+      "lieu-ville-mer-1000.webp": 122060
+    },
+    "media": "c.media({ nom: 'lieu-ville-mer', alt: \"Saint-Raphaël vue de la mer, la grande roue et la basilique\", sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 3' })"
+  },
+  "lieu-vieux-port": {
+    "nom": "lieu-vieux-port",
+    "source": "recu/chez-nous-10.jpg",
+    "role": "galerie",
+    "alt": "Le port et la grande roue",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "39b74d52e89146c9",
+    "ratio": "4:3",
+    "largeurs": [
+      480,
+      800,
+      1000
+    ],
+    "mobile": null,
+    "cadrage": "45% 58%",
+    "sujet": {
+      "x": 15.3,
+      "y": 44.1,
+      "l": 61.5,
+      "h": 26.5
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.6,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.32,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.22,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.14,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 860,
+      "height": 645,
+      "source": [
+        1000,
+        645
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1000 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,16 fois (source de 860 px après recadrage)"
+    ],
+    "fichiers": [
+      "lieu-vieux-port-480.webp",
+      "lieu-vieux-port-800.webp",
+      "lieu-vieux-port-1000.webp"
+    ],
+    "poids": {
+      "lieu-vieux-port-480.webp": 31232,
+      "lieu-vieux-port-800.webp": 77894,
+      "lieu-vieux-port-1000.webp": 100784
+    },
+    "media": "c.media({ nom: 'lieu-vieux-port', alt: \"Le port et la grande roue\", cadrage: '45% 58%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 3' })"
+  },
+  "appel-chez-nous": {
+    "nom": "appel-chez-nous",
+    "source": "recu/villa-boheme-23.png",
+    "role": "section-fond",
+    "alt": "Kiosque et jardin de La Bohème au soleil couchant",
+    "grok": false,
+    "mention": null,
+    "beaute": 5,
+    "empreinte": "4fd605400945ff9c",
+    "ratio": "16:9",
+    "largeurs": [
+      960,
+      1440,
+      1535
+    ],
+    "mobile": {
+      "ratio": "9:16",
+      "largeurs": [
+        640
+      ],
+      "cadrage": "35% 57%"
+    },
+    "cadrage": "71% 66%",
+    "sujet": {
+      "x": 62.5,
+      "y": 39.2,
+      "l": 33.1,
+      "h": 39
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.44,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.31,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.27,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.17,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": "haut",
+    "recadrage": {
+      "left": 0,
+      "top": 14,
+      "width": 1535,
+      "height": 863,
+      "source": [
+        1535,
+        1024
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "version téléphone sans 1080 px (source trop petite)"
+    ],
+    "fichiers": [
+      "appel-chez-nous-960.webp",
+      "appel-chez-nous-1440.webp",
+      "appel-chez-nous-1535.webp",
+      "appel-chez-nous-mobile-640.webp"
+    ],
+    "poids": {
+      "appel-chez-nous-960.webp": 114560,
+      "appel-chez-nous-1440.webp": 205456,
+      "appel-chez-nous-1535.webp": 223038,
+      "appel-chez-nous-mobile-640.webp": 121400
+    },
+    "media": "c.media({ nom: 'appel-chez-nous', alt: \"Kiosque et jardin de La Bohème au soleil couchant\", cadrage: '71% 66%', cadrageMobile: '35% 57%', sizes: '100vw' })"
+  },
+  "ouverture-renseignements": {
+    "nom": "ouverture-renseignements",
+    "source": "recu/villa-aiguebonne-15.png",
+    "role": "ouverture",
+    "alt": "Table de terrasse à l’ombre d’un arbre à Aiguebonne, la mer au loin",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "9a5c6e62a4d2445c",
+    "ratio": "4:3",
+    "largeurs": [
+      640,
+      960,
+      1280,
+      1448
+    ],
+    "mobile": {
+      "ratio": "4:5",
+      "largeurs": [
+        640,
+        1080
+      ],
+      "cadrage": "50% 46%"
+    },
+    "cadrage": "43% 46%",
+    "sujet": {
+      "x": 22.1,
+      "y": 32.4,
+      "l": 41.2,
+      "h": 27.9
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.26,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.26,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.23,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.2,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1448,
+      "height": 1086,
+      "source": [
+        1448,
+        1086
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "ouverture-renseignements-640.webp",
+      "ouverture-renseignements-960.webp",
+      "ouverture-renseignements-1280.webp",
+      "ouverture-renseignements-1448.webp",
+      "ouverture-renseignements-mobile-640.webp",
+      "ouverture-renseignements-mobile-1080.webp"
+    ],
+    "poids": {
+      "ouverture-renseignements-640.webp": 91926,
+      "ouverture-renseignements-960.webp": 182178,
+      "ouverture-renseignements-1280.webp": 280622,
+      "ouverture-renseignements-1448.webp": 275662,
+      "ouverture-renseignements-mobile-640.webp": 127460,
+      "ouverture-renseignements-mobile-1080.webp": 245194
+    },
+    "media": "c.media({ nom: 'ouverture-renseignements', alt: \"Table de terrasse à l’ombre d’un arbre à Aiguebonne, la mer au loin\", cadrage: '43% 46%', cadrageMobile: '50% 46%', sizes: '100vw', priorite: true })"
+  },
+  "page-404": {
+    "nom": "page-404",
+    "source": "recu/grok/g-404.png",
+    "role": "404",
+    "alt": "Une clé laissée seule sur la marche d’une terrasse, volets fermés",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "82423cc1c2fd209b",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      960,
+      1168
+    ],
+    "mobile": null,
+    "cadrage": "33% 41%",
+    "sujet": {
+      "x": 0,
+      "y": 4.5,
+      "l": 90.6,
+      "h": 82.3
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.09,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.08,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.01,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1600,
+      "height": 1067,
+      "source": [
+        1600,
+        1074
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "page-404-640.webp",
+      "page-404-960.webp",
+      "page-404-1168.webp"
+    ],
+    "poids": {
+      "page-404-640.webp": 40590,
+      "page-404-960.webp": 72052,
+      "page-404-1168.webp": 93326
+    },
+    "media": "c.media({ nom: 'page-404', alt: \"Une clé laissée seule sur la marche d’une terrasse, volets fermés\", cadrage: '33% 41%', sizes: '100vw', ratio: '3 / 2' })"
+  }
+}

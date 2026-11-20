@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="fr" data-v="1">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Chez nous · Saint-Raphaël et l’Estérel</title>
+<meta name="description" content="Plages, criques, Île d’Or, rade d’Agay, Corniche d’Or et massif de l’Estérel : Saint-Raphaël, entre Cannes et Saint-Tropez.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://superhostraph-maquette.vercel.app/chez-nous">
+<style>:root{--fond:#f6f1e9;--texte:#1e2a2f;--voile-fond:#12303f;--ouverture-fond:#12303f;--menu-fond:#f6f1e9}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) [data-voile] { transform: none; visibility: visible; } html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var mode = type === 'back_forward' ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/fonts/noto-serif-display-500.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/albert-sans-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#f6f1e9">
+<link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Madame&amp;Monsieur">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Chez nous · Saint-Raphaël et l’Estérel">
+<meta property="og:description" content="Plages, criques, Île d’Or, rade d’Agay, Corniche d’Or et massif de l’Estérel : Saint-Raphaël, entre Cannes et Saint-Tropez.">
+<meta property="og:url" content="https://superhostraph-maquette.vercel.app/chez-nous">
+<meta property="og:image" content="https://superhostraph-maquette.vercel.app/assets/partage/chez-nous-fr.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="L’Île d’Or et sa tour au large des rochers du Dramont">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LodgingBusiness","name":"Madame&Monsieur","description":"Conciergerie privée : collection de villas en location saisonnière à Saint-Raphaël, de Valescure à Anthéor.","telephone":"+33643780223","email":"contact@maconciergeriesaintraphael.fr","address":{"@type":"PostalAddress","streetAddress":"55, allée de la Voie Lactée","postalCode":"83700","addressLocality":"Saint-Raphaël","addressCountry":"FR"},"areaServed":"Saint-Raphaël, Var","sameAs":["https://www.instagram.com/madametmonsieur_conciergerie/"]}</script>
+</head>
+<body id="haut">
+<div data-voile data-forme="persiennes" aria-hidden="true"><div class="voile-contenu"><span class="voile-amp">&amp;</span><span data-voile-libelle>Chez nous</span></div></div>
+<div class="ouverture-panneau" data-ouverture data-gouttiere="#12303f" aria-hidden="true">
+  <div class="volet volet--g"><div class="volet-lames"><span class="lame" style="--i:0"></span><span class="lame" style="--i:1"></span><span class="lame" style="--i:2"></span><span class="lame" style="--i:3"></span><span class="lame" style="--i:4"></span><span class="lame" style="--i:5"></span><span class="lame" style="--i:6"></span><span class="lame" style="--i:7"></span><span class="lame" style="--i:8"></span><span class="lame" style="--i:9"></span><span class="lame" style="--i:10"></span><span class="lame" style="--i:11"></span><span class="lame" style="--i:12"></span><span class="lame" style="--i:13"></span></div><span class="volet-mot">Madame</span></div>
+  <div class="volet volet--d"><div class="volet-lames"><span class="lame" style="--i:0"></span><span class="lame" style="--i:1"></span><span class="lame" style="--i:2"></span><span class="lame" style="--i:3"></span><span class="lame" style="--i:4"></span><span class="lame" style="--i:5"></span><span class="lame" style="--i:6"></span><span class="lame" style="--i:7"></span><span class="lame" style="--i:8"></span><span class="lame" style="--i:9"></span><span class="lame" style="--i:10"></span><span class="lame" style="--i:11"></span><span class="lame" style="--i:12"></span><span class="lame" style="--i:13"></span></div><span class="volet-mot">Monsieur</span></div>
+  <span class="ouverture-amp" data-ouverture-objet>&amp;</span>
+  <p class="ouverture-ligne">Conciergerie privée · Saint-Raphaël</p>
+</div>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/" data-libelle="Accueil" aria-label="Madame&amp;Monsieur, retour à l’accueil">
+      <span class="marque" aria-hidden="true">Madame<em class="marque-amp" data-marque-amp>&amp;</em>Monsieur</span>
+    </a>
+    <nav data-nav aria-label="Navigation principale">
+      <ul><li><a href="/nos-villas" data-libelle="Nos villas">Nos villas</a></li><li><a href="/chez-vous" data-libelle="Chez vous">Chez vous</a></li><li><a href="/chez-nous" data-libelle="Chez nous" aria-current="page">Chez nous</a></li><li><a href="/renseignements" data-libelle="Renseignements">Renseignements</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="bouton" href="/renseignements" data-libelle="Renseignements">Demander un séjour</a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Fermer"><span data-libelle-bouton>Menu</span></button>
+      <a class="menu-sansjs" href="#menu" data-menu-lien>Menu</a>
+    </div>
+  </div>
+</header>
+<script>/* Avant le premier affichage : rangées de la navigation (même règle que ajusterNav dans assets/js/socle/entete.js)
+   et hauteur réelle de l'en-tête, pour que rien ne saute quand le JavaScript du site prend la main. */
+(function () {
+  var h = document.documentElement, u = document.querySelector('[data-nav] ul'), e = document.querySelector('[data-entete]');
+  if (u) {
+    var deborde = function () { return u.scrollWidth > u.clientWidth + 1; }, c = deborde();
+    if (c && window.matchMedia('(min-width: 900px)').matches) {
+      h.classList.add('nav-deux-rangees'); c = deborde();
+      if (c) { h.classList.add('nav-deux-lignes'); var a = u.querySelector('a'); c = !a || u.getBoundingClientRect().height > a.getBoundingClientRect().height * 2.5; }
+      if (c) h.classList.remove('nav-deux-rangees', 'nav-deux-lignes');
+    }
+    if (c) h.classList.add('nav-compacte');
+  }
+  if (e) h.style.setProperty('--entete-h', Math.round(e.getBoundingClientRect().height) + 'px');
+})();</script>
+<span id="menu-ferme" aria-hidden="true"></span>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <p class="menu-sansjs-fermer"><a href="#menu-ferme">Fermer</a></p>
+  <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Accueil">Accueil</a></li><li style="--i:1"><a href="/nos-villas" class="menu-lien" data-libelle="Nos villas">Nos villas</a></li><li style="--i:2"><a href="/chez-vous" class="menu-lien" data-libelle="Chez vous">Chez vous</a></li><li style="--i:3"><a href="/chez-nous" class="menu-lien" data-libelle="Chez nous" aria-current="page">Chez nous</a></li><li style="--i:4"><a href="/renseignements" class="menu-lien" data-libelle="Renseignements">Renseignements</a></li></ul>
+  <p class="menu-actions"><a class="bouton" href="/renseignements" data-libelle="Renseignements">Demander un séjour</a> <a class="bouton bouton--contour" href="tel:+33643780223">Appeler 06 43 78 02 23</a></p>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="ouv ouv--bas" id="debut">
+  <figure class="media ouv-media" data-fx="parallaxe" data-fx-force="10" data-iris-centre data-boucle-css style="--cadrage:46% 34%;--cadrage-mobile:50% 31%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/ouverture-chez-nous-mobile-640.webp 640w" sizes="100vw">
+    <img src="/assets/images/ouverture-chez-nous-1440.webp" srcset="/assets/images/ouverture-chez-nous-960.webp 960w, /assets/images/ouverture-chez-nous-1440.webp 1440w, /assets/images/ouverture-chez-nous-1920.webp 1920w" sizes="100vw" alt="L’Île d’Or et sa tour au large des rochers du Dramont" width="1440" height="810" fetchpriority="high" loading="eager" decoding="async">
+  </picture>
+</figure>
+  <div class="ouv-texte conteneur">
+    <p class="surtitre ouv-anim">Saint-Raphaël</p>
+    <h1 class="ouv-titre"><span class="ligne"><span class="ligne-in">Chez nous…</span></span><span class="ligne"><span class="ligne-in"><em>c’est chez vous</em></span></span></h1>
+    <p class="ouv-actions ouv-anim"><a class="bouton" href="#lieux" data-action-principale>Voir les lieux</a> <span class="ouv-info" data-info-cle>Entre Cannes et Saint-Tropez</span></p>
+  </div>
+</section>
+<section class="station" id="station">
+  <div class="conteneur station-grille">
+    <p class="manifeste-grand" data-anime="mots">Une station balnéaire au charme méditerranéen, entre Cannes et Saint-Tropez : plages, criques, Île d’Or, rade d’Agay, Corniche d’Or et massif de l’Estérel.</p>
+  </div>
+</section>
+<section class="esterel" data-fx="plein-ecran" id="esterel">
+  <div data-collant>
+    <figure class="media esterel-media" data-fx-cible style="--cadrage:45% 47%;--cadrage-mobile:50% 47%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/esterel-mer-mobile-640.webp 640w" sizes="100vw">
+    <img src="/assets/images/esterel-mer-1440.webp" srcset="/assets/images/esterel-mer-960.webp 960w, /assets/images/esterel-mer-1440.webp 1440w, /assets/images/esterel-mer-1920.webp 1920w" sizes="100vw" alt="Rochers rouges de l’Estérel plongeant dans la mer, la côte au loin" width="1440" height="810" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    <p class="esterel-mots" aria-hidden="true"><span data-fx-ecarte="g">L’Estérel</span> <span data-fx-ecarte="d">plonge dans la mer</span></p>
+    <p class="esterel-legende" data-fx-apres>Les rochers rouges de l’Estérel, entre Agay et Anthéor.</p>
+  </div>
+</section>
+<section class="lieux" id="lieux">
+  <div class="conteneur apercu-tete">
+    <h2 class="titre-section" data-anime="lignes">Nos lieux préférés</h2>
+    <p class="chapo" data-anime>La Plage du Veillat, le Casino Barrière, les villas Belle Époque, le Vieux Port, les criques, la promenade René Coty, la ville vue de la mer, le sentier des douaniers et l’Île d’Or.</p>
+  </div>
+  <ul class="conteneur mosaique" data-anime="cascade">
+    <li class="mosaique-carte mosaique-carte--1"><figure class="media mosaique-media" style="--cadrage:40% 58%">
+  <picture>
+    <img src="/assets/images/lieu-ile-d-or-1000.webp" srcset="/assets/images/lieu-ile-d-or-480.webp 480w, /assets/images/lieu-ile-d-or-800.webp 800w, /assets/images/lieu-ile-d-or-1000.webp 1000w" sizes="(max-width: 760px) 92vw, 33vw" alt="L’Île d’Or et sa tour au coucher du soleil" width="1000" height="750" loading="lazy" decoding="async">
+  </picture>
+</figure><p>L’Île d’Or</p></li><li class="mosaique-carte mosaique-carte--2"><figure class="media mosaique-media" style="--cadrage:34% 56%">
+  <picture>
+    <img src="/assets/images/lieu-crique-1000.webp" srcset="/assets/images/lieu-crique-480.webp 480w, /assets/images/lieu-crique-800.webp 800w, /assets/images/lieu-crique-1000.webp 1000w" sizes="(max-width: 760px) 92vw, 33vw" alt="Crique entre les rochers rouges, mer bleue" width="1000" height="750" loading="lazy" decoding="async">
+  </picture>
+</figure><p>Les criques</p></li><li class="mosaique-carte mosaique-carte--3"><figure class="media mosaique-media" style="--cadrage:49% 54%">
+  <picture>
+    <img src="/assets/images/lieu-port-1000.webp" srcset="/assets/images/lieu-port-480.webp 480w, /assets/images/lieu-port-800.webp 800w, /assets/images/lieu-port-1000.webp 1000w" sizes="(max-width: 760px) 92vw, 33vw" alt="Voiliers amarrés au port, ciel bleu" width="1000" height="750" loading="lazy" decoding="async">
+  </picture>
+</figure><p>Le port</p></li><li class="mosaique-carte mosaique-carte--4"><figure class="media mosaique-media" style="--cadrage:68% 50%">
+  <picture>
+    <img src="/assets/images/lieu-belle-epoque-1000.webp" srcset="/assets/images/lieu-belle-epoque-480.webp 480w, /assets/images/lieu-belle-epoque-800.webp 800w, /assets/images/lieu-belle-epoque-1000.webp 1000w" sizes="(max-width: 760px) 92vw, 33vw" alt="Tour d’une villa Belle Époque parmi les pins" width="1000" height="751" loading="lazy" decoding="async">
+  </picture>
+</figure><p>Les villas Belle Époque</p></li><li class="mosaique-carte mosaique-carte--5"><figure class="media mosaique-media" style="--cadrage:61% 54%">
+  <picture>
+    <img src="/assets/images/lieu-coucher-1000.webp" srcset="/assets/images/lieu-coucher-480.webp 480w, /assets/images/lieu-coucher-800.webp 800w, /assets/images/lieu-coucher-1000.webp 1000w" sizes="(max-width: 760px) 92vw, 33vw" alt="Coucher de soleil orange sur la mer, depuis la plage" width="1000" height="750" loading="lazy" decoding="async">
+  </picture>
+</figure><p>Les couchers de soleil</p></li><li class="mosaique-carte mosaique-carte--6"><figure class="media mosaique-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/lieu-ville-mer-1000.webp" srcset="/assets/images/lieu-ville-mer-480.webp 480w, /assets/images/lieu-ville-mer-800.webp 800w, /assets/images/lieu-ville-mer-1000.webp 1000w" sizes="(max-width: 760px) 92vw, 33vw" alt="Saint-Raphaël vue de la mer, la grande roue et la basilique" width="1000" height="750" loading="lazy" decoding="async">
+  </picture>
+</figure><p>La ville vue de la mer</p></li><li class="mosaique-carte mosaique-carte--7"><figure class="media mosaique-media" style="--cadrage:59% 55%">
+  <picture>
+    <img src="/assets/images/lieu-sentier-1000.webp" srcset="/assets/images/lieu-sentier-480.webp 480w, /assets/images/lieu-sentier-800.webp 800w, /assets/images/lieu-sentier-1000.webp 1000w" sizes="(max-width: 760px) 92vw, 33vw" alt="Soleil couchant sous les pins, au bord de la mer" width="1000" height="750" loading="lazy" decoding="async">
+  </picture>
+</figure><p>Le bord de mer sous les pins</p></li><li class="mosaique-carte mosaique-carte--8"><figure class="media mosaique-media" style="--cadrage:65% 33%">
+  <picture>
+    <img src="/assets/images/lieu-plage-1000.webp" srcset="/assets/images/lieu-plage-480.webp 480w, /assets/images/lieu-plage-800.webp 800w, /assets/images/lieu-plage-1000.webp 1000w" sizes="(max-width: 760px) 92vw, 33vw" alt="Plage de sable et colonnes d’une pergola face à la mer" width="1000" height="750" loading="lazy" decoding="async">
+  </picture>
+</figure><p>Les plages</p></li><li class="mosaique-carte mosaique-carte--9"><figure class="media mosaique-media" style="--cadrage:48% 48%">
+  <picture>
+    <img src="/assets/images/lieu-front-de-mer-1000.webp" srcset="/assets/images/lieu-front-de-mer-480.webp 480w, /assets/images/lieu-front-de-mer-800.webp 800w, /assets/images/lieu-front-de-mer-1000.webp 1000w" sizes="(max-width: 760px) 92vw, 33vw" alt="Front de mer de Saint-Raphaël, palmiers et dômes de la basilique" width="1000" height="750" loading="lazy" decoding="async">
+  </picture>
+</figure><p>Le front de mer</p></li><li class="mosaique-carte mosaique-carte--10"><figure class="media mosaique-media" style="--cadrage:45% 58%">
+  <picture>
+    <img src="/assets/images/lieu-vieux-port-1000.webp" srcset="/assets/images/lieu-vieux-port-480.webp 480w, /assets/images/lieu-vieux-port-800.webp 800w, /assets/images/lieu-vieux-port-1000.webp 1000w" sizes="(max-width: 760px) 92vw, 33vw" alt="Le port et la grande roue" width="1000" height="750" loading="lazy" decoding="async">
+  </picture>
+</figure><p>Le Vieux Port</p></li>
+  </ul>
+</section>
+<section class="activites" id="activites">
+  <div class="conteneur activites-grille">
+    <div class="activites-tete"><h2 class="titre-section" data-anime="lignes">Ce que l’on fait ici</h2></div>
+    <ul class="activites-liste">
+      <li class="activite"><h3 data-anime="lignes">La mer</h3><p data-anime>Sports nautiques, plongée, sorties en bateau et criques à rejoindre à pied.</p></li><li class="activite"><h3 data-anime="lignes">L’Estérel</h3><p data-anime>Randonnée, vélo et VTT dans le massif aux roches rouges.</p></li><li class="activite"><h3 data-anime="lignes">Tennis et golf</h3><p data-anime>Golfs de Saint-Raphaël Valescure, de Mandelieu et des Terres Blanches.</p></li><li class="activite"><h3 data-anime="lignes">L’arrière-pays</h3><p data-anime>Villages perchés et musées des environs.</p></li><li class="activite"><h3 data-anime="lignes">La table</h3><p data-anime>Visites de grands crus et restaurants étoilés.</p></li>
+    </ul>
+  </div>
+</section>
+<section class="partenaires" id="partenaires">
+  <div class="conteneur">
+    <h2 class="titre-section" data-anime="lignes">Nos partenaires</h2>
+    <p class="chapo" data-anime>Les adresses et les professionnels avec qui nous travaillons.</p>
+    <ul class="partenaires-liste" data-anime="cascade"><li>Estérel Côte d’Azur</li><li>L’Épuisette</li><li>Le Jardin Poncet</li><li>Méditerranée Plongée</li><li>Les Rouxcettes</li><li>Taste Gourmet</li><li>Taksea</li><li>Team Yachting</li><li>Popote Traiteur</li><li>Terres de Stel</li><li>Viager Dubois</li><li>Instant BOM</li><li>Climathis</li></ul>
+  </div>
+</section>
+<section class="appel" id="appel">
+  <figure class="media appel-media" data-fx="zoom" data-fx-force="12" style="--cadrage:71% 66%;--cadrage-mobile:35% 57%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/appel-chez-nous-mobile-640.webp 640w" sizes="100vw">
+    <img src="/assets/images/appel-chez-nous-1440.webp" srcset="/assets/images/appel-chez-nous-960.webp 960w, /assets/images/appel-chez-nous-1440.webp 1440w, /assets/images/appel-chez-nous-1535.webp 1535w" sizes="100vw" alt="Kiosque et jardin de La Bohème au soleil couchant" width="1440" height="810" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  <div class="appel-carte">
+    <h2 data-anime="lignes">Le plus beau, c’est d’y être</h2>
+    <p data-anime>Choisissez votre villa : nous nous occupons du reste.</p>
+    <p class="appel-actions" data-anime><a href="/nos-villas" class="bouton" data-libelle="Nos villas">Voir les villas</a></p>
+  </div>
+</section>
+</main>
+<footer class="pied" id="pied">
+  <div class="conteneur pied-grille">
+    <div class="pied-marque">
+      <p class="marque marque--grande" aria-hidden="true">Madame<em class="marque-amp">&amp;</em>Monsieur</p>
+      <p>Conciergerie privée de villas à Saint-Raphaël, de Valescure à Anthéor.</p>
+    </div>
+    <div>
+      <p class="pied-titre">Nous joindre</p>
+      <p>55, allée de la Voie Lactée, 83700 Saint-Raphaël<br><a href="tel:+33643780223">06 43 78 02 23</a><br><a href="mailto:contact@maconciergeriesaintraphael.fr">contact@maconciergeriesaintraphael.fr</a><br><a href="https://www.instagram.com/madametmonsieur_conciergerie/" target="_blank" rel="noopener">Instagram</a></p>
+    </div>
+    <nav aria-label="Le site">
+      <p class="pied-titre">Le site</p>
+      <ul><li><a href="/" data-libelle="Accueil">Accueil</a></li><li><a href="/nos-villas" data-libelle="Nos villas">Nos villas</a></li><li><a href="/chez-vous" data-libelle="Chez vous">Chez vous</a></li><li><a href="/chez-nous" data-libelle="Chez nous" aria-current="page">Chez nous</a></li><li><a href="/renseignements" data-libelle="Renseignements">Renseignements</a></li></ul>
+    </nav>
+  </div>
+  <div class="conteneur pied-bas">
+    <p><span>Mentions légales · à compléter</span> <span id="confidentialite">Politique de confidentialité · à compléter</span></p>
+    <p>Maquette de démonstration : formulaires simulés, aucune donnée n’est envoyée.</p>
+    <p>© Madame&amp;Monsieur · <a href="#haut" data-sans-transition>Retour en haut</a></p>
+  </div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--contour" href="tel:+33643780223">Appeler</a>
+  <a class="bouton" href="/renseignements" data-libelle="Renseignements">Demander un séjour</a>
+</div>
+</body>
+</html>

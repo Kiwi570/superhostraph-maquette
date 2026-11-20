@@ -1,0 +1,6 @@
+{
+  "siteActuel": "www.superhostraph.com",
+  "pagesTypes": ["/", "/nos-villas", "/chez-vous", "/renseignements"],
+  "effets": ["voyageurs", "cote", "rangee", "bandeau"],
+  "grille": { "dispenses": {} }
+}

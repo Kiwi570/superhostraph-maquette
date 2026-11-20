@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="fr" data-v="1">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Chez vous · Les services de Madame&amp;Monsieur</title>
+<meta name="description" content="Accueil personnalisé, linge de qualité hôtelière, gouvernante, chef à domicile, transferts privés : le séjour en bien mieux.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://superhostraph-maquette.vercel.app/chez-vous">
+<style>:root{--fond:#f6f1e9;--texte:#1e2a2f;--voile-fond:#12303f;--ouverture-fond:#12303f;--menu-fond:#f6f1e9}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) [data-voile] { transform: none; visibility: visible; } html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var mode = type === 'back_forward' ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/fonts/noto-serif-display-500.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/albert-sans-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#f6f1e9">
+<link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Madame&amp;Monsieur">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Chez vous · Les services de Madame&amp;Monsieur">
+<meta property="og:description" content="Accueil personnalisé, linge de qualité hôtelière, gouvernante, chef à domicile, transferts privés : le séjour en bien mieux.">
+<meta property="og:url" content="https://superhostraph-maquette.vercel.app/chez-vous">
+<meta property="og:image" content="https://superhostraph-maquette.vercel.app/assets/partage/chez-vous-fr.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Lit fait à l’arrivée avec du linge blanc">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LodgingBusiness","name":"Madame&Monsieur","description":"Conciergerie privée : collection de villas en location saisonnière à Saint-Raphaël, de Valescure à Anthéor.","telephone":"+33643780223","email":"contact@maconciergeriesaintraphael.fr","address":{"@type":"PostalAddress","streetAddress":"55, allée de la Voie Lactée","postalCode":"83700","addressLocality":"Saint-Raphaël","addressCountry":"FR"},"areaServed":"Saint-Raphaël, Var","sameAs":["https://www.instagram.com/madametmonsieur_conciergerie/"]}</script>
+</head>
+<body id="haut">
+<div data-voile data-forme="persiennes" aria-hidden="true"><div class="voile-contenu"><span class="voile-amp">&amp;</span><span data-voile-libelle>Chez vous</span></div></div>
+<div class="ouverture-panneau" data-ouverture data-gouttiere="#12303f" aria-hidden="true">
+  <div class="volet volet--g"><div class="volet-lames"><span class="lame" style="--i:0"></span><span class="lame" style="--i:1"></span><span class="lame" style="--i:2"></span><span class="lame" style="--i:3"></span><span class="lame" style="--i:4"></span><span class="lame" style="--i:5"></span><span class="lame" style="--i:6"></span><span class="lame" style="--i:7"></span><span class="lame" style="--i:8"></span><span class="lame" style="--i:9"></span><span class="lame" style="--i:10"></span><span class="lame" style="--i:11"></span><span class="lame" style="--i:12"></span><span class="lame" style="--i:13"></span></div><span class="volet-mot">Madame</span></div>
+  <div class="volet volet--d"><div class="volet-lames"><span class="lame" style="--i:0"></span><span class="lame" style="--i:1"></span><span class="lame" style="--i:2"></span><span class="lame" style="--i:3"></span><span class="lame" style="--i:4"></span><span class="lame" style="--i:5"></span><span class="lame" style="--i:6"></span><span class="lame" style="--i:7"></span><span class="lame" style="--i:8"></span><span class="lame" style="--i:9"></span><span class="lame" style="--i:10"></span><span class="lame" style="--i:11"></span><span class="lame" style="--i:12"></span><span class="lame" style="--i:13"></span></div><span class="volet-mot">Monsieur</span></div>
+  <span class="ouverture-amp" data-ouverture-objet>&amp;</span>
+  <p class="ouverture-ligne">Conciergerie privée · Saint-Raphaël</p>
+</div>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/" data-libelle="Accueil" aria-label="Madame&amp;Monsieur, retour à l’accueil">
+      <span class="marque" aria-hidden="true">Madame<em class="marque-amp" data-marque-amp>&amp;</em>Monsieur</span>
+    </a>
+    <nav data-nav aria-label="Navigation principale">
+      <ul><li><a href="/nos-villas" data-libelle="Nos villas">Nos villas</a></li><li><a href="/chez-vous" data-libelle="Chez vous" aria-current="page">Chez vous</a></li><li><a href="/chez-nous" data-libelle="Chez nous">Chez nous</a></li><li><a href="/renseignements" data-libelle="Renseignements">Renseignements</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="bouton" href="/renseignements" data-libelle="Renseignements">Demander un séjour</a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Fermer"><span data-libelle-bouton>Menu</span></button>
+      <a class="menu-sansjs" href="#menu" data-menu-lien>Menu</a>
+    </div>
+  </div>
+</header>
+<script>/* Avant le premier affichage : rangées de la navigation (même règle que ajusterNav dans assets/js/socle/entete.js)
+   et hauteur réelle de l'en-tête, pour que rien ne saute quand le JavaScript du site prend la main. */
+(function () {
+  var h = document.documentElement, u = document.querySelector('[data-nav] ul'), e = document.querySelector('[data-entete]');
+  if (u) {
+    var deborde = function () { return u.scrollWidth > u.clientWidth + 1; }, c = deborde();
+    if (c && window.matchMedia('(min-width: 900px)').matches) {
+      h.classList.add('nav-deux-rangees'); c = deborde();
+      if (c) { h.classList.add('nav-deux-lignes'); var a = u.querySelector('a'); c = !a || u.getBoundingClientRect().height > a.getBoundingClientRect().height * 2.5; }
+      if (c) h.classList.remove('nav-deux-rangees', 'nav-deux-lignes');
+    }
+    if (c) h.classList.add('nav-compacte');
+  }
+  if (e) h.style.setProperty('--entete-h', Math.round(e.getBoundingClientRect().height) + 'px');
+})();</script>
+<span id="menu-ferme" aria-hidden="true"></span>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <p class="menu-sansjs-fermer"><a href="#menu-ferme">Fermer</a></p>
+  <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Accueil">Accueil</a></li><li style="--i:1"><a href="/nos-villas" class="menu-lien" data-libelle="Nos villas">Nos villas</a></li><li style="--i:2"><a href="/chez-vous" class="menu-lien" data-libelle="Chez vous" aria-current="page">Chez vous</a></li><li style="--i:3"><a href="/chez-nous" class="menu-lien" data-libelle="Chez nous">Chez nous</a></li><li style="--i:4"><a href="/renseignements" class="menu-lien" data-libelle="Renseignements">Renseignements</a></li></ul>
+  <p class="menu-actions"><a class="bouton" href="/renseignements" data-libelle="Renseignements">Demander un séjour</a> <a class="bouton bouton--contour" href="tel:+33643780223">Appeler 06 43 78 02 23</a></p>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="ouv-scindee" id="debut">
+  <div class="ouv-scindee-texte">
+    <p class="surtitre ouv-anim">Les services</p>
+    <h1 class="ouv-titre ouv-titre--sombre"><span class="ligne"><span class="ligne-in">Chez vous…</span></span><span class="ligne"><span class="ligne-in"><em>en bien mieux</em></span></span></h1>
+    <p class="chapo ouv-anim masque-ecran-bas">Nous voulons faire plus que vous trouver un lieu de vie pour vos vacances : des services disponibles sur demande, pendant tout votre séjour.</p>
+    <p class="ouv-actions ouv-anim"><a class="bouton" href="#services" data-action-principale>Composer mon séjour</a></p>
+    <p class="ouv-info ouv-info--sombre ouv-anim" data-info-cle>Service haute couture dès votre arrivée</p>
+  </div>
+  <div class="ouv-scindee-image" data-iris-centre>
+    <figure class="media ouv-scindee-media" data-fx="parallaxe" data-fx-force="8" style="--cadrage:50% 49%;--cadrage-mobile:50% 49%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/ouverture-chez-vous-mobile-640.webp 640w, /assets/images/ouverture-chez-vous-mobile-1080.webp 1080w" sizes="(max-width: 760px) 100vw, 55vw">
+    <img src="/assets/images/ouverture-chez-vous-1280.webp" srcset="/assets/images/ouverture-chez-vous-640.webp 640w, /assets/images/ouverture-chez-vous-960.webp 960w, /assets/images/ouverture-chez-vous-1280.webp 1280w, /assets/images/ouverture-chez-vous-1536.webp 1536w" sizes="(max-width: 760px) 100vw, 55vw" alt="Lit fait à l’arrivée, linge blanc de qualité hôtelière, à La Palmeraie" width="1280" height="853" fetchpriority="high" loading="eager" decoding="async">
+  </picture>
+</figure>
+    <span class="drap" aria-hidden="true"></span>
+  </div>
+</section>
+<section class="temps" id="temps">
+  <div class="conteneur">
+    <h2 class="titre-section" data-anime="lignes">Votre séjour, en quatre temps</h2>
+    <div class="temps-frise">
+      <svg class="temps-trait" viewBox="0 0 1000 40" preserveAspectRatio="none" aria-hidden="true" data-fx="trace"><path d="M4 22 C 160 6, 330 36, 500 20 S 840 6, 996 20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+      <ol class="temps-liste" data-anime="cascade">
+        <li><span class="temps-point" aria-hidden="true"></span><h3>Avant</h3><p>Courses faites avant votre arrivée, transfert privé depuis l’aéroport ou la gare.</p></li><li><span class="temps-point" aria-hidden="true"></span><h3>À l’arrivée</h3><p>Accueil personnalisé, kit d’accueil, lits faits avec un linge de qualité hôtelière.</p></li><li><span class="temps-point" aria-hidden="true"></span><h3>Pendant</h3><p>Ménage quotidien, gouvernante de villa, chef à domicile, coach sportif, sorties en bateau.</p></li><li><span class="temps-point" aria-hidden="true"></span><h3>Au départ</h3><p>Départ tardif possible quand la villa n’est pas relouée le soir même.</p></li>
+      </ol>
+    </div>
+  </div>
+</section>
+<section class="familles" id="services">
+  <div class="conteneur">
+    <h2 class="titre-section" data-anime="lignes">Ce que nous faisons pour vous</h2>
+  </div>
+  <article class="famille" id="service-accueil">
+    <div class="famille-images">
+      <figure class="media famille-media" data-anime="rideau" style="--cadrage:32% 50%">
+  <picture>
+    <img src="/assets/images/service-accueil-1280.webp" srcset="/assets/images/service-accueil-640.webp 640w, /assets/images/service-accueil-960.webp 960w, /assets/images/service-accueil-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 50vw" alt="Lits jumeaux faits avec des serviettes pliées en éléphants à La Soleada" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <figure class="media famille-media famille-media--petite" data-fx="parallaxe" data-fx-force="10" style="--cadrage:52% 52%">
+  <picture>
+    <img src="/assets/images/service-cles-1168.webp" srcset="/assets/images/service-cles-640.webp 640w, /assets/images/service-cles-960.webp 960w, /assets/images/service-cles-1168.webp 1168w" sizes="(max-width: 760px) 60vw, 22vw" alt="Clé de villa posée sur une serviette pliée, avec un brin de lavande" width="1168" height="779" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    </div>
+    <div class="famille-texte">
+      <h3 class="famille-titre" data-anime="lignes">Service haute couture dès votre arrivée</h3>
+      <p data-anime>Accueil personnalisé, kit d’accueil, linge de maison de qualité hôtelière, lits faits à votre arrivée : l’attention portée aux détails.</p>
+      <ul class="famille-points" data-anime="cascade"><li>Accueil personnalisé</li><li>Kit d’accueil</li><li>Linge de qualité hôtelière</li><li>Lits faits à l’arrivée</li></ul>
+    </div>
+  </article><article class="famille famille--inverse" id="service-entretien">
+    <div class="famille-images">
+      <figure class="media famille-media" data-anime="rideau" style="--cadrage:60% 41%">
+  <picture>
+    <img src="/assets/images/service-entretien-1168.webp" srcset="/assets/images/service-entretien-640.webp 640w, /assets/images/service-entretien-960.webp 960w, /assets/images/service-entretien-1168.webp 1168w" sizes="(max-width: 760px) 100vw, 50vw" alt="Îlot de cuisine impeccable, bouquet d’hortensias blancs" width="1168" height="779" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    </div>
+    <div class="famille-texte">
+      <h3 class="famille-titre" data-anime="lignes">Une maison toujours prête</h3>
+      <p data-anime>Nettoyage et préparation de la villa, ménage quotidien et, si vous le souhaitez, une gouvernante de villa dédiée.</p>
+      <ul class="famille-points" data-anime="cascade"><li>Ménage quotidien</li><li>Gouvernante de villa</li><li>Préparation avant l’arrivée</li></ul>
+    </div>
+  </article><article class="famille" id="service-mobilite">
+    <div class="famille-images">
+      <figure class="media famille-media" data-anime="rideau" style="--cadrage:49% 50%">
+  <picture>
+    <img src="/assets/images/service-transfert-1168.webp" srcset="/assets/images/service-transfert-640.webp 640w, /assets/images/service-transfert-960.webp 960w, /assets/images/service-transfert-1168.webp 1168w" sizes="(max-width: 760px) 100vw, 50vw" alt="Berline sombre portière ouverte dans une allée de lavande" width="1168" height="779" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    </div>
+    <div class="famille-texte">
+      <h3 class="famille-titre" data-anime="lignes">Vos déplacements</h3>
+      <p data-anime>Un véhicule à disposition et des transferts privés, de l’aéroport ou de la gare jusqu’à la porte de la villa.</p>
+      <ul class="famille-points" data-anime="cascade"><li>Transferts privés</li><li>Location de véhicule</li></ul>
+    </div>
+  </article><article class="famille famille--inverse" id="service-table">
+    <div class="famille-images">
+      <figure class="media famille-media" data-anime="rideau" style="--cadrage:54% 51%">
+  <picture>
+    <img src="/assets/images/service-chef-1168.webp" srcset="/assets/images/service-chef-640.webp 640w, /assets/images/service-chef-960.webp 960w, /assets/images/service-chef-1168.webp 1168w" sizes="(max-width: 760px) 100vw, 50vw" alt="Tomates anciennes, huile d’olive, basilic et casserole de cuivre sur un plan de marbre" width="1168" height="779" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <figure class="media famille-media famille-media--petite" data-fx="parallaxe" data-fx-force="10" style="--cadrage:51% 51%">
+  <picture>
+    <img src="/assets/images/service-table-1280.webp" srcset="/assets/images/service-table-640.webp 640w, /assets/images/service-table-960.webp 960w, /assets/images/service-table-1280.webp 1280w" sizes="(max-width: 760px) 60vw, 22vw" alt="Table dressée sur la terrasse des Camelias" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    </div>
+    <div class="famille-texte">
+      <h3 class="famille-titre" data-anime="lignes">À table</h3>
+      <p data-anime>Petits-déjeuners, corbeille de fruits, extras, courses faites avant votre arrivée, et un chef ou une cheffe à domicile.</p>
+      <ul class="famille-points" data-anime="cascade"><li>Petits-déjeuners</li><li>Courses avant l’arrivée</li><li>Chef à domicile</li></ul>
+    </div>
+  </article><article class="famille" id="service-famille">
+    <div class="famille-images">
+      <figure class="media famille-media" data-anime="rideau" style="--cadrage:40% 44%">
+  <picture>
+    <img src="/assets/images/service-bebe-1168.webp" srcset="/assets/images/service-bebe-640.webp 640w, /assets/images/service-bebe-960.webp 960w, /assets/images/service-bebe-1168.webp 1168w" sizes="(max-width: 760px) 100vw, 50vw" alt="Lit à barreaux blanc avec langes pliés dans une chambre ensoleillée" width="1168" height="779" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <figure class="media famille-media famille-media--petite" data-fx="parallaxe" data-fx-force="10" style="--cadrage:46% 39%">
+  <picture>
+    <img src="/assets/images/service-coach-1168.webp" srcset="/assets/images/service-coach-640.webp 640w, /assets/images/service-coach-960.webp 960w, /assets/images/service-coach-1168.webp 1168w" sizes="(max-width: 760px) 60vw, 22vw" alt="Tapis de yoga roulé et serviette sur le bord d’une piscine au lever du soleil" width="1168" height="779" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    </div>
+    <div class="famille-texte">
+      <h3 class="famille-titre" data-anime="lignes">Famille et bien-être</h3>
+      <p data-anime>Le nécessaire pour bébé prêt à votre arrivée, et un coach sportif qui vient jusqu’à vous.</p>
+      <ul class="famille-points" data-anime="cascade"><li>Nécessaire bébé</li><li>Coach sportif à domicile</li></ul>
+    </div>
+  </article><article class="famille famille--inverse" id="service-demande">
+    <div class="famille-images">
+      <figure class="media famille-media" data-anime="rideau" style="--cadrage:67% 41%">
+  <picture>
+    <img src="/assets/images/service-bateau-1168.webp" srcset="/assets/images/service-bateau-640.webp 640w, /assets/images/service-bateau-960.webp 960w, /assets/images/service-bateau-1168.webp 1168w" sizes="(max-width: 760px) 100vw, 50vw" alt="Bateau en bois amarré dans une crique turquoise entre des rochers rouges" width="1168" height="779" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    </div>
+    <div class="famille-texte">
+      <h3 class="famille-titre" data-anime="lignes">Sur demande</h3>
+      <p data-anime>Tout ce que vous pouvez désirer : une sortie en bateau, une table réservée, une envie de dernière minute. Laissez-vous guider par vos envies.</p>
+      <ul class="famille-points" data-anime="cascade"><li>Location de bateau</li><li>Services sur mesure</li></ul>
+    </div>
+  </article>
+</section>
+<section class="inclus" id="inclus">
+  <div class="conteneur inclus-grille">
+    <h2 class="titre-section" data-anime="lignes">Dans nos villas, d’office</h2>
+    <ul class="inclus-liste" data-anime="cascade">
+      <li><svg class="coche" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Linge de maison et serviettes de qualité hôtelière</li><li><svg class="coche" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Lits faits à votre arrivée</li><li><svg class="coche" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Accueil personnalisé</li><li><svg class="coche" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Ménage et désinfection selon les recommandations de l’OMS, avec un battement entre deux séjours</li><li><svg class="coche" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Arrivée avant 16 h possible si la villa est libre, confirmée le jour même</li><li><svg class="coche" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Départ tardif possible si la villa n’est pas relouée le soir</li>
+    </ul>
+  </div>
+</section>
+<section class="appel" id="appel">
+  <figure class="media appel-media" data-fx="zoom" data-fx-force="12" style="--cadrage:49% 66%;--cadrage-mobile:50% 68%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/appel-chez-vous-mobile-640.webp 640w" sizes="100vw">
+    <img src="/assets/images/appel-chez-vous-1440.webp" srcset="/assets/images/appel-chez-vous-960.webp 960w, /assets/images/appel-chez-vous-1440.webp 1440w, /assets/images/appel-chez-vous-1556.webp 1556w" sizes="100vw" alt="Piscine des Camelias et ses parasols" width="1440" height="810" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  <div class="appel-carte">
+    <h2 data-anime="lignes">Une envie particulière ?</h2>
+    <p data-anime>Sur demande, tout ce que vous pouvez désirer… Laissez-vous guider par vos envies.</p>
+    <p class="appel-actions" data-anime><a href="/renseignements" class="bouton" data-libelle="Renseignements">Demander un service</a></p>
+  </div>
+</section>
+</main>
+<footer class="pied" id="pied">
+  <div class="conteneur pied-grille">
+    <div class="pied-marque">
+      <p class="marque marque--grande" aria-hidden="true">Madame<em class="marque-amp">&amp;</em>Monsieur</p>
+      <p>Conciergerie privée de villas à Saint-Raphaël, de Valescure à Anthéor.</p>
+    </div>
+    <div>
+      <p class="pied-titre">Nous joindre</p>
+      <p>55, allée de la Voie Lactée, 83700 Saint-Raphaël<br><a href="tel:+33643780223">06 43 78 02 23</a><br><a href="mailto:contact@maconciergeriesaintraphael.fr">contact@maconciergeriesaintraphael.fr</a><br><a href="https://www.instagram.com/madametmonsieur_conciergerie/" target="_blank" rel="noopener">Instagram</a></p>
+    </div>
+    <nav aria-label="Le site">
+      <p class="pied-titre">Le site</p>
+      <ul><li><a href="/" data-libelle="Accueil">Accueil</a></li><li><a href="/nos-villas" data-libelle="Nos villas">Nos villas</a></li><li><a href="/chez-vous" data-libelle="Chez vous" aria-current="page">Chez vous</a></li><li><a href="/chez-nous" data-libelle="Chez nous">Chez nous</a></li><li><a href="/renseignements" data-libelle="Renseignements">Renseignements</a></li></ul>
+    </nav>
+  </div>
+  <div class="conteneur pied-bas">
+    <p><span>Mentions légales · à compléter</span> <span id="confidentialite">Politique de confidentialité · à compléter</span></p>
+    <p>Maquette de démonstration : formulaires simulés, aucune donnée n’est envoyée.</p>
+    <p>© Madame&amp;Monsieur · <a href="#haut" data-sans-transition>Retour en haut</a></p>
+  </div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--contour" href="tel:+33643780223">Appeler</a>
+  <a class="bouton" href="/renseignements" data-libelle="Renseignements">Demander un séjour</a>
+</div>
+</body>
+</html>

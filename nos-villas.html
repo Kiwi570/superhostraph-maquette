@@ -1,0 +1,960 @@
+<!doctype html>
+<html lang="fr" data-v="1">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nos villas · Madame&amp;Monsieur</title>
+<meta name="description" content="Dix-neuf villas de 4 à 12 voyageurs, de Valescure à Anthéor : filtrez par voyageurs, budget, piscine, vue mer et secteur.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://superhostraph-maquette.vercel.app/nos-villas">
+<style>:root{--fond:#f6f1e9;--texte:#1e2a2f;--voile-fond:#12303f;--ouverture-fond:#12303f;--menu-fond:#f6f1e9}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) [data-voile] { transform: none; visibility: visible; } html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var mode = type === 'back_forward' ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/fonts/noto-serif-display-500.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/albert-sans-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#f6f1e9">
+<link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Madame&amp;Monsieur">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Nos villas · Madame&amp;Monsieur">
+<meta property="og:description" content="Dix-neuf villas de 4 à 12 voyageurs, de Valescure à Anthéor : filtrez par voyageurs, budget, piscine, vue mer et secteur.">
+<meta property="og:url" content="https://superhostraph-maquette.vercel.app/nos-villas">
+<meta property="og:image" content="https://superhostraph-maquette.vercel.app/assets/partage/villas-fr.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Piscine à débordement face à la baie d’Agay">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LodgingBusiness","name":"Madame&Monsieur","description":"Conciergerie privée : collection de villas en location saisonnière à Saint-Raphaël, de Valescure à Anthéor.","telephone":"+33643780223","email":"contact@maconciergeriesaintraphael.fr","address":{"@type":"PostalAddress","streetAddress":"55, allée de la Voie Lactée","postalCode":"83700","addressLocality":"Saint-Raphaël","addressCountry":"FR"},"areaServed":"Saint-Raphaël, Var","sameAs":["https://www.instagram.com/madametmonsieur_conciergerie/"]}</script>
+</head>
+<body id="haut">
+<div data-voile data-forme="persiennes" aria-hidden="true"><div class="voile-contenu"><span class="voile-amp">&amp;</span><span data-voile-libelle>Nos villas</span></div></div>
+<div class="ouverture-panneau" data-ouverture data-gouttiere="#12303f" aria-hidden="true">
+  <div class="volet volet--g"><div class="volet-lames"><span class="lame" style="--i:0"></span><span class="lame" style="--i:1"></span><span class="lame" style="--i:2"></span><span class="lame" style="--i:3"></span><span class="lame" style="--i:4"></span><span class="lame" style="--i:5"></span><span class="lame" style="--i:6"></span><span class="lame" style="--i:7"></span><span class="lame" style="--i:8"></span><span class="lame" style="--i:9"></span><span class="lame" style="--i:10"></span><span class="lame" style="--i:11"></span><span class="lame" style="--i:12"></span><span class="lame" style="--i:13"></span></div><span class="volet-mot">Madame</span></div>
+  <div class="volet volet--d"><div class="volet-lames"><span class="lame" style="--i:0"></span><span class="lame" style="--i:1"></span><span class="lame" style="--i:2"></span><span class="lame" style="--i:3"></span><span class="lame" style="--i:4"></span><span class="lame" style="--i:5"></span><span class="lame" style="--i:6"></span><span class="lame" style="--i:7"></span><span class="lame" style="--i:8"></span><span class="lame" style="--i:9"></span><span class="lame" style="--i:10"></span><span class="lame" style="--i:11"></span><span class="lame" style="--i:12"></span><span class="lame" style="--i:13"></span></div><span class="volet-mot">Monsieur</span></div>
+  <span class="ouverture-amp" data-ouverture-objet>&amp;</span>
+  <p class="ouverture-ligne">Conciergerie privée · Saint-Raphaël</p>
+</div>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/" data-libelle="Accueil" aria-label="Madame&amp;Monsieur, retour à l’accueil">
+      <span class="marque" aria-hidden="true">Madame<em class="marque-amp" data-marque-amp>&amp;</em>Monsieur</span>
+    </a>
+    <nav data-nav aria-label="Navigation principale">
+      <ul><li><a href="/nos-villas" data-libelle="Nos villas" aria-current="page">Nos villas</a></li><li><a href="/chez-vous" data-libelle="Chez vous">Chez vous</a></li><li><a href="/chez-nous" data-libelle="Chez nous">Chez nous</a></li><li><a href="/renseignements" data-libelle="Renseignements">Renseignements</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="bouton" href="/renseignements" data-libelle="Renseignements">Demander un séjour</a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Fermer"><span data-libelle-bouton>Menu</span></button>
+      <a class="menu-sansjs" href="#menu" data-menu-lien>Menu</a>
+    </div>
+  </div>
+</header>
+<script>/* Avant le premier affichage : rangées de la navigation (même règle que ajusterNav dans assets/js/socle/entete.js)
+   et hauteur réelle de l'en-tête, pour que rien ne saute quand le JavaScript du site prend la main. */
+(function () {
+  var h = document.documentElement, u = document.querySelector('[data-nav] ul'), e = document.querySelector('[data-entete]');
+  if (u) {
+    var deborde = function () { return u.scrollWidth > u.clientWidth + 1; }, c = deborde();
+    if (c && window.matchMedia('(min-width: 900px)').matches) {
+      h.classList.add('nav-deux-rangees'); c = deborde();
+      if (c) { h.classList.add('nav-deux-lignes'); var a = u.querySelector('a'); c = !a || u.getBoundingClientRect().height > a.getBoundingClientRect().height * 2.5; }
+      if (c) h.classList.remove('nav-deux-rangees', 'nav-deux-lignes');
+    }
+    if (c) h.classList.add('nav-compacte');
+  }
+  if (e) h.style.setProperty('--entete-h', Math.round(e.getBoundingClientRect().height) + 'px');
+})();</script>
+<span id="menu-ferme" aria-hidden="true"></span>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <p class="menu-sansjs-fermer"><a href="#menu-ferme">Fermer</a></p>
+  <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Accueil">Accueil</a></li><li style="--i:1"><a href="/nos-villas" class="menu-lien" data-libelle="Nos villas" aria-current="page">Nos villas</a></li><li style="--i:2"><a href="/chez-vous" class="menu-lien" data-libelle="Chez vous">Chez vous</a></li><li style="--i:3"><a href="/chez-nous" class="menu-lien" data-libelle="Chez nous">Chez nous</a></li><li style="--i:4"><a href="/renseignements" class="menu-lien" data-libelle="Renseignements">Renseignements</a></li></ul>
+  <p class="menu-actions"><a class="bouton" href="/renseignements" data-libelle="Renseignements">Demander un séjour</a> <a class="bouton bouton--contour" href="tel:+33643780223">Appeler 06 43 78 02 23</a></p>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="ouv-villas" id="debut">
+  <div class="conteneur ouv-villas-texte">
+    <p class="surtitre ouv-anim">La collection</p>
+    <h1 class="ouv-titre ouv-titre--sombre"><span class="ligne"><span class="ligne-in">Dix-neuf villas,</span></span><span class="ligne"><span class="ligne-in"><em>une signature</em></span></span></h1>
+    <div class="ouv-villas-cote ouv-anim">
+      <p class="masque-ecran-bas">De 4 à 12 voyageurs, de 140 à 980 € la nuit, des pins de Valescure aux rochers rouges d’Anthéor.</p>
+      <p class="ouv-actions"><a class="bouton" href="#catalogue" data-action-principale>Choisir ma villa</a> <span class="ouv-info ouv-info--sombre" data-info-cle>19 villas · de 140 à 980 € la nuit</span></p>
+    </div>
+  </div>
+  <div class="bandeau" data-bandeau data-effet="bandeau" data-iris-centre aria-hidden="true">
+    <ul class="bandeau-piste" data-bandeau-piste>
+      <li class="bandeau-carte"><figure class="media bandeau-media" style="--cadrage:43% 44%">
+  <picture>
+    <img src="/assets/images/villa-palmeraie-2-1280.webp" srcset="/assets/images/villa-palmeraie-2-640.webp 640w, /assets/images/villa-palmeraie-2-960.webp 960w, /assets/images/villa-palmeraie-2-1280.webp 1280w" sizes="(max-width: 760px) 60vw, 26vw" alt="Piscine à débordement de La Palmeraie face à la baie d’Agay" width="1280" height="853" fetchpriority="high" loading="eager" decoding="async">
+  </picture>
+</figure></li><li class="bandeau-carte bandeau-carte--bas"><figure class="media bandeau-media" style="--cadrage:52% 54%">
+  <picture>
+    <img src="/assets/images/villa-boheme-1-1280.webp" srcset="/assets/images/villa-boheme-1-640.webp 640w, /assets/images/villa-boheme-1-960.webp 960w, /assets/images/villa-boheme-1-1280.webp 1280w" sizes="(max-width: 760px) 60vw, 26vw" alt="La Bohème, sa piscine et ses palmiers" width="1280" height="960" fetchpriority="high" loading="eager" decoding="async">
+  </picture>
+</figure></li><li class="bandeau-carte"><figure class="media bandeau-media" style="--cadrage:50% 47%">
+  <picture>
+    <img src="/assets/images/villa-uccelli-1-1280.webp" srcset="/assets/images/villa-uccelli-1-640.webp 640w, /assets/images/villa-uccelli-1-960.webp 960w, /assets/images/villa-uccelli-1-1280.webp 1280w" sizes="(max-width: 760px) 60vw, 26vw" alt="Villa contemporaine Uccelli et sa piscine privée" width="1280" height="960" fetchpriority="high" loading="eager" decoding="async">
+  </picture>
+</figure></li><li class="bandeau-carte bandeau-carte--bas"><figure class="media bandeau-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/villa-estaou-1-1280.webp" srcset="/assets/images/villa-estaou-1-640.webp 640w, /assets/images/villa-estaou-1-960.webp 960w, /assets/images/villa-estaou-1-1280.webp 1280w" sizes="(max-width: 760px) 60vw, 26vw" alt="Piscine d’Estaou bordée de lauriers-roses et de transats rouges" width="1280" height="960" loading="lazy" decoding="async">
+  </picture>
+</figure></li><li class="bandeau-carte"><figure class="media bandeau-media" style="--cadrage:50% 48%">
+  <picture>
+    <img src="/assets/images/villa-alice-1-1280.webp" srcset="/assets/images/villa-alice-1-640.webp 640w, /assets/images/villa-alice-1-960.webp 960w, /assets/images/villa-alice-1-1280.webp 1280w" sizes="(max-width: 760px) 60vw, 26vw" alt="Villa Alice, sa piscine et le pool-house plein sud" width="1280" height="960" loading="lazy" decoding="async">
+  </picture>
+</figure></li><li class="bandeau-carte bandeau-carte--bas"><figure class="media bandeau-media" style="--cadrage:47% 49%">
+  <picture>
+    <img src="/assets/images/villa-harmony-1-1280.webp" srcset="/assets/images/villa-harmony-1-640.webp 640w, /assets/images/villa-harmony-1-960.webp 960w, /assets/images/villa-harmony-1-1280.webp 1280w" sizes="(max-width: 760px) 60vw, 26vw" alt="Villa Harmony, piscine et terrasses" width="1280" height="960" loading="lazy" decoding="async">
+  </picture>
+</figure></li><li class="bandeau-carte"><figure class="media bandeau-media" style="--cadrage:50% 45%">
+  <picture>
+    <img src="/assets/images/villa-chez-nous-1-1280.webp" srcset="/assets/images/villa-chez-nous-1-640.webp 640w, /assets/images/villa-chez-nous-1-960.webp 960w, /assets/images/villa-chez-nous-1-1280.webp 1280w" sizes="(max-width: 760px) 60vw, 26vw" alt="Maison de caractère Chez nous et sa piscine" width="1280" height="960" loading="lazy" decoding="async">
+  </picture>
+</figure></li><li class="bandeau-carte bandeau-carte--bas"><figure class="media bandeau-media" style="--cadrage:50% 55%">
+  <picture>
+    <img src="/assets/images/villa-camelias-1-1280.webp" srcset="/assets/images/villa-camelias-1-640.webp 640w, /assets/images/villa-camelias-1-960.webp 960w, /assets/images/villa-camelias-1-1280.webp 1280w" sizes="(max-width: 760px) 60vw, 26vw" alt="Terrasse ombragée et piscine des Camelias" width="1280" height="960" loading="lazy" decoding="async">
+  </picture>
+</figure></li><li class="bandeau-carte"><figure class="media bandeau-media" style="--cadrage:50% 56%">
+  <picture>
+    <img src="/assets/images/villa-aiguebonne-1-1280.webp" srcset="/assets/images/villa-aiguebonne-1-640.webp 640w, /assets/images/villa-aiguebonne-1-960.webp 960w, /assets/images/villa-aiguebonne-1-1280.webp 1280w" sizes="(max-width: 760px) 60vw, 26vw" alt="Grande terrasse d’Aiguebonne face à la mer" width="1280" height="960" loading="lazy" decoding="async">
+  </picture>
+</figure></li><li class="bandeau-carte bandeau-carte--bas"><figure class="media bandeau-media" style="--cadrage:50% 52%">
+  <picture>
+    <img src="/assets/images/villa-soleada-1-1280.webp" srcset="/assets/images/villa-soleada-1-640.webp 640w, /assets/images/villa-soleada-1-960.webp 960w, /assets/images/villa-soleada-1-1280.webp 1280w" sizes="(max-width: 760px) 60vw, 26vw" alt="Terrasse de La Soleada au soleil couchant" width="1280" height="960" loading="lazy" decoding="async">
+  </picture>
+</figure></li>
+    </ul>
+  </div>
+</section>
+<section class="catalogue" id="catalogue">
+  <div class="conteneur">
+    <h2 class="catalogue-titre" data-anime="lignes">Toutes nos villas</h2>
+    <form class="filtres" data-filtres aria-label="Filtrer les villas">
+      <fieldset class="filtre">
+        <legend>Voyageurs</legend>
+        <div class="puces"><label class="puce"><input type="radio" name="voyageurs" value="" checked><span>Tous</span></label><label class="puce"><input type="radio" name="voyageurs" value="4"><span>4+</span></label><label class="puce"><input type="radio" name="voyageurs" value="6"><span>6+</span></label><label class="puce"><input type="radio" name="voyageurs" value="8"><span>8+</span></label><label class="puce"><input type="radio" name="voyageurs" value="10"><span>10+</span></label><label class="puce"><input type="radio" name="voyageurs" value="12"><span>12</span></label></div>
+      </fieldset>
+      <fieldset class="filtre">
+        <legend>Budget par nuit</legend>
+        <div class="puces"><label class="puce"><input type="radio" name="budget" value="" checked><span>Tous</span></label><label class="puce"><input type="radio" name="budget" value="500"><span>Jusqu’à 500 €</span></label><label class="puce"><input type="radio" name="budget" value="700"><span>Jusqu’à 700 €</span></label></div>
+      </fieldset>
+      <fieldset class="filtre">
+        <legend class="visuellement-cache">Piscine · Vue mer</legend>
+        <div class="puces"><label class="puce"><input type="checkbox" name="piscine" value="1"><span>Piscine</span></label><label class="puce"><input type="checkbox" name="vue-mer" value="1"><span>Vue mer</span></label></div>
+      </fieldset>
+      <div class="filtre filtre--secteur">
+        <label for="f-secteur">Secteur</label>
+        <select id="f-secteur" name="secteur"><option value="">Tous</option><option value="valescure">Valescure</option><option value="boulouris">Boulouris</option><option value="santa-lucia">Santa Lucia</option><option value="dramont">Le Dramont</option><option value="agay">Agay · Cap Estérel</option><option value="antheor">Anthéor</option></select>
+      </div>
+    </form>
+    <div class="catalogue-barre">
+      <p class="catalogue-compte" aria-live="polite"><strong data-compte>19</strong> <span data-compte-mot>villas</span></p>
+      <button type="button" class="lien-bouton" data-effacer hidden>Effacer les filtres</button>
+    </div>
+    <ul class="catalogue-grille" data-catalogue>
+      <li class="villa" id="villa-palmeraie" data-villa="palmeraie" data-voyageurs="12" data-prix="350" data-prix-max="650" data-secteur="agay" data-piscine="1" data-vue-mer="1">
+  <article class="villa-carte" data-anime>
+    <div class="villa-image"><figure class="media villa-media" style="--cadrage:50% 43%">
+  <picture>
+    <img src="/assets/images/villa-palmeraie-1-1280.webp" srcset="/assets/images/villa-palmeraie-1-640.webp 640w, /assets/images/villa-palmeraie-1-960.webp 960w, /assets/images/villa-palmeraie-1-1280.webp 1280w" sizes="(max-width: 760px) 92vw, (max-width: 1100px) 45vw, 30vw" alt="La Palmeraie se reflète dans sa piscine à débordement" width="1280" height="960" loading="lazy" decoding="async">
+  </picture>
+</figure><span class="villa-badges"></span></div>
+    <div class="villa-texte">
+      <p class="villa-secteur">Agay · Cap Estérel</p>
+      <h3 class="villa-nom">La Palmeraie</h3>
+      <p class="villa-capacite">12 voyageurs · 6 chambres · 4 salles de bain</p>
+      <p class="villa-prix">de 350 à 650 € <span class="prix-nuit">la nuit</span></p>
+    </div>
+    <p class="villa-phrase">Retrouvez l’authenticité de la Baie d’Agay d’antan dans cette villa intimiste nichée au cœur de l’Estérel.</p>
+    <p class="villa-actions">
+      <button type="button" class="bouton bouton--contour bouton--petit" data-ouvrir-fiche="palmeraie" aria-haspopup="dialog">Voir la villa<span class="visuellement-cache"> La Palmeraie</span></button>
+      <a href="/renseignements?villa=palmeraie&amp;adultes=4" class="bouton bouton--petit" data-libelle="Renseignements">Demander cette villa<span class="visuellement-cache"> La Palmeraie</span></a>
+    </p>
+    <template data-fiche-galerie><figure class="media fiche-media" style="--cadrage:50% 43%">
+  <picture>
+    <img src="/assets/images/villa-palmeraie-1-1280.webp" srcset="/assets/images/villa-palmeraie-1-640.webp 640w, /assets/images/villa-palmeraie-1-960.webp 960w, /assets/images/villa-palmeraie-1-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="La Palmeraie se reflète dans sa piscine à débordement" width="1280" height="960" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-media" style="--cadrage:43% 44%">
+  <picture>
+    <img src="/assets/images/villa-palmeraie-2-1280.webp" srcset="/assets/images/villa-palmeraie-2-640.webp 640w, /assets/images/villa-palmeraie-2-960.webp 960w, /assets/images/villa-palmeraie-2-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Piscine à débordement de La Palmeraie face à la baie d’Agay" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-media" style="--cadrage:50% 56%">
+  <picture>
+    <img src="/assets/images/villa-palmeraie-3-1280.webp" srcset="/assets/images/villa-palmeraie-3-640.webp 640w, /assets/images/villa-palmeraie-3-960.webp 960w, /assets/images/villa-palmeraie-3-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Transats de La Palmeraie face aux rochers rouges de l’Estérel" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-media" style="--cadrage:53% 49%">
+  <picture>
+    <img src="/assets/images/villa-palmeraie-4-1280.webp" srcset="/assets/images/villa-palmeraie-4-640.webp 640w, /assets/images/villa-palmeraie-4-960.webp 960w, /assets/images/villa-palmeraie-4-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Salon sous la pergola de La Palmeraie" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure></template>
+    <template data-fiche-atouts>{"atouts":["Piscine à débordement","Au cœur de l’Estérel"],"etoiles":false,"piscine":true,"vueMer":true}</template>
+  </article>
+</li><li class="villa" id="villa-boheme" data-villa="boheme" data-voyageurs="12" data-prix="350" data-prix-max="700" data-secteur="antheor" data-piscine="1" data-vue-mer="1">
+  <article class="villa-carte" data-anime>
+    <div class="villa-image"><figure class="media villa-media" style="--cadrage:52% 54%">
+  <picture>
+    <img src="/assets/images/villa-boheme-1-1280.webp" srcset="/assets/images/villa-boheme-1-640.webp 640w, /assets/images/villa-boheme-1-960.webp 960w, /assets/images/villa-boheme-1-1280.webp 1280w" sizes="(max-width: 760px) 92vw, (max-width: 1100px) 45vw, 30vw" alt="La Bohème, sa piscine et ses palmiers" width="1280" height="960" loading="lazy" decoding="async">
+  </picture>
+</figure><span class="villa-badges"><span class="badge">Meublé de tourisme ★★★★★</span></span></div>
+    <div class="villa-texte">
+      <p class="villa-secteur">Anthéor</p>
+      <h3 class="villa-nom">La Bohème</h3>
+      <p class="villa-capacite">12 voyageurs · 5 chambres · 4 salles de bain</p>
+      <p class="villa-prix">de 350 à 700 € <span class="prix-nuit">la nuit</span></p>
+    </div>
+    <p class="villa-phrase">Nouveauté sublime, vue féérique mer et Estérel, piscine privée. Un véritable havre de paix.</p>
+    <p class="villa-actions">
+      <button type="button" class="bouton bouton--contour bouton--petit" data-ouvrir-fiche="boheme" aria-haspopup="dialog">Voir la villa<span class="visuellement-cache"> La Bohème</span></button>
+      <a href="/renseignements?villa=boheme&amp;adultes=4" class="bouton bouton--petit" data-libelle="Renseignements">Demander cette villa<span class="visuellement-cache"> La Bohème</span></a>
+    </p>
+    <template data-fiche-galerie><figure class="media fiche-media" style="--cadrage:52% 54%">
+  <picture>
+    <img src="/assets/images/villa-boheme-1-1280.webp" srcset="/assets/images/villa-boheme-1-640.webp 640w, /assets/images/villa-boheme-1-960.webp 960w, /assets/images/villa-boheme-1-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="La Bohème, sa piscine et ses palmiers" width="1280" height="960" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-media" style="--cadrage:50% 62%">
+  <picture>
+    <img src="/assets/images/villa-boheme-2-1280.webp" srcset="/assets/images/villa-boheme-2-640.webp 640w, /assets/images/villa-boheme-2-960.webp 960w, /assets/images/villa-boheme-2-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="La piscine de La Bohème vue à travers une arche" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-media" style="--cadrage:58% 61%">
+  <picture>
+    <img src="/assets/images/villa-boheme-3-1280.webp" srcset="/assets/images/villa-boheme-3-640.webp 640w, /assets/images/villa-boheme-3-960.webp 960w, /assets/images/villa-boheme-3-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Piscine de La Bohème au coucher du soleil" width="1280" height="854" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-media" style="--cadrage:48% 52%">
+  <picture>
+    <img src="/assets/images/villa-boheme-4-1280.webp" srcset="/assets/images/villa-boheme-4-640.webp 640w, /assets/images/villa-boheme-4-960.webp 960w, /assets/images/villa-boheme-4-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Salon de La Bohème sous la charpente" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure></template>
+    <template data-fiche-atouts>{"atouts":["Vue mer et Estérel","Piscine privée"],"etoiles":true,"piscine":true,"vueMer":true}</template>
+  </article>
+</li><li class="villa" id="villa-uccelli" data-villa="uccelli" data-voyageurs="12" data-prix="400" data-prix-max="950" data-secteur="boulouris" data-piscine="1" data-vue-mer="0">
+  <article class="villa-carte" data-anime>
+    <div class="villa-image"><figure class="media villa-media" style="--cadrage:50% 47%">
+  <picture>
+    <img src="/assets/images/villa-uccelli-1-1280.webp" srcset="/assets/images/villa-uccelli-1-640.webp 640w, /assets/images/villa-uccelli-1-960.webp 960w, /assets/images/villa-uccelli-1-1280.webp 1280w" sizes="(max-width: 760px) 92vw, (max-width: 1100px) 45vw, 30vw" alt="Villa contemporaine Uccelli et sa piscine privée" width="1280" height="960" loading="lazy" decoding="async">
+  </picture>
+</figure><span class="villa-badges"></span></div>
+    <div class="villa-texte">
+      <p class="villa-secteur">Boulouris</p>
+      <h3 class="villa-nom">Uccelli</h3>
+      <p class="villa-capacite">12 voyageurs · 6 chambres · 4 salles de bain</p>
+      <p class="villa-prix">de 400 à 950 € <span class="prix-nuit">la nuit</span></p>
+    </div>
+    <p class="villa-phrase">Sur les hauteurs de Boulouris, cette villa contemporaine avec sa piscine privée a tout pour vous séduire.</p>
+    <p class="villa-actions">
+      <button type="button" class="bouton bouton--contour bouton--petit" data-ouvrir-fiche="uccelli" aria-haspopup="dialog">Voir la villa<span class="visuellement-cache"> Uccelli</span></button>
+      <a href="/renseignements?villa=uccelli&amp;adultes=4" class="bouton bouton--petit" data-libelle="Renseignements">Demander cette villa<span class="visuellement-cache"> Uccelli</span></a>
+    </p>
+    <template data-fiche-galerie><figure class="media fiche-media" style="--cadrage:50% 47%">
+  <picture>
+    <img src="/assets/images/villa-uccelli-1-1280.webp" srcset="/assets/images/villa-uccelli-1-640.webp 640w, /assets/images/villa-uccelli-1-960.webp 960w, /assets/images/villa-uccelli-1-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Villa contemporaine Uccelli et sa piscine privée" width="1280" height="960" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-media" style="--cadrage:50% 46%">
+  <picture>
+    <img src="/assets/images/villa-uccelli-2-1280.webp" srcset="/assets/images/villa-uccelli-2-640.webp 640w, /assets/images/villa-uccelli-2-960.webp 960w, /assets/images/villa-uccelli-2-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Uccelli se reflète dans sa piscine" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-media" style="--cadrage:42% 42%">
+  <picture>
+    <img src="/assets/images/villa-uccelli-3-1280.webp" srcset="/assets/images/villa-uccelli-3-640.webp 640w, /assets/images/villa-uccelli-3-960.webp 960w, /assets/images/villa-uccelli-3-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Table pour douze dans la cuisine d’Uccelli" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-media" style="--cadrage:49% 50%">
+  <picture>
+    <img src="/assets/images/villa-uccelli-4-1280.webp" srcset="/assets/images/villa-uccelli-4-640.webp 640w, /assets/images/villa-uccelli-4-960.webp 960w, /assets/images/villa-uccelli-4-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Salon d’extérieur d’Uccelli au bord de l’eau" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure></template>
+    <template data-fiche-atouts>{"atouts":["Villa contemporaine","Piscine privée"],"etoiles":false,"piscine":true,"vueMer":false}</template>
+  </article>
+</li><li class="villa" id="villa-alice" data-villa="alice" data-voyageurs="12" data-prix="600" data-prix-max="850" data-secteur="valescure" data-piscine="1" data-vue-mer="0">
+  <article class="villa-carte" data-anime>
+    <div class="villa-image"><figure class="media villa-media" style="--cadrage:50% 48%">
+  <picture>
+    <img src="/assets/images/villa-alice-1-1280.webp" srcset="/assets/images/villa-alice-1-640.webp 640w, /assets/images/villa-alice-1-960.webp 960w, /assets/images/villa-alice-1-1280.webp 1280w" sizes="(max-width: 760px) 92vw, (max-width: 1100px) 45vw, 30vw" alt="Villa Alice, sa piscine et le pool-house plein sud" width="1280" height="960" loading="lazy" decoding="async">
+  </picture>
+</figure><span class="villa-badges"></span></div>
+    <div class="villa-texte">
+      <p class="villa-secteur">Valescure</p>
+      <h3 class="villa-nom">Alice</h3>
+      <p class="villa-capacite">12 voyageurs · 5 chambres · 4 salles de bain</p>
+      <p class="villa-prix">de 600 à 850 € <span class="prix-nuit">la nuit</span></p>
+    </div>
+    <p class="villa-phrase">Ici, on profite de la nature, de la piscine, du pool-house équipé d’une cuisine d’été, le tout exposé plein sud.</p>
+    <p class="villa-actions">
+      <button type="button" class="bouton bouton--contour bouton--petit" data-ouvrir-fiche="alice" aria-haspopup="dialog">Voir la villa<span class="visuellement-cache"> Alice</span></button>
+      <a href="/renseignements?villa=alice&amp;adultes=4" class="bouton bouton--petit" data-libelle="Renseignements">Demander cette villa<span class="visuellement-cache"> Alice</span></a>
+    </p>
+    <template data-fiche-galerie><figure class="media fiche-media" style="--cadrage:50% 48%">
+  <picture>
+    <img src="/assets/images/villa-alice-1-1280.webp" srcset="/assets/images/villa-alice-1-640.webp 640w, /assets/images/villa-alice-1-960.webp 960w, /assets/images/villa-alice-1-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Villa Alice, sa piscine et le pool-house plein sud" width="1280" height="960" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-media" style="--cadrage:44% 46%">
+  <picture>
+    <img src="/assets/images/villa-alice-2-1280.webp" srcset="/assets/images/villa-alice-2-640.webp 640w, /assets/images/villa-alice-2-960.webp 960w, /assets/images/villa-alice-2-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Piscine d’Alice sous les pins parasols" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-media" style="--cadrage:50% 52%">
+  <picture>
+    <img src="/assets/images/villa-alice-3-1280.webp" srcset="/assets/images/villa-alice-3-640.webp 640w, /assets/images/villa-alice-3-960.webp 960w, /assets/images/villa-alice-3-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Grande pièce à vivre d’Alice sous la charpente" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-media" style="--cadrage:48% 54%">
+  <picture>
+    <img src="/assets/images/villa-alice-4-1280.webp" srcset="/assets/images/villa-alice-4-640.webp 640w, /assets/images/villa-alice-4-960.webp 960w, /assets/images/villa-alice-4-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Salon d’Alice ouvert sur les pins" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure></template>
+    <template data-fiche-atouts>{"atouts":["Pool-house et cuisine d’été","Plein sud"],"etoiles":false,"piscine":true,"vueMer":false}</template>
+  </article>
+</li><li class="villa" id="villa-harmony" data-villa="harmony" data-voyageurs="12" data-prix="500" data-prix-max="980" data-secteur="boulouris" data-piscine="1" data-vue-mer="0">
+  <article class="villa-carte" data-anime>
+    <div class="villa-image"><figure class="media villa-media" style="--cadrage:47% 49%">
+  <picture>
+    <img src="/assets/images/villa-harmony-1-1280.webp" srcset="/assets/images/villa-harmony-1-640.webp 640w, /assets/images/villa-harmony-1-960.webp 960w, /assets/images/villa-harmony-1-1280.webp 1280w" sizes="(max-width: 760px) 92vw, (max-width: 1100px) 45vw, 30vw" alt="Villa Harmony, piscine et terrasses" width="1280" height="960" loading="lazy" decoding="async">
+  </picture>
+</figure><span class="villa-badges"><span class="badge badge--clair">Nouveauté</span></span></div>
+    <div class="villa-texte">
+      <p class="villa-secteur">Boulouris</p>
+      <h3 class="villa-nom">Harmony</h3>
+      <p class="villa-capacite">12 voyageurs · 6 chambres · 6 salles de bain</p>
+      <p class="villa-prix">de 500 à 980 € <span class="prix-nuit">la nuit</span></p>
+    </div>
+    <p class="villa-phrase">Sur les hauteurs de Boulouris, une nouvelle pépite de la collection.</p>
+    <p class="villa-actions">
+      <button type="button" class="bouton bouton--contour bouton--petit" data-ouvrir-fiche="harmony" aria-haspopup="dialog">Voir la villa<span class="visuellement-cache"> Harmony</span></button>
+      <a href="/renseignements?villa=harmony&amp;adultes=4" class="bouton bouton--petit" data-libelle="Renseignements">Demander cette villa<span class="visuellement-cache"> Harmony</span></a>
+    </p>
+    <template data-fiche-galerie><figure class="media fiche-media" style="--cadrage:47% 49%">
+  <picture>
+    <img src="/assets/images/villa-harmony-1-1280.webp" srcset="/assets/images/villa-harmony-1-640.webp 640w, /assets/images/villa-harmony-1-960.webp 960w, /assets/images/villa-harmony-1-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Villa Harmony, piscine et terrasses" width="1280" height="960" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-media" style="--cadrage:58% 62%">
+  <picture>
+    <img src="/assets/images/villa-harmony-2-1280.webp" srcset="/assets/images/villa-harmony-2-640.webp 640w, /assets/images/villa-harmony-2-960.webp 960w, /assets/images/villa-harmony-2-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Piscine d’Harmony entre oliviers et voilages" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-media" style="--cadrage:50% 57%">
+  <picture>
+    <img src="/assets/images/villa-harmony-3-1280.webp" srcset="/assets/images/villa-harmony-3-640.webp 640w, /assets/images/villa-harmony-3-960.webp 960w, /assets/images/villa-harmony-3-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Harmony vue du ciel, sur les hauteurs de Boulouris" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-media" style="--cadrage:51% 55%">
+  <picture>
+    <img src="/assets/images/villa-harmony-4-1280.webp" srcset="/assets/images/villa-harmony-4-640.webp 640w, /assets/images/villa-harmony-4-960.webp 960w, /assets/images/villa-harmony-4-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Déjeuner face à la piscine d’Harmony" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure></template>
+    <template data-fiche-atouts>{"atouts":["Six salles de bain","Sur les hauteurs"],"etoiles":false,"piscine":true,"vueMer":false}</template>
+  </article>
+</li><li class="villa" id="villa-dolce-vita" data-villa="dolce-vita" data-voyageurs="8" data-prix="600" data-prix-max="700" data-secteur="agay" data-piscine="1" data-vue-mer="0">
+  <article class="villa-carte" data-anime>
+    <div class="villa-image"><figure class="media villa-media" style="--cadrage:50% 44%">
+  <picture>
+    <img src="/assets/images/villa-dolce-vita-1-1280.webp" srcset="/assets/images/villa-dolce-vita-1-640.webp 640w, /assets/images/villa-dolce-vita-1-960.webp 960w, /assets/images/villa-dolce-vita-1-1280.webp 1280w" sizes="(max-width: 760px) 92vw, (max-width: 1100px) 45vw, 30vw" alt="Piscine et escalier de pierre dans le jardin méditerranéen de La Dolce Vita" width="1280" height="960" loading="lazy" decoding="async">
+  </picture>
+</figure><span class="villa-badges"></span></div>
+    <div class="villa-texte">
+      <p class="villa-secteur">Agay · Cap Estérel</p>
+      <h3 class="villa-nom">La Dolce Vita</h3>
+      <p class="villa-capacite">8 voyageurs · 4 chambres · 4 salles de bain</p>
+      <p class="villa-prix">de 600 à 700 € <span class="prix-nuit">la nuit</span></p>
+    </div>
+    <p class="villa-phrase">Une propriété rare où le raffinement rencontre la douceur de vivre méditerranéenne.</p>
+    <p class="villa-actions">
+      <button type="button" class="bouton bouton--contour bouton--petit" data-ouvrir-fiche="dolce-vita" aria-haspopup="dialog">Voir la villa<span class="visuellement-cache"> La Dolce Vita</span></button>
+      <a href="/renseignements?villa=dolce-vita&amp;adultes=4" class="bouton bouton--petit" data-libelle="Renseignements">Demander cette villa<span class="visuellement-cache"> La Dolce Vita</span></a>
+    </p>
+    <template data-fiche-galerie><figure class="media fiche-media" style="--cadrage:50% 44%">
+  <picture>
+    <img src="/assets/images/villa-dolce-vita-1-1280.webp" srcset="/assets/images/villa-dolce-vita-1-640.webp 640w, /assets/images/villa-dolce-vita-1-960.webp 960w, /assets/images/villa-dolce-vita-1-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Piscine et escalier de pierre dans le jardin méditerranéen de La Dolce Vita" width="1280" height="960" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-media" style="--cadrage:51% 53%">
+  <picture>
+    <img src="/assets/images/villa-dolce-vita-2-1280.webp" srcset="/assets/images/villa-dolce-vita-2-640.webp 640w, /assets/images/villa-dolce-vita-2-960.webp 960w, /assets/images/villa-dolce-vita-2-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="La Dolce Vita vue du ciel, piscine et jardin plein sud" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-media" style="--cadrage:52% 49%">
+  <picture>
+    <img src="/assets/images/villa-dolce-vita-3-1280.webp" srcset="/assets/images/villa-dolce-vita-3-640.webp 640w, /assets/images/villa-dolce-vita-3-960.webp 960w, /assets/images/villa-dolce-vita-3-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Piscine de La Dolce Vita au pied du jardin en terrasses" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-media" style="--cadrage:51% 52%">
+  <picture>
+    <img src="/assets/images/villa-dolce-vita-4-1280.webp" srcset="/assets/images/villa-dolce-vita-4-640.webp 640w, /assets/images/villa-dolce-vita-4-960.webp 960w, /assets/images/villa-dolce-vita-4-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Séjour lumineux de La Dolce Vita ouvert sur le jardin" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure></template>
+    <template data-fiche-atouts>{"atouts":["Jardin de 2 500 m² plein sud","Deux suites, un studio et une tiny house","Tiki Plage à pied"],"etoiles":false,"piscine":true,"vueMer":false}</template>
+  </article>
+</li><li class="villa" id="villa-escapadou" data-villa="escapadou" data-voyageurs="8" data-prix="450" data-prix-max="870" data-secteur="dramont" data-piscine="0" data-vue-mer="1">
+  <article class="villa-carte" data-anime>
+    <div class="villa-image"><figure class="media villa-media" style="--cadrage:38% 45%">
+  <picture>
+    <img src="/assets/images/villa-escapadou-1-1280.webp" srcset="/assets/images/villa-escapadou-1-640.webp 640w, /assets/images/villa-escapadou-1-960.webp 960w, /assets/images/villa-escapadou-1-1280.webp 1280w" sizes="(max-width: 760px) 92vw, (max-width: 1100px) 45vw, 30vw" alt="L’Île d’Or vue depuis le jardin de L’Escapadou, sous un pin" width="1280" height="960" loading="lazy" decoding="async">
+  </picture>
+</figure><span class="villa-badges"></span></div>
+    <div class="villa-texte">
+      <p class="villa-secteur">Le Dramont</p>
+      <h3 class="villa-nom">L’Escapadou</h3>
+      <p class="villa-capacite">8 voyageurs · 3 chambres · 3 salles de bain</p>
+      <p class="villa-prix">de 450 à 870 € <span class="prix-nuit">la nuit</span></p>
+    </div>
+    <p class="villa-phrase">Iconique, sur la plage, pour vous seul face à l’Île d’Or. La magie opère dès que l’on accède au domaine…</p>
+    <p class="villa-actions">
+      <button type="button" class="bouton bouton--contour bouton--petit" data-ouvrir-fiche="escapadou" aria-haspopup="dialog">Voir la villa<span class="visuellement-cache"> L’Escapadou</span></button>
+      <a href="/renseignements?villa=escapadou&amp;adultes=4" class="bouton bouton--petit" data-libelle="Renseignements">Demander cette villa<span class="visuellement-cache"> L’Escapadou</span></a>
+    </p>
+    <template data-fiche-galerie><figure class="media fiche-media" style="--cadrage:38% 45%">
+  <picture>
+    <img src="/assets/images/villa-escapadou-1-1280.webp" srcset="/assets/images/villa-escapadou-1-640.webp 640w, /assets/images/villa-escapadou-1-960.webp 960w, /assets/images/villa-escapadou-1-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="L’Île d’Or vue depuis le jardin de L’Escapadou, sous un pin" width="1280" height="960" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-media" style="--cadrage:48% 50%">
+  <picture>
+    <img src="/assets/images/villa-escapadou-2-960.webp" srcset="/assets/images/villa-escapadou-2-640.webp 640w, /assets/images/villa-escapadou-2-960.webp 960w" sizes="(max-width: 760px) 100vw, 60vw" alt="Table de terrasse face à la mer à L’Escapadou" width="960" height="641" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-media" style="--cadrage:49% 50%">
+  <picture>
+    <img src="/assets/images/villa-escapadou-3-1280.webp" srcset="/assets/images/villa-escapadou-3-640.webp 640w, /assets/images/villa-escapadou-3-960.webp 960w, /assets/images/villa-escapadou-3-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Séjour de L’Escapadou ouvert sur la mer" width="1280" height="854" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-media" style="--cadrage:46% 63%">
+  <picture>
+    <img src="/assets/images/villa-escapadou-4-1280.webp" srcset="/assets/images/villa-escapadou-4-640.webp 640w, /assets/images/villa-escapadou-4-960.webp 960w, /assets/images/villa-escapadou-4-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Coin salon et cheminée de L’Escapadou" width="1280" height="854" loading="lazy" decoding="async">
+  </picture>
+</figure></template>
+    <template data-fiche-atouts>{"atouts":["Sur la plage","Face à l’Île d’Or"],"etoiles":false,"piscine":false,"vueMer":true}</template>
+  </article>
+</li><li class="villa" id="villa-estaou" data-villa="estaou" data-voyageurs="8" data-prix="350" data-prix-max="850" data-secteur="agay" data-piscine="1" data-vue-mer="0">
+  <article class="villa-carte" data-anime>
+    <div class="villa-image"><figure class="media villa-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/villa-estaou-1-1280.webp" srcset="/assets/images/villa-estaou-1-640.webp 640w, /assets/images/villa-estaou-1-960.webp 960w, /assets/images/villa-estaou-1-1280.webp 1280w" sizes="(max-width: 760px) 92vw, (max-width: 1100px) 45vw, 30vw" alt="Piscine d’Estaou bordée de lauriers-roses et de transats rouges" width="1280" height="960" loading="lazy" decoding="async">
+  </picture>
+</figure><span class="villa-badges"></span></div>
+    <div class="villa-texte">
+      <p class="villa-secteur">Agay · Cap Estérel</p>
+      <h3 class="villa-nom">Estaou</h3>
+      <p class="villa-capacite">8 voyageurs · 4 chambres · 3 salles de bain</p>
+      <p class="villa-prix">de 350 à 850 € <span class="prix-nuit">la nuit</span></p>
+    </div>
+    <p class="villa-phrase">Certaines maisons accueillent. D’autres marquent les esprits.</p>
+    <p class="villa-actions">
+      <button type="button" class="bouton bouton--contour bouton--petit" data-ouvrir-fiche="estaou" aria-haspopup="dialog">Voir la villa<span class="visuellement-cache"> Estaou</span></button>
+      <a href="/renseignements?villa=estaou&amp;adultes=4" class="bouton bouton--petit" data-libelle="Renseignements">Demander cette villa<span class="visuellement-cache"> Estaou</span></a>
+    </p>
+    <template data-fiche-galerie><figure class="media fiche-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/villa-estaou-1-1280.webp" srcset="/assets/images/villa-estaou-1-640.webp 640w, /assets/images/villa-estaou-1-960.webp 960w, /assets/images/villa-estaou-1-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Piscine d’Estaou bordée de lauriers-roses et de transats rouges" width="1280" height="960" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-media" style="--cadrage:49% 56%">
+  <picture>
+    <img src="/assets/images/villa-estaou-2-1280.webp" srcset="/assets/images/villa-estaou-2-640.webp 640w, /assets/images/villa-estaou-2-960.webp 960w, /assets/images/villa-estaou-2-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Plage de la piscine d’Estaou sous les parasols de paille" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-media" style="--cadrage:56% 53%">
+  <picture>
+    <img src="/assets/images/villa-estaou-3-1280.webp" srcset="/assets/images/villa-estaou-3-640.webp 640w, /assets/images/villa-estaou-3-960.webp 960w, /assets/images/villa-estaou-3-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Jardin et piscine d’Estaou" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-media" style="--cadrage:55% 48%">
+  <picture>
+    <img src="/assets/images/villa-estaou-4-1280.webp" srcset="/assets/images/villa-estaou-4-640.webp 640w, /assets/images/villa-estaou-4-960.webp 960w, /assets/images/villa-estaou-4-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Façade ocre d’Estaou et sa piscine" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure></template>
+    <template data-fiche-atouts>{"atouts":["Piscine","Jardin fleuri"],"etoiles":false,"piscine":true,"vueMer":false}</template>
+  </article>
+</li><li class="villa" id="villa-soleada" data-villa="soleada" data-voyageurs="8" data-prix="330" data-prix-max="950" data-secteur="agay" data-piscine="1" data-vue-mer="1">
+  <article class="villa-carte" data-anime>
+    <div class="villa-image"><figure class="media villa-media" style="--cadrage:50% 52%">
+  <picture>
+    <img src="/assets/images/villa-soleada-1-1280.webp" srcset="/assets/images/villa-soleada-1-640.webp 640w, /assets/images/villa-soleada-1-960.webp 960w, /assets/images/villa-soleada-1-1280.webp 1280w" sizes="(max-width: 760px) 92vw, (max-width: 1100px) 45vw, 30vw" alt="Terrasse de La Soleada au soleil couchant" width="1280" height="960" loading="lazy" decoding="async">
+  </picture>
+</figure><span class="villa-badges"><span class="badge">Meublé de tourisme ★★★★★</span></span></div>
+    <div class="villa-texte">
+      <p class="villa-secteur">Agay · Cap Estérel</p>
+      <h3 class="villa-nom">La Soleada</h3>
+      <p class="villa-capacite">8 voyageurs · 4 chambres · 4 salles de bain</p>
+      <p class="villa-prix">de 330 à 950 € <span class="prix-nuit">la nuit</span></p>
+    </div>
+    <p class="villa-phrase">Nous vous ouvrons les portes d’un séjour de rêve dans une villa pour 8 personnes entre Estérel et Méditerranée.</p>
+    <p class="villa-actions">
+      <button type="button" class="bouton bouton--contour bouton--petit" data-ouvrir-fiche="soleada" aria-haspopup="dialog">Voir la villa<span class="visuellement-cache"> La Soleada</span></button>
+      <a href="/renseignements?villa=soleada&amp;adultes=4" class="bouton bouton--petit" data-libelle="Renseignements">Demander cette villa<span class="visuellement-cache"> La Soleada</span></a>
+    </p>
+    <template data-fiche-galerie><figure class="media fiche-media" style="--cadrage:50% 52%">
+  <picture>
+    <img src="/assets/images/villa-soleada-1-1280.webp" srcset="/assets/images/villa-soleada-1-640.webp 640w, /assets/images/villa-soleada-1-960.webp 960w, /assets/images/villa-soleada-1-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Terrasse de La Soleada au soleil couchant" width="1280" height="960" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-media" style="--cadrage:45% 39%">
+  <picture>
+    <img src="/assets/images/villa-soleada-2-1280.webp" srcset="/assets/images/villa-soleada-2-640.webp 640w, /assets/images/villa-soleada-2-960.webp 960w, /assets/images/villa-soleada-2-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Patio de La Soleada ouvert sur l’Estérel" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-media" style="--cadrage:53% 45%">
+  <picture>
+    <img src="/assets/images/villa-soleada-3-1280.webp" srcset="/assets/images/villa-soleada-3-640.webp 640w, /assets/images/villa-soleada-3-960.webp 960w, /assets/images/villa-soleada-3-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Salle à manger de La Soleada" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-media" style="--cadrage:56% 50%">
+  <picture>
+    <img src="/assets/images/villa-soleada-4-1280.webp" srcset="/assets/images/villa-soleada-4-640.webp 640w, /assets/images/villa-soleada-4-960.webp 960w, /assets/images/villa-soleada-4-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Dîner sous la pergola de La Soleada, la baie illuminée" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure></template>
+    <template data-fiche-atouts>{"atouts":["Entre Estérel et Méditerranée","Vue sur la baie"],"etoiles":true,"piscine":true,"vueMer":true}</template>
+  </article>
+</li><li class="villa" id="villa-mas-mirabelle" data-villa="mas-mirabelle" data-voyageurs="8" data-prix="330" data-prix-max="950" data-secteur="agay" data-piscine="1" data-vue-mer="1">
+  <article class="villa-carte" data-anime>
+    <div class="villa-image"><figure class="media villa-media" style="--cadrage:50% 41%">
+  <picture>
+    <img src="/assets/images/villa-mas-mirabelle-1-1280.webp" srcset="/assets/images/villa-mas-mirabelle-1-640.webp 640w, /assets/images/villa-mas-mirabelle-1-960.webp 960w, /assets/images/villa-mas-mirabelle-1-1280.webp 1280w" sizes="(max-width: 760px) 92vw, (max-width: 1100px) 45vw, 30vw" alt="Piscine à débordement du Mas Mirabelle face à la baie" width="1280" height="960" loading="lazy" decoding="async">
+  </picture>
+</figure><span class="villa-badges"><span class="badge">Meublé de tourisme ★★★★★</span></span></div>
+    <div class="villa-texte">
+      <p class="villa-secteur">Agay · Cap Estérel</p>
+      <h3 class="villa-nom">Le Mas Mirabelle</h3>
+      <p class="villa-capacite">8 voyageurs · 4 chambres · 3 salles de bain</p>
+      <p class="villa-prix">de 330 à 950 € <span class="prix-nuit">la nuit</span></p>
+    </div>
+    <p class="villa-phrase">Le Mas Mirabelle est une villa iconique surplombant la baie d’Agay au cœur du massif de l’Estérel.</p>
+    <p class="villa-actions">
+      <button type="button" class="bouton bouton--contour bouton--petit" data-ouvrir-fiche="mas-mirabelle" aria-haspopup="dialog">Voir la villa<span class="visuellement-cache"> Le Mas Mirabelle</span></button>
+      <a href="/renseignements?villa=mas-mirabelle&amp;adultes=4" class="bouton bouton--petit" data-libelle="Renseignements">Demander cette villa<span class="visuellement-cache"> Le Mas Mirabelle</span></a>
+    </p>
+    <template data-fiche-galerie><figure class="media fiche-media" style="--cadrage:50% 41%">
+  <picture>
+    <img src="/assets/images/villa-mas-mirabelle-1-1280.webp" srcset="/assets/images/villa-mas-mirabelle-1-640.webp 640w, /assets/images/villa-mas-mirabelle-1-960.webp 960w, /assets/images/villa-mas-mirabelle-1-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Piscine à débordement du Mas Mirabelle face à la baie" width="1280" height="960" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-media" style="--cadrage:53% 51%">
+  <picture>
+    <img src="/assets/images/villa-mas-mirabelle-2-1280.webp" srcset="/assets/images/villa-mas-mirabelle-2-640.webp 640w, /assets/images/villa-mas-mirabelle-2-960.webp 960w, /assets/images/villa-mas-mirabelle-2-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Oliviers et piscine du Mas Mirabelle" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-media" style="--cadrage:49% 53%">
+  <picture>
+    <img src="/assets/images/villa-mas-mirabelle-3-1280.webp" srcset="/assets/images/villa-mas-mirabelle-3-640.webp 640w, /assets/images/villa-mas-mirabelle-3-960.webp 960w, /assets/images/villa-mas-mirabelle-3-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Table du Mas Mirabelle face à la mer" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-media" style="--cadrage:56% 49%">
+  <picture>
+    <img src="/assets/images/villa-mas-mirabelle-4-1280.webp" srcset="/assets/images/villa-mas-mirabelle-4-640.webp 640w, /assets/images/villa-mas-mirabelle-4-960.webp 960w, /assets/images/villa-mas-mirabelle-4-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Salon du Mas Mirabelle ouvert sur la terrasse" width="1280" height="854" loading="lazy" decoding="async">
+  </picture>
+</figure></template>
+    <template data-fiche-atouts>{"atouts":["Piscine à débordement","Surplombe la baie d’Agay"],"etoiles":true,"piscine":true,"vueMer":true}</template>
+  </article>
+</li><li class="villa" id="villa-casa-lomi" data-villa="casa-lomi" data-voyageurs="8" data-prix="700" data-prix-max="850" data-secteur="valescure" data-piscine="1" data-vue-mer="0">
+  <article class="villa-carte" data-anime>
+    <div class="villa-image"><figure class="media villa-media" style="--cadrage:47% 47%">
+  <picture>
+    <img src="/assets/images/villa-casa-lomi-1-1280.webp" srcset="/assets/images/villa-casa-lomi-1-640.webp 640w, /assets/images/villa-casa-lomi-1-960.webp 960w, /assets/images/villa-casa-lomi-1-1280.webp 1280w" sizes="(max-width: 760px) 92vw, (max-width: 1100px) 45vw, 30vw" alt="Casa Lomi, ses murs de pierre et sa piscine" width="1280" height="960" loading="lazy" decoding="async">
+  </picture>
+</figure><span class="villa-badges"></span></div>
+    <div class="villa-texte">
+      <p class="villa-secteur">Valescure</p>
+      <h3 class="villa-nom">Casa Lomi</h3>
+      <p class="villa-capacite">8 voyageurs · 4 chambres · 3 salles de bain</p>
+      <p class="villa-prix">de 700 à 850 € <span class="prix-nuit">la nuit</span></p>
+    </div>
+    <p class="villa-phrase">Au cœur d’un domaine privé, Casa Lomi incarne l’art de vivre azuréen dans sa forme la plus exclusive.</p>
+    <p class="villa-actions">
+      <button type="button" class="bouton bouton--contour bouton--petit" data-ouvrir-fiche="casa-lomi" aria-haspopup="dialog">Voir la villa<span class="visuellement-cache"> Casa Lomi</span></button>
+      <a href="/renseignements?villa=casa-lomi&amp;adultes=4" class="bouton bouton--petit" data-libelle="Renseignements">Demander cette villa<span class="visuellement-cache"> Casa Lomi</span></a>
+    </p>
+    <template data-fiche-galerie><figure class="media fiche-media" style="--cadrage:47% 47%">
+  <picture>
+    <img src="/assets/images/villa-casa-lomi-1-1280.webp" srcset="/assets/images/villa-casa-lomi-1-640.webp 640w, /assets/images/villa-casa-lomi-1-960.webp 960w, /assets/images/villa-casa-lomi-1-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Casa Lomi, ses murs de pierre et sa piscine" width="1280" height="960" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-media" style="--cadrage:47% 40%">
+  <picture>
+    <img src="/assets/images/villa-casa-lomi-2-1280.webp" srcset="/assets/images/villa-casa-lomi-2-640.webp 640w, /assets/images/villa-casa-lomi-2-960.webp 960w, /assets/images/villa-casa-lomi-2-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Grande table en terrasse à Casa Lomi" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-media" style="--cadrage:37% 50%">
+  <picture>
+    <img src="/assets/images/villa-casa-lomi-3-1280.webp" srcset="/assets/images/villa-casa-lomi-3-640.webp 640w, /assets/images/villa-casa-lomi-3-960.webp 960w, /assets/images/villa-casa-lomi-3-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Cuisine de Casa Lomi ouverte sur la terrasse" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-media" style="--cadrage:57% 45%">
+  <picture>
+    <img src="/assets/images/villa-casa-lomi-4-1280.webp" srcset="/assets/images/villa-casa-lomi-4-640.webp 640w, /assets/images/villa-casa-lomi-4-960.webp 960w, /assets/images/villa-casa-lomi-4-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Salon de Casa Lomi" width="1280" height="854" loading="lazy" decoding="async">
+  </picture>
+</figure></template>
+    <template data-fiche-atouts>{"atouts":["Domaine privé","Piscine"],"etoiles":false,"piscine":true,"vueMer":false}</template>
+  </article>
+</li><li class="villa" id="villa-chez-nous" data-villa="chez-nous" data-voyageurs="8" data-prix="320" data-prix-max="760" data-secteur="boulouris" data-piscine="1" data-vue-mer="0">
+  <article class="villa-carte" data-anime>
+    <div class="villa-image"><figure class="media villa-media" style="--cadrage:50% 45%">
+  <picture>
+    <img src="/assets/images/villa-chez-nous-1-1280.webp" srcset="/assets/images/villa-chez-nous-1-640.webp 640w, /assets/images/villa-chez-nous-1-960.webp 960w, /assets/images/villa-chez-nous-1-1280.webp 1280w" sizes="(max-width: 760px) 92vw, (max-width: 1100px) 45vw, 30vw" alt="Maison de caractère Chez nous et sa piscine" width="1280" height="960" loading="lazy" decoding="async">
+  </picture>
+</figure><span class="villa-badges"><span class="badge">Meublé de tourisme ★★★★★</span></span></div>
+    <div class="villa-texte">
+      <p class="villa-secteur">Boulouris</p>
+      <h3 class="villa-nom">Chez nous</h3>
+      <p class="villa-capacite">8 voyageurs · 4 chambres · 2 salles de bain</p>
+      <p class="villa-prix">de 320 à 760 € <span class="prix-nuit">la nuit</span></p>
+    </div>
+    <p class="villa-phrase">Maison de caractère et de charme. Le jardin est un espace de vie à part entière. À 10 minutes du centre-ville.</p>
+    <p class="villa-actions">
+      <button type="button" class="bouton bouton--contour bouton--petit" data-ouvrir-fiche="chez-nous" aria-haspopup="dialog">Voir la villa<span class="visuellement-cache"> Chez nous</span></button>
+      <a href="/renseignements?villa=chez-nous&amp;adultes=4" class="bouton bouton--petit" data-libelle="Renseignements">Demander cette villa<span class="visuellement-cache"> Chez nous</span></a>
+    </p>
+    <template data-fiche-galerie><figure class="media fiche-media" style="--cadrage:50% 45%">
+  <picture>
+    <img src="/assets/images/villa-chez-nous-1-1280.webp" srcset="/assets/images/villa-chez-nous-1-640.webp 640w, /assets/images/villa-chez-nous-1-960.webp 960w, /assets/images/villa-chez-nous-1-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Maison de caractère Chez nous et sa piscine" width="1280" height="960" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-media" style="--cadrage:41% 54%">
+  <picture>
+    <img src="/assets/images/villa-chez-nous-2-1280.webp" srcset="/assets/images/villa-chez-nous-2-640.webp 640w, /assets/images/villa-chez-nous-2-960.webp 960w, /assets/images/villa-chez-nous-2-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Façade fleurie et piscine de Chez nous" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-media" style="--cadrage:46% 48%">
+  <picture>
+    <img src="/assets/images/villa-chez-nous-3-1280.webp" srcset="/assets/images/villa-chez-nous-3-640.webp 640w, /assets/images/villa-chez-nous-3-960.webp 960w, /assets/images/villa-chez-nous-3-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Terrasse et grandes baies de Chez nous" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-media" style="--cadrage:53% 53%">
+  <picture>
+    <img src="/assets/images/villa-chez-nous-4-1280.webp" srcset="/assets/images/villa-chez-nous-4-640.webp 640w, /assets/images/villa-chez-nous-4-960.webp 960w, /assets/images/villa-chez-nous-4-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Salon de Chez nous sous les poutres" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure></template>
+    <template data-fiche-atouts>{"atouts":["Jardin","10 minutes du centre-ville"],"etoiles":true,"piscine":true,"vueMer":false}</template>
+  </article>
+</li><li class="villa" id="villa-eucalypta" data-villa="eucalypta" data-voyageurs="10" data-prix="500" data-prix-max="750" data-secteur="antheor" data-piscine="1" data-vue-mer="1">
+  <article class="villa-carte" data-anime>
+    <div class="villa-image"><figure class="media villa-media" style="--cadrage:50% 52%">
+  <picture>
+    <img src="/assets/images/villa-eucalypta-1-1280.webp" srcset="/assets/images/villa-eucalypta-1-640.webp 640w, /assets/images/villa-eucalypta-1-960.webp 960w, /assets/images/villa-eucalypta-1-1280.webp 1280w" sizes="(max-width: 760px) 92vw, (max-width: 1100px) 45vw, 30vw" alt="Piscine d’Eucalypta face aux rochers rouges de l’Estérel" width="1280" height="960" loading="lazy" decoding="async">
+  </picture>
+</figure><span class="villa-badges"></span></div>
+    <div class="villa-texte">
+      <p class="villa-secteur">Anthéor</p>
+      <h3 class="villa-nom">Eucalypta</h3>
+      <p class="villa-capacite">10 voyageurs</p>
+      <p class="villa-prix">de 500 à 750 € <span class="prix-nuit">la nuit</span></p>
+    </div>
+    <p class="villa-phrase">Face à la mer avec une vue panoramique à 180° des îles de Lérins au cap Camarat.</p>
+    <p class="villa-actions">
+      <button type="button" class="bouton bouton--contour bouton--petit" data-ouvrir-fiche="eucalypta" aria-haspopup="dialog">Voir la villa<span class="visuellement-cache"> Eucalypta</span></button>
+      <a href="/renseignements?villa=eucalypta&amp;adultes=4" class="bouton bouton--petit" data-libelle="Renseignements">Demander cette villa<span class="visuellement-cache"> Eucalypta</span></a>
+    </p>
+    <template data-fiche-galerie><figure class="media fiche-media" style="--cadrage:50% 52%">
+  <picture>
+    <img src="/assets/images/villa-eucalypta-1-1280.webp" srcset="/assets/images/villa-eucalypta-1-640.webp 640w, /assets/images/villa-eucalypta-1-960.webp 960w, /assets/images/villa-eucalypta-1-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Piscine d’Eucalypta face aux rochers rouges de l’Estérel" width="1280" height="960" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-media" style="--cadrage:47% 50%">
+  <picture>
+    <img src="/assets/images/villa-eucalypta-2-1280.webp" srcset="/assets/images/villa-eucalypta-2-640.webp 640w, /assets/images/villa-eucalypta-2-960.webp 960w, /assets/images/villa-eucalypta-2-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Fauteuils de la terrasse d’Eucalypta face au soleil couchant" width="1280" height="854" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/villa-eucalypta-3-1280.webp" srcset="/assets/images/villa-eucalypta-3-640.webp 640w, /assets/images/villa-eucalypta-3-960.webp 960w, /assets/images/villa-eucalypta-3-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Piscine aux formes douces d’Eucalypta" width="1280" height="854" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-media" style="--cadrage:43% 49%">
+  <picture>
+    <img src="/assets/images/villa-eucalypta-4-1280.webp" srcset="/assets/images/villa-eucalypta-4-640.webp 640w, /assets/images/villa-eucalypta-4-960.webp 960w, /assets/images/villa-eucalypta-4-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Terrasse d’Eucalypta sur la mer" width="1280" height="854" loading="lazy" decoding="async">
+  </picture>
+</figure></template>
+    <template data-fiche-atouts>{"atouts":["Vue à 180°","Face à la mer"],"etoiles":false,"piscine":true,"vueMer":true}</template>
+  </article>
+</li><li class="villa" id="villa-camelias" data-villa="camelias" data-voyageurs="6" data-prix="350" data-prix-max="520" data-secteur="boulouris" data-piscine="1" data-vue-mer="0">
+  <article class="villa-carte" data-anime>
+    <div class="villa-image"><figure class="media villa-media" style="--cadrage:50% 55%">
+  <picture>
+    <img src="/assets/images/villa-camelias-1-1280.webp" srcset="/assets/images/villa-camelias-1-640.webp 640w, /assets/images/villa-camelias-1-960.webp 960w, /assets/images/villa-camelias-1-1280.webp 1280w" sizes="(max-width: 760px) 92vw, (max-width: 1100px) 45vw, 30vw" alt="Terrasse ombragée et piscine des Camelias" width="1280" height="960" loading="lazy" decoding="async">
+  </picture>
+</figure><span class="villa-badges"></span></div>
+    <div class="villa-texte">
+      <p class="villa-secteur">Boulouris</p>
+      <h3 class="villa-nom">Les Camelias</h3>
+      <p class="villa-capacite">6 voyageurs · 3 chambres · 2 salles de bain</p>
+      <p class="villa-prix">de 350 à 520 € <span class="prix-nuit">la nuit</span></p>
+    </div>
+    <p class="villa-phrase">Vous recherchez le confort ? Le calme ? Les deux ? Ici, tout est pensé pour que votre séjour soit inoubliable.</p>
+    <p class="villa-actions">
+      <button type="button" class="bouton bouton--contour bouton--petit" data-ouvrir-fiche="camelias" aria-haspopup="dialog">Voir la villa<span class="visuellement-cache"> Les Camelias</span></button>
+      <a href="/renseignements?villa=camelias&amp;adultes=4" class="bouton bouton--petit" data-libelle="Renseignements">Demander cette villa<span class="visuellement-cache"> Les Camelias</span></a>
+    </p>
+    <template data-fiche-galerie><figure class="media fiche-media" style="--cadrage:50% 55%">
+  <picture>
+    <img src="/assets/images/villa-camelias-1-1280.webp" srcset="/assets/images/villa-camelias-1-640.webp 640w, /assets/images/villa-camelias-1-960.webp 960w, /assets/images/villa-camelias-1-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Terrasse ombragée et piscine des Camelias" width="1280" height="960" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-media" style="--cadrage:51% 55%">
+  <picture>
+    <img src="/assets/images/villa-camelias-2-1280.webp" srcset="/assets/images/villa-camelias-2-640.webp 640w, /assets/images/villa-camelias-2-960.webp 960w, /assets/images/villa-camelias-2-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Allée bordée de lauriers-roses vers la villa Les Camelias" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-media" style="--cadrage:48% 46%">
+  <picture>
+    <img src="/assets/images/villa-camelias-3-1280.webp" srcset="/assets/images/villa-camelias-3-640.webp 640w, /assets/images/villa-camelias-3-960.webp 960w, /assets/images/villa-camelias-3-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Table dressée sous la pergola des Camelias" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-media" style="--cadrage:51% 53%">
+  <picture>
+    <img src="/assets/images/villa-camelias-4-1280.webp" srcset="/assets/images/villa-camelias-4-640.webp 640w, /assets/images/villa-camelias-4-960.webp 960w, /assets/images/villa-camelias-4-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Salon des Camelias ouvert sur les palmiers" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure></template>
+    <template data-fiche-atouts>{"atouts":["Piscine","Pergola et table d’été"],"etoiles":false,"piscine":true,"vueMer":false}</template>
+  </article>
+</li><li class="villa" id="villa-santoline" data-villa="santoline" data-voyageurs="6" data-prix="350" data-prix-max="550" data-secteur="valescure" data-piscine="1" data-vue-mer="0">
+  <article class="villa-carte" data-anime>
+    <div class="villa-image"><figure class="media villa-media" style="--cadrage:50% 46%">
+  <picture>
+    <img src="/assets/images/villa-santoline-1-1280.webp" srcset="/assets/images/villa-santoline-1-640.webp 640w, /assets/images/villa-santoline-1-960.webp 960w, /assets/images/villa-santoline-1-1280.webp 1280w" sizes="(max-width: 760px) 92vw, (max-width: 1100px) 45vw, 30vw" alt="La Santoline et sa piscine au cœur du jardin" width="1280" height="960" loading="lazy" decoding="async">
+  </picture>
+</figure><span class="villa-badges"></span></div>
+    <div class="villa-texte">
+      <p class="villa-secteur">Valescure</p>
+      <h3 class="villa-nom">La Santoline</h3>
+      <p class="villa-capacite">6 voyageurs · 3 chambres · 2 salles de bain</p>
+      <p class="villa-prix">de 350 à 550 € <span class="prix-nuit">la nuit</span></p>
+    </div>
+    <p class="villa-phrase">Une véritable parenthèse enchantée où calme et nature se rencontrent.</p>
+    <p class="villa-actions">
+      <button type="button" class="bouton bouton--contour bouton--petit" data-ouvrir-fiche="santoline" aria-haspopup="dialog">Voir la villa<span class="visuellement-cache"> La Santoline</span></button>
+      <a href="/renseignements?villa=santoline&amp;adultes=4" class="bouton bouton--petit" data-libelle="Renseignements">Demander cette villa<span class="visuellement-cache"> La Santoline</span></a>
+    </p>
+    <template data-fiche-galerie><figure class="media fiche-media" style="--cadrage:50% 46%">
+  <picture>
+    <img src="/assets/images/villa-santoline-1-1280.webp" srcset="/assets/images/villa-santoline-1-640.webp 640w, /assets/images/villa-santoline-1-960.webp 960w, /assets/images/villa-santoline-1-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="La Santoline et sa piscine au cœur du jardin" width="1280" height="960" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-media" style="--cadrage:57% 70%">
+  <picture>
+    <img src="/assets/images/villa-santoline-2-1280.webp" srcset="/assets/images/villa-santoline-2-640.webp 640w, /assets/images/villa-santoline-2-960.webp 960w, /assets/images/villa-santoline-2-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Piscine de La Santoline éclairée à la tombée du jour" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-media" style="--cadrage:45% 58%">
+  <picture>
+    <img src="/assets/images/villa-santoline-3-1280.webp" srcset="/assets/images/villa-santoline-3-640.webp 640w, /assets/images/villa-santoline-3-960.webp 960w, /assets/images/villa-santoline-3-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Salon de La Santoline" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-media" style="--cadrage:42% 52%">
+  <picture>
+    <img src="/assets/images/villa-santoline-4-1280.webp" srcset="/assets/images/villa-santoline-4-640.webp 640w, /assets/images/villa-santoline-4-960.webp 960w, /assets/images/villa-santoline-4-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Terrasse couverte face à la piscine de La Santoline" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure></template>
+    <template data-fiche-atouts>{"atouts":["Piscine","Calme et nature"],"etoiles":false,"piscine":true,"vueMer":false}</template>
+  </article>
+</li><li class="villa" id="villa-155" data-villa="155" data-voyageurs="6" data-prix="250" data-prix-max="500" data-secteur="santa-lucia" data-piscine="1" data-vue-mer="0">
+  <article class="villa-carte" data-anime>
+    <div class="villa-image"><figure class="media villa-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/villa-155-1-1280.webp" srcset="/assets/images/villa-155-1-640.webp 640w, /assets/images/villa-155-1-960.webp 960w, /assets/images/villa-155-1-1280.webp 1280w" sizes="(max-width: 760px) 92vw, (max-width: 1100px) 45vw, 30vw" alt="Piscine du 155 entre palmiers et cyprès" width="1280" height="960" loading="lazy" decoding="async">
+  </picture>
+</figure><span class="villa-badges"></span></div>
+    <div class="villa-texte">
+      <p class="villa-secteur">Santa Lucia</p>
+      <h3 class="villa-nom">Le 155</h3>
+      <p class="villa-capacite">6 voyageurs · 4 chambres · 4 salles de bain</p>
+      <p class="villa-prix">de 250 à 500 € <span class="prix-nuit">la nuit</span></p>
+    </div>
+    <p class="villa-phrase">À deux pas de la plage de la Péguière et du port de Santa Lucia, entre le centre-ville animé et la tranquillité.</p>
+    <p class="villa-actions">
+      <button type="button" class="bouton bouton--contour bouton--petit" data-ouvrir-fiche="155" aria-haspopup="dialog">Voir la villa<span class="visuellement-cache"> Le 155</span></button>
+      <a href="/renseignements?villa=155&amp;adultes=4" class="bouton bouton--petit" data-libelle="Renseignements">Demander cette villa<span class="visuellement-cache"> Le 155</span></a>
+    </p>
+    <template data-fiche-galerie><figure class="media fiche-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/villa-155-1-1280.webp" srcset="/assets/images/villa-155-1-640.webp 640w, /assets/images/villa-155-1-960.webp 960w, /assets/images/villa-155-1-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Piscine du 155 entre palmiers et cyprès" width="1280" height="960" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-media" style="--cadrage:52% 58%">
+  <picture>
+    <img src="/assets/images/villa-155-2-1280.webp" srcset="/assets/images/villa-155-2-640.webp 640w, /assets/images/villa-155-2-960.webp 960w, /assets/images/villa-155-2-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Le 155 vu d’en haut, piscine et jardin" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-media" style="--cadrage:52% 50%">
+  <picture>
+    <img src="/assets/images/villa-155-3-1280.webp" srcset="/assets/images/villa-155-3-640.webp 640w, /assets/images/villa-155-3-960.webp 960w, /assets/images/villa-155-3-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Déjeuner en terrasse au 155" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-media" style="--cadrage:63% 43%">
+  <picture>
+    <img src="/assets/images/villa-155-4-1280.webp" srcset="/assets/images/villa-155-4-640.webp 640w, /assets/images/villa-155-4-960.webp 960w, /assets/images/villa-155-4-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Salon du 155 aux murs bleus" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure></template>
+    <template data-fiche-atouts>{"atouts":["Plage de la Péguière à pied","Port de Santa Lucia"],"etoiles":false,"piscine":true,"vueMer":false}</template>
+  </article>
+</li><li class="villa" id="villa-pirouschka" data-villa="pirouschka" data-voyageurs="6" data-prix="250" data-prix-max="690" data-secteur="boulouris" data-piscine="1" data-vue-mer="0">
+  <article class="villa-carte" data-anime>
+    <div class="villa-image"><figure class="media villa-media" style="--cadrage:50% 58%">
+  <picture>
+    <img src="/assets/images/villa-pirouschka-1-1280.webp" srcset="/assets/images/villa-pirouschka-1-640.webp 640w, /assets/images/villa-pirouschka-1-960.webp 960w, /assets/images/villa-pirouschka-1-1280.webp 1280w" sizes="(max-width: 760px) 92vw, (max-width: 1100px) 45vw, 30vw" alt="Pirouschka et sa piscine sous les pins" width="1280" height="960" loading="lazy" decoding="async">
+  </picture>
+</figure><span class="villa-badges"><span class="badge">Meublé de tourisme ★★★★★</span></span></div>
+    <div class="villa-texte">
+      <p class="villa-secteur">Boulouris</p>
+      <h3 class="villa-nom">Pirouschka</h3>
+      <p class="villa-capacite">6 voyageurs · 3 chambres · 2 salles de bain</p>
+      <p class="villa-prix">de 250 à 690 € <span class="prix-nuit">la nuit</span></p>
+    </div>
+    <p class="villa-phrase">Demeure confortable pour des vacances sportives ou relax, la découverte ou le farniente.</p>
+    <p class="villa-actions">
+      <button type="button" class="bouton bouton--contour bouton--petit" data-ouvrir-fiche="pirouschka" aria-haspopup="dialog">Voir la villa<span class="visuellement-cache"> Pirouschka</span></button>
+      <a href="/renseignements?villa=pirouschka&amp;adultes=4" class="bouton bouton--petit" data-libelle="Renseignements">Demander cette villa<span class="visuellement-cache"> Pirouschka</span></a>
+    </p>
+    <template data-fiche-galerie><figure class="media fiche-media" style="--cadrage:50% 58%">
+  <picture>
+    <img src="/assets/images/villa-pirouschka-1-1280.webp" srcset="/assets/images/villa-pirouschka-1-640.webp 640w, /assets/images/villa-pirouschka-1-960.webp 960w, /assets/images/villa-pirouschka-1-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Pirouschka et sa piscine sous les pins" width="1280" height="960" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-media" style="--cadrage:53% 47%">
+  <picture>
+    <img src="/assets/images/villa-pirouschka-2-1280.webp" srcset="/assets/images/villa-pirouschka-2-640.webp 640w, /assets/images/villa-pirouschka-2-960.webp 960w, /assets/images/villa-pirouschka-2-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Maison aux volets bleus de Pirouschka" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-media" style="--cadrage:52% 52%">
+  <picture>
+    <img src="/assets/images/villa-pirouschka-3-1280.webp" srcset="/assets/images/villa-pirouschka-3-640.webp 640w, /assets/images/villa-pirouschka-3-960.webp 960w, /assets/images/villa-pirouschka-3-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Transats bleus au bord de la piscine de Pirouschka" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-media" style="--cadrage:53% 44%">
+  <picture>
+    <img src="/assets/images/villa-pirouschka-4-1280.webp" srcset="/assets/images/villa-pirouschka-4-640.webp 640w, /assets/images/villa-pirouschka-4-960.webp 960w, /assets/images/villa-pirouschka-4-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Salle à manger de Pirouschka" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure></template>
+    <template data-fiche-atouts>{"atouts":["Piscine","Volets bleus et pins"],"etoiles":true,"piscine":true,"vueMer":false}</template>
+  </article>
+</li><li class="villa" id="villa-petit-roc" data-villa="petit-roc" data-voyageurs="4" data-prix="230" data-prix-max="430" data-secteur="santa-lucia" data-piscine="0" data-vue-mer="1">
+  <article class="villa-carte" data-anime>
+    <div class="villa-image"><figure class="media villa-media" style="--cadrage:56% 48%">
+  <picture>
+    <img src="/assets/images/villa-petit-roc-1-1280.webp" srcset="/assets/images/villa-petit-roc-1-640.webp 640w, /assets/images/villa-petit-roc-1-960.webp 960w, /assets/images/villa-petit-roc-1-1280.webp 1280w" sizes="(max-width: 760px) 92vw, (max-width: 1100px) 45vw, 30vw" alt="Rochers rouges et mer au pied du Petit Roc" width="1280" height="960" loading="lazy" decoding="async">
+  </picture>
+</figure><span class="villa-badges"></span></div>
+    <div class="villa-texte">
+      <p class="villa-secteur">Santa Lucia</p>
+      <h3 class="villa-nom">Le Petit Roc</h3>
+      <p class="villa-capacite">4 voyageurs · 2 chambres · 2 salles de bain</p>
+      <p class="villa-prix">de 230 à 430 € <span class="prix-nuit">la nuit</span></p>
+    </div>
+    <p class="villa-phrase">Face à la mer, les pieds dans l’eau, avec une vue panoramique à 180° du Dramont au golfe de Saint-Tropez.</p>
+    <p class="villa-actions">
+      <button type="button" class="bouton bouton--contour bouton--petit" data-ouvrir-fiche="petit-roc" aria-haspopup="dialog">Voir la villa<span class="visuellement-cache"> Le Petit Roc</span></button>
+      <a href="/renseignements?villa=petit-roc&amp;adultes=4" class="bouton bouton--petit" data-libelle="Renseignements">Demander cette villa<span class="visuellement-cache"> Le Petit Roc</span></a>
+    </p>
+    <template data-fiche-galerie><figure class="media fiche-media" style="--cadrage:56% 48%">
+  <picture>
+    <img src="/assets/images/villa-petit-roc-1-1280.webp" srcset="/assets/images/villa-petit-roc-1-640.webp 640w, /assets/images/villa-petit-roc-1-960.webp 960w, /assets/images/villa-petit-roc-1-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Rochers rouges et mer au pied du Petit Roc" width="1280" height="960" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-media" style="--cadrage:45% 55%">
+  <picture>
+    <img src="/assets/images/villa-petit-roc-2-1280.webp" srcset="/assets/images/villa-petit-roc-2-640.webp 640w, /assets/images/villa-petit-roc-2-960.webp 960w, /assets/images/villa-petit-roc-2-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Pin et horizon marin depuis le jardin du Petit Roc" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-media" style="--cadrage:49% 58%">
+  <picture>
+    <img src="/assets/images/villa-petit-roc-3-1280.webp" srcset="/assets/images/villa-petit-roc-3-640.webp 640w, /assets/images/villa-petit-roc-3-960.webp 960w, /assets/images/villa-petit-roc-3-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Côte rocheuse face au Petit Roc" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-media" style="--cadrage:46% 56%">
+  <picture>
+    <img src="/assets/images/villa-petit-roc-4-1280.webp" srcset="/assets/images/villa-petit-roc-4-640.webp 640w, /assets/images/villa-petit-roc-4-960.webp 960w, /assets/images/villa-petit-roc-4-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Chambre du Petit Roc avec fenêtre sur la mer" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure></template>
+    <template data-fiche-atouts>{"atouts":["Pieds dans l’eau","Domaine privé sécurisé","Criques à pied"],"etoiles":false,"piscine":false,"vueMer":true}</template>
+  </article>
+</li><li class="villa" id="villa-aiguebonne" data-villa="aiguebonne" data-voyageurs="4" data-prix="140" data-prix-max="350" data-secteur="dramont" data-piscine="0" data-vue-mer="1">
+  <article class="villa-carte" data-anime>
+    <div class="villa-image"><figure class="media villa-media" style="--cadrage:50% 56%">
+  <picture>
+    <img src="/assets/images/villa-aiguebonne-1-1280.webp" srcset="/assets/images/villa-aiguebonne-1-640.webp 640w, /assets/images/villa-aiguebonne-1-960.webp 960w, /assets/images/villa-aiguebonne-1-1280.webp 1280w" sizes="(max-width: 760px) 92vw, (max-width: 1100px) 45vw, 30vw" alt="Grande terrasse d’Aiguebonne face à la mer" width="1280" height="960" loading="lazy" decoding="async">
+  </picture>
+</figure><span class="villa-badges"></span></div>
+    <div class="villa-texte">
+      <p class="villa-secteur">Le Dramont</p>
+      <h3 class="villa-nom">Aiguebonne</h3>
+      <p class="villa-capacite">4 voyageurs · 2 chambres · 1 salles de bain</p>
+      <p class="villa-prix">de 140 à 350 € <span class="prix-nuit">la nuit</span></p>
+    </div>
+    <p class="villa-phrase">Petite pépite pour vos vacances sportives ou relax, pour la découverte ou la contemplation grâce à sa grande terrasse.</p>
+    <p class="villa-actions">
+      <button type="button" class="bouton bouton--contour bouton--petit" data-ouvrir-fiche="aiguebonne" aria-haspopup="dialog">Voir la villa<span class="visuellement-cache"> Aiguebonne</span></button>
+      <a href="/renseignements?villa=aiguebonne&amp;adultes=4" class="bouton bouton--petit" data-libelle="Renseignements">Demander cette villa<span class="visuellement-cache"> Aiguebonne</span></a>
+    </p>
+    <template data-fiche-galerie><figure class="media fiche-media" style="--cadrage:50% 56%">
+  <picture>
+    <img src="/assets/images/villa-aiguebonne-1-1280.webp" srcset="/assets/images/villa-aiguebonne-1-640.webp 640w, /assets/images/villa-aiguebonne-1-960.webp 960w, /assets/images/villa-aiguebonne-1-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Grande terrasse d’Aiguebonne face à la mer" width="1280" height="960" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-media" style="--cadrage:50% 52%">
+  <picture>
+    <img src="/assets/images/villa-aiguebonne-2-1280.webp" srcset="/assets/images/villa-aiguebonne-2-640.webp 640w, /assets/images/villa-aiguebonne-2-960.webp 960w, /assets/images/villa-aiguebonne-2-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Transat et chapeau de paille sur la terrasse d’Aiguebonne, la mer au loin" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-media" style="--cadrage:55% 39%">
+  <picture>
+    <img src="/assets/images/villa-aiguebonne-3-1280.webp" srcset="/assets/images/villa-aiguebonne-3-640.webp 640w, /assets/images/villa-aiguebonne-3-960.webp 960w, /assets/images/villa-aiguebonne-3-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Terrasse fleurie d’Aiguebonne" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media fiche-media" style="--cadrage:43% 50%">
+  <picture>
+    <img src="/assets/images/villa-aiguebonne-4-1280.webp" srcset="/assets/images/villa-aiguebonne-4-640.webp 640w, /assets/images/villa-aiguebonne-4-960.webp 960w, /assets/images/villa-aiguebonne-4-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="Table sous l’arbre de la terrasse d’Aiguebonne" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure></template>
+    <template data-fiche-atouts>{"atouts":["Grande terrasse","Vue mer"],"etoiles":false,"piscine":false,"vueMer":true}</template>
+  </article>
+</li>
+    </ul>
+    <p class="catalogue-vide" data-vide hidden>Aucune villa ne réunit tous ces critères : élargissez un filtre.</p>
+    <p class="note">Fourchettes par nuit indiquées sur le site actuel ; le tarif exact dépend des dates et vous est donné avec la disponibilité.</p>
+  </div>
+</section>
+<div class="fiche" data-fiche role="dialog" aria-modal="true" aria-labelledby="fiche-titre" data-recouvrement hidden>
+  <div class="fiche-boite" data-fiche-boite>
+    <button type="button" class="fiche-fermer" data-fiche-fermer aria-label="Fermer la fiche"><span aria-hidden="true">×</span></button>
+    <div class="fiche-galerie">
+      <div class="fiche-photos" data-fiche-photos></div>
+      <div class="fiche-nav">
+        <button type="button" data-fiche-prec aria-label="Photo précédente"><span aria-hidden="true">←</span></button>
+        <span class="fiche-compte" data-fiche-compte>1 / 4</span>
+        <button type="button" data-fiche-suiv aria-label="Photo suivante"><span aria-hidden="true">→</span></button>
+      </div>
+    </div>
+    <div class="fiche-texte">
+      <p class="villa-secteur" data-fiche-secteur></p>
+      <h2 id="fiche-titre" data-fiche-nom></h2>
+      <p class="fiche-capacite" data-fiche-capacite></p>
+      <p class="fiche-prix" data-fiche-prix></p>
+      <p class="fiche-phrase" data-fiche-phrase></p>
+      <ul class="fiche-atouts" data-fiche-atouts></ul>
+      <p class="fiche-inclus">Linge de qualité hôtelière, lits faits à l’arrivée, accueil personnalisé.</p>
+      <p><a class="bouton" href="/renseignements" data-fiche-demande data-libelle="Renseignements">Demander cette villa</a></p>
+    </div>
+  </div>
+</div>
+<section class="appel" id="appel">
+  <figure class="media appel-media" data-fx="zoom" data-fx-force="12" style="--cadrage:39% 59%;--cadrage-mobile:50% 50%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/appel-villas-mobile-640.webp 640w" sizes="100vw">
+    <img src="/assets/images/appel-villas-1440.webp" srcset="/assets/images/appel-villas-960.webp 960w, /assets/images/appel-villas-1440.webp 1440w, /assets/images/appel-villas-1600.webp 1600w" sizes="100vw" alt="Piscine à débordement de La Palmeraie qui rejoint l’horizon" width="1440" height="810" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  <div class="appel-carte">
+    <h2 data-anime="lignes">Une villa vous fait de l’œil ?</h2>
+    <p data-anime>Envoyez-nous vos dates : nous vous répondons avec la disponibilité et le tarif exact.</p>
+    <p class="appel-actions" data-anime><a href="/renseignements" class="bouton" data-libelle="Renseignements">Demander un séjour</a> <a class="bouton bouton--clair" href="tel:+33643780223">Appeler le 06 43 78 02 23</a></p>
+  </div>
+</section>
+</main>
+<footer class="pied" id="pied">
+  <div class="conteneur pied-grille">
+    <div class="pied-marque">
+      <p class="marque marque--grande" aria-hidden="true">Madame<em class="marque-amp">&amp;</em>Monsieur</p>
+      <p>Conciergerie privée de villas à Saint-Raphaël, de Valescure à Anthéor.</p>
+    </div>
+    <div>
+      <p class="pied-titre">Nous joindre</p>
+      <p>55, allée de la Voie Lactée, 83700 Saint-Raphaël<br><a href="tel:+33643780223">06 43 78 02 23</a><br><a href="mailto:contact@maconciergeriesaintraphael.fr">contact@maconciergeriesaintraphael.fr</a><br><a href="https://www.instagram.com/madametmonsieur_conciergerie/" target="_blank" rel="noopener">Instagram</a></p>
+    </div>
+    <nav aria-label="Le site">
+      <p class="pied-titre">Le site</p>
+      <ul><li><a href="/" data-libelle="Accueil">Accueil</a></li><li><a href="/nos-villas" data-libelle="Nos villas" aria-current="page">Nos villas</a></li><li><a href="/chez-vous" data-libelle="Chez vous">Chez vous</a></li><li><a href="/chez-nous" data-libelle="Chez nous">Chez nous</a></li><li><a href="/renseignements" data-libelle="Renseignements">Renseignements</a></li></ul>
+    </nav>
+  </div>
+  <div class="conteneur pied-bas">
+    <p><span>Mentions légales · à compléter</span> <span id="confidentialite">Politique de confidentialité · à compléter</span></p>
+    <p>Maquette de démonstration : formulaires simulés, aucune donnée n’est envoyée.</p>
+    <p>© Madame&amp;Monsieur · <a href="#haut" data-sans-transition>Retour en haut</a></p>
+  </div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--contour" href="tel:+33643780223">Appeler</a>
+  <a class="bouton" href="/renseignements" data-libelle="Renseignements">Demander un séjour</a>
+</div>
+</body>
+</html>

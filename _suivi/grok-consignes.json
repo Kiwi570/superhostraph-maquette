@@ -1,0 +1,112 @@
+{
+  "client": "Madame&Monsieur",
+  "activite": "hébergement",
+  "direction": "Volets ouverts",
+  "date": "2026-11-20T21:32:15.077Z",
+  "images": [
+    {
+      "nom": "service-cles",
+      "fichier": "g-service-cles.png",
+      "page": "chez-vous",
+      "emplacement": "service",
+      "role": "carte-service",
+      "format": "3:2",
+      "grok": "1168×784",
+      "priorite": "Indispensable",
+      "gabarit": "scene-metier",
+      "pieges": [],
+      "consigne": "A single vintage brass villa key with a small natural linen tag, resting on a folded white towel on a pale limestone console, a sprig of lavender beside it, nobody in the frame. Landscape composition, aspect ratio 3:2. Contemporary editorial hospitality photography, quiet and slow, serene, sunlit and quietly luxurious mood, palette of warm linen white, deep harbour blue, red porphyry rock and soft umbrella-pine green, warm late-afternoon Mediterranean sunlight with long soft shadows, tactile crisp white linen, pale limestone, weathered teak and terracotta, set in a private family villa on a quiet stretch of the French Mediterranean coast with red volcanic rocks and umbrella pines, nothing like a hotel resort on a clear early-summer afternoon, medium-format look, subtle 35mm film grain, generous negative space, realistic, high detail. No guests, no staff, no bed with someone in it, no famous landmark, no postcard cliché, no room presented as the real establishment, no signage. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "service-entretien",
+      "fichier": "g-service-entretien.png",
+      "page": "chez-vous",
+      "emplacement": "service",
+      "role": "carte-service",
+      "format": "3:2",
+      "grok": "1168×784",
+      "priorite": "Indispensable",
+      "gabarit": "scene-metier",
+      "pieges": [],
+      "consigne": "A freshly cleaned villa kitchen island in pale stone, a vase of white hydrangeas and a neatly folded linen tea towel, sunlight from a large open window with a garden beyond, immaculate, nobody in the frame. Landscape composition, aspect ratio 3:2. Contemporary editorial hospitality photography, quiet and slow, serene, sunlit and quietly luxurious mood, palette of warm linen white, deep harbour blue, red porphyry rock and soft umbrella-pine green, warm late-afternoon Mediterranean sunlight with long soft shadows, tactile crisp white linen, pale limestone, weathered teak and terracotta, set in a private family villa on a quiet stretch of the French Mediterranean coast with red volcanic rocks and umbrella pines, nothing like a hotel resort on a clear early-summer afternoon, medium-format look, subtle 35mm film grain, generous negative space, realistic, high detail. No guests, no staff, no bed with someone in it, no famous landmark, no postcard cliché, no room presented as the real establishment, no signage. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "service-transfert",
+      "fichier": "g-service-transfert.png",
+      "page": "chez-vous",
+      "emplacement": "service",
+      "role": "carte-service",
+      "format": "3:2",
+      "grok": "1168×784",
+      "priorite": "Indispensable",
+      "gabarit": "scene-metier",
+      "pieges": [],
+      "consigne": "The open rear door of a dark premium sedan waiting in a gravel driveway lined with lavender and umbrella pines, no driver visible, no logo, no license plate. Landscape composition, aspect ratio 3:2. Contemporary editorial hospitality photography, quiet and slow, serene, sunlit and quietly luxurious mood, palette of warm linen white, deep harbour blue, red porphyry rock and soft umbrella-pine green, warm late-afternoon Mediterranean sunlight with long soft shadows, tactile crisp white linen, pale limestone, weathered teak and terracotta, set in a private family villa on a quiet stretch of the French Mediterranean coast with red volcanic rocks and umbrella pines, nothing like a hotel resort on a clear early-summer afternoon, medium-format look, subtle 35mm film grain, generous negative space, realistic, high detail. No guests, no staff, no bed with someone in it, no famous landmark, no postcard cliché, no room presented as the real establishment, no signage. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "service-chef",
+      "fichier": "g-service-chef.png",
+      "page": "chez-vous",
+      "emplacement": "service",
+      "role": "carte-service",
+      "format": "3:2",
+      "grok": "1168×784",
+      "priorite": "Indispensable",
+      "gabarit": "scene-metier",
+      "pieges": [],
+      "consigne": "A private chef mise en place on a marble kitchen counter: heirloom tomatoes, olive oil in a glass cruet, fresh basil, lemons and a copper pan, nobody in the frame. Landscape composition, aspect ratio 3:2. Contemporary editorial hospitality photography, quiet and slow, serene, sunlit and quietly luxurious mood, palette of warm linen white, deep harbour blue, red porphyry rock and soft umbrella-pine green, warm late-afternoon Mediterranean sunlight with long soft shadows, tactile crisp white linen, pale limestone, weathered teak and terracotta, set in a private family villa on a quiet stretch of the French Mediterranean coast with red volcanic rocks and umbrella pines, nothing like a hotel resort on a clear early-summer afternoon, medium-format look, subtle 35mm film grain, generous negative space, realistic, high detail. No guests, no staff, no bed with someone in it, no famous landmark, no postcard cliché, no room presented as the real establishment, no signage. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "service-bebe",
+      "fichier": "g-service-bebe.png",
+      "page": "chez-vous",
+      "emplacement": "service",
+      "role": "carte-service",
+      "format": "3:2",
+      "grok": "1168×784",
+      "priorite": "Indispensable",
+      "gabarit": "scene-metier",
+      "pieges": [],
+      "consigne": "A white wooden baby cot with neatly folded muslin and a soft knitted toy in a sunny bedroom, sheer linen curtains, calm and safe, nobody in the frame. Landscape composition, aspect ratio 3:2. Contemporary editorial hospitality photography, quiet and slow, serene, sunlit and quietly luxurious mood, palette of warm linen white, deep harbour blue, red porphyry rock and soft umbrella-pine green, warm late-afternoon Mediterranean sunlight with long soft shadows, tactile crisp white linen, pale limestone, weathered teak and terracotta, set in a private family villa on a quiet stretch of the French Mediterranean coast with red volcanic rocks and umbrella pines, nothing like a hotel resort on a clear early-summer afternoon, medium-format look, subtle 35mm film grain, generous negative space, realistic, high detail. No guests, no staff, no bed with someone in it, no famous landmark, no postcard cliché, no room presented as the real establishment, no signage. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "service-coach",
+      "fichier": "g-service-coach.png",
+      "page": "chez-vous",
+      "emplacement": "service",
+      "role": "carte-service",
+      "format": "3:2",
+      "grok": "1168×784",
+      "priorite": "Indispensable",
+      "gabarit": "scene-metier",
+      "pieges": [],
+      "consigne": "A rolled natural yoga mat, a folded white towel and a glass water bottle on a teak pool deck in soft morning light, the sea softly blurred in the distance, nobody in the frame. Landscape composition, aspect ratio 3:2. Contemporary editorial hospitality photography, quiet and slow, serene, sunlit and quietly luxurious mood, palette of warm linen white, deep harbour blue, red porphyry rock and soft umbrella-pine green, warm late-afternoon Mediterranean sunlight with long soft shadows, tactile crisp white linen, pale limestone, weathered teak and terracotta, set in a private family villa on a quiet stretch of the French Mediterranean coast with red volcanic rocks and umbrella pines, nothing like a hotel resort on a clear early-summer afternoon, medium-format look, subtle 35mm film grain, generous negative space, realistic, high detail. No guests, no staff, no bed with someone in it, no famous landmark, no postcard cliché, no room presented as the real establishment, no signage. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "service-bateau",
+      "fichier": "g-service-bateau.png",
+      "page": "chez-vous",
+      "emplacement": "service",
+      "role": "carte-service",
+      "format": "3:2",
+      "grok": "1168×784",
+      "priorite": "Conseillée",
+      "gabarit": "scene-metier",
+      "pieges": [],
+      "consigne": "A classic varnished wooden day boat moored alone in a small turquoise cove between red volcanic rocks, seen from above at a gentle angle, nobody aboard. Landscape composition, aspect ratio 3:2. Contemporary editorial hospitality photography, quiet and slow, serene, sunlit and quietly luxurious mood, palette of warm linen white, deep harbour blue, red porphyry rock and soft umbrella-pine green, warm late-afternoon Mediterranean sunlight with long soft shadows, tactile crisp white linen, pale limestone, weathered teak and terracotta, set in a private family villa on a quiet stretch of the French Mediterranean coast with red volcanic rocks and umbrella pines, nothing like a hotel resort on a clear early-summer afternoon, medium-format look, subtle 35mm film grain, generous negative space, realistic, high detail. No guests, no staff, no bed with someone in it, no famous landmark, no postcard cliché, no room presented as the real establishment, no signage. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "page-404",
+      "fichier": "g-404.png",
+      "page": "404",
+      "emplacement": "ouverture de la 404",
+      "role": "404",
+      "format": "3:2",
+      "grok": "1168×784",
+      "priorite": "Conseillée",
+      "gabarit": "404",
+      "pieges": [],
+      "consigne": "A single vintage brass villa key with a small linen tag left alone on a warm limestone terrace step, closed pale wooden louvered shutters behind it, late afternoon light with long soft shadows, a gentle touch of humour, nobody. Landscape composition, aspect ratio 3:2, quiet uncluttered area in the upper half for a title. Contemporary editorial hospitality photography, quiet and slow, serene, sunlit and quietly luxurious mood, palette of warm linen white, deep harbour blue, red porphyry rock and soft umbrella-pine green, warm late-afternoon Mediterranean sunlight with long soft shadows, tactile crisp white linen, pale limestone, weathered teak and terracotta, set in a private family villa on a quiet stretch of the French Mediterranean coast with red volcanic rocks and umbrella pines, nothing like a hotel resort on a clear early-summer afternoon, medium-format look, subtle 35mm film grain, generous negative space, realistic, high detail. No guests, no staff, no bed with someone in it, no famous landmark, no postcard cliché, no room presented as the real establishment, no signage. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    }
+  ]
+}

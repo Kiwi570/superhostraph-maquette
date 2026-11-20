@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="fr" data-v="1">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Renseignements · Madame&amp;Monsieur</title>
+<meta name="description" content="Une villa, des dates, le nombre de voyageurs : demandez la disponibilité et le tarif de votre séjour.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://superhostraph-maquette.vercel.app/renseignements">
+<style>:root{--fond:#f6f1e9;--texte:#1e2a2f;--voile-fond:#12303f;--ouverture-fond:#12303f;--menu-fond:#f6f1e9}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) [data-voile] { transform: none; visibility: visible; } html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var mode = type === 'back_forward' ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/fonts/noto-serif-display-500.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/albert-sans-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#f6f1e9">
+<link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Madame&amp;Monsieur">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Renseignements · Madame&amp;Monsieur">
+<meta property="og:description" content="Une villa, des dates, le nombre de voyageurs : demandez la disponibilité et le tarif de votre séjour.">
+<meta property="og:url" content="https://superhostraph-maquette.vercel.app/renseignements">
+<meta property="og:image" content="https://superhostraph-maquette.vercel.app/assets/partage/renseignements-fr.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Table de terrasse à l’ombre d’un arbre, la mer au loin">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LodgingBusiness","name":"Madame&Monsieur","description":"Conciergerie privée : collection de villas en location saisonnière à Saint-Raphaël, de Valescure à Anthéor.","telephone":"+33643780223","email":"contact@maconciergeriesaintraphael.fr","address":{"@type":"PostalAddress","streetAddress":"55, allée de la Voie Lactée","postalCode":"83700","addressLocality":"Saint-Raphaël","addressCountry":"FR"},"areaServed":"Saint-Raphaël, Var","sameAs":["https://www.instagram.com/madametmonsieur_conciergerie/"]}</script>
+</head>
+<body id="haut">
+<div data-voile data-forme="persiennes" aria-hidden="true"><div class="voile-contenu"><span class="voile-amp">&amp;</span><span data-voile-libelle>Renseignements</span></div></div>
+<div class="ouverture-panneau" data-ouverture data-gouttiere="#12303f" aria-hidden="true">
+  <div class="volet volet--g"><div class="volet-lames"><span class="lame" style="--i:0"></span><span class="lame" style="--i:1"></span><span class="lame" style="--i:2"></span><span class="lame" style="--i:3"></span><span class="lame" style="--i:4"></span><span class="lame" style="--i:5"></span><span class="lame" style="--i:6"></span><span class="lame" style="--i:7"></span><span class="lame" style="--i:8"></span><span class="lame" style="--i:9"></span><span class="lame" style="--i:10"></span><span class="lame" style="--i:11"></span><span class="lame" style="--i:12"></span><span class="lame" style="--i:13"></span></div><span class="volet-mot">Madame</span></div>
+  <div class="volet volet--d"><div class="volet-lames"><span class="lame" style="--i:0"></span><span class="lame" style="--i:1"></span><span class="lame" style="--i:2"></span><span class="lame" style="--i:3"></span><span class="lame" style="--i:4"></span><span class="lame" style="--i:5"></span><span class="lame" style="--i:6"></span><span class="lame" style="--i:7"></span><span class="lame" style="--i:8"></span><span class="lame" style="--i:9"></span><span class="lame" style="--i:10"></span><span class="lame" style="--i:11"></span><span class="lame" style="--i:12"></span><span class="lame" style="--i:13"></span></div><span class="volet-mot">Monsieur</span></div>
+  <span class="ouverture-amp" data-ouverture-objet>&amp;</span>
+  <p class="ouverture-ligne">Conciergerie privée · Saint-Raphaël</p>
+</div>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/" data-libelle="Accueil" aria-label="Madame&amp;Monsieur, retour à l’accueil">
+      <span class="marque" aria-hidden="true">Madame<em class="marque-amp" data-marque-amp>&amp;</em>Monsieur</span>
+    </a>
+    <nav data-nav aria-label="Navigation principale">
+      <ul><li><a href="/nos-villas" data-libelle="Nos villas">Nos villas</a></li><li><a href="/chez-vous" data-libelle="Chez vous">Chez vous</a></li><li><a href="/chez-nous" data-libelle="Chez nous">Chez nous</a></li><li><a href="/renseignements" data-libelle="Renseignements" aria-current="page">Renseignements</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="bouton" href="/renseignements" data-libelle="Renseignements">Demander un séjour</a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Fermer"><span data-libelle-bouton>Menu</span></button>
+      <a class="menu-sansjs" href="#menu" data-menu-lien>Menu</a>
+    </div>
+  </div>
+</header>
+<script>/* Avant le premier affichage : rangées de la navigation (même règle que ajusterNav dans assets/js/socle/entete.js)
+   et hauteur réelle de l'en-tête, pour que rien ne saute quand le JavaScript du site prend la main. */
+(function () {
+  var h = document.documentElement, u = document.querySelector('[data-nav] ul'), e = document.querySelector('[data-entete]');
+  if (u) {
+    var deborde = function () { return u.scrollWidth > u.clientWidth + 1; }, c = deborde();
+    if (c && window.matchMedia('(min-width: 900px)').matches) {
+      h.classList.add('nav-deux-rangees'); c = deborde();
+      if (c) { h.classList.add('nav-deux-lignes'); var a = u.querySelector('a'); c = !a || u.getBoundingClientRect().height > a.getBoundingClientRect().height * 2.5; }
+      if (c) h.classList.remove('nav-deux-rangees', 'nav-deux-lignes');
+    }
+    if (c) h.classList.add('nav-compacte');
+  }
+  if (e) h.style.setProperty('--entete-h', Math.round(e.getBoundingClientRect().height) + 'px');
+})();</script>
+<span id="menu-ferme" aria-hidden="true"></span>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <p class="menu-sansjs-fermer"><a href="#menu-ferme">Fermer</a></p>
+  <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Accueil">Accueil</a></li><li style="--i:1"><a href="/nos-villas" class="menu-lien" data-libelle="Nos villas">Nos villas</a></li><li style="--i:2"><a href="/chez-vous" class="menu-lien" data-libelle="Chez vous">Chez vous</a></li><li style="--i:3"><a href="/chez-nous" class="menu-lien" data-libelle="Chez nous">Chez nous</a></li><li style="--i:4"><a href="/renseignements" class="menu-lien" data-libelle="Renseignements" aria-current="page">Renseignements</a></li></ul>
+  <p class="menu-actions"><a class="bouton" href="/renseignements" data-libelle="Renseignements">Demander un séjour</a> <a class="bouton bouton--contour" href="tel:+33643780223">Appeler 06 43 78 02 23</a></p>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="ouv-scindee ouv-scindee--inverse" id="debut">
+  <div class="ouv-scindee-texte">
+    <p class="surtitre ouv-anim">Renseignements</p>
+    <h1 class="ouv-titre ouv-titre--sombre"><span class="ligne"><span class="ligne-in">Parlons de</span></span><span class="ligne"><span class="ligne-in"><em>votre séjour</em></span></span></h1>
+    <p class="chapo ouv-anim masque-ecran-bas">Une villa, des dates, le nombre de voyageurs : nous revenons vers vous avec la disponibilité et le tarif exact.</p>
+    <p class="ouv-actions ouv-anim"><a class="bouton" href="#demande" data-action-principale>Commencer ma demande</a> <a class="bouton bouton--contour" href="tel:+33643780223">06 43 78 02 23</a></p>
+    <p class="ouv-info ouv-info--sombre ouv-anim" data-info-cle>Réponse par téléphone ou par e-mail</p>
+  </div>
+  <div class="ouv-scindee-image" data-iris-centre>
+    <figure class="media ouv-scindee-media" data-fx="parallaxe" data-fx-force="8" style="--cadrage:43% 46%;--cadrage-mobile:50% 46%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/ouverture-renseignements-mobile-640.webp 640w, /assets/images/ouverture-renseignements-mobile-1080.webp 1080w" sizes="(max-width: 760px) 100vw, 50vw">
+    <img src="/assets/images/ouverture-renseignements-1280.webp" srcset="/assets/images/ouverture-renseignements-640.webp 640w, /assets/images/ouverture-renseignements-960.webp 960w, /assets/images/ouverture-renseignements-1280.webp 1280w, /assets/images/ouverture-renseignements-1448.webp 1448w" sizes="(max-width: 760px) 100vw, 50vw" alt="Table de terrasse à l’ombre d’un arbre à Aiguebonne, la mer au loin" width="1280" height="960" fetchpriority="high" loading="eager" decoding="async">
+  </picture>
+</figure>
+  </div>
+</section>
+<section class="demande" id="demande">
+  <div class="conteneur"><h2 class="titre-section" data-anime="lignes">Préparons votre séjour</h2></div>
+  <div class="conteneur demande-grille">
+    <form class="formulaire etapes" data-formulaire data-etapes action="#" novalidate>
+      <p class="etapes-annonce">Trois étapes : la villa et les dates, les voyageurs, vos coordonnées.</p>
+      <ol class="etapes-fil" aria-hidden="true"><li data-fil="1" class="actif">La villa et les dates</li><li data-fil="2">Les voyageurs</li><li data-fil="3">Vos coordonnées</li></ol>
+      <div class="etapes-cadre" data-etapes-cadre>
+        <fieldset class="etape" data-etape="1">
+          <legend>1 · La villa et les dates</legend>
+          <div class="champ"><label for="f-villa">Villa</label>
+            <select id="f-villa" name="villa" required><option value="">Choisir une villa</option><option value="conseil">Je ne sais pas encore, conseillez-moi</option><option value="palmeraie" data-voyageurs="12">La Palmeraie · 12 voyageurs</option><option value="boheme" data-voyageurs="12">La Bohème · 12 voyageurs</option><option value="uccelli" data-voyageurs="12">Uccelli · 12 voyageurs</option><option value="alice" data-voyageurs="12">Alice · 12 voyageurs</option><option value="harmony" data-voyageurs="12">Harmony · 12 voyageurs</option><option value="dolce-vita" data-voyageurs="8">La Dolce Vita · 8 voyageurs</option><option value="escapadou" data-voyageurs="8">L’Escapadou · 8 voyageurs</option><option value="estaou" data-voyageurs="8">Estaou · 8 voyageurs</option><option value="soleada" data-voyageurs="8">La Soleada · 8 voyageurs</option><option value="mas-mirabelle" data-voyageurs="8">Le Mas Mirabelle · 8 voyageurs</option><option value="casa-lomi" data-voyageurs="8">Casa Lomi · 8 voyageurs</option><option value="chez-nous" data-voyageurs="8">Chez nous · 8 voyageurs</option><option value="eucalypta" data-voyageurs="10">Eucalypta · 10 voyageurs</option><option value="camelias" data-voyageurs="6">Les Camelias · 6 voyageurs</option><option value="santoline" data-voyageurs="6">La Santoline · 6 voyageurs</option><option value="155" data-voyageurs="6">Le 155 · 6 voyageurs</option><option value="pirouschka" data-voyageurs="6">Pirouschka · 6 voyageurs</option><option value="petit-roc" data-voyageurs="4">Le Petit Roc · 4 voyageurs</option><option value="aiguebonne" data-voyageurs="4">Aiguebonne · 4 voyageurs</option></select></div>
+          <div class="champs-deux">
+            <div class="champ"><label for="f-arrivee">Date d’arrivée</label><input id="f-arrivee" name="arrivee" type="date" required></div>
+            <div class="champ"><label for="f-depart">Date de départ</label><input id="f-depart" name="depart" type="date" required></div>
+          </div>
+          <p class="etape-actions"><button type="button" class="bouton" data-suivant>Étape suivante</button></p>
+        </fieldset>
+        <fieldset class="etape" data-etape="2">
+          <legend>2 · Les voyageurs</legend>
+          <div class="champs-deux"><div class="champ champ--nombre"><label for="f-adultes">Adultes</label>
+    <div class="compteur-champ"><button type="button" data-moins="f-adultes" aria-label="−1 Adultes">−</button><input id="f-adultes" name="adultes" type="number" min="1" max="12" value="2" inputmode="numeric"><button type="button" data-plus="f-adultes" aria-label="+1 Adultes">+</button></div></div><div class="champ champ--nombre"><label for="f-enfants">Enfants</label>
+    <div class="compteur-champ"><button type="button" data-moins="f-enfants" aria-label="−1 Enfants">−</button><input id="f-enfants" name="enfants" type="number" min="0" max="10" value="0" inputmode="numeric"><button type="button" data-plus="f-enfants" aria-label="+1 Enfants">+</button></div></div></div>
+          <div class="champ"><label for="f-autres">Autres renseignements</label><textarea id="f-autres" name="autres" rows="4" placeholder="Services souhaités, heure d’arrivée, questions…"></textarea></div>
+          <p class="etape-actions"><button type="button" class="bouton bouton--contour" data-precedent>Retour</button> <button type="button" class="bouton" data-suivant>Étape suivante</button></p>
+        </fieldset>
+        <fieldset class="etape" data-etape="3">
+          <legend>3 · Vos coordonnées</legend>
+          <div class="champs-deux">
+            <div class="champ"><label for="f-prenom">Prénom</label><input id="f-prenom" name="prenom" autocomplete="given-name"></div>
+            <div class="champ"><label for="f-nom">Nom</label><input id="f-nom" name="nom" autocomplete="family-name" required></div>
+          </div>
+          <div class="champs-deux">
+            <div class="champ"><label for="f-email">E-mail</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+            <div class="champ"><label for="f-tel">Téléphone</label><input id="f-tel" name="tel" type="tel" autocomplete="tel"></div>
+          </div>
+          <div class="champ"><label for="f-connu">Comment avez-vous connu Madame&amp;Monsieur ?</label><input id="f-connu" name="connu"></div>
+          <div class="champ champ--case"><input id="f-nouvelles" name="nouvelles" type="checkbox" value="oui"><label for="f-nouvelles">Je souhaite recevoir les nouvelles de Madame&amp;Monsieur</label></div>
+          <p class="mention-donnees">Votre adresse e-mail sert à répondre à votre demande et, si vous le choisissez, à vous envoyer nos nouvelles. <a href="#confidentialite">Politique de confidentialité</a> : à compléter.</p>
+          <p class="etape-actions"><button type="button" class="bouton bouton--contour" data-precedent>Retour</button> <button type="submit" class="bouton">Envoyer ma demande</button></p>
+        </fieldset>
+      </div>
+      <p data-message-envoi data-texte="Demande simulée : rien n’a été envoyé. Sur le site final, elle partira vers Madame&amp;Monsieur." role="status" tabindex="-1" hidden></p>
+    </form>
+    <aside class="recap" data-recap aria-label="Votre demande">
+      <p class="recap-titre">Votre demande</p>
+      <div class="recap-image" data-recap-image><figure class="media recap-media" data-anime="rideau" style="--cadrage:50% 43%">
+  <picture>
+    <img src="/assets/images/villa-palmeraie-1-1280.webp" srcset="/assets/images/villa-palmeraie-1-640.webp 640w, /assets/images/villa-palmeraie-1-960.webp 960w, /assets/images/villa-palmeraie-1-1280.webp 1280w" sizes="(max-width: 760px) 40vw, 26vw" alt="La Palmeraie se reflète dans sa piscine à débordement" width="1280" height="960" loading="lazy" decoding="async">
+  </picture>
+</figure></div>
+      <dl class="recap-liste">
+        <div><dt>Villa</dt><dd data-recap-villa>à choisir</dd></div>
+        <div><dt>Dates</dt><dd data-recap-dates>à choisir</dd></div>
+        <div><dt>Voyageurs</dt><dd data-recap-voyageurs>2</dd></div>
+      </dl>
+      <template data-recap-images><span data-id="palmeraie" data-src="/assets/images/villa-palmeraie-1-640.webp" data-alt="La Palmeraie se reflète dans sa piscine à débordement"></span><span data-id="boheme" data-src="/assets/images/villa-boheme-1-640.webp" data-alt="La Bohème, sa piscine et ses palmiers"></span><span data-id="uccelli" data-src="/assets/images/villa-uccelli-1-640.webp" data-alt="Villa contemporaine Uccelli et sa piscine privée"></span><span data-id="alice" data-src="/assets/images/villa-alice-1-640.webp" data-alt="Villa Alice, sa piscine et le pool-house plein sud"></span><span data-id="harmony" data-src="/assets/images/villa-harmony-1-640.webp" data-alt="Villa Harmony, piscine et terrasses"></span><span data-id="dolce-vita" data-src="/assets/images/villa-dolce-vita-1-640.webp" data-alt="Piscine et escalier de pierre dans le jardin méditerranéen de La Dolce Vita"></span><span data-id="escapadou" data-src="/assets/images/villa-escapadou-1-640.webp" data-alt="L’Île d’Or vue depuis le jardin de L’Escapadou, sous un pin"></span><span data-id="estaou" data-src="/assets/images/villa-estaou-1-640.webp" data-alt="Piscine d’Estaou bordée de lauriers-roses et de transats rouges"></span><span data-id="soleada" data-src="/assets/images/villa-soleada-1-640.webp" data-alt="Terrasse de La Soleada au soleil couchant"></span><span data-id="mas-mirabelle" data-src="/assets/images/villa-mas-mirabelle-1-640.webp" data-alt="Piscine à débordement du Mas Mirabelle face à la baie"></span><span data-id="casa-lomi" data-src="/assets/images/villa-casa-lomi-1-640.webp" data-alt="Casa Lomi, ses murs de pierre et sa piscine"></span><span data-id="chez-nous" data-src="/assets/images/villa-chez-nous-1-640.webp" data-alt="Maison de caractère Chez nous et sa piscine"></span><span data-id="eucalypta" data-src="/assets/images/villa-eucalypta-1-640.webp" data-alt="Piscine d’Eucalypta face aux rochers rouges de l’Estérel"></span><span data-id="camelias" data-src="/assets/images/villa-camelias-1-640.webp" data-alt="Terrasse ombragée et piscine des Camelias"></span><span data-id="santoline" data-src="/assets/images/villa-santoline-1-640.webp" data-alt="La Santoline et sa piscine au cœur du jardin"></span><span data-id="155" data-src="/assets/images/villa-155-1-640.webp" data-alt="Piscine du 155 entre palmiers et cyprès"></span><span data-id="pirouschka" data-src="/assets/images/villa-pirouschka-1-640.webp" data-alt="Pirouschka et sa piscine sous les pins"></span><span data-id="petit-roc" data-src="/assets/images/villa-petit-roc-1-640.webp" data-alt="Rochers rouges et mer au pied du Petit Roc"></span><span data-id="aiguebonne" data-src="/assets/images/villa-aiguebonne-1-640.webp" data-alt="Grande terrasse d’Aiguebonne face à la mer"></span></template>
+    </aside>
+  </div>
+</section>
+<section class="joindre" id="joindre">
+  <div class="conteneur joindre-grille">
+    <div>
+      <h2 class="titre-section" data-anime="lignes">Nous joindre</h2>
+      <dl class="joindre-liste" data-anime="cascade">
+        <div><dt>Téléphone et WhatsApp</dt><dd><a href="tel:+33643780223">06 43 78 02 23</a></dd></div>
+        <div><dt>E-mail</dt><dd><a href="mailto:contact@maconciergeriesaintraphael.fr">contact@maconciergeriesaintraphael.fr</a></dd></div>
+        <div><dt>Conciergerie</dt><dd>55, allée de la Voie Lactée, 83700 Saint-Raphaël</dd></div>
+      </dl>
+      <p class="note" data-anime>Réservation à moins de 48 h de l’arrivée : appelez-nous avant de réserver.</p>
+    </div>
+    <div class="cote-carte cote-carte--compacte" data-effet="cote" data-boucle-css>
+  <svg class="cote-svg" viewBox="0 0 1200 470" role="img" aria-labelledby="cote-titre-svg">
+    <title id="cote-titre-svg">De Valescure à Anthéor</title>
+    <path class="cote-mer" d="M0 196 C 120 206 180 214 236 226 C 300 238 360 226 420 236 C 480 246 540 262 572 300 C 590 322 612 330 628 312 C 650 288 690 282 720 270 C 750 258 766 230 792 228 C 820 226 832 262 860 276 C 900 296 950 286 990 296 C 1060 312 1130 318 1200 330 L 1200 470 L 0 470 Z"/>
+    <path class="cote-esterel" d="M700 0 L 742 58 L 768 40 L 806 112 L 838 84 L 872 150 L 906 118 L 948 176 L 982 138 L 1020 196 L 1060 150 L 1098 206 L 1140 168 L 1200 232 L 1200 0 Z"/>
+    <text class="cote-ville" x="18" y="172">Saint-Raphaël</text>
+    <path class="cote-trait" data-cote-trait d="M0 196 C 120 206 180 214 236 226 C 300 238 360 226 420 236 C 480 246 540 262 572 300 C 590 322 612 330 628 312 C 650 288 690 282 720 270 C 750 258 766 230 792 228 C 820 226 832 262 860 276 C 900 296 950 286 990 296 C 1060 312 1130 318 1200 330"/>
+    <g class="cote-ile" transform="translate(632 392)"><path d="M-26 6 C -18 -6 -6 -10 4 -8 C 16 -6 24 0 28 8 Z"/><rect x="-3" y="-26" width="8" height="22"/></g>
+    <text class="cote-legende" x="660" y="430">Île d’Or</text>
+    <text class="cote-legende cote-legende--mer" x="250" y="380">Méditerranée</text>
+    <text class="cote-legende cote-legende--esterel" x="1180" y="40" text-anchor="end">Massif de l’Estérel</text>
+    <g class="cote-repere" data-superpose data-repere="valescure" style="--i:0" transform="translate(250 92)">
+      <circle class="cote-halo" r="22"></circle><circle class="cote-point" r="7"></circle>
+      <text class="cote-nom" x="0" y="-46" text-anchor="middle">Valescure</text>
+      <text class="cote-nb" x="0" y="-72" text-anchor="middle">3 villas</text>
+    </g><g class="cote-repere" data-superpose data-repere="boulouris" style="--i:1" transform="translate(418 214)">
+      <circle class="cote-halo" r="22"></circle><circle class="cote-point" r="7"></circle>
+      <text class="cote-nom" x="0" y="46" text-anchor="middle">Boulouris</text>
+      <text class="cote-nb" x="0" y="70" text-anchor="middle">5 villas</text>
+    </g><g class="cote-repere" data-superpose data-repere="santa-lucia" style="--i:2" transform="translate(230 222)">
+      <circle class="cote-halo" r="22"></circle><circle class="cote-point" r="7"></circle>
+      <text class="cote-nom" x="0" y="46" text-anchor="middle">Santa Lucia</text>
+      <text class="cote-nb" x="0" y="70" text-anchor="middle">2 villas</text>
+    </g><g class="cote-repere" data-superpose data-repere="dramont" style="--i:3" transform="translate(602 292)">
+      <circle class="cote-halo" r="22"></circle><circle class="cote-point" r="7"></circle>
+      <text class="cote-nom" x="0" y="46" text-anchor="middle">Le Dramont</text>
+      <text class="cote-nb" x="0" y="70" text-anchor="middle">2 villas</text>
+    </g><g class="cote-repere" data-superpose data-repere="agay" style="--i:4" transform="translate(790 236)">
+      <circle class="cote-halo" r="22"></circle><circle class="cote-point" r="7"></circle>
+      <text class="cote-nom" x="0" y="46" text-anchor="middle">Agay · Cap Estérel</text>
+      <text class="cote-nb" x="0" y="70" text-anchor="middle">5 villas</text>
+    </g><g class="cote-repere" data-superpose data-repere="antheor" style="--i:5" transform="translate(985 262)">
+      <circle class="cote-halo" r="22"></circle><circle class="cote-point" r="7"></circle>
+      <text class="cote-nom" x="0" y="46" text-anchor="middle">Anthéor</text>
+      <text class="cote-nb" x="0" y="70" text-anchor="middle">2 villas</text>
+    </g>
+  </svg>
+  <ul class="cote-liste"><li data-secteur-liste="valescure"><strong>Valescure</strong> <span>Alice, Casa Lomi, La Santoline</span></li><li data-secteur-liste="boulouris"><strong>Boulouris</strong> <span>Uccelli, Harmony, Chez nous, Les Camelias, Pirouschka</span></li><li data-secteur-liste="santa-lucia"><strong>Santa Lucia</strong> <span>Le 155, Le Petit Roc</span></li><li data-secteur-liste="dramont"><strong>Le Dramont</strong> <span>L’Escapadou, Aiguebonne</span></li><li data-secteur-liste="agay"><strong>Agay · Cap Estérel</strong> <span>La Palmeraie, La Dolce Vita, Estaou, La Soleada, Le Mas Mirabelle</span></li><li data-secteur-liste="antheor"><strong>Anthéor</strong> <span>La Bohème, Eucalypta</span></li></ul>
+</div>
+  </div>
+</section>
+</main>
+<footer class="pied" id="pied">
+  <div class="conteneur pied-grille">
+    <div class="pied-marque">
+      <p class="marque marque--grande" aria-hidden="true">Madame<em class="marque-amp">&amp;</em>Monsieur</p>
+      <p>Conciergerie privée de villas à Saint-Raphaël, de Valescure à Anthéor.</p>
+    </div>
+    <div>
+      <p class="pied-titre">Nous joindre</p>
+      <p>55, allée de la Voie Lactée, 83700 Saint-Raphaël<br><a href="tel:+33643780223">06 43 78 02 23</a><br><a href="mailto:contact@maconciergeriesaintraphael.fr">contact@maconciergeriesaintraphael.fr</a><br><a href="https://www.instagram.com/madametmonsieur_conciergerie/" target="_blank" rel="noopener">Instagram</a></p>
+    </div>
+    <nav aria-label="Le site">
+      <p class="pied-titre">Le site</p>
+      <ul><li><a href="/" data-libelle="Accueil">Accueil</a></li><li><a href="/nos-villas" data-libelle="Nos villas">Nos villas</a></li><li><a href="/chez-vous" data-libelle="Chez vous">Chez vous</a></li><li><a href="/chez-nous" data-libelle="Chez nous">Chez nous</a></li><li><a href="/renseignements" data-libelle="Renseignements" aria-current="page">Renseignements</a></li></ul>
+    </nav>
+  </div>
+  <div class="conteneur pied-bas">
+    <p><span>Mentions légales · à compléter</span> <span id="confidentialite">Politique de confidentialité · à compléter</span></p>
+    <p>Maquette de démonstration : formulaires simulés, aucune donnée n’est envoyée.</p>
+    <p>© Madame&amp;Monsieur · <a href="#haut" data-sans-transition>Retour en haut</a></p>
+  </div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--contour" href="tel:+33643780223">Appeler</a>
+  <a class="bouton" href="/renseignements" data-libelle="Renseignements">Demander un séjour</a>
+</div>
+</body>
+</html>

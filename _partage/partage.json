@@ -1,0 +1,174 @@
+{
+  "avertissements": [],
+  "cartes": [
+    {
+      "page": "accueil",
+      "langue": "fr",
+      "fichier": "assets/partage/accueil-fr.jpg",
+      "gabarit": "droite",
+      "image": "ouverture-accueil-1440.webp",
+      "poids": 102017,
+      "sujet": {
+        "x": 600,
+        "y": 164,
+        "l": 600,
+        "h": 308
+      },
+      "textes": [
+        {
+          "x": 64,
+          "y": 203,
+          "l": 480,
+          "h": 193
+        },
+        {
+          "x": 64,
+          "y": 543,
+          "l": 480,
+          "h": 35
+        }
+      ],
+      "recouvrement": 0
+    },
+    {
+      "page": "chez-nous",
+      "langue": "fr",
+      "fichier": "assets/partage/chez-nous-fr.jpg",
+      "gabarit": "droite",
+      "image": "ouverture-chez-nous-1440.webp",
+      "poids": 65541,
+      "sujet": {
+        "x": 685,
+        "y": 112,
+        "l": 428,
+        "h": 213
+      },
+      "textes": [
+        {
+          "x": 64,
+          "y": 235,
+          "l": 480,
+          "h": 129
+        },
+        {
+          "x": 64,
+          "y": 543,
+          "l": 480,
+          "h": 35
+        },
+        {
+          "x": 600,
+          "y": 0,
+          "l": 78,
+          "h": 630
+        }
+      ],
+      "recouvrement": 0
+    },
+    {
+      "page": "chez-vous",
+      "langue": "fr",
+      "fichier": "assets/partage/chez-vous-fr.jpg",
+      "gabarit": "droite",
+      "image": "ouverture-chez-vous-1280.webp",
+      "poids": 74691,
+      "sujet": {
+        "x": 634,
+        "y": 179,
+        "l": 532,
+        "h": 378
+      },
+      "textes": [
+        {
+          "x": 64,
+          "y": 235,
+          "l": 480,
+          "h": 129
+        },
+        {
+          "x": 64,
+          "y": 543,
+          "l": 480,
+          "h": 35
+        },
+        {
+          "x": 600,
+          "y": 0,
+          "l": 26,
+          "h": 630
+        }
+      ],
+      "recouvrement": 0
+    },
+    {
+      "page": "renseignements",
+      "langue": "fr",
+      "fichier": "assets/partage/renseignements-fr.jpg",
+      "gabarit": "droite",
+      "image": "ouverture-renseignements-1280.webp",
+      "poids": 125088,
+      "sujet": {
+        "x": 728,
+        "y": 204,
+        "l": 346,
+        "h": 176
+      },
+      "textes": [
+        {
+          "x": 64,
+          "y": 235,
+          "l": 480,
+          "h": 129
+        },
+        {
+          "x": 64,
+          "y": 543,
+          "l": 480,
+          "h": 35
+        },
+        {
+          "x": 600,
+          "y": 0,
+          "l": 90,
+          "h": 630
+        }
+      ],
+      "recouvrement": 0
+    },
+    {
+      "page": "villas",
+      "langue": "fr",
+      "fichier": "assets/partage/villas-fr.jpg",
+      "gabarit": "droite",
+      "image": "villa-palmeraie-1-1280.webp",
+      "poids": 114731,
+      "sujet": {
+        "x": 656,
+        "y": 158,
+        "l": 487,
+        "h": 213
+      },
+      "textes": [
+        {
+          "x": 64,
+          "y": 235,
+          "l": 480,
+          "h": 129
+        },
+        {
+          "x": 64,
+          "y": 543,
+          "l": 480,
+          "h": 35
+        },
+        {
+          "x": 600,
+          "y": 0,
+          "l": 48,
+          "h": 630
+        }
+      ],
+      "recouvrement": 0
+    }
+  ]
+}

@@ -1,0 +1,610 @@
+<!doctype html>
+<html lang="fr" data-v="1">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Madame&amp;Monsieur · Villas d’exception à Saint-Raphaël</title>
+<meta name="description" content="Une collection de dix-neuf villas d’exception de Valescure à Anthéor, et un service digne des plus grands hôtels.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://superhostraph-maquette.vercel.app/">
+<style>:root{--fond:#f6f1e9;--texte:#1e2a2f;--voile-fond:#12303f;--ouverture-fond:#12303f;--menu-fond:#f6f1e9}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) [data-voile] { transform: none; visibility: visible; } html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var mode = type === 'back_forward' ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/fonts/noto-serif-display-500.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/albert-sans-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#f6f1e9">
+<link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Madame&amp;Monsieur">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Madame&amp;Monsieur · Villas d’exception à Saint-Raphaël">
+<meta property="og:description" content="Une collection de dix-neuf villas d’exception de Valescure à Anthéor, et un service digne des plus grands hôtels.">
+<meta property="og:url" content="https://superhostraph-maquette.vercel.app/">
+<meta property="og:image" content="https://superhostraph-maquette.vercel.app/assets/partage/accueil-fr.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Piscine d’une villa face aux rochers rouges de l’Estérel, et le nom Madame&amp;Monsieur">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LodgingBusiness","name":"Madame&Monsieur","description":"Conciergerie privée : collection de villas en location saisonnière à Saint-Raphaël, de Valescure à Anthéor.","telephone":"+33643780223","email":"contact@maconciergeriesaintraphael.fr","address":{"@type":"PostalAddress","streetAddress":"55, allée de la Voie Lactée","postalCode":"83700","addressLocality":"Saint-Raphaël","addressCountry":"FR"},"areaServed":"Saint-Raphaël, Var","sameAs":["https://www.instagram.com/madametmonsieur_conciergerie/"]}</script>
+</head>
+<body id="haut">
+<div data-voile data-forme="persiennes" aria-hidden="true"><div class="voile-contenu"><span class="voile-amp">&amp;</span><span data-voile-libelle>Accueil</span></div></div>
+<div class="ouverture-panneau" data-ouverture data-gouttiere="#12303f" aria-hidden="true">
+  <div class="volet volet--g"><div class="volet-lames"><span class="lame" style="--i:0"></span><span class="lame" style="--i:1"></span><span class="lame" style="--i:2"></span><span class="lame" style="--i:3"></span><span class="lame" style="--i:4"></span><span class="lame" style="--i:5"></span><span class="lame" style="--i:6"></span><span class="lame" style="--i:7"></span><span class="lame" style="--i:8"></span><span class="lame" style="--i:9"></span><span class="lame" style="--i:10"></span><span class="lame" style="--i:11"></span><span class="lame" style="--i:12"></span><span class="lame" style="--i:13"></span></div><span class="volet-mot">Madame</span></div>
+  <div class="volet volet--d"><div class="volet-lames"><span class="lame" style="--i:0"></span><span class="lame" style="--i:1"></span><span class="lame" style="--i:2"></span><span class="lame" style="--i:3"></span><span class="lame" style="--i:4"></span><span class="lame" style="--i:5"></span><span class="lame" style="--i:6"></span><span class="lame" style="--i:7"></span><span class="lame" style="--i:8"></span><span class="lame" style="--i:9"></span><span class="lame" style="--i:10"></span><span class="lame" style="--i:11"></span><span class="lame" style="--i:12"></span><span class="lame" style="--i:13"></span></div><span class="volet-mot">Monsieur</span></div>
+  <span class="ouverture-amp" data-ouverture-objet>&amp;</span>
+  <p class="ouverture-ligne">Conciergerie privée · Saint-Raphaël</p>
+</div>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/" data-libelle="Accueil" aria-label="Madame&amp;Monsieur, retour à l’accueil" aria-current="page">
+      <span class="marque" aria-hidden="true">Madame<em class="marque-amp" data-marque-amp>&amp;</em>Monsieur</span>
+    </a>
+    <nav data-nav aria-label="Navigation principale">
+      <ul><li><a href="/nos-villas" data-libelle="Nos villas">Nos villas</a></li><li><a href="/chez-vous" data-libelle="Chez vous">Chez vous</a></li><li><a href="/chez-nous" data-libelle="Chez nous">Chez nous</a></li><li><a href="/renseignements" data-libelle="Renseignements">Renseignements</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="bouton" href="/renseignements" data-libelle="Renseignements">Demander un séjour</a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Fermer"><span data-libelle-bouton>Menu</span></button>
+      <a class="menu-sansjs" href="#menu" data-menu-lien>Menu</a>
+    </div>
+  </div>
+</header>
+<script>/* Avant le premier affichage : rangées de la navigation (même règle que ajusterNav dans assets/js/socle/entete.js)
+   et hauteur réelle de l'en-tête, pour que rien ne saute quand le JavaScript du site prend la main. */
+(function () {
+  var h = document.documentElement, u = document.querySelector('[data-nav] ul'), e = document.querySelector('[data-entete]');
+  if (u) {
+    var deborde = function () { return u.scrollWidth > u.clientWidth + 1; }, c = deborde();
+    if (c && window.matchMedia('(min-width: 900px)').matches) {
+      h.classList.add('nav-deux-rangees'); c = deborde();
+      if (c) { h.classList.add('nav-deux-lignes'); var a = u.querySelector('a'); c = !a || u.getBoundingClientRect().height > a.getBoundingClientRect().height * 2.5; }
+      if (c) h.classList.remove('nav-deux-rangees', 'nav-deux-lignes');
+    }
+    if (c) h.classList.add('nav-compacte');
+  }
+  if (e) h.style.setProperty('--entete-h', Math.round(e.getBoundingClientRect().height) + 'px');
+})();</script>
+<span id="menu-ferme" aria-hidden="true"></span>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <p class="menu-sansjs-fermer"><a href="#menu-ferme">Fermer</a></p>
+  <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Accueil" aria-current="page">Accueil</a></li><li style="--i:1"><a href="/nos-villas" class="menu-lien" data-libelle="Nos villas">Nos villas</a></li><li style="--i:2"><a href="/chez-vous" class="menu-lien" data-libelle="Chez vous">Chez vous</a></li><li style="--i:3"><a href="/chez-nous" class="menu-lien" data-libelle="Chez nous">Chez nous</a></li><li style="--i:4"><a href="/renseignements" class="menu-lien" data-libelle="Renseignements">Renseignements</a></li></ul>
+  <p class="menu-actions"><a class="bouton" href="/renseignements" data-libelle="Renseignements">Demander un séjour</a> <a class="bouton bouton--contour" href="tel:+33643780223">Appeler 06 43 78 02 23</a></p>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="ouv ouv--accueil" id="debut">
+  <figure class="media ouv-media" data-fx="parallaxe" data-fx-force="8" data-iris-centre data-boucle-css style="--cadrage:47% 50%;--cadrage-mobile:50% 66%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/ouverture-accueil-mobile-640.webp 640w" sizes="100vw">
+    <img src="/assets/images/ouverture-accueil-1440.webp" srcset="/assets/images/ouverture-accueil-960.webp 960w, /assets/images/ouverture-accueil-1440.webp 1440w, /assets/images/ouverture-accueil-1920.webp 1920w" sizes="100vw" alt="Piscine de La Bohème face aux rochers rouges de l’Estérel et à la mer" width="1440" height="810" fetchpriority="high" loading="eager" decoding="async">
+  </picture>
+</figure>
+  <div class="ouv-texte conteneur">
+    <p class="surtitre ouv-anim masque-ecran-tres-bas">Conciergerie privée · Saint-Raphaël</p>
+    <h1 class="ouv-titre"><span class="ligne"><span class="ligne-in">L’excellence</span></span><span class="ligne"><span class="ligne-in">comme <em>signature</em></span></span></h1>
+    <p class="ouv-sous ouv-anim masque-ecran-bas">Une collection de villas d’exception, une expérience 5 étoiles.</p>
+    <p class="ouv-actions ouv-anim">
+      <a class="bouton" href="#collection" data-action-principale>Trouver ma villa</a>
+      <a href="/renseignements" class="bouton bouton--clair" data-libelle="Renseignements">Demander un séjour</a>
+    </p>
+    <p class="ouv-info ouv-anim" data-info-cle>19 villas · de 4 à 12 voyageurs · de Valescure à Anthéor</p>
+  </div>
+</section>
+<section class="manifeste" id="esprit">
+  <div class="conteneur manifeste-grille">
+    <div class="manifeste-texte">
+      <p class="surtitre" data-anime>Plus qu’un lieu de vie</p>
+      <p class="manifeste-grand" data-anime="mots">Nous voulons faire plus que vous trouver un simple lieu de vie pour vos vacances.</p>
+      <p class="manifeste-suite" data-anime>Linge de qualité hôtelière, lits faits à votre arrivée, gouvernante, chef à domicile, transferts privés : un service digne des plus grands hôtels, dans une maison rien qu’à vous.</p>
+      <p data-anime><a href="/chez-vous" class="lien-fleche" data-libelle="Chez vous">Ce qui vous attend sur place</a></p>
+    </div>
+    <figure class="media manifeste-media" data-fx="parallaxe" data-fx-force="12" style="--cadrage:45% 48%">
+  <picture>
+    <img src="/assets/images/manifeste-1280.webp" srcset="/assets/images/manifeste-800.webp 800w, /assets/images/manifeste-1280.webp 1280w, /assets/images/manifeste-1536.webp 1536w" sizes="(max-width: 760px) 100vw, 50vw" alt="Table d’été sous la pergola de La Palmeraie, ouverte sur l’Estérel" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  </div>
+</section>
+<section class="collection" id="collection">
+  <div class="conteneur collection-tete">
+    <div>
+      <p class="surtitre" data-anime>La collection</p>
+      <h2 class="titre-section" data-anime="lignes">Combien serez-vous ?</h2>
+      <p class="chapo" data-anime>Glissez le curseur : les villas qui vous accueillent passent au premier rang.</p>
+    </div>
+    <div class="curseur-voyageurs" data-effet="voyageurs" data-curseur-voyageurs>
+      <label for="nb-voyageurs">Nombre de voyageurs</label>
+      <div class="curseur-ligne">
+        <input type="range" id="nb-voyageurs" min="2" max="12" step="1" value="8" data-voyageurs-curseur>
+        <output for="nb-voyageurs" class="curseur-valeur" data-voyageurs-valeur>8</output>
+      </div>
+      <p class="curseur-resultat" aria-live="polite"><strong data-nb-villas>13</strong> villas pour <strong data-nb-voyageurs>8</strong> voyageurs</p>
+    </div>
+  </div>
+  <ul class="conteneur collection-grille" data-collection>
+    <li class="villa" data-villa="chez-nous" data-voyageurs="8" data-prix="320">
+  <a class="villa-lien" href="/nos-villas#villa-chez-nous" data-libelle="Nos villas">
+    <div class="villa-image"><figure class="media villa-media" style="--cadrage:50% 45%">
+  <picture>
+    <img src="/assets/images/villa-chez-nous-1-1280.webp" srcset="/assets/images/villa-chez-nous-1-640.webp 640w, /assets/images/villa-chez-nous-1-960.webp 960w, /assets/images/villa-chez-nous-1-1280.webp 1280w" sizes="(max-width: 760px) 92vw, (max-width: 1100px) 45vw, 30vw" alt="Maison de caractère Chez nous et sa piscine" width="1280" height="960" loading="lazy" decoding="async">
+  </picture>
+</figure><span class="villa-badges"><span class="badge">Meublé de tourisme ★★★★★</span></span></div>
+    <div class="villa-texte">
+      <p class="villa-secteur">Boulouris</p>
+      <h3 class="villa-nom">Chez nous</h3>
+      <p class="villa-capacite">8 voyageurs · 4 chambres · 2 salles de bain</p>
+      <p class="villa-prix">de 320 à 760 € <span class="prix-nuit">la nuit</span></p>
+    </div><span class="visuellement-cache"> · Voir la villa</span></a>
+</li><li class="villa" data-villa="soleada" data-voyageurs="8" data-prix="330">
+  <a class="villa-lien" href="/nos-villas#villa-soleada" data-libelle="Nos villas">
+    <div class="villa-image"><figure class="media villa-media" style="--cadrage:50% 52%">
+  <picture>
+    <img src="/assets/images/villa-soleada-1-1280.webp" srcset="/assets/images/villa-soleada-1-640.webp 640w, /assets/images/villa-soleada-1-960.webp 960w, /assets/images/villa-soleada-1-1280.webp 1280w" sizes="(max-width: 760px) 92vw, (max-width: 1100px) 45vw, 30vw" alt="Terrasse de La Soleada au soleil couchant" width="1280" height="960" loading="lazy" decoding="async">
+  </picture>
+</figure><span class="villa-badges"><span class="badge">Meublé de tourisme ★★★★★</span></span></div>
+    <div class="villa-texte">
+      <p class="villa-secteur">Agay · Cap Estérel</p>
+      <h3 class="villa-nom">La Soleada</h3>
+      <p class="villa-capacite">8 voyageurs · 4 chambres · 4 salles de bain</p>
+      <p class="villa-prix">de 330 à 950 € <span class="prix-nuit">la nuit</span></p>
+    </div><span class="visuellement-cache"> · Voir la villa</span></a>
+</li><li class="villa" data-villa="mas-mirabelle" data-voyageurs="8" data-prix="330">
+  <a class="villa-lien" href="/nos-villas#villa-mas-mirabelle" data-libelle="Nos villas">
+    <div class="villa-image"><figure class="media villa-media" style="--cadrage:50% 41%">
+  <picture>
+    <img src="/assets/images/villa-mas-mirabelle-1-1280.webp" srcset="/assets/images/villa-mas-mirabelle-1-640.webp 640w, /assets/images/villa-mas-mirabelle-1-960.webp 960w, /assets/images/villa-mas-mirabelle-1-1280.webp 1280w" sizes="(max-width: 760px) 92vw, (max-width: 1100px) 45vw, 30vw" alt="Piscine à débordement du Mas Mirabelle face à la baie" width="1280" height="960" loading="lazy" decoding="async">
+  </picture>
+</figure><span class="villa-badges"><span class="badge">Meublé de tourisme ★★★★★</span></span></div>
+    <div class="villa-texte">
+      <p class="villa-secteur">Agay · Cap Estérel</p>
+      <h3 class="villa-nom">Le Mas Mirabelle</h3>
+      <p class="villa-capacite">8 voyageurs · 4 chambres · 3 salles de bain</p>
+      <p class="villa-prix">de 330 à 950 € <span class="prix-nuit">la nuit</span></p>
+    </div><span class="visuellement-cache"> · Voir la villa</span></a>
+</li><li class="villa" data-villa="estaou" data-voyageurs="8" data-prix="350">
+  <a class="villa-lien" href="/nos-villas#villa-estaou" data-libelle="Nos villas">
+    <div class="villa-image"><figure class="media villa-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/villa-estaou-1-1280.webp" srcset="/assets/images/villa-estaou-1-640.webp 640w, /assets/images/villa-estaou-1-960.webp 960w, /assets/images/villa-estaou-1-1280.webp 1280w" sizes="(max-width: 760px) 92vw, (max-width: 1100px) 45vw, 30vw" alt="Piscine d’Estaou bordée de lauriers-roses et de transats rouges" width="1280" height="960" loading="lazy" decoding="async">
+  </picture>
+</figure><span class="villa-badges"></span></div>
+    <div class="villa-texte">
+      <p class="villa-secteur">Agay · Cap Estérel</p>
+      <h3 class="villa-nom">Estaou</h3>
+      <p class="villa-capacite">8 voyageurs · 4 chambres · 3 salles de bain</p>
+      <p class="villa-prix">de 350 à 850 € <span class="prix-nuit">la nuit</span></p>
+    </div><span class="visuellement-cache"> · Voir la villa</span></a>
+</li><li class="villa" data-villa="escapadou" data-voyageurs="8" data-prix="450">
+  <a class="villa-lien" href="/nos-villas#villa-escapadou" data-libelle="Nos villas">
+    <div class="villa-image"><figure class="media villa-media" style="--cadrage:38% 45%">
+  <picture>
+    <img src="/assets/images/villa-escapadou-1-1280.webp" srcset="/assets/images/villa-escapadou-1-640.webp 640w, /assets/images/villa-escapadou-1-960.webp 960w, /assets/images/villa-escapadou-1-1280.webp 1280w" sizes="(max-width: 760px) 92vw, (max-width: 1100px) 45vw, 30vw" alt="L’Île d’Or vue depuis le jardin de L’Escapadou, sous un pin" width="1280" height="960" loading="lazy" decoding="async">
+  </picture>
+</figure><span class="villa-badges"></span></div>
+    <div class="villa-texte">
+      <p class="villa-secteur">Le Dramont</p>
+      <h3 class="villa-nom">L’Escapadou</h3>
+      <p class="villa-capacite">8 voyageurs · 3 chambres · 3 salles de bain</p>
+      <p class="villa-prix">de 450 à 870 € <span class="prix-nuit">la nuit</span></p>
+    </div><span class="visuellement-cache"> · Voir la villa</span></a>
+</li><li class="villa" data-villa="dolce-vita" data-voyageurs="8" data-prix="600">
+  <a class="villa-lien" href="/nos-villas#villa-dolce-vita" data-libelle="Nos villas">
+    <div class="villa-image"><figure class="media villa-media" style="--cadrage:50% 44%">
+  <picture>
+    <img src="/assets/images/villa-dolce-vita-1-1280.webp" srcset="/assets/images/villa-dolce-vita-1-640.webp 640w, /assets/images/villa-dolce-vita-1-960.webp 960w, /assets/images/villa-dolce-vita-1-1280.webp 1280w" sizes="(max-width: 760px) 92vw, (max-width: 1100px) 45vw, 30vw" alt="Piscine et escalier de pierre dans le jardin méditerranéen de La Dolce Vita" width="1280" height="960" loading="lazy" decoding="async">
+  </picture>
+</figure><span class="villa-badges"></span></div>
+    <div class="villa-texte">
+      <p class="villa-secteur">Agay · Cap Estérel</p>
+      <h3 class="villa-nom">La Dolce Vita</h3>
+      <p class="villa-capacite">8 voyageurs · 4 chambres · 4 salles de bain</p>
+      <p class="villa-prix">de 600 à 700 € <span class="prix-nuit">la nuit</span></p>
+    </div><span class="visuellement-cache"> · Voir la villa</span></a>
+</li><li class="villa" hidden data-villa="casa-lomi" data-voyageurs="8" data-prix="700">
+  <a class="villa-lien" href="/nos-villas#villa-casa-lomi" data-libelle="Nos villas">
+    <div class="villa-image"><figure class="media villa-media" style="--cadrage:47% 47%">
+  <picture>
+    <img src="/assets/images/villa-casa-lomi-1-1280.webp" srcset="/assets/images/villa-casa-lomi-1-640.webp 640w, /assets/images/villa-casa-lomi-1-960.webp 960w, /assets/images/villa-casa-lomi-1-1280.webp 1280w" sizes="(max-width: 760px) 92vw, (max-width: 1100px) 45vw, 30vw" alt="Casa Lomi, ses murs de pierre et sa piscine" width="1280" height="960" loading="lazy" decoding="async">
+  </picture>
+</figure><span class="villa-badges"></span></div>
+    <div class="villa-texte">
+      <p class="villa-secteur">Valescure</p>
+      <h3 class="villa-nom">Casa Lomi</h3>
+      <p class="villa-capacite">8 voyageurs · 4 chambres · 3 salles de bain</p>
+      <p class="villa-prix">de 700 à 850 € <span class="prix-nuit">la nuit</span></p>
+    </div><span class="visuellement-cache"> · Voir la villa</span></a>
+</li><li class="villa" hidden data-villa="eucalypta" data-voyageurs="10" data-prix="500">
+  <a class="villa-lien" href="/nos-villas#villa-eucalypta" data-libelle="Nos villas">
+    <div class="villa-image"><figure class="media villa-media" style="--cadrage:50% 52%">
+  <picture>
+    <img src="/assets/images/villa-eucalypta-1-1280.webp" srcset="/assets/images/villa-eucalypta-1-640.webp 640w, /assets/images/villa-eucalypta-1-960.webp 960w, /assets/images/villa-eucalypta-1-1280.webp 1280w" sizes="(max-width: 760px) 92vw, (max-width: 1100px) 45vw, 30vw" alt="Piscine d’Eucalypta face aux rochers rouges de l’Estérel" width="1280" height="960" loading="lazy" decoding="async">
+  </picture>
+</figure><span class="villa-badges"></span></div>
+    <div class="villa-texte">
+      <p class="villa-secteur">Anthéor</p>
+      <h3 class="villa-nom">Eucalypta</h3>
+      <p class="villa-capacite">10 voyageurs</p>
+      <p class="villa-prix">de 500 à 750 € <span class="prix-nuit">la nuit</span></p>
+    </div><span class="visuellement-cache"> · Voir la villa</span></a>
+</li><li class="villa" hidden data-villa="palmeraie" data-voyageurs="12" data-prix="350">
+  <a class="villa-lien" href="/nos-villas#villa-palmeraie" data-libelle="Nos villas">
+    <div class="villa-image"><figure class="media villa-media" style="--cadrage:50% 43%">
+  <picture>
+    <img src="/assets/images/villa-palmeraie-1-1280.webp" srcset="/assets/images/villa-palmeraie-1-640.webp 640w, /assets/images/villa-palmeraie-1-960.webp 960w, /assets/images/villa-palmeraie-1-1280.webp 1280w" sizes="(max-width: 760px) 92vw, (max-width: 1100px) 45vw, 30vw" alt="La Palmeraie se reflète dans sa piscine à débordement" width="1280" height="960" loading="lazy" decoding="async">
+  </picture>
+</figure><span class="villa-badges"></span></div>
+    <div class="villa-texte">
+      <p class="villa-secteur">Agay · Cap Estérel</p>
+      <h3 class="villa-nom">La Palmeraie</h3>
+      <p class="villa-capacite">12 voyageurs · 6 chambres · 4 salles de bain</p>
+      <p class="villa-prix">de 350 à 650 € <span class="prix-nuit">la nuit</span></p>
+    </div><span class="visuellement-cache"> · Voir la villa</span></a>
+</li><li class="villa" hidden data-villa="boheme" data-voyageurs="12" data-prix="350">
+  <a class="villa-lien" href="/nos-villas#villa-boheme" data-libelle="Nos villas">
+    <div class="villa-image"><figure class="media villa-media" style="--cadrage:52% 54%">
+  <picture>
+    <img src="/assets/images/villa-boheme-1-1280.webp" srcset="/assets/images/villa-boheme-1-640.webp 640w, /assets/images/villa-boheme-1-960.webp 960w, /assets/images/villa-boheme-1-1280.webp 1280w" sizes="(max-width: 760px) 92vw, (max-width: 1100px) 45vw, 30vw" alt="La Bohème, sa piscine et ses palmiers" width="1280" height="960" loading="lazy" decoding="async">
+  </picture>
+</figure><span class="villa-badges"><span class="badge">Meublé de tourisme ★★★★★</span></span></div>
+    <div class="villa-texte">
+      <p class="villa-secteur">Anthéor</p>
+      <h3 class="villa-nom">La Bohème</h3>
+      <p class="villa-capacite">12 voyageurs · 5 chambres · 4 salles de bain</p>
+      <p class="villa-prix">de 350 à 700 € <span class="prix-nuit">la nuit</span></p>
+    </div><span class="visuellement-cache"> · Voir la villa</span></a>
+</li><li class="villa" hidden data-villa="uccelli" data-voyageurs="12" data-prix="400">
+  <a class="villa-lien" href="/nos-villas#villa-uccelli" data-libelle="Nos villas">
+    <div class="villa-image"><figure class="media villa-media" style="--cadrage:50% 47%">
+  <picture>
+    <img src="/assets/images/villa-uccelli-1-1280.webp" srcset="/assets/images/villa-uccelli-1-640.webp 640w, /assets/images/villa-uccelli-1-960.webp 960w, /assets/images/villa-uccelli-1-1280.webp 1280w" sizes="(max-width: 760px) 92vw, (max-width: 1100px) 45vw, 30vw" alt="Villa contemporaine Uccelli et sa piscine privée" width="1280" height="960" loading="lazy" decoding="async">
+  </picture>
+</figure><span class="villa-badges"></span></div>
+    <div class="villa-texte">
+      <p class="villa-secteur">Boulouris</p>
+      <h3 class="villa-nom">Uccelli</h3>
+      <p class="villa-capacite">12 voyageurs · 6 chambres · 4 salles de bain</p>
+      <p class="villa-prix">de 400 à 950 € <span class="prix-nuit">la nuit</span></p>
+    </div><span class="visuellement-cache"> · Voir la villa</span></a>
+</li><li class="villa" hidden data-villa="harmony" data-voyageurs="12" data-prix="500">
+  <a class="villa-lien" href="/nos-villas#villa-harmony" data-libelle="Nos villas">
+    <div class="villa-image"><figure class="media villa-media" style="--cadrage:47% 49%">
+  <picture>
+    <img src="/assets/images/villa-harmony-1-1280.webp" srcset="/assets/images/villa-harmony-1-640.webp 640w, /assets/images/villa-harmony-1-960.webp 960w, /assets/images/villa-harmony-1-1280.webp 1280w" sizes="(max-width: 760px) 92vw, (max-width: 1100px) 45vw, 30vw" alt="Villa Harmony, piscine et terrasses" width="1280" height="960" loading="lazy" decoding="async">
+  </picture>
+</figure><span class="villa-badges"><span class="badge badge--clair">Nouveauté</span></span></div>
+    <div class="villa-texte">
+      <p class="villa-secteur">Boulouris</p>
+      <h3 class="villa-nom">Harmony</h3>
+      <p class="villa-capacite">12 voyageurs · 6 chambres · 6 salles de bain</p>
+      <p class="villa-prix">de 500 à 980 € <span class="prix-nuit">la nuit</span></p>
+    </div><span class="visuellement-cache"> · Voir la villa</span></a>
+</li><li class="villa" hidden data-villa="alice" data-voyageurs="12" data-prix="600">
+  <a class="villa-lien" href="/nos-villas#villa-alice" data-libelle="Nos villas">
+    <div class="villa-image"><figure class="media villa-media" style="--cadrage:50% 48%">
+  <picture>
+    <img src="/assets/images/villa-alice-1-1280.webp" srcset="/assets/images/villa-alice-1-640.webp 640w, /assets/images/villa-alice-1-960.webp 960w, /assets/images/villa-alice-1-1280.webp 1280w" sizes="(max-width: 760px) 92vw, (max-width: 1100px) 45vw, 30vw" alt="Villa Alice, sa piscine et le pool-house plein sud" width="1280" height="960" loading="lazy" decoding="async">
+  </picture>
+</figure><span class="villa-badges"></span></div>
+    <div class="villa-texte">
+      <p class="villa-secteur">Valescure</p>
+      <h3 class="villa-nom">Alice</h3>
+      <p class="villa-capacite">12 voyageurs · 5 chambres · 4 salles de bain</p>
+      <p class="villa-prix">de 600 à 850 € <span class="prix-nuit">la nuit</span></p>
+    </div><span class="visuellement-cache"> · Voir la villa</span></a>
+</li><li class="villa" hidden data-villa="aiguebonne" data-voyageurs="4" data-prix="140">
+  <a class="villa-lien" href="/nos-villas#villa-aiguebonne" data-libelle="Nos villas">
+    <div class="villa-image"><figure class="media villa-media" style="--cadrage:50% 56%">
+  <picture>
+    <img src="/assets/images/villa-aiguebonne-1-1280.webp" srcset="/assets/images/villa-aiguebonne-1-640.webp 640w, /assets/images/villa-aiguebonne-1-960.webp 960w, /assets/images/villa-aiguebonne-1-1280.webp 1280w" sizes="(max-width: 760px) 92vw, (max-width: 1100px) 45vw, 30vw" alt="Grande terrasse d’Aiguebonne face à la mer" width="1280" height="960" loading="lazy" decoding="async">
+  </picture>
+</figure><span class="villa-badges"></span></div>
+    <div class="villa-texte">
+      <p class="villa-secteur">Le Dramont</p>
+      <h3 class="villa-nom">Aiguebonne</h3>
+      <p class="villa-capacite">4 voyageurs · 2 chambres · 1 salles de bain</p>
+      <p class="villa-prix">de 140 à 350 € <span class="prix-nuit">la nuit</span></p>
+    </div><span class="visuellement-cache"> · Voir la villa</span></a>
+</li><li class="villa" hidden data-villa="petit-roc" data-voyageurs="4" data-prix="230">
+  <a class="villa-lien" href="/nos-villas#villa-petit-roc" data-libelle="Nos villas">
+    <div class="villa-image"><figure class="media villa-media" style="--cadrage:56% 48%">
+  <picture>
+    <img src="/assets/images/villa-petit-roc-1-1280.webp" srcset="/assets/images/villa-petit-roc-1-640.webp 640w, /assets/images/villa-petit-roc-1-960.webp 960w, /assets/images/villa-petit-roc-1-1280.webp 1280w" sizes="(max-width: 760px) 92vw, (max-width: 1100px) 45vw, 30vw" alt="Rochers rouges et mer au pied du Petit Roc" width="1280" height="960" loading="lazy" decoding="async">
+  </picture>
+</figure><span class="villa-badges"></span></div>
+    <div class="villa-texte">
+      <p class="villa-secteur">Santa Lucia</p>
+      <h3 class="villa-nom">Le Petit Roc</h3>
+      <p class="villa-capacite">4 voyageurs · 2 chambres · 2 salles de bain</p>
+      <p class="villa-prix">de 230 à 430 € <span class="prix-nuit">la nuit</span></p>
+    </div><span class="visuellement-cache"> · Voir la villa</span></a>
+</li><li class="villa" hidden data-villa="155" data-voyageurs="6" data-prix="250">
+  <a class="villa-lien" href="/nos-villas#villa-155" data-libelle="Nos villas">
+    <div class="villa-image"><figure class="media villa-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/villa-155-1-1280.webp" srcset="/assets/images/villa-155-1-640.webp 640w, /assets/images/villa-155-1-960.webp 960w, /assets/images/villa-155-1-1280.webp 1280w" sizes="(max-width: 760px) 92vw, (max-width: 1100px) 45vw, 30vw" alt="Piscine du 155 entre palmiers et cyprès" width="1280" height="960" loading="lazy" decoding="async">
+  </picture>
+</figure><span class="villa-badges"></span></div>
+    <div class="villa-texte">
+      <p class="villa-secteur">Santa Lucia</p>
+      <h3 class="villa-nom">Le 155</h3>
+      <p class="villa-capacite">6 voyageurs · 4 chambres · 4 salles de bain</p>
+      <p class="villa-prix">de 250 à 500 € <span class="prix-nuit">la nuit</span></p>
+    </div><span class="visuellement-cache"> · Voir la villa</span></a>
+</li><li class="villa" hidden data-villa="pirouschka" data-voyageurs="6" data-prix="250">
+  <a class="villa-lien" href="/nos-villas#villa-pirouschka" data-libelle="Nos villas">
+    <div class="villa-image"><figure class="media villa-media" style="--cadrage:50% 58%">
+  <picture>
+    <img src="/assets/images/villa-pirouschka-1-1280.webp" srcset="/assets/images/villa-pirouschka-1-640.webp 640w, /assets/images/villa-pirouschka-1-960.webp 960w, /assets/images/villa-pirouschka-1-1280.webp 1280w" sizes="(max-width: 760px) 92vw, (max-width: 1100px) 45vw, 30vw" alt="Pirouschka et sa piscine sous les pins" width="1280" height="960" loading="lazy" decoding="async">
+  </picture>
+</figure><span class="villa-badges"><span class="badge">Meublé de tourisme ★★★★★</span></span></div>
+    <div class="villa-texte">
+      <p class="villa-secteur">Boulouris</p>
+      <h3 class="villa-nom">Pirouschka</h3>
+      <p class="villa-capacite">6 voyageurs · 3 chambres · 2 salles de bain</p>
+      <p class="villa-prix">de 250 à 690 € <span class="prix-nuit">la nuit</span></p>
+    </div><span class="visuellement-cache"> · Voir la villa</span></a>
+</li><li class="villa" hidden data-villa="camelias" data-voyageurs="6" data-prix="350">
+  <a class="villa-lien" href="/nos-villas#villa-camelias" data-libelle="Nos villas">
+    <div class="villa-image"><figure class="media villa-media" style="--cadrage:50% 55%">
+  <picture>
+    <img src="/assets/images/villa-camelias-1-1280.webp" srcset="/assets/images/villa-camelias-1-640.webp 640w, /assets/images/villa-camelias-1-960.webp 960w, /assets/images/villa-camelias-1-1280.webp 1280w" sizes="(max-width: 760px) 92vw, (max-width: 1100px) 45vw, 30vw" alt="Terrasse ombragée et piscine des Camelias" width="1280" height="960" loading="lazy" decoding="async">
+  </picture>
+</figure><span class="villa-badges"></span></div>
+    <div class="villa-texte">
+      <p class="villa-secteur">Boulouris</p>
+      <h3 class="villa-nom">Les Camelias</h3>
+      <p class="villa-capacite">6 voyageurs · 3 chambres · 2 salles de bain</p>
+      <p class="villa-prix">de 350 à 520 € <span class="prix-nuit">la nuit</span></p>
+    </div><span class="visuellement-cache"> · Voir la villa</span></a>
+</li><li class="villa" hidden data-villa="santoline" data-voyageurs="6" data-prix="350">
+  <a class="villa-lien" href="/nos-villas#villa-santoline" data-libelle="Nos villas">
+    <div class="villa-image"><figure class="media villa-media" style="--cadrage:50% 46%">
+  <picture>
+    <img src="/assets/images/villa-santoline-1-1280.webp" srcset="/assets/images/villa-santoline-1-640.webp 640w, /assets/images/villa-santoline-1-960.webp 960w, /assets/images/villa-santoline-1-1280.webp 1280w" sizes="(max-width: 760px) 92vw, (max-width: 1100px) 45vw, 30vw" alt="La Santoline et sa piscine au cœur du jardin" width="1280" height="960" loading="lazy" decoding="async">
+  </picture>
+</figure><span class="villa-badges"></span></div>
+    <div class="villa-texte">
+      <p class="villa-secteur">Valescure</p>
+      <h3 class="villa-nom">La Santoline</h3>
+      <p class="villa-capacite">6 voyageurs · 3 chambres · 2 salles de bain</p>
+      <p class="villa-prix">de 350 à 550 € <span class="prix-nuit">la nuit</span></p>
+    </div><span class="visuellement-cache"> · Voir la villa</span></a>
+</li>
+  </ul>
+  <p class="conteneur collection-tous"><a href="/nos-villas" class="bouton bouton--contour" data-libelle="Nos villas">Voir les 19 villas</a></p>
+</section>
+<section class="cote" id="cote">
+  <div class="conteneur cote-tete">
+    <p class="surtitre" data-anime>Entre Cannes et Saint-Tropez</p>
+    <h2 class="titre-section" data-anime="lignes">De Valescure à Anthéor</h2>
+    <p class="chapo" data-anime>Dix-neuf maisons entre les pins de Valescure, les criques de Boulouris et les rochers rouges de l’Estérel.</p>
+  </div>
+  <div class="conteneur"><div class="cote-carte" data-effet="cote" data-boucle-css>
+  <svg class="cote-svg" viewBox="0 0 1200 470" role="img" aria-labelledby="cote-titre-svg">
+    <title id="cote-titre-svg">De Valescure à Anthéor</title>
+    <path class="cote-mer" d="M0 196 C 120 206 180 214 236 226 C 300 238 360 226 420 236 C 480 246 540 262 572 300 C 590 322 612 330 628 312 C 650 288 690 282 720 270 C 750 258 766 230 792 228 C 820 226 832 262 860 276 C 900 296 950 286 990 296 C 1060 312 1130 318 1200 330 L 1200 470 L 0 470 Z"/>
+    <path class="cote-esterel" d="M700 0 L 742 58 L 768 40 L 806 112 L 838 84 L 872 150 L 906 118 L 948 176 L 982 138 L 1020 196 L 1060 150 L 1098 206 L 1140 168 L 1200 232 L 1200 0 Z"/>
+    <text class="cote-ville" x="18" y="172">Saint-Raphaël</text>
+    <path class="cote-trait" data-cote-trait d="M0 196 C 120 206 180 214 236 226 C 300 238 360 226 420 236 C 480 246 540 262 572 300 C 590 322 612 330 628 312 C 650 288 690 282 720 270 C 750 258 766 230 792 228 C 820 226 832 262 860 276 C 900 296 950 286 990 296 C 1060 312 1130 318 1200 330"/>
+    <g class="cote-ile" transform="translate(632 392)"><path d="M-26 6 C -18 -6 -6 -10 4 -8 C 16 -6 24 0 28 8 Z"/><rect x="-3" y="-26" width="8" height="22"/></g>
+    <text class="cote-legende" x="660" y="430">Île d’Or</text>
+    <text class="cote-legende cote-legende--mer" x="250" y="380">Méditerranée</text>
+    <text class="cote-legende cote-legende--esterel" x="1180" y="40" text-anchor="end">Massif de l’Estérel</text>
+    <g class="cote-repere" data-superpose data-repere="valescure" style="--i:0" transform="translate(250 92)">
+      <circle class="cote-halo" r="22"></circle><circle class="cote-point" r="7"></circle>
+      <text class="cote-nom" x="0" y="-46" text-anchor="middle">Valescure</text>
+      <text class="cote-nb" x="0" y="-72" text-anchor="middle">3 villas</text>
+    </g><g class="cote-repere" data-superpose data-repere="boulouris" style="--i:1" transform="translate(418 214)">
+      <circle class="cote-halo" r="22"></circle><circle class="cote-point" r="7"></circle>
+      <text class="cote-nom" x="0" y="46" text-anchor="middle">Boulouris</text>
+      <text class="cote-nb" x="0" y="70" text-anchor="middle">5 villas</text>
+    </g><g class="cote-repere" data-superpose data-repere="santa-lucia" style="--i:2" transform="translate(230 222)">
+      <circle class="cote-halo" r="22"></circle><circle class="cote-point" r="7"></circle>
+      <text class="cote-nom" x="0" y="46" text-anchor="middle">Santa Lucia</text>
+      <text class="cote-nb" x="0" y="70" text-anchor="middle">2 villas</text>
+    </g><g class="cote-repere" data-superpose data-repere="dramont" style="--i:3" transform="translate(602 292)">
+      <circle class="cote-halo" r="22"></circle><circle class="cote-point" r="7"></circle>
+      <text class="cote-nom" x="0" y="46" text-anchor="middle">Le Dramont</text>
+      <text class="cote-nb" x="0" y="70" text-anchor="middle">2 villas</text>
+    </g><g class="cote-repere" data-superpose data-repere="agay" style="--i:4" transform="translate(790 236)">
+      <circle class="cote-halo" r="22"></circle><circle class="cote-point" r="7"></circle>
+      <text class="cote-nom" x="0" y="46" text-anchor="middle">Agay · Cap Estérel</text>
+      <text class="cote-nb" x="0" y="70" text-anchor="middle">5 villas</text>
+    </g><g class="cote-repere" data-superpose data-repere="antheor" style="--i:5" transform="translate(985 262)">
+      <circle class="cote-halo" r="22"></circle><circle class="cote-point" r="7"></circle>
+      <text class="cote-nom" x="0" y="46" text-anchor="middle">Anthéor</text>
+      <text class="cote-nb" x="0" y="70" text-anchor="middle">2 villas</text>
+    </g>
+  </svg>
+  <ul class="cote-liste"><li data-secteur-liste="valescure"><strong>Valescure</strong> <span>Alice, Casa Lomi, La Santoline</span></li><li data-secteur-liste="boulouris"><strong>Boulouris</strong> <span>Uccelli, Harmony, Chez nous, Les Camelias, Pirouschka</span></li><li data-secteur-liste="santa-lucia"><strong>Santa Lucia</strong> <span>Le 155, Le Petit Roc</span></li><li data-secteur-liste="dramont"><strong>Le Dramont</strong> <span>L’Escapadou, Aiguebonne</span></li><li data-secteur-liste="agay"><strong>Agay · Cap Estérel</strong> <span>La Palmeraie, La Dolce Vita, Estaou, La Soleada, Le Mas Mirabelle</span></li><li data-secteur-liste="antheor"><strong>Anthéor</strong> <span>La Bohème, Eucalypta</span></li></ul>
+</div></div>
+  <p class="conteneur note">Plan indicatif : l’adresse exacte est donnée avec la réservation.</p>
+</section>
+<section class="apercu-services" id="services">
+  <div class="conteneur apercu-tete">
+    <div>
+      <p class="surtitre" data-anime>Chez vous</p>
+      <h2 class="titre-section" data-anime="lignes">Un service digne des plus grands hôtels</h2>
+    </div>
+    <div>
+      <p class="chapo" data-anime>Disponibles sur demande pendant tout votre séjour.</p>
+      <p data-anime><a href="/chez-vous" class="lien-fleche" data-libelle="Chez vous">Tous les services</a></p>
+    </div>
+  </div>
+  <ul class="conteneur apercu-grille" data-anime="cascade">
+    <li class="apercu-carte">
+      <figure class="media apercu-media" style="--cadrage:32% 50%">
+  <picture>
+    <img src="/assets/images/service-accueil-1280.webp" srcset="/assets/images/service-accueil-640.webp 640w, /assets/images/service-accueil-960.webp 960w, /assets/images/service-accueil-1280.webp 1280w" sizes="(max-width: 760px) 92vw, 25vw" alt="Lits jumeaux faits avec des serviettes pliées en éléphants à La Soleada" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <h3>Service haute couture dès votre arrivée</h3>
+      <p>Accueil personnalisé · Kit d’accueil · Linge de qualité hôtelière · Lits faits à l’arrivée</p>
+    </li><li class="apercu-carte">
+      <figure class="media apercu-media" style="--cadrage:54% 51%">
+  <picture>
+    <img src="/assets/images/service-chef-1168.webp" srcset="/assets/images/service-chef-640.webp 640w, /assets/images/service-chef-960.webp 960w, /assets/images/service-chef-1168.webp 1168w" sizes="(max-width: 760px) 92vw, 25vw" alt="Tomates anciennes, huile d’olive, basilic et casserole de cuivre sur un plan de marbre" width="1168" height="779" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <h3>À table</h3>
+      <p>Petits-déjeuners · Courses avant l’arrivée · Chef à domicile</p>
+    </li><li class="apercu-carte">
+      <figure class="media apercu-media" style="--cadrage:49% 50%">
+  <picture>
+    <img src="/assets/images/service-transfert-1168.webp" srcset="/assets/images/service-transfert-640.webp 640w, /assets/images/service-transfert-960.webp 960w, /assets/images/service-transfert-1168.webp 1168w" sizes="(max-width: 760px) 92vw, 25vw" alt="Berline sombre portière ouverte dans une allée de lavande" width="1168" height="779" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <h3>Vos déplacements</h3>
+      <p>Transferts privés · Location de véhicule</p>
+    </li><li class="apercu-carte">
+      <figure class="media apercu-media" style="--cadrage:67% 41%">
+  <picture>
+    <img src="/assets/images/service-bateau-1168.webp" srcset="/assets/images/service-bateau-640.webp 640w, /assets/images/service-bateau-960.webp 960w, /assets/images/service-bateau-1168.webp 1168w" sizes="(max-width: 760px) 92vw, 25vw" alt="Bateau en bois amarré dans une crique turquoise entre des rochers rouges" width="1168" height="779" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <h3>Sur demande</h3>
+      <p>Location de bateau · Services sur mesure</p>
+    </li>
+  </ul>
+</section>
+<section class="lieux-apercu" id="lieux">
+  <div class="conteneur apercu-tete">
+    <div>
+      <p class="surtitre" data-anime>Chez nous</p>
+      <h2 class="titre-section" data-anime="lignes">Saint-Raphaël, sans fausse note</h2>
+    </div>
+    <div>
+      <p class="chapo" data-anime>Plages, criques, Île d’Or, rade d’Agay et Corniche d’Or : la station balnéaire entre Cannes et Saint-Tropez.</p>
+      <p data-anime><a href="/chez-nous" class="lien-fleche" data-libelle="Chez nous">Découvrir Saint-Raphaël</a></p>
+    </div>
+  </div>
+  <div class="rangee" data-rangee data-effet="rangee" tabindex="0" role="region" aria-label="Saint-Raphaël, sans fausse note">
+    <ul class="rangee-piste" data-rangee-piste>
+      <li class="rangee-carte"><figure class="media rangee-media" style="--cadrage:40% 58%">
+  <picture>
+    <img src="/assets/images/lieu-ile-d-or-1000.webp" srcset="/assets/images/lieu-ile-d-or-480.webp 480w, /assets/images/lieu-ile-d-or-800.webp 800w, /assets/images/lieu-ile-d-or-1000.webp 1000w" sizes="(max-width: 760px) 70vw, 28vw" alt="L’Île d’Or et sa tour au coucher du soleil" width="1000" height="750" loading="lazy" decoding="async">
+  </picture>
+</figure><p>L’Île d’Or</p></li><li class="rangee-carte"><figure class="media rangee-media" style="--cadrage:34% 56%">
+  <picture>
+    <img src="/assets/images/lieu-crique-1000.webp" srcset="/assets/images/lieu-crique-480.webp 480w, /assets/images/lieu-crique-800.webp 800w, /assets/images/lieu-crique-1000.webp 1000w" sizes="(max-width: 760px) 70vw, 28vw" alt="Crique entre les rochers rouges, mer bleue" width="1000" height="750" loading="lazy" decoding="async">
+  </picture>
+</figure><p>Les criques</p></li><li class="rangee-carte"><figure class="media rangee-media" style="--cadrage:49% 54%">
+  <picture>
+    <img src="/assets/images/lieu-port-1000.webp" srcset="/assets/images/lieu-port-480.webp 480w, /assets/images/lieu-port-800.webp 800w, /assets/images/lieu-port-1000.webp 1000w" sizes="(max-width: 760px) 70vw, 28vw" alt="Voiliers amarrés au port, ciel bleu" width="1000" height="750" loading="lazy" decoding="async">
+  </picture>
+</figure><p>Le port</p></li><li class="rangee-carte"><figure class="media rangee-media" style="--cadrage:68% 50%">
+  <picture>
+    <img src="/assets/images/lieu-belle-epoque-1000.webp" srcset="/assets/images/lieu-belle-epoque-480.webp 480w, /assets/images/lieu-belle-epoque-800.webp 800w, /assets/images/lieu-belle-epoque-1000.webp 1000w" sizes="(max-width: 760px) 70vw, 28vw" alt="Tour d’une villa Belle Époque parmi les pins" width="1000" height="751" loading="lazy" decoding="async">
+  </picture>
+</figure><p>Les villas Belle Époque</p></li><li class="rangee-carte"><figure class="media rangee-media" style="--cadrage:61% 54%">
+  <picture>
+    <img src="/assets/images/lieu-coucher-1000.webp" srcset="/assets/images/lieu-coucher-480.webp 480w, /assets/images/lieu-coucher-800.webp 800w, /assets/images/lieu-coucher-1000.webp 1000w" sizes="(max-width: 760px) 70vw, 28vw" alt="Coucher de soleil orange sur la mer, depuis la plage" width="1000" height="750" loading="lazy" decoding="async">
+  </picture>
+</figure><p>Les couchers de soleil</p></li><li class="rangee-carte"><figure class="media rangee-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/lieu-ville-mer-1000.webp" srcset="/assets/images/lieu-ville-mer-480.webp 480w, /assets/images/lieu-ville-mer-800.webp 800w, /assets/images/lieu-ville-mer-1000.webp 1000w" sizes="(max-width: 760px) 70vw, 28vw" alt="Saint-Raphaël vue de la mer, la grande roue et la basilique" width="1000" height="750" loading="lazy" decoding="async">
+  </picture>
+</figure><p>La ville vue de la mer</p></li><li class="rangee-carte"><figure class="media rangee-media" style="--cadrage:59% 55%">
+  <picture>
+    <img src="/assets/images/lieu-sentier-1000.webp" srcset="/assets/images/lieu-sentier-480.webp 480w, /assets/images/lieu-sentier-800.webp 800w, /assets/images/lieu-sentier-1000.webp 1000w" sizes="(max-width: 760px) 70vw, 28vw" alt="Soleil couchant sous les pins, au bord de la mer" width="1000" height="750" loading="lazy" decoding="async">
+  </picture>
+</figure><p>Le bord de mer sous les pins</p></li><li class="rangee-carte"><figure class="media rangee-media" style="--cadrage:65% 33%">
+  <picture>
+    <img src="/assets/images/lieu-plage-1000.webp" srcset="/assets/images/lieu-plage-480.webp 480w, /assets/images/lieu-plage-800.webp 800w, /assets/images/lieu-plage-1000.webp 1000w" sizes="(max-width: 760px) 70vw, 28vw" alt="Plage de sable et colonnes d’une pergola face à la mer" width="1000" height="750" loading="lazy" decoding="async">
+  </picture>
+</figure><p>Les plages</p></li>
+    </ul>
+  </div>
+</section>
+<section class="confiance" id="confiance">
+  <div class="conteneur confiance-grille">
+    <h2 class="titre-section" data-anime="lignes">Classées, et réservables partout</h2>
+    <div class="confiance-texte" data-anime="cascade">
+      <p class="confiance-etoiles"><span class="etoiles" aria-hidden="true">★★★★★</span> Cinq villas classées Meublé de tourisme cinq étoiles</p>
+      <p>La Bohème, La Soleada, Le Mas Mirabelle, Chez nous et Pirouschka.</p>
+      <p>Nos villas sont aussi présentes sur Airbnb, VRBO, Booking et WAY.</p>
+    </div>
+  </div>
+  <div class="mots" data-fx="mots-geants" aria-hidden="true" data-ruban data-visuel data-audit-ignorer>
+    <p data-fx-rangee>Valescure · Boulouris · Santa Lucia · Le Dramont · Agay · Anthéor · Valescure · Boulouris · Santa Lucia · Le Dramont · Agay · Anthéor ·</p>
+    <p data-fx-rangee data-sens="-1">Airbnb · VRBO · Booking · WAY · Madame&amp;Monsieur · Airbnb · VRBO · Booking · WAY · Madame&amp;Monsieur ·</p>
+  </div>
+</section>
+<section class="appel" id="demande">
+  <figure class="media appel-media" data-fx="zoom" data-fx-force="12" style="--cadrage:59% 66%;--cadrage-mobile:49% 57%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/appel-accueil-mobile-640.webp 640w" sizes="100vw">
+    <img src="/assets/images/appel-accueil-1440.webp" srcset="/assets/images/appel-accueil-960.webp 960w, /assets/images/appel-accueil-1440.webp 1440w, /assets/images/appel-accueil-1600.webp 1600w" sizes="100vw" alt="Le soleil se couche sur la mer, vu sous l’arche de La Bohème" width="1440" height="810" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  <div class="appel-carte">
+    <h2 data-anime="lignes">Votre séjour commence ici</h2>
+    <p data-anime>Une villa, des dates, le nombre de voyageurs : nous revenons vers vous avec la disponibilité et le tarif.</p>
+    <form class="mini-demande" action="/renseignements" method="get" data-mini-demande data-anime>
+      <div class="champ"><label for="m-villa">Villa</label>
+        <select id="m-villa" name="villa"><option value="">Je ne sais pas encore</option><option value="palmeraie">La Palmeraie</option><option value="boheme">La Bohème</option><option value="uccelli">Uccelli</option><option value="alice">Alice</option><option value="harmony">Harmony</option><option value="dolce-vita">La Dolce Vita</option><option value="escapadou">L’Escapadou</option><option value="estaou">Estaou</option><option value="soleada">La Soleada</option><option value="mas-mirabelle">Le Mas Mirabelle</option><option value="casa-lomi">Casa Lomi</option><option value="chez-nous">Chez nous</option><option value="eucalypta">Eucalypta</option><option value="camelias">Les Camelias</option><option value="santoline">La Santoline</option><option value="155">Le 155</option><option value="pirouschka">Pirouschka</option><option value="petit-roc">Le Petit Roc</option><option value="aiguebonne">Aiguebonne</option></select></div>
+      <div class="champ"><label for="m-arrivee">Arrivée</label><input id="m-arrivee" name="arrivee" type="date"></div>
+      <div class="champ champ--court"><label for="m-voyageurs">Voyageurs</label><input id="m-voyageurs" name="adultes" type="number" min="1" max="12" value="4" inputmode="numeric"></div>
+      <button type="submit" class="bouton">Continuer ma demande</button>
+    </form>
+  </div>
+</section>
+</main>
+<footer class="pied" id="pied">
+  <div class="conteneur pied-grille">
+    <div class="pied-marque">
+      <p class="marque marque--grande" aria-hidden="true">Madame<em class="marque-amp">&amp;</em>Monsieur</p>
+      <p>Conciergerie privée de villas à Saint-Raphaël, de Valescure à Anthéor.</p>
+    </div>
+    <div>
+      <p class="pied-titre">Nous joindre</p>
+      <p>55, allée de la Voie Lactée, 83700 Saint-Raphaël<br><a href="tel:+33643780223">06 43 78 02 23</a><br><a href="mailto:contact@maconciergeriesaintraphael.fr">contact@maconciergeriesaintraphael.fr</a><br><a href="https://www.instagram.com/madametmonsieur_conciergerie/" target="_blank" rel="noopener">Instagram</a></p>
+    </div>
+    <nav aria-label="Le site">
+      <p class="pied-titre">Le site</p>
+      <ul><li><a href="/" data-libelle="Accueil" aria-current="page">Accueil</a></li><li><a href="/nos-villas" data-libelle="Nos villas">Nos villas</a></li><li><a href="/chez-vous" data-libelle="Chez vous">Chez vous</a></li><li><a href="/chez-nous" data-libelle="Chez nous">Chez nous</a></li><li><a href="/renseignements" data-libelle="Renseignements">Renseignements</a></li></ul>
+    </nav>
+  </div>
+  <div class="conteneur pied-bas">
+    <p><span>Mentions légales · à compléter</span> <span id="confidentialite">Politique de confidentialité · à compléter</span></p>
+    <p>Maquette de démonstration : formulaires simulés, aucune donnée n’est envoyée.</p>
+    <p>© Madame&amp;Monsieur · <a href="#haut" data-sans-transition>Retour en haut</a></p>
+  </div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--contour" href="tel:+33643780223">Appeler</a>
+  <a class="bouton" href="/renseignements" data-libelle="Renseignements">Demander un séjour</a>
+</div>
+</body>
+</html>
