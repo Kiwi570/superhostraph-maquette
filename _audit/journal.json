@@ -98,6 +98,70 @@
    ],
    "grilleDispenses": {},
    "notes": "Les zips des images du site : 19 sur 36 reçus ; 47 photos choisies sur les planches et demandées à part."
+  },
+  {
+   "version": 2,
+   "skill": "v11.1.1",
+   "perimetre": [
+    "accueil",
+    "nos-villas",
+    "chez-vous",
+    "chez-nous",
+    "renseignements",
+    "404"
+   ],
+   "etapes": [
+    {
+     "etape": "analyse complète du site en ligne (captures de chaque page, ordinateur et téléphone)",
+     "budget": 15,
+     "debut": "2026-11-23T14:15:00+01:00",
+     "fin": "2026-11-23T14:30:00+01:00"
+    },
+    {
+     "etape": "améliorations v2 (titres, accueil, catalogue, services, Chez nous, demande)",
+     "budget": 40,
+     "debut": "2026-11-23T14:30:00+01:00",
+     "fin": "2026-11-23T15:05:00+01:00"
+    },
+    {
+     "etape": "audit complet, corrections et relances ciblées",
+     "budget": 45,
+     "debut": "2026-11-23T15:05:00+01:00",
+     "fin": "2026-11-23T15:58:00+01:00"
+    },
+    {
+     "etape": "livraison v2",
+     "budget": 5,
+     "debut": "2026-11-23T15:58:00+01:00",
+     "fin": "2026-11-23T16:03:00+01:00"
+    }
+   ],
+   "attentes": [],
+   "allersRetours": 0,
+   "modules": [],
+   "audit": {
+    "niveau": "rapide (2 passes) + complet + 3 relances complètes ciblées",
+    "echecsPremierPassage": 13,
+    "echecsComplet": 2,
+    "relances": 3,
+    "echecsFinal": 0,
+    "corrections": [
+     "liens de la carte en SVG remplacés par de vrais liens HTML posés sur le dessin",
+     "macaron : étoiles et « & » en tracés (textes qui se chevauchaient)",
+     "signature du pied coupée sur petit écran",
+     "arrivée sur une ancre (#villa-…) remontée en haut par un recalcul de ScrollTrigger sous charge",
+     "zone tactile de l'indicateur de défilement sur tablette",
+     "contraste des services inactifs du récit (opacité remplacée par un filet et une couleur)",
+     "mention « Illustration générée » absente des huit images générées (nom sans grok/), et en 13 px",
+     "ombre de l'ouverture de Chez nous pour le surtitre"
+    ]
+   },
+   "effetsRetires": [],
+   "grilleDispenses": {
+    "intro": "L’intro finit sur la marque : le « & » des volets rejoint celui de Madame&Monsieur dans l’en-tête, puis la page s’ouvre sur sa photo (data-iris-centre).",
+    "fil": "Le « & » de Madame&Monsieur relie les pages : volets de l’intro, en-tête, voile entre les pages, macaron du classement, partenaires et signature du pied de page."
+   },
+   "notes": "Version demandée après la mise en ligne : audit complet et améliorations sur l’ensemble du site. Safari non lancé (WebKit absent de l’environnement)."
   }
  ]
 }

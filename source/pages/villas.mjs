@@ -20,15 +20,16 @@ export default (c) => {
   </div>
   <div class="bandeau" data-bandeau data-effet="bandeau" data-iris-centre aria-hidden="true">
     <ul class="bandeau-piste" data-bandeau-piste>
-      ${bandeau.map((id, i) => html`<li class="bandeau-carte${i % 2 ? ' bandeau-carte--bas' : ''}">${img(c, `villa-${id}-${id === 'palmeraie' ? 2 : 1}`, { classe: 'bandeau-media', sizes: '(max-width: 760px) 60vw, 26vw', priorite: i < 3 })}</li>`)}
+      ${bandeau.map((id, i) => html`<li class="bandeau-carte${i % 2 ? ' bandeau-carte--bas' : ''}">${img(c, `villa-${id}-2`, { classe: 'bandeau-media', sizes: '(max-width: 760px) 60vw, 26vw', priorite: i < 3 })}</li>`)}
     </ul>
   </div>
 </section>
 
 <section class="catalogue" id="catalogue">
   <div class="conteneur">
-    <h2 class="catalogue-titre" data-anime="lignes">${c.t('villas.liste')}</h2>
-    <form class="filtres" data-filtres aria-label="${c.s('villas.filtres')}">
+    <h2 class="catalogue-titre" data-anime="lignes">${c.tb('villas.liste')}</h2>
+    <button type="button" class="filtres-bouton" data-filtres-bouton aria-expanded="false" aria-controls="filtres"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M7 12h10M10 17h4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>${c.t('villas.filtrer')} <span class="filtres-nb" data-filtres-nb></span></button>
+    <form class="filtres" id="filtres" data-filtres aria-label="${c.s('villas.filtres')}">
       <fieldset class="filtre">
         <legend>${c.t('villas.voyageurs')}</legend>
         <div class="puces">${choix('voyageurs', '', c.t('villas.voyageursTous'), true)}${[4, 6, 8, 10, 12].map((n) => choix('voyageurs', n, n === 12 ? '12' : `${n}+`))}</div>
@@ -45,12 +46,16 @@ export default (c) => {
         <label for="f-secteur">${c.t('villas.secteur')}</label>
         <select id="f-secteur" name="secteur"><option value="">${c.t('villas.secteurTous')}</option>${c.donnees.secteurs.map((s) => html`<option value="${s.id}">${s.nom}</option>`)}</select>
       </div>
+      <div class="filtre filtre--secteur">
+        <label for="f-tri">${c.t('villas.tri')}</label>
+        <select id="f-tri" name="tri"><option value="">${c.t('villas.triReco')}</option><option value="prix">${c.t('villas.triPrix')}</option><option value="prix-desc">${c.t('villas.triPrixDesc')}</option><option value="capacite">${c.t('villas.triCapacite')}</option></select>
+      </div>
     </form>
     <div class="catalogue-barre">
       <p class="catalogue-compte" aria-live="polite"><strong data-compte>${V.length}</strong> <span data-compte-mot>${c.t('villas.resultat')}</span></p>
       <button type="button" class="lien-bouton" data-effacer hidden>${c.t('villas.effacer')}</button>
     </div>
-    <ul class="catalogue-grille" data-catalogue>
+    <ul class="catalogue-grille" data-catalogue data-grille="retour">
       ${V.map((v) => carteVilla(c, v, { mode: 'catalogue' }))}
     </ul>
     <p class="catalogue-vide" data-vide hidden>${c.t('villas.vide')}</p>
@@ -63,6 +68,7 @@ export default (c) => {
     <button type="button" class="fiche-fermer" data-fiche-fermer aria-label="${c.s('villas.fermer')}"><span aria-hidden="true">×</span></button>
     <div class="fiche-galerie">
       <div class="fiche-photos" data-fiche-photos></div>
+      <div class="fiche-vignettes" data-fiche-vignettes></div>
       <div class="fiche-nav">
         <button type="button" data-fiche-prec aria-label="${c.s('villas.precedente')}"><span aria-hidden="true">←</span></button>
         <span class="fiche-compte" data-fiche-compte>1 / 4</span>
@@ -83,7 +89,7 @@ export default (c) => {
 </div>
 
 ${appel(c, {
-    image: 'appel-villas', titre: c.t('villas.appel.titre'), texte: c.t('villas.appel.texte'),
+    image: 'appel-villas', titre: c.tb('villas.appel.titre'), texte: c.t('villas.appel.texte'),
     actions: html`${c.lien('renseignements', { classe: 'bouton', texte: c.t('villas.appel.action') })} <a class="bouton bouton--clair" href="tel:${c.site.contact.telephoneLien}">${c.t('villas.appel.appeler')}</a>`,
   })}
 `;

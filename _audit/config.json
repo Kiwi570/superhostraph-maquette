@@ -1,6 +1,24 @@
 {
   "siteActuel": "www.superhostraph.com",
-  "pagesTypes": ["/", "/nos-villas", "/chez-vous", "/renseignements"],
-  "effets": ["voyageurs", "cote", "rangee", "bandeau"],
-  "grille": { "dispenses": {} }
+  "pagesTypes": [
+    "/",
+    "/nos-villas",
+    "/chez-vous",
+    "/chez-nous",
+    "/renseignements"
+  ],
+  "effets": [
+    "bandeau",
+    "cote",
+    "macaron",
+    "rangee",
+    "signature",
+    "voyageurs"
+  ],
+  "grille": {
+    "dispenses": {
+      "intro": "L’intro finit sur la marque : le « & » des volets rejoint celui de Madame&Monsieur dans l’en-tête, puis la page s’ouvre sur sa photo (data-iris-centre).",
+      "fil": "Le « & » de Madame&Monsieur relie les pages : volets de l’intro, en-tête, voile entre les pages, macaron du classement, partenaires et signature du pied de page."
+    }
+  }
 }

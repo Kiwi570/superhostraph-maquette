@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" data-v="1">
+<html lang="fr" data-v="2" data-curseur>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -35,14 +35,14 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 })();</script>
 <link rel="preload" href="/assets/fonts/noto-serif-display-500.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/albert-sans-400.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=1">
-<link rel="stylesheet" href="/assets/css/site.css?v=1">
-<link rel="modulepreload" href="/assets/js/site.js?v=1">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<link rel="stylesheet" href="/assets/css/socle.css?v=2">
+<link rel="stylesheet" href="/assets/css/site.css?v=2">
+<link rel="modulepreload" href="/assets/js/site.js?v=2">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=2">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=1"></script>
+<script type="module" src="/assets/js/site.js?v=2"></script>
 <meta name="theme-color" content="#f6f1e9">
 <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
@@ -124,7 +124,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 </section>
 <section class="temps" id="temps">
   <div class="conteneur">
-    <h2 class="titre-section" data-anime="lignes">Votre séjour, en quatre temps</h2>
+    <h2 class="titre-section" data-anime="lignes">Votre séjour, <em>en quatre temps</em></h2>
     <div class="temps-frise">
       <svg class="temps-trait" viewBox="0 0 1000 40" preserveAspectRatio="none" aria-hidden="true" data-fx="trace"><path d="M4 22 C 160 6, 330 36, 500 20 S 840 6, 996 20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
       <ol class="temps-liste" data-anime="cascade">
@@ -135,106 +135,117 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 </section>
 <section class="familles" id="services">
   <div class="conteneur">
-    <h2 class="titre-section" data-anime="lignes">Ce que nous faisons pour vous</h2>
+    <h2 class="titre-section" data-anime="lignes">Ce que nous faisons <em>pour vous</em></h2>
   </div>
-  <article class="famille" id="service-accueil">
+  <div class="familles-scene" data-familles>
+    <div class="familles-pile" data-familles-pile aria-hidden="true"><p class="familles-index" data-familles-index>01 / 06</p></div>
+    <div class="familles-liste">
+  <article class="famille" id="service-accueil" data-famille="0">
     <div class="famille-images">
-      <figure class="media famille-media" data-anime="rideau" style="--cadrage:32% 50%">
+      <figure class="media famille-media famille-media--grande" style="--cadrage:32% 50%">
   <picture>
     <img src="/assets/images/service-accueil-1280.webp" srcset="/assets/images/service-accueil-640.webp 640w, /assets/images/service-accueil-960.webp 960w, /assets/images/service-accueil-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 50vw" alt="Lits jumeaux faits avec des serviettes pliées en éléphants à La Soleada" width="1280" height="853" loading="lazy" decoding="async">
   </picture>
 </figure>
-      <figure class="media famille-media famille-media--petite" data-fx="parallaxe" data-fx-force="10" style="--cadrage:52% 52%">
-  <picture>
-    <img src="/assets/images/service-cles-1168.webp" srcset="/assets/images/service-cles-640.webp 640w, /assets/images/service-cles-960.webp 960w, /assets/images/service-cles-1168.webp 1168w" sizes="(max-width: 760px) 60vw, 22vw" alt="Clé de villa posée sur une serviette pliée, avec un brin de lavande" width="1168" height="779" loading="lazy" decoding="async">
-  </picture>
-</figure>
     </div>
     <div class="famille-texte">
+      <p class="famille-numero" aria-hidden="true">01</p>
       <h3 class="famille-titre" data-anime="lignes">Service haute couture dès votre arrivée</h3>
       <p data-anime>Accueil personnalisé, kit d’accueil, linge de maison de qualité hôtelière, lits faits à votre arrivée : l’attention portée aux détails.</p>
       <ul class="famille-points" data-anime="cascade"><li>Accueil personnalisé</li><li>Kit d’accueil</li><li>Linge de qualité hôtelière</li><li>Lits faits à l’arrivée</li></ul>
-    </div>
-  </article><article class="famille famille--inverse" id="service-entretien">
-    <div class="famille-images">
-      <figure class="media famille-media" data-anime="rideau" style="--cadrage:60% 41%">
+      <figure class="media famille-media famille-media--petite" data-grok data-anime="rideau" style="--cadrage:52% 52%">
   <picture>
-    <img src="/assets/images/service-entretien-1168.webp" srcset="/assets/images/service-entretien-640.webp 640w, /assets/images/service-entretien-960.webp 960w, /assets/images/service-entretien-1168.webp 1168w" sizes="(max-width: 760px) 100vw, 50vw" alt="Îlot de cuisine impeccable, bouquet d’hortensias blancs" width="1168" height="779" loading="lazy" decoding="async">
-  </picture>
+    <img src="/assets/images/grok/service-cles-1168.webp" srcset="/assets/images/grok/service-cles-640.webp 640w, /assets/images/grok/service-cles-960.webp 960w, /assets/images/grok/service-cles-1168.webp 1168w" sizes="(max-width: 760px) 50vw, 18vw" alt="Clé de villa posée sur une serviette pliée, avec un brin de lavande" width="1168" height="779" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+    </div>
+  </article><article class="famille famille--inverse" id="service-entretien" data-famille="1">
+    <div class="famille-images">
+      <figure class="media famille-media famille-media--grande" data-grok style="--cadrage:60% 41%">
+  <picture>
+    <img src="/assets/images/grok/service-entretien-1168.webp" srcset="/assets/images/grok/service-entretien-640.webp 640w, /assets/images/grok/service-entretien-960.webp 960w, /assets/images/grok/service-entretien-1168.webp 1168w" sizes="(max-width: 760px) 100vw, 50vw" alt="Îlot de cuisine impeccable, bouquet d’hortensias blancs" width="1168" height="779" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
 </figure>
     </div>
     <div class="famille-texte">
+      <p class="famille-numero" aria-hidden="true">02</p>
       <h3 class="famille-titre" data-anime="lignes">Une maison toujours prête</h3>
       <p data-anime>Nettoyage et préparation de la villa, ménage quotidien et, si vous le souhaitez, une gouvernante de villa dédiée.</p>
       <ul class="famille-points" data-anime="cascade"><li>Ménage quotidien</li><li>Gouvernante de villa</li><li>Préparation avant l’arrivée</li></ul>
     </div>
-  </article><article class="famille" id="service-mobilite">
+  </article><article class="famille" id="service-mobilite" data-famille="2">
     <div class="famille-images">
-      <figure class="media famille-media" data-anime="rideau" style="--cadrage:49% 50%">
+      <figure class="media famille-media famille-media--grande" data-grok style="--cadrage:49% 50%">
   <picture>
-    <img src="/assets/images/service-transfert-1168.webp" srcset="/assets/images/service-transfert-640.webp 640w, /assets/images/service-transfert-960.webp 960w, /assets/images/service-transfert-1168.webp 1168w" sizes="(max-width: 760px) 100vw, 50vw" alt="Berline sombre portière ouverte dans une allée de lavande" width="1168" height="779" loading="lazy" decoding="async">
-  </picture>
+    <img src="/assets/images/grok/service-transfert-1168.webp" srcset="/assets/images/grok/service-transfert-640.webp 640w, /assets/images/grok/service-transfert-960.webp 960w, /assets/images/grok/service-transfert-1168.webp 1168w" sizes="(max-width: 760px) 100vw, 50vw" alt="Berline sombre portière ouverte dans une allée de lavande" width="1168" height="779" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
 </figure>
     </div>
     <div class="famille-texte">
+      <p class="famille-numero" aria-hidden="true">03</p>
       <h3 class="famille-titre" data-anime="lignes">Vos déplacements</h3>
       <p data-anime>Un véhicule à disposition et des transferts privés, de l’aéroport ou de la gare jusqu’à la porte de la villa.</p>
       <ul class="famille-points" data-anime="cascade"><li>Transferts privés</li><li>Location de véhicule</li></ul>
     </div>
-  </article><article class="famille famille--inverse" id="service-table">
+  </article><article class="famille famille--inverse" id="service-table" data-famille="3">
     <div class="famille-images">
-      <figure class="media famille-media" data-anime="rideau" style="--cadrage:54% 51%">
+      <figure class="media famille-media famille-media--grande" data-grok style="--cadrage:54% 51%">
   <picture>
-    <img src="/assets/images/service-chef-1168.webp" srcset="/assets/images/service-chef-640.webp 640w, /assets/images/service-chef-960.webp 960w, /assets/images/service-chef-1168.webp 1168w" sizes="(max-width: 760px) 100vw, 50vw" alt="Tomates anciennes, huile d’olive, basilic et casserole de cuivre sur un plan de marbre" width="1168" height="779" loading="lazy" decoding="async">
-  </picture>
-</figure>
-      <figure class="media famille-media famille-media--petite" data-fx="parallaxe" data-fx-force="10" style="--cadrage:51% 51%">
-  <picture>
-    <img src="/assets/images/service-table-1280.webp" srcset="/assets/images/service-table-640.webp 640w, /assets/images/service-table-960.webp 960w, /assets/images/service-table-1280.webp 1280w" sizes="(max-width: 760px) 60vw, 22vw" alt="Table dressée sur la terrasse des Camelias" width="1280" height="853" loading="lazy" decoding="async">
-  </picture>
+    <img src="/assets/images/grok/service-chef-1168.webp" srcset="/assets/images/grok/service-chef-640.webp 640w, /assets/images/grok/service-chef-960.webp 960w, /assets/images/grok/service-chef-1168.webp 1168w" sizes="(max-width: 760px) 100vw, 50vw" alt="Tomates anciennes, huile d’olive, basilic et casserole de cuivre sur un plan de marbre" width="1168" height="779" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
 </figure>
     </div>
     <div class="famille-texte">
+      <p class="famille-numero" aria-hidden="true">04</p>
       <h3 class="famille-titre" data-anime="lignes">À table</h3>
       <p data-anime>Petits-déjeuners, corbeille de fruits, extras, courses faites avant votre arrivée, et un chef ou une cheffe à domicile.</p>
       <ul class="famille-points" data-anime="cascade"><li>Petits-déjeuners</li><li>Courses avant l’arrivée</li><li>Chef à domicile</li></ul>
-    </div>
-  </article><article class="famille" id="service-famille">
-    <div class="famille-images">
-      <figure class="media famille-media" data-anime="rideau" style="--cadrage:40% 44%">
+      <figure class="media famille-media famille-media--petite" data-anime="rideau" style="--cadrage:51% 51%">
   <picture>
-    <img src="/assets/images/service-bebe-1168.webp" srcset="/assets/images/service-bebe-640.webp 640w, /assets/images/service-bebe-960.webp 960w, /assets/images/service-bebe-1168.webp 1168w" sizes="(max-width: 760px) 100vw, 50vw" alt="Lit à barreaux blanc avec langes pliés dans une chambre ensoleillée" width="1168" height="779" loading="lazy" decoding="async">
+    <img src="/assets/images/service-table-1280.webp" srcset="/assets/images/service-table-640.webp 640w, /assets/images/service-table-960.webp 960w, /assets/images/service-table-1280.webp 1280w" sizes="(max-width: 760px) 50vw, 18vw" alt="Table dressée sur la terrasse des Camelias" width="1280" height="853" loading="lazy" decoding="async">
   </picture>
 </figure>
-      <figure class="media famille-media famille-media--petite" data-fx="parallaxe" data-fx-force="10" style="--cadrage:46% 39%">
+    </div>
+  </article><article class="famille" id="service-famille" data-famille="4">
+    <div class="famille-images">
+      <figure class="media famille-media famille-media--grande" data-grok style="--cadrage:40% 44%">
   <picture>
-    <img src="/assets/images/service-coach-1168.webp" srcset="/assets/images/service-coach-640.webp 640w, /assets/images/service-coach-960.webp 960w, /assets/images/service-coach-1168.webp 1168w" sizes="(max-width: 760px) 60vw, 22vw" alt="Tapis de yoga roulé et serviette sur le bord d’une piscine au lever du soleil" width="1168" height="779" loading="lazy" decoding="async">
-  </picture>
+    <img src="/assets/images/grok/service-bebe-1168.webp" srcset="/assets/images/grok/service-bebe-640.webp 640w, /assets/images/grok/service-bebe-960.webp 960w, /assets/images/grok/service-bebe-1168.webp 1168w" sizes="(max-width: 760px) 100vw, 50vw" alt="Lit à barreaux blanc avec langes pliés dans une chambre ensoleillée" width="1168" height="779" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
 </figure>
     </div>
     <div class="famille-texte">
+      <p class="famille-numero" aria-hidden="true">05</p>
       <h3 class="famille-titre" data-anime="lignes">Famille et bien-être</h3>
       <p data-anime>Le nécessaire pour bébé prêt à votre arrivée, et un coach sportif qui vient jusqu’à vous.</p>
       <ul class="famille-points" data-anime="cascade"><li>Nécessaire bébé</li><li>Coach sportif à domicile</li></ul>
-    </div>
-  </article><article class="famille famille--inverse" id="service-demande">
-    <div class="famille-images">
-      <figure class="media famille-media" data-anime="rideau" style="--cadrage:67% 41%">
+      <figure class="media famille-media famille-media--petite" data-grok data-anime="rideau" style="--cadrage:46% 39%">
   <picture>
-    <img src="/assets/images/service-bateau-1168.webp" srcset="/assets/images/service-bateau-640.webp 640w, /assets/images/service-bateau-960.webp 960w, /assets/images/service-bateau-1168.webp 1168w" sizes="(max-width: 760px) 100vw, 50vw" alt="Bateau en bois amarré dans une crique turquoise entre des rochers rouges" width="1168" height="779" loading="lazy" decoding="async">
-  </picture>
+    <img src="/assets/images/grok/service-coach-1168.webp" srcset="/assets/images/grok/service-coach-640.webp 640w, /assets/images/grok/service-coach-960.webp 960w, /assets/images/grok/service-coach-1168.webp 1168w" sizes="(max-width: 760px) 50vw, 18vw" alt="Tapis de yoga roulé et serviette sur le bord d’une piscine au lever du soleil" width="1168" height="779" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+    </div>
+  </article><article class="famille famille--inverse" id="service-demande" data-famille="5">
+    <div class="famille-images">
+      <figure class="media famille-media famille-media--grande" data-grok style="--cadrage:67% 41%">
+  <picture>
+    <img src="/assets/images/grok/service-bateau-1168.webp" srcset="/assets/images/grok/service-bateau-640.webp 640w, /assets/images/grok/service-bateau-960.webp 960w, /assets/images/grok/service-bateau-1168.webp 1168w" sizes="(max-width: 760px) 100vw, 50vw" alt="Bateau en bois amarré dans une crique turquoise entre des rochers rouges" width="1168" height="779" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
 </figure>
     </div>
     <div class="famille-texte">
+      <p class="famille-numero" aria-hidden="true">06</p>
       <h3 class="famille-titre" data-anime="lignes">Sur demande</h3>
       <p data-anime>Tout ce que vous pouvez désirer : une sortie en bateau, une table réservée, une envie de dernière minute. Laissez-vous guider par vos envies.</p>
       <ul class="famille-points" data-anime="cascade"><li>Location de bateau</li><li>Services sur mesure</li></ul>
     </div>
   </article>
+    </div>
+  </div>
 </section>
 <section class="inclus" id="inclus">
   <div class="conteneur inclus-grille">
-    <h2 class="titre-section" data-anime="lignes">Dans nos villas, d’office</h2>
+    <h2 class="titre-section" data-anime="lignes">Dans nos villas, <em>d’office</em></h2>
     <ul class="inclus-liste" data-anime="cascade">
       <li><svg class="coche" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Linge de maison et serviettes de qualité hôtelière</li><li><svg class="coche" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Lits faits à votre arrivée</li><li><svg class="coche" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Accueil personnalisé</li><li><svg class="coche" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Ménage et désinfection selon les recommandations de l’OMS, avec un battement entre deux séjours</li><li><svg class="coche" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Arrivée avant 16 h possible si la villa est libre, confirmée le jour même</li><li><svg class="coche" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Départ tardif possible si la villa n’est pas relouée le soir</li>
     </ul>
@@ -247,13 +258,14 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   </picture>
 </figure>
   <div class="appel-carte">
-    <h2 data-anime="lignes">Une envie particulière ?</h2>
+    <h2 data-anime="lignes">Une envie <em>particulière</em> ?</h2>
     <p data-anime>Sur demande, tout ce que vous pouvez désirer… Laissez-vous guider par vos envies.</p>
     <p class="appel-actions" data-anime><a href="/renseignements" class="bouton" data-libelle="Renseignements">Demander un service</a></p>
   </div>
 </section>
 </main>
 <footer class="pied" id="pied">
+  <p class="pied-signature" aria-hidden="true" data-effet="signature"><span>Madame</span><em>&amp;</em><span>Monsieur</span></p>
   <div class="conteneur pied-grille">
     <div class="pied-marque">
       <p class="marque marque--grande" aria-hidden="true">Madame<em class="marque-amp">&amp;</em>Monsieur</p>

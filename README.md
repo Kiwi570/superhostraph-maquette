@@ -9,9 +9,9 @@ Direction « Volets ouverts » : lin, bleu de la rade (#12303F), rouge de l'Est�
 
 | Page | Adresse | Contenu |
 |---|---|---|
-| Accueil | `/` | Volets qui s'ouvrent sur La Bohème, manifeste, curseur des voyageurs qui range la collection, côte de Valescure à Anthéor qui se dessine, services, lieux qui glissent, classement ★★★★★ et plateformes, mini-demande |
-| Nos villas | `/nos-villas` | Les 19 villas filtrables (voyageurs, budget, piscine, vue mer, secteur ; filtres gardés dans l'adresse), fiche plein écran (`?fiche=boheme`), « Demander cette villa » |
-| Chez vous | `/chez-vous` | Le séjour en quatre temps, six familles de services, ce qui est inclus |
+| Accueil | `/` | Volets qui s'ouvrent sur La Bohème, manifeste et chiffres clés, curseur des voyageurs qui range la collection, carte de Valescure à Anthéor (chaque secteur ouvre le catalogue filtré), services, lieux qui glissent, macaron ★★★★★ et plateformes, mini-demande |
+| Nos villas | `/nos-villas` | Les 19 villas filtrables (voyageurs, budget, piscine, vue mer, secteur) et triables (prix, capacité) ; filtres et tri gardés dans l'adresse (`?secteur=agay&tri=prix`) ; fiche plein écran avec vignettes (`?fiche=boheme`), « Demander cette villa » |
+| Chez vous | `/chez-vous` | Le séjour en quatre temps, six familles de services en récit (la photo change avec le service), ce qui est inclus |
 | Chez nous | `/chez-nous` | Saint-Raphaël, l'Estérel en plein écran, dix lieux, activités, partenaires |
 | Renseignements | `/renseignements` | Demande en trois étapes avec récapitulatif, préremplie depuis une villa (`?villa=uccelli&adultes=4`), coordonnées, plan des secteurs |
 | 404 | toute adresse inconnue | « Cette villa n'existe pas (encore) » |

@@ -26,7 +26,7 @@
   --ligne: rgba(30, 42, 47, .16);
   --rayon: 4px;
   --largeur: 1280px;
-  --section: clamp(64px, 8.4vw, 124px);
+  --section: clamp(60px, 7.6vw, 112px);
 }
 body { font-size: clamp(1rem, .97rem + .18vw, 1.125rem); letter-spacing: .005em; }
 h1, h2, h3 { font-weight: 500; letter-spacing: -.01em; }
@@ -114,7 +114,7 @@ html.js:is([data-arrivee="intro"], [data-arrivee="voile"]):not(.secours) .ouv-an
 html.intro-finie .ouv-media[data-boucle-css] { animation: respire 14s ease-in-out infinite alternate; transform-origin: 60% 55%; }
 @media (max-width: 760px) { html.intro-finie .ouv-media[data-boucle-css] { animation-duration: 9s; } }
 .ouv-media::after { content: ''; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(180deg, rgba(10, 30, 40, .48) 0, rgba(10, 30, 40, 0) 28%), linear-gradient(90deg, rgba(10, 30, 40, .78) 0, rgba(10, 30, 40, .6) 50%, rgba(10, 30, 40, .22) 76%, rgba(10, 30, 40, 0) 92%), linear-gradient(0deg, rgba(10, 30, 40, .72) 0, rgba(10, 30, 40, 0) 55%); }
-.ouv--bas .ouv-media::after { background: linear-gradient(180deg, rgba(10, 30, 40, .42) 0, rgba(10, 30, 40, 0) 26%), linear-gradient(0deg, rgba(10, 30, 40, .82) 0, rgba(10, 30, 40, .35) 40%, rgba(10, 30, 40, 0) 64%); }
+.ouv--bas .ouv-media::after { background: linear-gradient(180deg, rgba(10, 30, 40, .42) 0, rgba(10, 30, 40, 0) 26%), linear-gradient(90deg, rgba(10, 30, 40, .5) 0, rgba(10, 30, 40, .2) 40%, rgba(10, 30, 40, 0) 60%), linear-gradient(0deg, rgba(10, 30, 40, .82) 0, rgba(10, 30, 40, .4) 42%, rgba(10, 30, 40, 0) 66%); }
 .ouv-texte { position: relative; padding-top: calc(var(--entete-h) + 40px); padding-bottom: calc(var(--barres-h) + clamp(36px, 7vh, 88px)); }
 .ouv .surtitre { color: var(--lin); text-shadow: 0 1px 12px rgba(10, 30, 40, .55); }
 .ouv-titre em { color: #ffd3c2; }
@@ -204,7 +204,7 @@ html:not(.js) .drap, html.secours .drap, html[data-arrivee="retour"] .drap { dis
 }
 
 /* Manifeste. */
-.manifeste { padding-block: var(--section); }
+.manifeste { padding-block: var(--section) clamp(36px, 5vw, 72px); }
 .manifeste-grille { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: clamp(28px, 6vw, 96px); align-items: center; }
 .manifeste-grand { font-family: var(--police-titres); font-size: clamp(1.9rem, 1.2rem + 2.6vw, 3.5rem); line-height: 1.16; letter-spacing: -.01em; margin-bottom: .6em; }
 .manifeste-suite { color: var(--texte-doux); max-width: 34em; }
@@ -256,29 +256,22 @@ html:not(.js) .drap, html.secours .drap, html[data-arrivee="retour"] .drap { dis
 .cote { padding-block: var(--section); }
 .cote-tete { margin-bottom: clamp(16px, 3vw, 40px); }
 .cote-carte { position: relative; }
-.cote-svg { width: 100%; height: auto; overflow: visible; }
+.cote-svg { display: block; width: 100%; height: auto; overflow: hidden; }
 .cote-mer { fill: #d7e3e4; pointer-events: none; }
-.cote-esterel, .cote-trait, .cote-ile, .cote-legende, .cote-ville { pointer-events: none; }
-.cote-esterel { fill: rgba(181, 69, 43, .16); }
+.cote-relief, .cote-pins, .cote-vagues, .cote-trait, .cote-ile, .cote-legende, .cote-ville { pointer-events: none; }
 .cote-ville { font: 600 15px var(--police-texte); letter-spacing: .1em; text-transform: uppercase; fill: var(--texte-doux); }
 .cote-trait { fill: none; stroke: var(--rade); stroke-width: 2.4; stroke-linecap: round; }
 .cote-ile path { fill: var(--accent); } .cote-ile rect { fill: var(--accent-fonce); }
 .cote-legende { font: italic 500 20px var(--police-titres); fill: var(--texte-doux); }
 .cote-legende--mer { font-size: 30px; fill: #3e6170; letter-spacing: .02em; }
 .cote-legende--esterel { fill: var(--accent-fonce); }
-.cote-point { fill: var(--accent); stroke: var(--lin); stroke-width: 3; }
-.cote-halo { fill: rgba(181, 69, 43, .18); transform-box: fill-box; transform-origin: center; }
-.cote-nom { font: 500 22px var(--police-titres); fill: var(--encre); }
 .cote-nb { font: 600 15px var(--police-texte); letter-spacing: .08em; fill: var(--accent-fonce); text-transform: uppercase; }
 .cote-liste { list-style: none; padding: 0; margin: clamp(16px, 3vw, 32px) 0 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px 32px; }
 .cote-liste li { padding-top: 12px; border-top: 1px solid var(--ligne); font-size: .95rem; color: var(--texte-doux); }
 .cote-liste strong { display: block; color: var(--encre); font-family: var(--police-titres); font-weight: 500; font-size: 1.2rem; }
-@keyframes halo { from { transform: scale(.6); opacity: .9; } to { transform: scale(1.6); opacity: 0; } }
-.cote-carte.allumee .cote-repere.allume .cote-halo { animation: halo 2.4s ease-out infinite; animation-delay: calc(var(--i) * .3s); }
+@keyframes halo { from { transform: translate(-50%, -50%) scale(.7); opacity: .9; } to { transform: translate(-50%, -50%) scale(1.7); opacity: 0; } }
 .cote-carte--compacte .cote-liste { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 @media (max-width: 760px) {
-  .cote-svg { width: 170%; max-width: none; margin-left: -18%; }
-  .cote-carte { overflow: hidden; }
   .cote-liste, .cote-carte--compacte .cote-liste { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px 16px; }
   .cote-liste li { font-size: .88rem; }
 }
@@ -535,4 +528,157 @@ html.js:not(.secours) .etapes .etape:not(.active) { display: none; }
 
 /* Médias : coin léger, fond lin pendant le chargement. */
 .media { background-color: var(--lin-fonce); }
-.mention-ia { background: rgba(14, 39, 52, .78); }
+.mention-ia { background: rgba(14, 39, 52, .78); font-size: 13px; }
+
+
+/* ===== v2 ===== */
+/* Un mot en italique rouge par titre ; plus clair sur les fonds sombres. */
+.manifeste-grand em, .appel-carte h2 em, .catalogue-titre em { color: var(--accent); }
+:is(.apercu-services, .confiance, .inclus) .titre-section em { color: var(--accent-clair); }
+
+/* Indicateur de défilement de l'ouverture. */
+.ouv-defiler { position: absolute; right: max(var(--gouttiere), calc((100vw - var(--largeur)) / 2)); bottom: calc(var(--barres-h) + clamp(36px, 7vh, 88px)); display: flex; flex-direction: column; align-items: center; gap: 12px; min-height: 44px; min-width: 44px; color: var(--lin); text-decoration: none; font: 600 .82rem/1 var(--police-texte); letter-spacing: .18em; text-transform: uppercase; writing-mode: vertical-rl; }
+.ouv-defiler span:first-child { transform: rotate(180deg); }
+.ouv-defiler-trait { position: relative; width: 1.5px; height: 64px; background: rgba(246, 241, 233, .3); overflow: hidden; }
+.ouv-defiler-trait::after { content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 40%; background: var(--lin); animation: defiler 2.2s cubic-bezier(.7, 0, .3, 1) infinite; }
+@keyframes defiler { from { transform: translateY(-100%); } to { transform: translateY(260%); } }
+.ouv-defiler-trait.hors-ecran::after { animation-play-state: paused; }
+@media (max-width: 760px) { .ouv-defiler { display: none; } }
+
+/* Chiffres du manifeste. */
+.chiffres { list-style: none; padding: 0; margin: clamp(28px, 4vw, 48px) 0 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; border-top: 1px solid var(--ligne); padding-top: 22px; }
+.chiffres strong { display: block; font-family: var(--police-titres); font-weight: 500; font-size: clamp(2.6rem, 2rem + 2.4vw, 4.2rem); line-height: 1; color: var(--accent); font-variant-numeric: tabular-nums; min-width: 2ch; }
+.chiffres span { display: block; margin-top: 8px; font-size: .95rem; color: var(--texte-doux); line-height: 1.35; }
+
+/* Silhouettes des voyageurs. */
+.pictos { display: flex; gap: 5px; margin: 14px 0 4px; height: 34px; align-items: flex-end; }
+.picto { width: 18px; height: 29px; fill: none; stroke: rgba(30, 42, 47, .35); stroke-width: 1.5; transition: fill .25s, stroke .25s, transform .35s var(--courbe); transform-origin: 50% 100%; }
+.picto.plein { fill: var(--accent); stroke: var(--accent); }
+.picto.saute { transform: translateY(-5px); }
+@media (max-width: 400px) { .pictos { gap: 3px; } .picto { width: 15px; height: 24px; } }
+
+/* Côte : crêtes de l'Estérel, vagues qui ondulent, repères chiffrés qui mènent au catalogue. */
+.cote-relief path { fill: rgba(181, 69, 43, .075); stroke: rgba(181, 69, 43, .38); stroke-width: 1.4; }
+.cote-pins { fill: rgba(18, 48, 63, .2); stroke: rgba(18, 48, 63, .35); stroke-width: 2.4; stroke-linecap: round; }
+.cote-pins ellipse { stroke: none; }
+.cote-mer { fill: url(#cote-profondeur); }
+.cote-legende--esterel { paint-order: stroke; stroke: var(--lin); stroke-width: 7px; stroke-linejoin: round; }
+.cote-vagues path { fill: none; stroke: rgba(255, 255, 255, .85); stroke-width: 2; stroke-linecap: round; animation: vague 6s ease-in-out infinite alternate; }
+.cote-vagues path:nth-child(2n) { animation-duration: 7.5s; animation-delay: -2s; }
+.cote-vagues path:nth-child(3n) { animation-duration: 5.2s; animation-delay: -1s; }
+@keyframes vague { from { transform: translateX(-14px); } to { transform: translateX(14px); } }
+.cote-carte.hors-ecran .cote-vagues path, .cote-carte.hors-ecran .cote-halo { animation-play-state: paused; }
+.cote-plan { position: relative; }
+.cote-repere { position: absolute; width: 0; height: 0; text-decoration: none; color: var(--encre); z-index: 1; }
+.cote-repere::before { content: ''; position: absolute; left: 0; top: 0; width: 48px; height: 48px; transform: translate(-50%, -50%); }
+.cote-point { position: absolute; left: 0; top: 0; display: grid; place-items: center; width: 32px; height: 32px; transform: translate(-50%, -50%); border-radius: 50%; background: var(--accent-fonce); box-shadow: 0 0 0 3px var(--lin); color: #fff; font: 700 .95rem/1 var(--police-texte); font-variant-numeric: tabular-nums; transition: background .25s, transform .3s var(--courbe); }
+.cote-halo { position: absolute; left: 0; top: 0; width: 54px; height: 54px; border-radius: 50%; background: rgba(181, 69, 43, .2); transform: translate(-50%, -50%); pointer-events: none; }
+.cote-carte.allumee .cote-repere.allume .cote-halo { animation: halo 2.6s ease-out infinite; animation-delay: calc(var(--i) * .35s); }
+.cote-nom { position: absolute; left: 0; bottom: 24px; transform: translateX(-50%); white-space: nowrap; font: 500 clamp(1rem, .8rem + .6vw, 1.4rem)/1.1 var(--police-titres); text-shadow: 0 0 6px var(--lin), 0 0 3px var(--lin), 0 0 1px var(--lin); transition: color .25s; }
+.cote-repere:is(:hover, :focus-visible, .actif) .cote-point { background: var(--rade); transform: translate(-50%, -50%) scale(1.15); }
+.cote-repere:is(:hover, :focus-visible, .actif) .cote-nom { color: var(--accent-fonce); }
+.cote-repere:focus-visible { outline: none; }
+.cote-repere:focus-visible .cote-point { box-shadow: 0 0 0 3px var(--lin), 0 0 0 6px var(--accent-fonce); }
+.cote-consigne { margin: 10px 0 0; font-size: .95rem; color: var(--texte-doux); }
+html:not(.js) .cote-consigne { display: none; }
+.cote-liste a { display: block; min-height: 44px; padding: 12px 0 4px; text-decoration: none; color: inherit; transition: color .2s; }
+.cote-liste li { padding-top: 0; }
+.cote-liste a strong { display: inline; }
+.cote-liste-nb { font: 600 .82rem/1.4 var(--police-texte); letter-spacing: .1em; text-transform: uppercase; color: var(--accent-fonce); margin-left: 6px; }
+.cote-liste-noms { display: block; margin-top: 2px; }
+.cote-liste a:is(:hover, :focus-visible, .actif) strong { color: var(--accent-fonce); }
+.cote-liste a:is(:hover, :focus-visible, .actif) .cote-liste-noms { color: var(--encre); }
+@media (max-width: 760px) {
+  /* Sur téléphone, la carte est deux fois plus grande et se parcourt du doigt. */
+  .cote-cadre { margin-inline: calc(-1 * var(--gouttiere)); overflow-x: auto; overscroll-behavior-x: contain; scrollbar-width: none; }
+  .cote-cadre::-webkit-scrollbar { display: none; }
+  .cote-plan { width: 200%; }
+  .cote-nom { font-size: 1.05rem; }
+}
+.pied-marque .marque--grande { display: none; }
+
+/* Macaron du classement, qui tourne avec le défilement. */
+.confiance-tete { display: flex; flex-direction: column; gap: 12px; }
+.macaron { width: clamp(132px, 14vw, 188px); height: auto; overflow: visible; }
+.macaron text { font-family: var(--police-texte); }
+.macaron-tour text { pointer-events: none; }
+.macaron textPath { font-size: 15.5px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; fill: var(--lin); }
+.macaron-tour { transform-origin: 100px 100px; }
+.macaron-disque { fill: var(--accent); }
+.macaron-etoiles, .macaron-amp { fill: var(--lin); }
+
+/* Signature en grand en tête du pied de page. */
+.pied-signature { margin: 0 0 clamp(36px, 5vw, 64px); padding: 0 var(--gouttiere); display: flex; justify-content: center; align-items: baseline; gap: .02em; font-family: var(--police-titres); font-weight: 500; font-size: clamp(1.6rem, 8.4vw, 10rem); line-height: 1.12; letter-spacing: -.02em; color: rgba(246, 241, 233, .92); white-space: nowrap; }
+.pied-signature em { color: var(--accent-clair); font-style: italic; padding: 0 .04em; display: inline-block; }
+.pied-signature span { display: inline-block; }
+
+/* Catalogue : filtres repliés sur téléphone, carte seule en fin de grille, cartes plus courtes. */
+.filtres-bouton { display: none; }
+@media (max-width: 760px) {
+  html.js:not(.secours) .filtres-bouton { display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 0 20px; margin-bottom: 14px; border: 0; border-radius: 999px; background: var(--rade); color: var(--lin); font-weight: 600; }
+  .filtres-bouton svg { width: 20px; height: 20px; }
+  .filtres-nb:not(:empty) { display: inline-grid; place-items: center; min-width: 24px; height: 24px; padding: 0 6px; border-radius: 12px; background: var(--accent); font-size: .85rem; }
+  html.js:not(.secours) .filtres:not(.ouvert) { display: none; }
+  .catalogue-grille .villa-media { aspect-ratio: 16 / 10; }
+  .catalogue-grille .villa-phrase { display: none; }
+  .catalogue-grille .villa-texte { padding-bottom: 12px; }
+}
+@media (min-width: 1001px) {
+  .catalogue-grille .villa.seule { grid-column: 1 / -1; }
+  .catalogue-grille .villa.seule .villa-carte { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); grid-template-rows: 1fr auto auto auto 1fr; }
+  .catalogue-grille .villa.seule .villa-image { grid-row: 1 / -1; grid-column: 1; }
+  .catalogue-grille .villa.seule .villa-texte { grid-row: 2; grid-column: 2; }
+  .catalogue-grille .villa.seule .villa-phrase { grid-row: 3; grid-column: 2; }
+  .catalogue-grille .villa.seule .villa-actions { grid-row: 4; grid-column: 2; align-items: flex-start; }
+  .catalogue-grille .villa.seule .villa-media { height: 100%; aspect-ratio: auto; min-height: 340px; }
+  .catalogue-grille .villa.seule .villa-nom { font-size: clamp(2rem, 1.4rem + 1.4vw, 2.8rem); }
+}
+@media (min-width: 641px) and (max-width: 1000px) { .catalogue-grille .villa.seule { grid-column: 1 / -1; } .catalogue-grille .villa.seule .villa-media { aspect-ratio: 21 / 9; } }
+
+/* Fiche : vignettes cliquables. */
+.fiche-vignettes { position: absolute; left: 12px; top: 12px; display: flex; flex-direction: column; gap: 8px; z-index: 2; }
+.fiche-vignettes button { width: 64px; height: 48px; padding: 0; border: 2px solid transparent; border-radius: 4px; overflow: hidden; background: var(--rade); opacity: .75; transition: opacity .2s, border-color .2s; }
+.fiche-vignettes button.active { border-color: var(--lin); opacity: 1; }
+.fiche-vignettes img { width: 100%; height: 100%; object-fit: cover; display: block; }
+@media (max-width: 860px) { .fiche-vignettes { display: none; } }
+
+/* Chez vous : services en récit, une pile d'images collée qui change à chaque service (ordinateur). */
+.familles-scene { width: min(100% - 2 * var(--gouttiere), var(--largeur)); margin: 0 auto; }
+.familles-scene .famille { width: auto; }
+@media (max-width: 760px) { .famille-texte .famille-media--petite { display: none; } }
+.familles-pile { display: none; }
+.famille-numero { font-family: var(--police-titres); font-style: italic; font-size: 1.4rem; color: var(--accent); margin: 0 0 .3em; }
+.famille-media--petite { width: min(52%, 300px); aspect-ratio: 4 / 3; margin: 22px 0 0; box-shadow: none; }
+.famille-texte .famille-media--petite { display: block; margin: 22px 0 0; box-shadow: none; }
+html.familles-recit .familles-scene { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: clamp(32px, 6vw, 96px); align-items: start; }
+html.familles-recit .familles-pile { display: block; position: sticky; top: calc(var(--entete-h) + 4vh); height: calc(100svh - var(--entete-h) - 8vh); margin-top: 6vh; border-radius: var(--rayon); overflow: hidden; background: var(--rade); }
+/* La photo du service en cours monte par-dessus la précédente, qui reste dessous le temps du passage puis se cache. */
+html.familles-recit .familles-pile .famille-media { position: absolute; inset: 0; margin: 0; width: 100%; height: 100%; aspect-ratio: auto; border-radius: 0; z-index: 1; visibility: hidden; clip-path: inset(100% 0 0 0); transition: clip-path 0s .9s, visibility 0s .9s; }
+html.familles-recit .familles-pile .famille-media img { transform: scale(1.08); transition: transform 1.4s var(--courbe); }
+html.familles-recit .familles-pile .famille-media.active { visibility: visible; clip-path: inset(0 0 0 0); z-index: 2; transition: clip-path .9s var(--courbe), visibility 0s; }
+html.familles-recit .familles-pile .famille-media.active img { transform: scale(1); }
+.familles-index { position: absolute; left: 14px; bottom: 14px; z-index: 3; margin: 0; padding: 6px 12px; border-radius: 999px; background: rgba(12, 32, 42, .72); color: var(--lin); font: 600 .88rem/1.2 var(--police-texte); letter-spacing: .08em; font-variant-numeric: tabular-nums; }
+html.familles-recit .famille { display: flex; flex-direction: column; justify-content: center; width: auto; min-height: 78svh; margin: 0; }
+html.familles-recit .famille .famille-images { display: none; }
+html.familles-recit .famille-texte { order: 0; padding-left: clamp(18px, 2vw, 28px); border-left: 2px solid var(--ligne); transition: border-color .5s; }
+html.familles-recit .famille-titre { transition: color .5s; }
+html.familles-recit .famille:not(.active) .famille-titre { color: var(--texte-doux); }
+html.familles-recit .famille.active .famille-texte { border-left-color: var(--accent); }
+
+/* Chez nous : icônes dessinées des activités, partenaires reliés par des « & ». */
+.activite { display: grid; grid-template-columns: 56px minmax(0, 1fr); gap: 18px; align-items: start; }
+.activite-icone { width: 48px; height: 48px; color: var(--accent); margin-top: 6px; }
+.partenaires-liste { display: flex; flex-wrap: wrap; align-items: baseline; gap: .1em 0; }
+.partenaires-liste li { padding: 0; border: 0; font-size: clamp(1.35rem, 1rem + 1.5vw, 2.4rem); line-height: 1.35; }
+.partenaires-liste li:not(:last-child)::after { content: '&'; font-style: italic; color: var(--accent); margin: 0 .32em; }
+
+/* Barre fixe du téléphone : libellés sur une ligne. */
+[data-barre-fixe] .bouton { font-size: .92rem; padding-inline: .7em; letter-spacing: 0; white-space: nowrap; }
+
+/* Curseur : anneau rouge, plein au-dessus des liens. */
+.curseur { border-color: var(--accent); }
+.curseur.curseur-lien { background: rgba(181, 69, 43, .14); }
+
+/* Deux sections claires qui se suivent : un seul grand espace entre elles, pas deux. */
+:is(.cote, .activites, .partenaires, .joindre) { padding-top: calc(var(--section) * .45); }
+.collection { padding-top: calc(var(--section) * .7); }

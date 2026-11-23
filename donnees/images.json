@@ -6159,15 +6159,15 @@
     },
     "media": "c.media({ nom: 'appel-chez-vous', alt: \"Piscine des Camelias et ses parasols\", cadrage: '49% 66%', cadrageMobile: '50% 68%', sizes: '100vw' })"
   },
-  "service-cles": {
-    "nom": "service-cles",
+  "grok/service-cles": {
+    "nom": "grok/service-cles",
     "source": "recu/grok/g-service-cles.png",
     "role": "carte-service",
     "alt": "Clé de villa posée sur une serviette pliée, avec un brin de lavande",
-    "grok": false,
-    "mention": null,
+    "grok": true,
+    "mention": "Illustration générée",
     "beaute": 4,
-    "empreinte": "d6b2ece1aa3c28b3",
+    "empreinte": "0b3b0ea9632a3eee",
     "ratio": "3:2",
     "largeurs": [
       640,
@@ -6219,26 +6219,26 @@
     "raisons_faible": [],
     "avertissements": [],
     "fichiers": [
-      "service-cles-640.webp",
-      "service-cles-960.webp",
-      "service-cles-1168.webp"
+      "grok/service-cles-640.webp",
+      "grok/service-cles-960.webp",
+      "grok/service-cles-1168.webp"
     ],
     "poids": {
-      "service-cles-640.webp": 45344,
-      "service-cles-960.webp": 85604,
-      "service-cles-1168.webp": 112714
+      "grok/service-cles-640.webp": 45344,
+      "grok/service-cles-960.webp": 85604,
+      "grok/service-cles-1168.webp": 112714
     },
-    "media": "c.media({ nom: 'service-cles', alt: \"Clé de villa posée sur une serviette pliée, avec un brin de lavande\", cadrage: '52% 52%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '3 / 2' })"
+    "media": "c.media({ nom: 'grok/service-cles', alt: \"Clé de villa posée sur une serviette pliée, avec un brin de lavande\", cadrage: '52% 52%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '3 / 2' })"
   },
-  "service-entretien": {
-    "nom": "service-entretien",
+  "grok/service-entretien": {
+    "nom": "grok/service-entretien",
     "source": "recu/grok/g-service-entretien.png",
     "role": "carte-service",
     "alt": "Îlot de cuisine impeccable, bouquet d’hortensias blancs",
-    "grok": false,
-    "mention": null,
+    "grok": true,
+    "mention": "Illustration générée",
     "beaute": 4,
-    "empreinte": "ff160a433bcaba1f",
+    "empreinte": "2272f5e42dce68e3",
     "ratio": "3:2",
     "largeurs": [
       640,
@@ -6290,26 +6290,26 @@
     "raisons_faible": [],
     "avertissements": [],
     "fichiers": [
-      "service-entretien-640.webp",
-      "service-entretien-960.webp",
-      "service-entretien-1168.webp"
+      "grok/service-entretien-640.webp",
+      "grok/service-entretien-960.webp",
+      "grok/service-entretien-1168.webp"
     ],
     "poids": {
-      "service-entretien-640.webp": 37658,
-      "service-entretien-960.webp": 72530,
-      "service-entretien-1168.webp": 94034
+      "grok/service-entretien-640.webp": 37658,
+      "grok/service-entretien-960.webp": 72530,
+      "grok/service-entretien-1168.webp": 94034
     },
-    "media": "c.media({ nom: 'service-entretien', alt: \"Îlot de cuisine impeccable, bouquet d’hortensias blancs\", cadrage: '60% 41%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '3 / 2' })"
+    "media": "c.media({ nom: 'grok/service-entretien', alt: \"Îlot de cuisine impeccable, bouquet d’hortensias blancs\", cadrage: '60% 41%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '3 / 2' })"
   },
-  "service-transfert": {
-    "nom": "service-transfert",
+  "grok/service-transfert": {
+    "nom": "grok/service-transfert",
     "source": "recu/grok/g-service-transfert.png",
     "role": "carte-service",
     "alt": "Berline sombre portière ouverte dans une allée de lavande",
-    "grok": false,
-    "mention": null,
+    "grok": true,
+    "mention": "Illustration générée",
     "beaute": 4,
-    "empreinte": "ee1aa44b31334172",
+    "empreinte": "6dba371e74ede82f",
     "ratio": "3:2",
     "largeurs": [
       640,
@@ -6361,26 +6361,26 @@
     "raisons_faible": [],
     "avertissements": [],
     "fichiers": [
-      "service-transfert-640.webp",
-      "service-transfert-960.webp",
-      "service-transfert-1168.webp"
+      "grok/service-transfert-640.webp",
+      "grok/service-transfert-960.webp",
+      "grok/service-transfert-1168.webp"
     ],
     "poids": {
-      "service-transfert-640.webp": 92392,
-      "service-transfert-960.webp": 181174,
-      "service-transfert-1168.webp": 238502
+      "grok/service-transfert-640.webp": 92392,
+      "grok/service-transfert-960.webp": 181174,
+      "grok/service-transfert-1168.webp": 238502
     },
-    "media": "c.media({ nom: 'service-transfert', alt: \"Berline sombre portière ouverte dans une allée de lavande\", cadrage: '49% 50%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '3 / 2' })"
+    "media": "c.media({ nom: 'grok/service-transfert', alt: \"Berline sombre portière ouverte dans une allée de lavande\", cadrage: '49% 50%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '3 / 2' })"
   },
-  "service-chef": {
-    "nom": "service-chef",
+  "grok/service-chef": {
+    "nom": "grok/service-chef",
     "source": "recu/grok/g-service-chef.png",
     "role": "carte-service",
     "alt": "Tomates anciennes, huile d’olive, basilic et casserole de cuivre sur un plan de marbre",
-    "grok": false,
-    "mention": null,
+    "grok": true,
+    "mention": "Illustration générée",
     "beaute": 4,
-    "empreinte": "a1876fe0bcb7d979",
+    "empreinte": "ec3a05bc50cd5a46",
     "ratio": "3:2",
     "largeurs": [
       640,
@@ -6432,26 +6432,26 @@
     "raisons_faible": [],
     "avertissements": [],
     "fichiers": [
-      "service-chef-640.webp",
-      "service-chef-960.webp",
-      "service-chef-1168.webp"
+      "grok/service-chef-640.webp",
+      "grok/service-chef-960.webp",
+      "grok/service-chef-1168.webp"
     ],
     "poids": {
-      "service-chef-640.webp": 46504,
-      "service-chef-960.webp": 81002,
-      "service-chef-1168.webp": 105630
+      "grok/service-chef-640.webp": 46504,
+      "grok/service-chef-960.webp": 81002,
+      "grok/service-chef-1168.webp": 105630
     },
-    "media": "c.media({ nom: 'service-chef', alt: \"Tomates anciennes, huile d’olive, basilic et casserole de cuivre sur un plan de marbre\", cadrage: '54% 51%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '3 / 2' })"
+    "media": "c.media({ nom: 'grok/service-chef', alt: \"Tomates anciennes, huile d’olive, basilic et casserole de cuivre sur un plan de marbre\", cadrage: '54% 51%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '3 / 2' })"
   },
-  "service-bebe": {
-    "nom": "service-bebe",
+  "grok/service-bebe": {
+    "nom": "grok/service-bebe",
     "source": "recu/grok/g-service-bebe.png",
     "role": "carte-service",
     "alt": "Lit à barreaux blanc avec langes pliés dans une chambre ensoleillée",
-    "grok": false,
-    "mention": null,
+    "grok": true,
+    "mention": "Illustration générée",
     "beaute": 4,
-    "empreinte": "64d059c15e2a1aee",
+    "empreinte": "c16cfd701c6c8030",
     "ratio": "3:2",
     "largeurs": [
       640,
@@ -6503,26 +6503,26 @@
     "raisons_faible": [],
     "avertissements": [],
     "fichiers": [
-      "service-bebe-640.webp",
-      "service-bebe-960.webp",
-      "service-bebe-1168.webp"
+      "grok/service-bebe-640.webp",
+      "grok/service-bebe-960.webp",
+      "grok/service-bebe-1168.webp"
     ],
     "poids": {
-      "service-bebe-640.webp": 43584,
-      "service-bebe-960.webp": 80610,
-      "service-bebe-1168.webp": 104970
+      "grok/service-bebe-640.webp": 43584,
+      "grok/service-bebe-960.webp": 80610,
+      "grok/service-bebe-1168.webp": 104970
     },
-    "media": "c.media({ nom: 'service-bebe', alt: \"Lit à barreaux blanc avec langes pliés dans une chambre ensoleillée\", cadrage: '40% 44%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '3 / 2' })"
+    "media": "c.media({ nom: 'grok/service-bebe', alt: \"Lit à barreaux blanc avec langes pliés dans une chambre ensoleillée\", cadrage: '40% 44%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '3 / 2' })"
   },
-  "service-coach": {
-    "nom": "service-coach",
+  "grok/service-coach": {
+    "nom": "grok/service-coach",
     "source": "recu/grok/g-service-coach.png",
     "role": "carte-service",
     "alt": "Tapis de yoga roulé et serviette sur le bord d’une piscine au lever du soleil",
-    "grok": false,
-    "mention": null,
+    "grok": true,
+    "mention": "Illustration générée",
     "beaute": 4,
-    "empreinte": "fa62cf6210f8999b",
+    "empreinte": "8eef212a658d5a57",
     "ratio": "3:2",
     "largeurs": [
       640,
@@ -6574,26 +6574,26 @@
     "raisons_faible": [],
     "avertissements": [],
     "fichiers": [
-      "service-coach-640.webp",
-      "service-coach-960.webp",
-      "service-coach-1168.webp"
+      "grok/service-coach-640.webp",
+      "grok/service-coach-960.webp",
+      "grok/service-coach-1168.webp"
     ],
     "poids": {
-      "service-coach-640.webp": 32780,
-      "service-coach-960.webp": 56068,
-      "service-coach-1168.webp": 71674
+      "grok/service-coach-640.webp": 32780,
+      "grok/service-coach-960.webp": 56068,
+      "grok/service-coach-1168.webp": 71674
     },
-    "media": "c.media({ nom: 'service-coach', alt: \"Tapis de yoga roulé et serviette sur le bord d’une piscine au lever du soleil\", cadrage: '46% 39%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '3 / 2' })"
+    "media": "c.media({ nom: 'grok/service-coach', alt: \"Tapis de yoga roulé et serviette sur le bord d’une piscine au lever du soleil\", cadrage: '46% 39%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '3 / 2' })"
   },
-  "service-bateau": {
-    "nom": "service-bateau",
+  "grok/service-bateau": {
+    "nom": "grok/service-bateau",
     "source": "recu/grok/g-service-bateau.png",
     "role": "carte-service",
     "alt": "Bateau en bois amarré dans une crique turquoise entre des rochers rouges",
-    "grok": false,
-    "mention": null,
+    "grok": true,
+    "mention": "Illustration générée",
     "beaute": 4,
-    "empreinte": "72f673859a8f945d",
+    "empreinte": "7bf9579d04c8c7e4",
     "ratio": "3:2",
     "largeurs": [
       640,
@@ -6645,16 +6645,16 @@
     "raisons_faible": [],
     "avertissements": [],
     "fichiers": [
-      "service-bateau-640.webp",
-      "service-bateau-960.webp",
-      "service-bateau-1168.webp"
+      "grok/service-bateau-640.webp",
+      "grok/service-bateau-960.webp",
+      "grok/service-bateau-1168.webp"
     ],
     "poids": {
-      "service-bateau-640.webp": 96334,
-      "service-bateau-960.webp": 190734,
-      "service-bateau-1168.webp": 256902
+      "grok/service-bateau-640.webp": 96334,
+      "grok/service-bateau-960.webp": 190734,
+      "grok/service-bateau-1168.webp": 256902
     },
-    "media": "c.media({ nom: 'service-bateau', alt: \"Bateau en bois amarré dans une crique turquoise entre des rochers rouges\", cadrage: '67% 41%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '3 / 2' })"
+    "media": "c.media({ nom: 'grok/service-bateau', alt: \"Bateau en bois amarré dans une crique turquoise entre des rochers rouges\", cadrage: '67% 41%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '3 / 2' })"
   },
   "ouverture-chez-nous": {
     "nom": "ouverture-chez-nous",
@@ -7718,15 +7718,15 @@
     },
     "media": "c.media({ nom: 'ouverture-renseignements', alt: \"Table de terrasse à l’ombre d’un arbre à Aiguebonne, la mer au loin\", cadrage: '43% 46%', cadrageMobile: '50% 46%', sizes: '100vw', priorite: true })"
   },
-  "page-404": {
-    "nom": "page-404",
+  "grok/page-404": {
+    "nom": "grok/page-404",
     "source": "recu/grok/g-404.png",
     "role": "404",
     "alt": "Une clé laissée seule sur la marche d’une terrasse, volets fermés",
-    "grok": false,
-    "mention": null,
+    "grok": true,
+    "mention": "Illustration générée",
     "beaute": 4,
-    "empreinte": "82423cc1c2fd209b",
+    "empreinte": "594d64314c109a41",
     "ratio": "3:2",
     "largeurs": [
       640,
@@ -7778,15 +7778,15 @@
     "raisons_faible": [],
     "avertissements": [],
     "fichiers": [
-      "page-404-640.webp",
-      "page-404-960.webp",
-      "page-404-1168.webp"
+      "grok/page-404-640.webp",
+      "grok/page-404-960.webp",
+      "grok/page-404-1168.webp"
     ],
     "poids": {
-      "page-404-640.webp": 40590,
-      "page-404-960.webp": 72052,
-      "page-404-1168.webp": 93326
+      "grok/page-404-640.webp": 40590,
+      "grok/page-404-960.webp": 72052,
+      "grok/page-404-1168.webp": 93326
     },
-    "media": "c.media({ nom: 'page-404', alt: \"Une clé laissée seule sur la marche d’une terrasse, volets fermés\", cadrage: '33% 41%', sizes: '100vw', ratio: '3 / 2' })"
+    "media": "c.media({ nom: 'grok/page-404', alt: \"Une clé laissée seule sur la marche d’une terrasse, volets fermés\", cadrage: '33% 41%', sizes: '100vw', ratio: '3 / 2' })"
   }
 }

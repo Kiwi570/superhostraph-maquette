@@ -1188,7 +1188,7 @@
  },
  {
   "source": "recu/grok/g-service-cles.png",
-  "nom": "service-cles",
+  "nom": "grok/service-cles",
   "role": "carte-service",
   "ratio": "3:2",
   "largeurs": [
@@ -1205,7 +1205,7 @@
  },
  {
   "source": "recu/grok/g-service-entretien.png",
-  "nom": "service-entretien",
+  "nom": "grok/service-entretien",
   "role": "carte-service",
   "ratio": "3:2",
   "largeurs": [
@@ -1222,7 +1222,7 @@
  },
  {
   "source": "recu/grok/g-service-transfert.png",
-  "nom": "service-transfert",
+  "nom": "grok/service-transfert",
   "role": "carte-service",
   "ratio": "3:2",
   "largeurs": [
@@ -1239,7 +1239,7 @@
  },
  {
   "source": "recu/grok/g-service-chef.png",
-  "nom": "service-chef",
+  "nom": "grok/service-chef",
   "role": "carte-service",
   "ratio": "3:2",
   "largeurs": [
@@ -1256,7 +1256,7 @@
  },
  {
   "source": "recu/grok/g-service-bebe.png",
-  "nom": "service-bebe",
+  "nom": "grok/service-bebe",
   "role": "carte-service",
   "ratio": "3:2",
   "largeurs": [
@@ -1273,7 +1273,7 @@
  },
  {
   "source": "recu/grok/g-service-coach.png",
-  "nom": "service-coach",
+  "nom": "grok/service-coach",
   "role": "carte-service",
   "ratio": "3:2",
   "largeurs": [
@@ -1290,7 +1290,7 @@
  },
  {
   "source": "recu/grok/g-service-bateau.png",
-  "nom": "service-bateau",
+  "nom": "grok/service-bateau",
   "role": "carte-service",
   "ratio": "3:2",
   "largeurs": [
@@ -1510,7 +1510,7 @@
  },
  {
   "source": "recu/grok/g-404.png",
-  "nom": "page-404",
+  "nom": "grok/page-404",
   "role": "404",
   "ratio": "3:2",
   "largeurs": [

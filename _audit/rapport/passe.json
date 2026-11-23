@@ -1,16 +1,15 @@
 {
- "id": "20261120-224747-complet-cible-partiel",
- "date": "2026-11-20T22:53:07.029Z",
+ "id": "20261123-145733-complet-cible-partiel",
+ "date": "2026-11-23T15:00:25.900Z",
  "niveau": "complet",
- "pages": "/,/404,/chez-nous,/chez-vous,/renseignements",
+ "pages": "/,/chez-vous,/404",
  "etapes": [
   "fichiers",
-  "mesures",
-  "ecran"
+  "mesures"
  ],
- "version": "1",
+ "version": "2",
  "echecs": 0,
- "aRegarder": 8,
+ "aRegarder": 2,
  "nonLances": 0,
  "manquants": 0,
  "statut": "complet"

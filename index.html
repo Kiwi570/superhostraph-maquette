@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" data-v="1">
+<html lang="fr" data-v="2" data-curseur>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -35,14 +35,14 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 })();</script>
 <link rel="preload" href="/assets/fonts/noto-serif-display-500.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/albert-sans-400.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=1">
-<link rel="stylesheet" href="/assets/css/site.css?v=1">
-<link rel="modulepreload" href="/assets/js/site.js?v=1">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<link rel="stylesheet" href="/assets/css/socle.css?v=2">
+<link rel="stylesheet" href="/assets/css/site.css?v=2">
+<link rel="modulepreload" href="/assets/js/site.js?v=2">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=2">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=1"></script>
+<script type="module" src="/assets/js/site.js?v=2"></script>
 <meta name="theme-color" content="#f6f1e9">
 <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
@@ -121,14 +121,20 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     </p>
     <p class="ouv-info ouv-anim" data-info-cle>19 villas · de 4 à 12 voyageurs · de Valescure à Anthéor</p>
   </div>
+  <a class="ouv-defiler ouv-anim masque-ecran-bas" href="#esprit"><span>Découvrir</span><span class="ouv-defiler-trait" aria-hidden="true" data-boucle-css></span></a>
 </section>
 <section class="manifeste" id="esprit">
   <div class="conteneur manifeste-grille">
     <div class="manifeste-texte">
       <p class="surtitre" data-anime>Plus qu’un lieu de vie</p>
-      <p class="manifeste-grand" data-anime="mots">Nous voulons faire plus que vous trouver un simple lieu de vie pour vos vacances.</p>
+      <p class="manifeste-grand" data-anime="mots">Nous voulons faire <em>plus</em> que vous trouver un simple lieu de vie pour vos vacances.</p>
       <p class="manifeste-suite" data-anime>Linge de qualité hôtelière, lits faits à votre arrivée, gouvernante, chef à domicile, transferts privés : un service digne des plus grands hôtels, dans une maison rien qu’à vous.</p>
       <p data-anime><a href="/chez-vous" class="lien-fleche" data-libelle="Chez vous">Ce qui vous attend sur place</a></p>
+      <ul class="chiffres" data-anime="cascade">
+        <li><strong data-compteur="19">19</strong><span>villas d’exception</span></li>
+        <li><strong data-compteur="12">12</strong><span>voyageurs au plus dans une même villa</span></li>
+        <li><strong data-compteur="5">5</strong><span>villas classées cinq étoiles</span></li>
+      </ul>
     </div>
     <figure class="media manifeste-media" data-fx="parallaxe" data-fx-force="12" style="--cadrage:45% 48%">
   <picture>
@@ -141,15 +147,16 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <div class="conteneur collection-tete">
     <div>
       <p class="surtitre" data-anime>La collection</p>
-      <h2 class="titre-section" data-anime="lignes">Combien serez-vous ?</h2>
+      <h2 class="titre-section" data-anime="lignes">Combien <em>serez-vous</em> ?</h2>
       <p class="chapo" data-anime>Glissez le curseur : les villas qui vous accueillent passent au premier rang.</p>
     </div>
-    <div class="curseur-voyageurs" data-effet="voyageurs" data-curseur-voyageurs>
+    <div class="curseur-voyageurs" data-effet="voyageurs" data-grille="manipuler" data-curseur-voyageurs>
       <label for="nb-voyageurs">Nombre de voyageurs</label>
       <div class="curseur-ligne">
         <input type="range" id="nb-voyageurs" min="2" max="12" step="1" value="8" data-voyageurs-curseur>
         <output for="nb-voyageurs" class="curseur-valeur" data-voyageurs-valeur>8</output>
       </div>
+      <p class="pictos" data-pictos aria-hidden="true"><svg class="picto plein" viewBox="0 0 20 32"><circle cx="10" cy="6" r="5"/><path d="M2 31v-9c0-5 3.5-9 8-9s8 4 8 9v9z"/></svg><svg class="picto plein" viewBox="0 0 20 32"><circle cx="10" cy="6" r="5"/><path d="M2 31v-9c0-5 3.5-9 8-9s8 4 8 9v9z"/></svg><svg class="picto plein" viewBox="0 0 20 32"><circle cx="10" cy="6" r="5"/><path d="M2 31v-9c0-5 3.5-9 8-9s8 4 8 9v9z"/></svg><svg class="picto plein" viewBox="0 0 20 32"><circle cx="10" cy="6" r="5"/><path d="M2 31v-9c0-5 3.5-9 8-9s8 4 8 9v9z"/></svg><svg class="picto plein" viewBox="0 0 20 32"><circle cx="10" cy="6" r="5"/><path d="M2 31v-9c0-5 3.5-9 8-9s8 4 8 9v9z"/></svg><svg class="picto plein" viewBox="0 0 20 32"><circle cx="10" cy="6" r="5"/><path d="M2 31v-9c0-5 3.5-9 8-9s8 4 8 9v9z"/></svg><svg class="picto plein" viewBox="0 0 20 32"><circle cx="10" cy="6" r="5"/><path d="M2 31v-9c0-5 3.5-9 8-9s8 4 8 9v9z"/></svg><svg class="picto plein" viewBox="0 0 20 32"><circle cx="10" cy="6" r="5"/><path d="M2 31v-9c0-5 3.5-9 8-9s8 4 8 9v9z"/></svg><svg class="picto" viewBox="0 0 20 32"><circle cx="10" cy="6" r="5"/><path d="M2 31v-9c0-5 3.5-9 8-9s8 4 8 9v9z"/></svg><svg class="picto" viewBox="0 0 20 32"><circle cx="10" cy="6" r="5"/><path d="M2 31v-9c0-5 3.5-9 8-9s8 4 8 9v9z"/></svg><svg class="picto" viewBox="0 0 20 32"><circle cx="10" cy="6" r="5"/><path d="M2 31v-9c0-5 3.5-9 8-9s8 4 8 9v9z"/></svg><svg class="picto" viewBox="0 0 20 32"><circle cx="10" cy="6" r="5"/><path d="M2 31v-9c0-5 3.5-9 8-9s8 4 8 9v9z"/></svg></p>
       <p class="curseur-resultat" aria-live="polite"><strong data-nb-villas>13</strong> villas pour <strong data-nb-voyageurs>8</strong> voyageurs</p>
     </div>
   </div>
@@ -408,47 +415,45 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 <section class="cote" id="cote">
   <div class="conteneur cote-tete">
     <p class="surtitre" data-anime>Entre Cannes et Saint-Tropez</p>
-    <h2 class="titre-section" data-anime="lignes">De Valescure à Anthéor</h2>
+    <h2 class="titre-section" data-anime="lignes">De Valescure <em>à Anthéor</em></h2>
     <p class="chapo" data-anime>Dix-neuf maisons entre les pins de Valescure, les criques de Boulouris et les rochers rouges de l’Estérel.</p>
   </div>
   <div class="conteneur"><div class="cote-carte" data-effet="cote" data-boucle-css>
-  <svg class="cote-svg" viewBox="0 0 1200 470" role="img" aria-labelledby="cote-titre-svg">
+  <div class="cote-cadre" data-cote-cadre><div class="cote-plan">
+  <svg class="cote-svg" viewBox="0 0 1200 470" role="group" aria-labelledby="cote-titre-svg">
     <title id="cote-titre-svg">De Valescure à Anthéor</title>
+    <defs><linearGradient id="cote-profondeur" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#dfe8ea"/><stop offset="1" stop-color="#c3d5da"/></linearGradient></defs>
+    <g class="cote-relief"><path d="M1293 30 C1303 51 1287 80 1269 100 C1251 121 1218 140 1185 152 C1153 164 1110 171 1075 171 C1039 171 1010 155 973 152 C935 150 886 163 850 156 C813 148 762 127 751 106 C740 85 773 53 783 30 C793 7 795 -11 809 -30 C823 -48 842 -67 868 -82 C893 -98 925 -112 961 -122 C997 -132 1052 -148 1086 -140 C1121 -133 1147 -98 1168 -79 C1188 -59 1190 -42 1211 -24 C1231 -6 1283 9 1293 30Z"/><path d="M1240 33 C1246 50 1226 72 1210 88 C1194 105 1171 121 1145 130 C1119 138 1084 140 1056 141 C1027 141 1006 134 975 134 C944 134 897 147 869 140 C841 133 814 109 807 92 C801 74 826 51 832 33 C838 15 833 -0 842 -16 C852 -31 870 -45 890 -58 C911 -71 936 -86 965 -93 C994 -100 1039 -108 1066 -100 C1092 -93 1106 -63 1124 -48 C1142 -33 1156 -26 1175 -13 C1194 1 1234 16 1240 33Z"/><path d="M1184 36 C1187 49 1168 66 1155 78 C1142 90 1126 103 1107 109 C1087 115 1061 114 1039 115 C1017 117 1001 117 976 118 C952 119 912 128 893 121 C873 114 862 93 858 78 C855 64 869 49 871 36 C874 23 867 10 874 -2 C880 -14 896 -25 912 -35 C928 -45 947 -60 969 -64 C992 -68 1026 -68 1046 -62 C1066 -55 1072 -33 1088 -23 C1103 -13 1124 -11 1140 -1 C1156 8 1182 23 1184 36Z"/><path d="M1128 39 C1129 49 1115 60 1106 68 C1096 77 1085 86 1071 90 C1058 94 1039 93 1024 94 C1008 96 995 101 978 102 C960 103 931 107 918 101 C905 95 904 78 902 67 C899 57 904 48 904 39 C904 30 899 20 904 11 C908 2 920 -6 931 -13 C943 -21 958 -32 974 -34 C990 -36 1013 -32 1028 -27 C1042 -21 1045 -8 1058 -2 C1071 4 1092 3 1104 10 C1116 17 1128 29 1128 39Z"/><path d="M1075 42 C1075 48 1067 55 1061 60 C1055 66 1047 71 1039 74 C1030 76 1020 75 1010 77 C1000 79 990 84 979 85 C968 86 950 85 943 81 C936 77 938 65 936 59 C934 52 933 48 933 42 C932 36 929 30 932 24 C935 18 942 13 950 8 C958 3 968 -4 978 -5 C988 -6 1002 -0 1011 3 C1020 6 1023 12 1032 15 C1041 19 1058 18 1065 22 C1072 27 1076 36 1075 42Z"/></g>
+    <g class="cote-pins"><g transform="translate(186 118)"><path d="M0 0 v12"/><ellipse cx="0" cy="-2" rx="15" ry="6"/></g><g transform="translate(214 146)"><path d="M0 0 v12"/><ellipse cx="0" cy="-2" rx="15" ry="6"/></g><g transform="translate(336 112)"><path d="M0 0 v12"/><ellipse cx="0" cy="-2" rx="15" ry="6"/></g><g transform="translate(362 144)"><path d="M0 0 v12"/><ellipse cx="0" cy="-2" rx="15" ry="6"/></g><g transform="translate(404 118)"><path d="M0 0 v12"/><ellipse cx="0" cy="-2" rx="15" ry="6"/></g><g transform="translate(160 90)"><path d="M0 0 v12"/><ellipse cx="0" cy="-2" rx="15" ry="6"/></g></g>
     <path class="cote-mer" d="M0 196 C 120 206 180 214 236 226 C 300 238 360 226 420 236 C 480 246 540 262 572 300 C 590 322 612 330 628 312 C 650 288 690 282 720 270 C 750 258 766 230 792 228 C 820 226 832 262 860 276 C 900 296 950 286 990 296 C 1060 312 1130 318 1200 330 L 1200 470 L 0 470 Z"/>
-    <path class="cote-esterel" d="M700 0 L 742 58 L 768 40 L 806 112 L 838 84 L 872 150 L 906 118 L 948 176 L 982 138 L 1020 196 L 1060 150 L 1098 206 L 1140 168 L 1200 232 L 1200 0 Z"/>
-    <text class="cote-ville" x="18" y="172">Saint-Raphaël</text>
-    <path class="cote-trait" data-cote-trait d="M0 196 C 120 206 180 214 236 226 C 300 238 360 226 420 236 C 480 246 540 262 572 300 C 590 322 612 330 628 312 C 650 288 690 282 720 270 C 750 258 766 230 792 228 C 820 226 832 262 860 276 C 900 296 950 286 990 296 C 1060 312 1130 318 1200 330"/>
-    <g class="cote-ile" transform="translate(632 392)"><path d="M-26 6 C -18 -6 -6 -10 4 -8 C 16 -6 24 0 28 8 Z"/><rect x="-3" y="-26" width="8" height="22"/></g>
-    <text class="cote-legende" x="660" y="430">Île d’Or</text>
-    <text class="cote-legende cote-legende--mer" x="250" y="380">Méditerranée</text>
-    <text class="cote-legende cote-legende--esterel" x="1180" y="40" text-anchor="end">Massif de l’Estérel</text>
-    <g class="cote-repere" data-superpose data-repere="valescure" style="--i:0" transform="translate(250 92)">
-      <circle class="cote-halo" r="22"></circle><circle class="cote-point" r="7"></circle>
-      <text class="cote-nom" x="0" y="-46" text-anchor="middle">Valescure</text>
-      <text class="cote-nb" x="0" y="-72" text-anchor="middle">3 villas</text>
-    </g><g class="cote-repere" data-superpose data-repere="boulouris" style="--i:1" transform="translate(418 214)">
-      <circle class="cote-halo" r="22"></circle><circle class="cote-point" r="7"></circle>
-      <text class="cote-nom" x="0" y="46" text-anchor="middle">Boulouris</text>
-      <text class="cote-nb" x="0" y="70" text-anchor="middle">5 villas</text>
-    </g><g class="cote-repere" data-superpose data-repere="santa-lucia" style="--i:2" transform="translate(230 222)">
-      <circle class="cote-halo" r="22"></circle><circle class="cote-point" r="7"></circle>
-      <text class="cote-nom" x="0" y="46" text-anchor="middle">Santa Lucia</text>
-      <text class="cote-nb" x="0" y="70" text-anchor="middle">2 villas</text>
-    </g><g class="cote-repere" data-superpose data-repere="dramont" style="--i:3" transform="translate(602 292)">
-      <circle class="cote-halo" r="22"></circle><circle class="cote-point" r="7"></circle>
-      <text class="cote-nom" x="0" y="46" text-anchor="middle">Le Dramont</text>
-      <text class="cote-nb" x="0" y="70" text-anchor="middle">2 villas</text>
-    </g><g class="cote-repere" data-superpose data-repere="agay" style="--i:4" transform="translate(790 236)">
-      <circle class="cote-halo" r="22"></circle><circle class="cote-point" r="7"></circle>
-      <text class="cote-nom" x="0" y="46" text-anchor="middle">Agay · Cap Estérel</text>
-      <text class="cote-nb" x="0" y="70" text-anchor="middle">5 villas</text>
-    </g><g class="cote-repere" data-superpose data-repere="antheor" style="--i:5" transform="translate(985 262)">
-      <circle class="cote-halo" r="22"></circle><circle class="cote-point" r="7"></circle>
-      <text class="cote-nom" x="0" y="46" text-anchor="middle">Anthéor</text>
-      <text class="cote-nb" x="0" y="70" text-anchor="middle">2 villas</text>
+    <g class="cote-vagues" aria-hidden="true">
+      <path d="M40 300 q 30 -10 60 0 t 60 0 t 60 0"/><path d="M300 380 q 30 -10 60 0 t 60 0 t 60 0 t 60 0"/>
+      <path d="M760 400 q 30 -10 60 0 t 60 0 t 60 0"/><path d="M940 370 q 30 -10 60 0 t 60 0 t 60 0 t 60 0"/>
+      <path d="M120 430 q 30 -10 60 0 t 60 0"/><path d="M820 330 q 30 -10 60 0 t 60 0"/>
     </g>
+    <path class="cote-trait" data-cote-trait d="M0 196 C 120 206 180 214 236 226 C 300 238 360 226 420 236 C 480 246 540 262 572 300 C 590 322 612 330 628 312 C 650 288 690 282 720 270 C 750 258 766 230 792 228 C 820 226 832 262 860 276 C 900 296 950 286 990 296 C 1060 312 1130 318 1200 330"/>
+    <g class="cote-ile" transform="translate(640 400)"><path d="M-26 6 C -18 -6 -6 -10 4 -8 C 16 -6 24 0 28 8 Z"/><rect x="-3" y="-26" width="8" height="22"/></g>
+    <text class="cote-legende" x="676" y="410">Île d’Or</text>
+    <text class="cote-legende cote-legende--mer" x="280" y="336">Méditerranée</text>
+    <text class="cote-legende cote-legende--esterel" x="1182" y="196" text-anchor="end">Massif de l’Estérel</text>
+    <text class="cote-ville" x="18" y="152">Saint-Raphaël</text>
   </svg>
-  <ul class="cote-liste"><li data-secteur-liste="valescure"><strong>Valescure</strong> <span>Alice, Casa Lomi, La Santoline</span></li><li data-secteur-liste="boulouris"><strong>Boulouris</strong> <span>Uccelli, Harmony, Chez nous, Les Camelias, Pirouschka</span></li><li data-secteur-liste="santa-lucia"><strong>Santa Lucia</strong> <span>Le 155, Le Petit Roc</span></li><li data-secteur-liste="dramont"><strong>Le Dramont</strong> <span>L’Escapadou, Aiguebonne</span></li><li data-secteur-liste="agay"><strong>Agay · Cap Estérel</strong> <span>La Palmeraie, La Dolce Vita, Estaou, La Soleada, Le Mas Mirabelle</span></li><li data-secteur-liste="antheor"><strong>Anthéor</strong> <span>La Bohème, Eucalypta</span></li></ul>
+  <a class="cote-repere" href="/nos-villas?secteur=valescure#catalogue" data-libelle="Nos villas" data-superpose data-repere="valescure" data-x="0.218" style="--i:0; left:21.83%; top:25.11%" aria-label="Valescure : 3 villas">
+      <span class="cote-halo" aria-hidden="true"></span><span class="cote-point" aria-hidden="true">3</span><span class="cote-nom" aria-hidden="true">Valescure</span>
+    </a><a class="cote-repere" href="/nos-villas?secteur=boulouris#catalogue" data-libelle="Nos villas" data-superpose data-repere="boulouris" data-x="0.350" style="--i:1; left:35.00%; top:50.21%" aria-label="Boulouris : 5 villas">
+      <span class="cote-halo" aria-hidden="true"></span><span class="cote-point" aria-hidden="true">5</span><span class="cote-nom" aria-hidden="true">Boulouris</span>
+    </a><a class="cote-repere" href="/nos-villas?secteur=santa-lucia#catalogue" data-libelle="Nos villas" data-superpose data-repere="santa-lucia" data-x="0.178" style="--i:2; left:17.83%; top:47.23%" aria-label="Santa Lucia : 2 villas">
+      <span class="cote-halo" aria-hidden="true"></span><span class="cote-point" aria-hidden="true">2</span><span class="cote-nom" aria-hidden="true">Santa Lucia</span>
+    </a><a class="cote-repere" href="/nos-villas?secteur=dramont#catalogue" data-libelle="Nos villas" data-superpose data-repere="dramont" data-x="0.505" style="--i:3; left:50.50%; top:68.51%" aria-label="Le Dramont : 2 villas">
+      <span class="cote-halo" aria-hidden="true"></span><span class="cote-point" aria-hidden="true">2</span><span class="cote-nom" aria-hidden="true">Le Dramont</span>
+    </a><a class="cote-repere" href="/nos-villas?secteur=agay#catalogue" data-libelle="Nos villas" data-superpose data-repere="agay" data-x="0.658" style="--i:4; left:65.83%; top:48.72%" aria-label="Agay · Cap Estérel : 5 villas">
+      <span class="cote-halo" aria-hidden="true"></span><span class="cote-point" aria-hidden="true">5</span><span class="cote-nom" aria-hidden="true">Agay · Cap Estérel</span>
+    </a><a class="cote-repere" href="/nos-villas?secteur=antheor#catalogue" data-libelle="Nos villas" data-superpose data-repere="antheor" data-x="0.825" style="--i:5; left:82.50%; top:63.19%" aria-label="Anthéor : 2 villas">
+      <span class="cote-halo" aria-hidden="true"></span><span class="cote-point" aria-hidden="true">2</span><span class="cote-nom" aria-hidden="true">Anthéor</span>
+    </a>
+  </div></div>
+  <p class="cote-consigne">Touchez un secteur pour voir ses villas.</p>
+  <ul class="cote-liste"><li><a href="/nos-villas?secteur=valescure#catalogue" data-libelle="Nos villas" data-secteur-liste="valescure"><strong>Valescure</strong> <span class="cote-liste-nb">3 villas</span> <span class="cote-liste-noms">Alice, Casa Lomi, La Santoline</span></a></li><li><a href="/nos-villas?secteur=boulouris#catalogue" data-libelle="Nos villas" data-secteur-liste="boulouris"><strong>Boulouris</strong> <span class="cote-liste-nb">5 villas</span> <span class="cote-liste-noms">Uccelli, Harmony, Chez nous, Les Camelias, Pirouschka</span></a></li><li><a href="/nos-villas?secteur=santa-lucia#catalogue" data-libelle="Nos villas" data-secteur-liste="santa-lucia"><strong>Santa Lucia</strong> <span class="cote-liste-nb">2 villas</span> <span class="cote-liste-noms">Le 155, Le Petit Roc</span></a></li><li><a href="/nos-villas?secteur=dramont#catalogue" data-libelle="Nos villas" data-secteur-liste="dramont"><strong>Le Dramont</strong> <span class="cote-liste-nb">2 villas</span> <span class="cote-liste-noms">L’Escapadou, Aiguebonne</span></a></li><li><a href="/nos-villas?secteur=agay#catalogue" data-libelle="Nos villas" data-secteur-liste="agay"><strong>Agay · Cap Estérel</strong> <span class="cote-liste-nb">5 villas</span> <span class="cote-liste-noms">La Palmeraie, La Dolce Vita, Estaou, La Soleada, Le Mas Mirabelle</span></a></li><li><a href="/nos-villas?secteur=antheor#catalogue" data-libelle="Nos villas" data-secteur-liste="antheor"><strong>Anthéor</strong> <span class="cote-liste-nb">2 villas</span> <span class="cote-liste-noms">La Bohème, Eucalypta</span></a></li></ul>
 </div></div>
   <p class="conteneur note">Plan indicatif : l’adresse exacte est donnée avec la réservation.</p>
 </section>
@@ -456,7 +461,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <div class="conteneur apercu-tete">
     <div>
       <p class="surtitre" data-anime>Chez vous</p>
-      <h2 class="titre-section" data-anime="lignes">Un service digne des plus grands hôtels</h2>
+      <h2 class="titre-section" data-anime="lignes">Un service digne des <em>plus grands hôtels</em></h2>
     </div>
     <div>
       <p class="chapo" data-anime>Disponibles sur demande pendant tout votre séjour.</p>
@@ -473,26 +478,26 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
       <h3>Service haute couture dès votre arrivée</h3>
       <p>Accueil personnalisé · Kit d’accueil · Linge de qualité hôtelière · Lits faits à l’arrivée</p>
     </li><li class="apercu-carte">
-      <figure class="media apercu-media" style="--cadrage:54% 51%">
+      <figure class="media apercu-media" data-grok style="--cadrage:54% 51%">
   <picture>
-    <img src="/assets/images/service-chef-1168.webp" srcset="/assets/images/service-chef-640.webp 640w, /assets/images/service-chef-960.webp 960w, /assets/images/service-chef-1168.webp 1168w" sizes="(max-width: 760px) 92vw, 25vw" alt="Tomates anciennes, huile d’olive, basilic et casserole de cuivre sur un plan de marbre" width="1168" height="779" loading="lazy" decoding="async">
-  </picture>
+    <img src="/assets/images/grok/service-chef-1168.webp" srcset="/assets/images/grok/service-chef-640.webp 640w, /assets/images/grok/service-chef-960.webp 960w, /assets/images/grok/service-chef-1168.webp 1168w" sizes="(max-width: 760px) 92vw, 25vw" alt="Tomates anciennes, huile d’olive, basilic et casserole de cuivre sur un plan de marbre" width="1168" height="779" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
 </figure>
       <h3>À table</h3>
       <p>Petits-déjeuners · Courses avant l’arrivée · Chef à domicile</p>
     </li><li class="apercu-carte">
-      <figure class="media apercu-media" style="--cadrage:49% 50%">
+      <figure class="media apercu-media" data-grok style="--cadrage:49% 50%">
   <picture>
-    <img src="/assets/images/service-transfert-1168.webp" srcset="/assets/images/service-transfert-640.webp 640w, /assets/images/service-transfert-960.webp 960w, /assets/images/service-transfert-1168.webp 1168w" sizes="(max-width: 760px) 92vw, 25vw" alt="Berline sombre portière ouverte dans une allée de lavande" width="1168" height="779" loading="lazy" decoding="async">
-  </picture>
+    <img src="/assets/images/grok/service-transfert-1168.webp" srcset="/assets/images/grok/service-transfert-640.webp 640w, /assets/images/grok/service-transfert-960.webp 960w, /assets/images/grok/service-transfert-1168.webp 1168w" sizes="(max-width: 760px) 92vw, 25vw" alt="Berline sombre portière ouverte dans une allée de lavande" width="1168" height="779" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
 </figure>
       <h3>Vos déplacements</h3>
       <p>Transferts privés · Location de véhicule</p>
     </li><li class="apercu-carte">
-      <figure class="media apercu-media" style="--cadrage:67% 41%">
+      <figure class="media apercu-media" data-grok style="--cadrage:67% 41%">
   <picture>
-    <img src="/assets/images/service-bateau-1168.webp" srcset="/assets/images/service-bateau-640.webp 640w, /assets/images/service-bateau-960.webp 960w, /assets/images/service-bateau-1168.webp 1168w" sizes="(max-width: 760px) 92vw, 25vw" alt="Bateau en bois amarré dans une crique turquoise entre des rochers rouges" width="1168" height="779" loading="lazy" decoding="async">
-  </picture>
+    <img src="/assets/images/grok/service-bateau-1168.webp" srcset="/assets/images/grok/service-bateau-640.webp 640w, /assets/images/grok/service-bateau-960.webp 960w, /assets/images/grok/service-bateau-1168.webp 1168w" sizes="(max-width: 760px) 92vw, 25vw" alt="Bateau en bois amarré dans une crique turquoise entre des rochers rouges" width="1168" height="779" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
 </figure>
       <h3>Sur demande</h3>
       <p>Location de bateau · Services sur mesure</p>
@@ -503,7 +508,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <div class="conteneur apercu-tete">
     <div>
       <p class="surtitre" data-anime>Chez nous</p>
-      <h2 class="titre-section" data-anime="lignes">Saint-Raphaël, sans fausse note</h2>
+      <h2 class="titre-section" data-anime="lignes">Saint-Raphaël, <em>sans fausse note</em></h2>
     </div>
     <div>
       <p class="chapo" data-anime>Plages, criques, Île d’Or, rade d’Agay et Corniche d’Or : la station balnéaire entre Cannes et Saint-Tropez.</p>
@@ -550,7 +555,16 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 </section>
 <section class="confiance" id="confiance">
   <div class="conteneur confiance-grille">
-    <h2 class="titre-section" data-anime="lignes">Classées, et réservables partout</h2>
+    <div class="confiance-tete">
+      <h2 class="titre-section" data-anime="lignes">Classées, et <em>réservables partout</em></h2>
+      <svg class="macaron" viewBox="0 0 200 200" aria-hidden="true" data-effet="macaron">
+        <defs><path id="macaron-cercle" d="M100 100 m-74 0 a74 74 0 1 1 148 0 a74 74 0 1 1 -148 0"/></defs>
+        <g class="macaron-tour"><text><textPath href="#macaron-cercle" textLength="462">Meublé de tourisme · cinq étoiles · Madame&amp;Monsieur · </textPath></text></g>
+        <circle cx="100" cy="100" r="52" class="macaron-disque"/>
+        <path class="macaron-etoiles" d="M74.0 78.4 L75.4 82.1 L79.3 82.3 L76.2 84.7 L77.3 88.5 L74.0 86.3 L70.7 88.5 L71.8 84.7 L68.7 82.3 L72.6 82.1Z M87.0 78.4 L88.4 82.1 L92.3 82.3 L89.2 84.7 L90.3 88.5 L87.0 86.3 L83.7 88.5 L84.8 84.7 L81.7 82.3 L85.6 82.1Z M100.0 78.4 L101.4 82.1 L105.3 82.3 L102.2 84.7 L103.3 88.5 L100.0 86.3 L96.7 88.5 L97.8 84.7 L94.7 82.3 L98.6 82.1Z M113.0 78.4 L114.4 82.1 L118.3 82.3 L115.2 84.7 L116.3 88.5 L113.0 86.3 L109.7 88.5 L110.8 84.7 L107.7 82.3 L111.6 82.1Z M126.0 78.4 L127.4 82.1 L131.3 82.3 L128.2 84.7 L129.3 88.5 L126.0 86.3 L122.7 88.5 L123.8 84.7 L120.7 82.3 L124.6 82.1Z"/>
+        <path class="macaron-amp" d="M93.5 128.9Q90 128.9 87.7 127.8Q85.4 126.6 84.3 124.7Q83.2 122.9 83.2 120.4Q83.2 117.5 84.5 115.5Q85.8 113.6 88.1 112.4Q90.5 111.2 93.4 110.7Q92 108.4 91.4 106.6Q90.7 104.8 90.7 103.1Q90.7 100.5 91.9 98.7Q93.1 96.9 95.4 96Q97.6 95.1 100.6 95.1Q103.4 95.1 105.1 95.9Q106.9 96.7 107.7 98Q108.6 99.3 108.6 101.1Q108.6 103.4 107.5 104.9Q106.4 106.4 104.1 107.4Q101.9 108.5 98.3 109.4L105.1 118.6Q106 116.7 106.7 114.7Q107.4 112.6 107.8 110.8L108.2 109H116.8L116.7 109.5H116.1Q114.8 109.5 113.9 109.8Q113 110.2 112.3 111.1Q111.6 112 110.7 113.7Q109.8 115.4 108.8 117.3Q107.9 119.1 106.8 120.9L109.7 124.7Q110.9 126.4 111.7 127.2Q112.4 128 113.6 128H114L113.9 128.4H106.3L103.7 124.8Q101.9 126.5 99.4 127.7Q96.9 128.9 93.5 128.9ZM94.1 128.4Q96.7 128.4 98.7 126.9Q100.7 125.3 102.2 122.8L93.7 111Q91.8 112 90.6 113.3Q89.4 114.6 88.9 116.3Q88.3 117.9 88.3 120.3Q88.3 122.7 89 124.6Q89.7 126.4 91 127.4Q92.2 128.4 94.1 128.4ZM98.1 109.1Q100.3 107.8 101.7 106.5Q103 105.3 103.5 103.9Q104.1 102.5 104.1 100.7Q104.1 98.5 103.2 97Q102.3 95.6 100.4 95.6Q98 95.6 96.8 97.2Q95.6 98.8 95.6 102.2Q95.6 103.3 95.9 104.3Q96.1 105.4 96.6 106.6Q97.2 107.7 98.1 109.1Z"/>
+      </svg>
+    </div>
     <div class="confiance-texte" data-anime="cascade">
       <p class="confiance-etoiles"><span class="etoiles" aria-hidden="true">★★★★★</span> Cinq villas classées Meublé de tourisme cinq étoiles</p>
       <p>La Bohème, La Soleada, Le Mas Mirabelle, Chez nous et Pirouschka.</p>
@@ -569,7 +583,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   </picture>
 </figure>
   <div class="appel-carte">
-    <h2 data-anime="lignes">Votre séjour commence ici</h2>
+    <h2 data-anime="lignes">Votre séjour <em>commence ici</em></h2>
     <p data-anime>Une villa, des dates, le nombre de voyageurs : nous revenons vers vous avec la disponibilité et le tarif.</p>
     <form class="mini-demande" action="/renseignements" method="get" data-mini-demande data-anime>
       <div class="champ"><label for="m-villa">Villa</label>
@@ -582,6 +596,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 </section>
 </main>
 <footer class="pied" id="pied">
+  <p class="pied-signature" aria-hidden="true" data-effet="signature"><span>Madame</span><em>&amp;</em><span>Monsieur</span></p>
   <div class="conteneur pied-grille">
     <div class="pied-marque">
       <p class="marque marque--grande" aria-hidden="true">Madame<em class="marque-amp">&amp;</em>Monsieur</p>

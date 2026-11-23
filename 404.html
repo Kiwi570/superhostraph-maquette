@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" data-v="1">
+<html lang="fr" data-v="2" data-curseur>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -35,14 +35,14 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 })();</script>
 <link rel="preload" href="/assets/fonts/noto-serif-display-500.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/albert-sans-400.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=1">
-<link rel="stylesheet" href="/assets/css/site.css?v=1">
-<link rel="modulepreload" href="/assets/js/site.js?v=1">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<link rel="stylesheet" href="/assets/css/socle.css?v=2">
+<link rel="stylesheet" href="/assets/css/site.css?v=2">
+<link rel="modulepreload" href="/assets/js/site.js?v=2">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=2">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=1"></script>
+<script type="module" src="/assets/js/site.js?v=2"></script>
 <meta name="theme-color" content="#f6f1e9">
 <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
@@ -114,15 +114,16 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <p class="ouv-info ouv-info--sombre ouv-anim" data-info-cle>19 villas · de 4 à 12 voyageurs · de Valescure à Anthéor</p>
   </div>
   <div class="ouv-scindee-image" data-iris-centre>
-    <figure class="media ouv-scindee-media" data-fx="zoom" data-fx-force="10" style="--cadrage:33% 41%">
+    <figure class="media ouv-scindee-media" data-grok data-fx="zoom" data-fx-force="10" style="--cadrage:33% 41%">
   <picture>
-    <img src="/assets/images/page-404-1168.webp" srcset="/assets/images/page-404-640.webp 640w, /assets/images/page-404-960.webp 960w, /assets/images/page-404-1168.webp 1168w" sizes="(max-width: 760px) 100vw, 50vw" alt="Une clé laissée seule sur la marche d’une terrasse, volets fermés" width="1168" height="779" fetchpriority="high" loading="eager" decoding="async">
-  </picture>
+    <img src="/assets/images/grok/page-404-1168.webp" srcset="/assets/images/grok/page-404-640.webp 640w, /assets/images/grok/page-404-960.webp 960w, /assets/images/grok/page-404-1168.webp 1168w" sizes="(max-width: 760px) 100vw, 50vw" alt="Une clé laissée seule sur la marche d’une terrasse, volets fermés" width="1168" height="779" fetchpriority="high" loading="eager" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
 </figure>
   </div>
 </section>
 </main>
 <footer class="pied" id="pied">
+  <p class="pied-signature" aria-hidden="true" data-effet="signature"><span>Madame</span><em>&amp;</em><span>Monsieur</span></p>
   <div class="conteneur pied-grille">
     <div class="pied-marque">
       <p class="marque marque--grande" aria-hidden="true">Madame<em class="marque-amp">&amp;</em>Monsieur</p>

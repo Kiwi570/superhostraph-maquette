@@ -91,6 +91,7 @@ function entete(c) {
 
 function pied(c) {
   return html`<footer class="pied" id="pied">
+  <p class="pied-signature" aria-hidden="true" data-effet="signature"><span>Madame</span><em>&amp;</em><span>Monsieur</span></p>
   <div class="conteneur pied-grille">
     <div class="pied-marque">
       <p class="marque marque--grande" aria-hidden="true">Madame<em class="marque-amp">&amp;</em>Monsieur</p>

@@ -1,0 +1,16 @@
+{
+ "id": "20261123-145733-complet-cible-partiel",
+ "date": "2026-11-23T15:00:25.900Z",
+ "niveau": "complet",
+ "pages": "/,/chez-vous,/404",
+ "etapes": [
+  "fichiers",
+  "mesures"
+ ],
+ "version": "2",
+ "echecs": 0,
+ "aRegarder": 2,
+ "nonLances": 0,
+ "manquants": 0,
+ "statut": "complet"
+}

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" data-v="1">
+<html lang="fr" data-v="2" data-curseur>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -35,14 +35,14 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 })();</script>
 <link rel="preload" href="/assets/fonts/noto-serif-display-500.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/albert-sans-400.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=1">
-<link rel="stylesheet" href="/assets/css/site.css?v=1">
-<link rel="modulepreload" href="/assets/js/site.js?v=1">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<link rel="stylesheet" href="/assets/css/socle.css?v=2">
+<link rel="stylesheet" href="/assets/css/site.css?v=2">
+<link rel="modulepreload" href="/assets/js/site.js?v=2">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=2">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=1"></script>
+<script type="module" src="/assets/js/site.js?v=2"></script>
 <meta name="theme-color" content="#f6f1e9">
 <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
@@ -122,20 +122,20 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <p class="manifeste-grand" data-anime="mots">Une station balnéaire au charme méditerranéen, entre Cannes et Saint-Tropez : plages, criques, Île d’Or, rade d’Agay, Corniche d’Or et massif de l’Estérel.</p>
   </div>
 </section>
-<section class="esterel" data-fx="plein-ecran" id="esterel">
+<section class="esterel" data-fx="plein-ecran" data-fx-depart="inset(16% 22% 16% 22% round 24px)" style="--fx-longueur: 200svh" id="esterel">
   <div data-collant>
     <figure class="media esterel-media" data-fx-cible style="--cadrage:45% 47%;--cadrage-mobile:50% 47%">
   <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/esterel-mer-mobile-640.webp 640w" sizes="100vw">
     <img src="/assets/images/esterel-mer-1440.webp" srcset="/assets/images/esterel-mer-960.webp 960w, /assets/images/esterel-mer-1440.webp 1440w, /assets/images/esterel-mer-1920.webp 1920w" sizes="100vw" alt="Rochers rouges de l’Estérel plongeant dans la mer, la côte au loin" width="1440" height="810" loading="lazy" decoding="async">
   </picture>
 </figure>
-    <p class="esterel-mots" aria-hidden="true"><span data-fx-ecarte="g">L’Estérel</span> <span data-fx-ecarte="d">plonge dans la mer</span></p>
+    <p class="esterel-mots" aria-hidden="true" data-grille="typo"><span data-fx-ecarte="g">L’Estérel</span> <span data-fx-ecarte="d">plonge dans la mer</span></p>
     <p class="esterel-legende" data-fx-apres>Les rochers rouges de l’Estérel, entre Agay et Anthéor.</p>
   </div>
 </section>
 <section class="lieux" id="lieux">
   <div class="conteneur apercu-tete">
-    <h2 class="titre-section" data-anime="lignes">Nos lieux préférés</h2>
+    <h2 class="titre-section" data-anime="lignes">Nos lieux <em>préférés</em></h2>
     <p class="chapo" data-anime>La Plage du Veillat, le Casino Barrière, les villas Belle Époque, le Vieux Port, les criques, la promenade René Coty, la ville vue de la mer, le sentier des douaniers et l’Île d’Or.</p>
   </div>
   <ul class="conteneur mosaique" data-anime="cascade">
@@ -184,15 +184,15 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 </section>
 <section class="activites" id="activites">
   <div class="conteneur activites-grille">
-    <div class="activites-tete"><h2 class="titre-section" data-anime="lignes">Ce que l’on fait ici</h2></div>
+    <div class="activites-tete"><h2 class="titre-section" data-anime="lignes">Ce que l’on <em>fait ici</em></h2></div>
     <ul class="activites-liste">
-      <li class="activite"><h3 data-anime="lignes">La mer</h3><p data-anime>Sports nautiques, plongée, sorties en bateau et criques à rejoindre à pied.</p></li><li class="activite"><h3 data-anime="lignes">L’Estérel</h3><p data-anime>Randonnée, vélo et VTT dans le massif aux roches rouges.</p></li><li class="activite"><h3 data-anime="lignes">Tennis et golf</h3><p data-anime>Golfs de Saint-Raphaël Valescure, de Mandelieu et des Terres Blanches.</p></li><li class="activite"><h3 data-anime="lignes">L’arrière-pays</h3><p data-anime>Villages perchés et musées des environs.</p></li><li class="activite"><h3 data-anime="lignes">La table</h3><p data-anime>Visites de grands crus et restaurants étoilés.</p></li>
+      <li class="activite"><svg class="activite-icone" viewBox="0 0 48 48" aria-hidden="true" data-fx="trace"><path d="M4 18 q5 -6 10 0 t10 0 t10 0 t10 0 M4 28 q5 -6 10 0 t10 0 t10 0 t10 0 M4 38 q5 -6 10 0 t10 0 t10 0 t10 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h3 data-anime="lignes">La mer</h3><p data-anime>Sports nautiques, plongée, sorties en bateau et criques à rejoindre à pied.</p></div></li><li class="activite"><svg class="activite-icone" viewBox="0 0 48 48" aria-hidden="true" data-fx="trace"><path d="M3 42 L17 16 L25 28 L32 19 L45 42 Z M17 16 l-3 7 l4 -2 l3 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h3 data-anime="lignes">L’Estérel</h3><p data-anime>Randonnée, vélo et VTT dans le massif aux roches rouges.</p></div></li><li class="activite"><svg class="activite-icone" viewBox="0 0 48 48" aria-hidden="true" data-fx="trace"><path d="M17 43 V6 L35 12 L17 18 M8 43 h22 M36 38 a3 3 0 1 0 0.1 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h3 data-anime="lignes">Tennis et golf</h3><p data-anime>Golfs de Saint-Raphaël Valescure, de Mandelieu et des Terres Blanches.</p></div></li><li class="activite"><svg class="activite-icone" viewBox="0 0 48 48" aria-hidden="true" data-fx="trace"><path d="M3 43 Q24 14 45 43 M15 33 v-7 l5 -5 l5 5 v8 M25 28 v-6 l5 -5 l5 5 v9 M20 33 v-3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h3 data-anime="lignes">L’arrière-pays</h3><p data-anime>Villages perchés et musées des environs.</p></div></li><li class="activite"><svg class="activite-icone" viewBox="0 0 48 48" aria-hidden="true" data-fx="trace"><path d="M15 5 h18 l-2 15 a7 7 0 0 1 -14 0 Z M24 27 v12 M16 41 h16 M17 12 h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h3 data-anime="lignes">La table</h3><p data-anime>Visites de grands crus et restaurants étoilés.</p></div></li>
     </ul>
   </div>
 </section>
 <section class="partenaires" id="partenaires">
   <div class="conteneur">
-    <h2 class="titre-section" data-anime="lignes">Nos partenaires</h2>
+    <h2 class="titre-section" data-anime="lignes">Nos <em>partenaires</em></h2>
     <p class="chapo" data-anime>Les adresses et les professionnels avec qui nous travaillons.</p>
     <ul class="partenaires-liste" data-anime="cascade"><li>Estérel Côte d’Azur</li><li>L’Épuisette</li><li>Le Jardin Poncet</li><li>Méditerranée Plongée</li><li>Les Rouxcettes</li><li>Taste Gourmet</li><li>Taksea</li><li>Team Yachting</li><li>Popote Traiteur</li><li>Terres de Stel</li><li>Viager Dubois</li><li>Instant BOM</li><li>Climathis</li></ul>
   </div>
@@ -204,13 +204,14 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   </picture>
 </figure>
   <div class="appel-carte">
-    <h2 data-anime="lignes">Le plus beau, c’est d’y être</h2>
+    <h2 data-anime="lignes">Le plus beau, <em>c’est d’y être</em></h2>
     <p data-anime>Choisissez votre villa : nous nous occupons du reste.</p>
     <p class="appel-actions" data-anime><a href="/nos-villas" class="bouton" data-libelle="Nos villas">Voir les villas</a></p>
   </div>
 </section>
 </main>
 <footer class="pied" id="pied">
+  <p class="pied-signature" aria-hidden="true" data-effet="signature"><span>Madame</span><em>&amp;</em><span>Monsieur</span></p>
   <div class="conteneur pied-grille">
     <div class="pied-marque">
       <p class="marque marque--grande" aria-hidden="true">Madame<em class="marque-amp">&amp;</em>Monsieur</p>

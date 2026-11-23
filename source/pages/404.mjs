@@ -14,7 +14,7 @@ export default (c) => html`
     <p class="ouv-info ouv-info--sombre ouv-anim" data-info-cle>${c.t('accueil.info')}</p>
   </div>
   <div class="ouv-scindee-image" data-iris-centre>
-    ${img(c, 'page-404', { priorite: true, classe: 'ouv-scindee-media', sizes: '(max-width: 760px) 100vw, 50vw', attrs: 'data-fx="zoom" data-fx-force="10"' })}
+    ${img(c, 'grok/page-404', { priorite: true, classe: 'ouv-scindee-media', sizes: '(max-width: 760px) 100vw, 50vw', attrs: 'data-fx="zoom" data-fx-force="10"' })}
   </div>
 </section>
 `;

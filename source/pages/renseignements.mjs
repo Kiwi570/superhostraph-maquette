@@ -24,7 +24,7 @@ export default (c) => {
 </section>
 
 <section class="demande" id="demande">
-  <div class="conteneur"><h2 class="titre-section" data-anime="lignes">${c.t('renseignements.demandeTitre')}</h2></div>
+  <div class="conteneur"><h2 class="titre-section" data-anime="lignes">${c.tb('renseignements.demandeTitre')}</h2></div>
   <div class="conteneur demande-grille">
     <form class="formulaire etapes" data-formulaire data-etapes action="#" novalidate>
       <p class="etapes-annonce">${c.t('renseignements.etapes')}</p>
@@ -80,7 +80,7 @@ export default (c) => {
 <section class="joindre" id="joindre">
   <div class="conteneur joindre-grille">
     <div>
-      <h2 class="titre-section" data-anime="lignes">${c.t('renseignements.joindre.titre')}</h2>
+      <h2 class="titre-section" data-anime="lignes">${c.tb('renseignements.joindre.titre')}</h2>
       <dl class="joindre-liste" data-anime="cascade">
         <div><dt>${c.t('renseignements.joindre.tel')}</dt><dd><a href="tel:${c.site.contact.telephoneLien}">${c.site.contact.telephone}</a></dd></div>
         <div><dt>${c.t('renseignements.joindre.email')}</dt><dd><a href="mailto:${c.site.contact.email}">${c.site.contact.email}</a></dd></div>

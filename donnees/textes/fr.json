@@ -25,7 +25,8 @@
     "voyageurs": "voyageurs",
     "nuit": "la nuit",
     "etoiles": "Meublé de tourisme ★★★★★",
-    "nouveau": "Nouveauté"
+    "nouveau": "Nouveauté",
+    "signature": "Madame&Monsieur"
   },
   "pages": {
     "404": {
@@ -83,58 +84,67 @@
     "defiler": "Découvrir",
     "manifeste": {
       "surtitre": "Plus qu’un lieu de vie",
-      "texte": "Nous voulons faire plus que vous trouver un simple lieu de vie pour vos vacances.",
+      "texte": "Nous voulons faire <em>plus</em> que vous trouver un simple lieu de vie pour vos vacances.",
       "suite": "Linge de qualité hôtelière, lits faits à votre arrivée, gouvernante, chef à domicile, transferts privés : un service digne des plus grands hôtels, dans une maison rien qu’à vous.",
       "lien": "Ce qui vous attend sur place"
     },
     "voyageurs": {
       "surtitre": "La collection",
-      "titre": "Combien serez-vous ?",
+      "titre": "Combien <em>serez-vous</em> ?",
       "texte": "Glissez le curseur : les villas qui vous accueillent passent au premier rang.",
       "label": "Nombre de voyageurs",
       "resultat": "villas pour",
       "tous": "Voir les 19 villas",
-      "fiche": "Voir la villa"
+      "fiche": "Voir la villa",
+      "pictos": "Une silhouette par voyageur"
     },
     "cote": {
       "surtitre": "Entre Cannes et Saint-Tropez",
-      "titre": "De Valescure à Anthéor",
+      "titre": "De Valescure <em>à Anthéor</em>",
       "texte": "Dix-neuf maisons entre les pins de Valescure, les criques de Boulouris et les rochers rouges de l’Estérel.",
       "note": "Plan indicatif : l’adresse exacte est donnée avec la réservation.",
       "villas": "villas",
       "villa": "villa",
       "mer": "Méditerranée",
       "ileOr": "Île d’Or",
-      "esterel": "Massif de l’Estérel"
+      "esterel": "Massif de l’Estérel",
+      "voir": "Voir les villas",
+      "toucher": "Touchez un secteur pour voir ses villas."
     },
     "services": {
       "surtitre": "Chez vous",
-      "titre": "Un service digne des plus grands hôtels",
+      "titre": "Un service digne des <em>plus grands hôtels</em>",
       "texte": "Disponibles sur demande pendant tout votre séjour.",
       "lien": "Tous les services"
     },
     "lieux": {
       "surtitre": "Chez nous",
-      "titre": "Saint-Raphaël, sans fausse note",
+      "titre": "Saint-Raphaël, <em>sans fausse note</em>",
       "texte": "Plages, criques, Île d’Or, rade d’Agay et Corniche d’Or : la station balnéaire entre Cannes et Saint-Tropez.",
       "lien": "Découvrir Saint-Raphaël"
     },
     "confiance": {
-      "titre": "Classées, et réservables partout",
+      "titre": "Classées, et <em>réservables partout</em>",
       "etoiles": "Cinq villas classées Meublé de tourisme cinq étoiles",
       "etoilesListe": "La Bohème, La Soleada, Le Mas Mirabelle, Chez nous et Pirouschka.",
       "plateformes": "Nos villas sont aussi présentes sur Airbnb, VRBO, Booking et WAY.",
       "ruban": "Valescure · Boulouris · Santa Lucia · Le Dramont · Agay · Anthéor ·",
-      "ruban2": "Airbnb · VRBO · Booking · WAY · Madame&Monsieur ·"
+      "ruban2": "Airbnb · VRBO · Booking · WAY · Madame&Monsieur ·",
+      "macaron": "Meublé de tourisme · cinq étoiles · Madame&Monsieur · "
     },
     "appel": {
-      "titre": "Votre séjour commence ici",
+      "titre": "Votre séjour <em>commence ici</em>",
       "texte": "Une villa, des dates, le nombre de voyageurs : nous revenons vers vous avec la disponibilité et le tarif.",
       "villa": "Villa",
       "villaIndifferente": "Je ne sais pas encore",
       "arrivee": "Arrivée",
       "voyageurs": "Voyageurs",
       "envoyer": "Continuer ma demande"
+    },
+    "chiffres": {
+      "villas": "villas d’exception",
+      "voyageurs": "voyageurs au plus dans une même villa",
+      "etoiles": "villas classées cinq étoiles"
     }
   },
   "villas": {
@@ -145,7 +155,7 @@
     "action": "Choisir ma villa",
     "info": "19 villas · de 140 à 980 € la nuit",
     "filtres": "Filtrer les villas",
-    "liste": "Toutes nos villas",
+    "liste": "Toutes <em>nos villas</em>",
     "voyageurs": "Voyageurs",
     "voyageursTous": "Tous",
     "budget": "Budget par nuit",
@@ -173,11 +183,18 @@
     "suivante": "Photo suivante",
     "inclus": "Linge de qualité hôtelière, lits faits à l’arrivée, accueil personnalisé.",
     "appel": {
-      "titre": "Une villa vous fait de l’œil ?",
+      "titre": "Une villa vous fait <em>de l’œil</em> ?",
       "texte": "Envoyez-nous vos dates : nous vous répondons avec la disponibilité et le tarif exact.",
       "action": "Demander un séjour",
       "appeler": "Appeler le 06 43 78 02 23"
-    }
+    },
+    "tri": "Ordre",
+    "triReco": "Recommandées",
+    "triPrix": "Prix croissant",
+    "triPrixDesc": "Prix décroissant",
+    "triCapacite": "Les plus grandes",
+    "filtrer": "Filtrer",
+    "photo": "Photo"
   },
   "chezVous": {
     "surtitre": "Les services",
@@ -187,7 +204,7 @@
     "action": "Composer mon séjour",
     "info": "Service haute couture dès votre arrivée",
     "temps": {
-      "titre": "Votre séjour, en quatre temps",
+      "titre": "Votre séjour, <em>en quatre temps</em>",
       "avant": "Avant",
       "avantTexte": "Courses faites avant votre arrivée, transfert privé depuis l’aéroport ou la gare.",
       "arrivee": "À l’arrivée",
@@ -198,10 +215,10 @@
       "departTexte": "Départ tardif possible quand la villa n’est pas relouée le soir même."
     },
     "familles": {
-      "titre": "Ce que nous faisons pour vous"
+      "titre": "Ce que nous faisons <em>pour vous</em>"
     },
     "inclus": {
-      "titre": "Dans nos villas, d’office",
+      "titre": "Dans nos villas, <em>d’office</em>",
       "l1": "Linge de maison et serviettes de qualité hôtelière",
       "l2": "Lits faits à votre arrivée",
       "l3": "Accueil personnalisé",
@@ -210,7 +227,7 @@
       "l6": "Départ tardif possible si la villa n’est pas relouée le soir"
     },
     "appel": {
-      "titre": "Une envie particulière ?",
+      "titre": "Une envie <em>particulière</em> ?",
       "texte": "Sur demande, tout ce que vous pouvez désirer… Laissez-vous guider par vos envies.",
       "action": "Demander un service"
     }
@@ -228,12 +245,12 @@
       "legende": "Les rochers rouges de l’Estérel, entre Agay et Anthéor."
     },
     "lieux": {
-      "titre": "Nos lieux préférés",
+      "titre": "Nos lieux <em>préférés</em>",
       "texte": "La Plage du Veillat, le Casino Barrière, les villas Belle Époque, le Vieux Port, les criques, la promenade René Coty, la ville vue de la mer, le sentier des douaniers et l’Île d’Or.",
       "glisser": "Faites glisser"
     },
     "activites": {
-      "titre": "Ce que l’on fait ici",
+      "titre": "Ce que l’on <em>fait ici</em>",
       "mer": "La mer",
       "merTexte": "Sports nautiques, plongée, sorties en bateau et criques à rejoindre à pied.",
       "terre": "L’Estérel",
@@ -246,11 +263,11 @@
       "tableTexte": "Visites de grands crus et restaurants étoilés."
     },
     "partenaires": {
-      "titre": "Nos partenaires",
+      "titre": "Nos <em>partenaires</em>",
       "texte": "Les adresses et les professionnels avec qui nous travaillons."
     },
     "appel": {
-      "titre": "Le plus beau, c’est d’y être",
+      "titre": "Le plus beau, <em>c’est d’y être</em>",
       "texte": "Choisissez votre villa : nous nous occupons du reste.",
       "action": "Voir les villas"
     }
@@ -285,9 +302,9 @@
     "precedent": "Retour",
     "envoyer": "Envoyer ma demande",
     "envoye": "Demande simulée : rien n’a été envoyé. Sur le site final, elle partira vers Madame&Monsieur.",
-    "donnees": "Votre adresse e-mail sert à répondre à votre demande et, si vous le choisissez, à vous envoyer nos nouvelles. <a href=\"#confidentialite\">Politique de confidentialité</a> : à compléter.",
+    "donnees": "Votre adresse e-mail sert à répondre à votre demande et, si vous le choisissez, à vous envoyer nos nouvelles.",
     "recap": "Votre demande",
-    "demandeTitre": "Préparons votre séjour",
+    "demandeTitre": "Préparons <em>votre séjour</em>",
     "recapVilla": "Villa",
     "recapDates": "Dates",
     "recapVoyageurs": "Voyageurs",
@@ -295,7 +312,7 @@
     "nuits": "nuits",
     "nuit": "nuit",
     "joindre": {
-      "titre": "Nous joindre",
+      "titre": "Nous <em>joindre</em>",
       "tel": "Téléphone et WhatsApp",
       "email": "E-mail",
       "adresse": "Conciergerie",
